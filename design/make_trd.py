@@ -70,6 +70,16 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
 <h2 style="margin: 0 0 8px; font-size: 28px">Research highlights</h2>
 <p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668">Publications from the past 12 months by this project and its collaborators.</p>
+<figure style="margin: 0 0 28px; display: flex; flex-wrap: wrap; gap: 0; border: 1px solid #E3E8EF; border-radius: 16px; overflow: hidden; background: #FFFFFF">
+<a href="{{feat.doi}}" style="flex: 999 1 520px; min-width: 0; background: #0F1B2D; display: block"><img src="{{feat.fig}}" alt="{{feat.alt}}" style="display: block; width: 100%; height: 100%; max-height: 460px; object-fit: contain; background: #FFFFFF"></a>
+<figcaption style="flex: 1 1 300px; min-width: 0; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Latest paper</span>
+<a href="{{feat.doi}}" style="color: #0F1B2D; font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 1.3">{{feat.title}}</a>
+<span style="font-size: 14px; color: #4A5668">{{feat.cite}}</span>
+<span style="font-size: 15px; line-height: 1.55; color: #3A4658">{{feat.what}}</span>
+<span style="margin-top: auto; font-size: 12px; color: #6B778A">{{feat.credit}}</span>
+</figcaption>
+</figure>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
 <sc-for list="{{papers}}" as="p" hint-placeholder-count="4">
 <article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
@@ -243,6 +253,12 @@ jonas=[('Sebastian Ahn','sebastian-ahn'),('Simon Chow','simon-chow'),('Christine
 agar=[('Gerard Baquer','gerard-baquer'),('Sankha (Bobby) Basu','sankha-bobby-basu'),('Clément Bodineau','clement-bodineau'),('Julia Bonney','julia-bonney'),('Kaitlyn Bootz','kaitlyn-bootz'),('Aaron Bowen','aaron-bowen'),('Jamie Brett','jamie-brett'),('Aanchalika Chauhan','aanchalika-chauhan'),('Jennifer Gantchev','jennifer-gantchev'),('Christelle Guillermier','christelle-guillermier'),('Songhua Hu','songhua-hu'),('Jaimie Lee','jaimie-lee'),('Zongyu Li','zongyu-li'),('C. Zoë Linke','c-zoe-linke'),('Camilla Martinez','camilla-martinez'),('Jacob Myers','jacob-myers'),('Atticus Scovel','atticus-scovel')]
 tokuda=[('Mariana Bernardes','mariana-bernardes'),('Ruofeng Wei','ruofeng-wei')]
 collab3=[('Iulian Iordachita','iulian-iordachita','Research Professor'),('Axel Krieger','axel-krieger','Assistant Professor'),('Gregory Fischer','gregory-fischer','Professor'),('Simon Leonard','simon-leonard','Assistant Research Professor'),('Tamas Ungi','tamas-ungi','Assistant Professor'),('Ehud Schmidt','ehud-schmidt','Associate Professor'),('Robert Cormack','robert-cormack','Associate Professor of Radiation Oncology'),('Mark Fuge','mark-fuge','Associate Professor'),('Yue Chen','yue-chen','Assistant Professor'),('Gregory Ekchian','gregory-ekchian','CEO')]
+
+FEAT={
+'TRD1':{'fig':'media/figs/trd1-hbm2026-fig2-full.jpg','alt':'Diffusion MRI maps of the human brain in axial, sagittal and coronal planes','title':'Unveiling neuronal microstructure in the human brain in vivo with time-dependent radial diffusivity in a head-only high-performance gradient 3T MRI system','cite':'Zhu A, … Maier SE, … Westin CF, … Li H. Hum Brain Mapp, Nov 2026','what':'Oscillating-gradient diffusion MRI on a high-performance gradient scanner reveals how radial diffusivity changes with diffusion time across white matter.','credit':'Figure 2 of the paper, CC BY 4.0.','doi':'https://doi.org/10.1002/hbm.70664'},
+'TRD2':{'fig':'media/figs/trd2-sciadv2026-fig2-full.jpg','alt':'Design drawings, imaging and fluorescence microscopy of an implantable microdevice releasing cells','title':'A spatially resolved implantable microdevice for multiplexed in situ screening of engineered cellular therapies in solid tumors','cite':'Panikkanvalappil SR, … Jonas O. Sci Adv, Aug 2026','what':'The microdevice platform extended from drugs to engineered cell therapies, screened side by side inside solid tumors.','credit':'Figure 2 of the paper, CC BY-NC 4.0.','doi':'https://doi.org/10.1126/sciadv.aee6195'},
+'TRD3':{'fig':'media/figs/trd3-medphys2026-fig7-full.jpg','alt':'Predicted needle deflection with confidence bands on segmented prostate MRI and on the MRI slice','title':'Machine learning model for fast prediction and uncertainty quantification of needle deflection during prostate biopsy','cite':'Hoffman N, Al-Zogbi L, Krieger A, Tokuda J, Moreira P, Fuge M. Med Phys, Feb 2026','what':'A neural network predicts how a biopsy needle will bend, with confidence bands, fast enough for planning during the procedure.','credit':'Figure 7 of the paper, CC BY 4.0.','doi':'https://doi.org/10.1002/mp.70314'}}
+for k in FEAT: pages[k]['feat']=FEAT[k]
 for k,v in pages.items():
     for m in v['team']:
         f=photos.get(m['name']); m['photo']=ph(f) if f else ''; m['nophoto']= not f
