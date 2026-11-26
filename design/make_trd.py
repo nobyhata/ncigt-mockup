@@ -28,6 +28,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="Main.dc.html#research" style="color: #0F1B2D">Research</a>
 <a href="People.dc.html" style="color: #0F1B2D">People</a>
 <a href="Main.dc.html#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Publications.dc.html" style="color: #0F1B2D">Publications</a>
 <a href="Main.dc.html#resources" style="color: #0F1B2D">Resources</a>
 <a href="Main.dc.html#training" style="color: #0F1B2D">Training</a>
 <a href="Industry.dc.html" style="color: #0F1B2D">Industry</a>
@@ -68,7 +69,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
 <h2 style="margin: 0 0 8px; font-size: 28px">Research highlights</h2>
-<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668">Recent publications from this project and its collaborators.</p>
+<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668">Publications from the past 12 months by this project and its collaborators.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
 <sc-for list="{{papers}}" as="p" hint-placeholder-count="4">
 <article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
@@ -184,10 +185,8 @@ pages = {
  problem='Tumors are not uniform. Regions that look alike on standard MRI can differ in cell density, microstructure and metabolism, and those differences affect diagnosis, targeting and response to treatment. Measuring them noninvasively, with methods that are reproducible across scanners, would let clinicians aim biopsies and therapy at the parts of a tumor that matter most.',
  aims=[{'t':'Sub-millimeter diffusion MRI for tissue microstructure'},{'t':'Quantitative chemical exchange saturation transfer (CEST) imaging'},{'t':'Methods for 3T clinical scanners, 7T and high-performance gradient systems'},{'t':'Reproducible quantitative measures for prostate and brain tumors'}],
  papers=[
-  {'title':'Optimization of diffusion MRI with consideration of the signal decay in biological tissues','authors':'Kuczera S, Maier SE','venue':'Magn Reson Med, 2026','doi':D+'10.1002/mrm.70346'},
-  {'title':'Human prostate MRI at ultrahigh-performance gradient: a feasibility study','authors':'Zhu A, … Westin CF, … Tempany C, Akin O, Foo TKF','venue':'Magn Reson Med, 2024','doi':D+'10.1002/mrm.29874'},
-  {'title':'Early change in apparent diffusion coefficient as a predictor of response to neoadjuvant therapy for prostate cancer','authors':'Franco FB, Leeman JE, Fedorov A, Vangel M, Fennessy FM','venue':'Clin Radiol, 2024','doi':D+'10.1016/j.crad.2023.12.022'},
-  {'title':'Truly reproducible uniform estimation of the ADC with multi-b diffusion data','authors':'Kuczera S, Langkilde F, Maier SE','venue':'Magn Reson Med, 2023','doi':D+'10.1002/mrm.29533'}],
+  {'title':'Unveiling neuronal microstructure in the human brain in vivo with time-dependent radial diffusivity in a head-only high-performance gradient 3T MRI system','authors':'Zhu A, … Maier SE, … Westin CF, … Li H (led by GE HealthCare)','venue':'Hum Brain Mapp, Nov 2026','doi':D+'10.1002/hbm.70664'},
+  {'title':'Optimization of diffusion MRI with consideration of the signal decay in biological tissues','authors':'Kuczera S, Maier SE','venue':'Magn Reson Med, Jul 2026','doi':D+'10.1002/mrm.70346'}],
  team=[{'name':'Stephan E. Maier','role':'Project lead','focus':'Quantitative diffusion MRI'},
   {'name':'Carl-Fredrik Westin','role':'Investigator','focus':'Diffusion MRI methods'},
   {'name':'William M. Wells III','role':'Co-investigator','focus':'Image registration and multimodal learning'},
@@ -203,10 +202,9 @@ pages = {
  problem='Patients with the same cancer type often respond very differently to the same drug, and today most treatment choices are made without testing them on the patient’s own tumor. Microdevices that release minute doses of many drugs into different regions of a tumor, then are removed with the surrounding tissue, can show which drugs work before a full course of systemic therapy begins.',
  aims=[{'t':'Microdevices that measure drug efficacy in situ'},{'t':'Image-guided implantation and retrieval, including MRI-guided placement'},{'t':'Multi-omic readout of local drug response'},{'t':'Machine learning that links response patterns to imaging biomarkers'}],
  papers=[
-  {'title':'Development and pre-clinical feasibility of a catheter-based platform for interventional phase-0 drug response measurements','authors':'Bhagavatula SK, … Jonas O','venue':'Ann Biomed Eng, 2026','doi':D+'10.1007/s10439-026-04113-w'},
-  {'title':'An interventional radiology method for in situ assessments of cancer drug response','authors':'Bhagavatula SK, … Hata N, Silverman SG, Jonas O','venue':'Radiol Imaging Cancer, 2025','doi':D+'10.1148/rycan.250055'},
-  {'title':'Feasibility of MRI-guided transperineal implantation of microdevices for drug delivery and response assessment in prostate cancer','authors':'Rainer Q, … Tempany C, Jonas O, Kibel AS, Hata N','venue':'J Magn Reson Imaging, 2025','doi':D+'10.1002/jmri.29784'},
-  {'title':'Intratumoral drug-releasing microdevices allow in situ high-throughput pharmaco phenotyping in patients with gliomas','authors':'Peruzzi P, … Wen PY, Jonas O','venue':'Sci Transl Med, 2023','doi':D+'10.1126/scitranslmed.adi0069'}],
+  {'title':'A spatially resolved implantable microdevice for multiplexed in situ screening of engineered cellular therapies in solid tumors','authors':'Panikkanvalappil SR, … Bhagavatula SK, Jonas O','venue':'Science Advances, Aug 2026','doi':D+'10.1126/sciadv.aee6195'},
+  {'title':'Implantable microdevices for in vivo assessment of chemotherapy response in patient-derived organoid orthotopic pancreatic cancer models','authors':'Standring OJ, … Jonas O, … Weiss MJ','venue':'Ann Surg, May 2026','doi':D+'10.1097/SLA.0000000000007071'},
+  {'title':'Development and pre-clinical feasibility of a catheter-based platform for interventional phase-0 drug response measurements','authors':'Bhagavatula SK, … Jonas O','venue':'Ann Biomed Eng, Mar 2026','doi':D+'10.1007/s10439-026-04113-w'}],
  team=[{'name':'Oliver Jonas','role':'Project lead','focus':'Implantable microdevices'},
   {'name':'Sharath Bhagavatula','role':'Investigator','focus':'Interventional radiology'},
   {'name':'Nobuhiko Hata','role':'Investigator','focus':'Image-guided device placement'},
@@ -222,10 +220,10 @@ pages = {
  problem='Many procedures depend on placing a needle or instrument exactly on a small target that moves or deforms, while the physician watches images that are not perfectly aligned with the patient. Needles bend, organs shift and anatomy differs from the preoperative scan. Robots that correct their path from imaging data, and navigation that tracks the anatomy as it moves, can make these procedures more accurate and more consistent.',
  aims=[{'t':'Robotic needle guidance with path correction for needle deflection'},{'t':'Augmented-reality and trackerless navigation for open and endoscopic surgery'},{'t':'AI-based prediction to plan and monitor ablation'},{'t':'Clinical evaluation in the AMIGO suite and procedure rooms'}],
  papers=[
-  {'title':'Clinical validation of a novel robotic device for MR-guided prostate biopsy: initial patient experience','authors':'Moreira P, … Park J, Tokuda J','venue':'J Med Robot Res, 2026','doi':D+'10.1142/s2424905x26500042'},
-  {'title':'AI-assisted cryo-dose estimation and tissue injury modeling in MRI-guided prostate cryoablation','authors':'Moreira P, … Tempany C, Tuncali K, Tokuda J','venue':'Phys Med Biol, 2026','doi':D+'10.1088/1361-6560/ae4847'},
-  {'title':'In vivo feasibility study: autonomous data-driven robotic needle trajectory correction in MRI-guided transperineal procedures','authors':'Bernardes MC, … Hata N, Iordachita I, Tokuda J','venue':'IEEE Robot Autom Lett, 2024','doi':D+'10.1109/lra.2024.3455940'},
-  {'title':'Integration of trackerless surface reconstruction-based surgical navigation with exoscopic trans-mastoid surgery','authors':'Bartholomew RA, … Jagadeesan J, Corrales CE','venue':'Otolaryngol Head Neck Surg, 2026','doi':D+'10.1002/ohn.70062'}],
+  {'title':'Multimodal cross-attention fusion of B-mode ultrasound and strain elastography for tumor segmentation in robotics-assisted surgery','authors':'Abkhofte S, Naidu AS, Patel RV, Jagadeesan J','venue':'IEEE Trans Med Robot Bionics, May 2026','doi':D+'10.1109/tmrb.2026.3681001'},
+  {'title':'Clinical validation of a novel robotic device for MR-guided prostate biopsy: initial patient experience','authors':'Moreira P, … Park J, Tokuda J','venue':'J Med Robot Res, Mar 2026','doi':D+'10.1142/s2424905x26500042'},
+  {'title':'AI-assisted cryo-dose estimation and tissue injury modeling in MRI-guided prostate cryoablation','authors':'Moreira P, … Tempany C, Tuncali K, Tokuda J','venue':'Phys Med Biol, Mar 2026','doi':D+'10.1088/1361-6560/ae4847'},
+  {'title':'Machine learning model for fast prediction and uncertainty quantification of needle deflection during prostate biopsy','authors':'Hoffman N, … Tokuda J, Moreira P, Fuge M (led by University of Maryland)','venue':'Med Phys, Feb 2026','doi':D+'10.1002/mp.70314'}],
  team=[{'name':'Junichi Tokuda','role':'Project lead','focus':'MRI-guided robotic interventions'},
   {'name':'Jagadeesan Jayender','role':'Investigator','focus':'Surgical navigation and computer vision'},
   {'name':'Nobuhiko Hata','role':'Investigator','focus':'Robotic navigation for bronchoscopy and prostate interventions'},

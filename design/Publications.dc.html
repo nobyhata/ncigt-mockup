@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Publications · AT-NCIGT</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:underline}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #0F1B2D; background: #FFFFFF">
+<header style="border-bottom: 1px solid #E3E8EF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 12px; color: #0F1B2D">
+<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="none" stroke="#0B5F86" stroke-width="2.5"></circle><circle cx="18" cy="18" r="6" fill="#A8763E"></circle><path d="M18 2v8M18 26v8M2 18h8M26 18h8" stroke="#0B5F86" stroke-width="2.5"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">AT-NCIGT</strong><span style="font-size: 12px; color: #4A5668">Advanced Technologies - National Center for Image Guided Therapy</span></span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; font-weight: 500">
+<a href="Main.dc.html#research" style="color: #0F1B2D">Research</a>
+<a href="People.dc.html" style="color: #0F1B2D">People</a>
+<a href="Main.dc.html#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Publications.dc.html" style="color: #0F1B2D">Publications</a>
+<a href="Main.dc.html#resources" style="color: #0F1B2D">Resources</a>
+<a href="Main.dc.html#training" style="color: #0F1B2D">Training</a>
+<a href="Industry.dc.html" style="color: #0F1B2D">Industry</a>
+<a href="Main.dc.html#partner" style="color: #0F1B2D">Partner with us</a>
+<a href="Main.dc.html#community" style="color: #0F1B2D">News</a>
+<a href="Main.dc.html#about" style="color: #0F1B2D">About</a>
+</nav>
+</div>
+</header>
+<section style="background: #0F1B2D; color: #FFFFFF"><div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 48px">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Publications</p>
+<h1 style="margin: 0 0 14px; font-size: 40px; line-height: 1.2">Research outcomes, past 12 months</h1>
+<p style="margin: 0 0 12px; font-size: 18px; line-height: 1.6; color: #C9D3E0; max-width: 780px">Papers that acknowledge center support, published December 2025 to November 2026.</p>
+<p style="margin: 0 0 24px; font-size: 15px"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=P41+EB028741+OR+P41EB028741+OR+P41+EB015898+OR+P41EB015898&amp;sort=pubdate&amp;size=200" style="color: #FFFFFF; font-weight: 600; text-decoration: underline">All center publications on PubMed, every year →</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 32px">
+<div><div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; color: #D9B98F">{{nmajor}}</div><div style="font-size: 14px; color: #C9D3E0">major achievements</div></div>
+<div><div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; color: #D9B98F">{{ncollab}}</div><div style="font-size: 14px; color: #C9D3E0">collaborations</div></div>
+<div><div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 36px; font-weight: 600; color: #D9B98F">{{ninst}}</div><div style="font-size: 14px; color: #C9D3E0">partner institutions leading papers</div></div>
+</div>
+</div></section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
+<h2 style="margin: 0 0 8px; font-size: 30px">Major achievements</h2>
+<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668; max-width: 860px">Papers with a center investigator as senior author.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
+<sc-for list="{{major}}" as="p" hint-placeholder-count="6">
+<article style="border: 1px solid #E3E8EF; border-left: 4px solid #0B5F86; border-radius: 0 12px 12px 0; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #8A5A2B">{{p.venue}} · {{p.project}}</span>
+<a href="{{p.doi}}" style="color: #0F1B2D; font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; font-weight: 600; line-height: 1.35">{{p.title}}</a>
+<span style="font-size: 14px; color: #3A4658; line-height: 1.5">{{p.why}}</span>
+<span style="font-size: 13px; color: #4A5668">Senior author: <strong>{{p.senior}}</strong> · First author: {{p.first}}</span>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section style="background: #F7F9FC; margin-top: 48px"><div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px">
+<h2 style="margin: 0 0 8px; font-size: 30px">Collaborations</h2>
+<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668; max-width: 860px">Papers led by partner institutions and companies, with center investigators as co-authors. Lead institutions this year: {{insts}}.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
+<sc-for list="{{collabs}}" as="c" hint-placeholder-count="6">
+<article style="background: #FFFFFF; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Led by {{c.leadinst}}</span>
+<a href="{{c.doi}}" style="color: #0F1B2D; font-size: 16px; font-weight: 600; line-height: 1.4">{{c.title}}</a>
+<span style="font-size: 13px; color: #4A5668">{{c.venue}} · First author: {{c.first}}</span>
+<span style="font-size: 13px; color: #3A4658; line-height: 1.5"><strong>Partners:</strong> {{c.partners}}</span>
+<span style="font-size: 13px; color: #0B5F86; font-weight: 600">Center co-authors: {{c.center}}</span>
+</article>
+</sc-for>
+</div>
+</div></section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 72px; display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 999 1 480px; min-width: 0; background: #F6F1EA; border-radius: 14px; padding: 24px">
+<h2 style="margin: 0 0 8px; font-size: 22px">Earlier publications</h2>
+<p style="margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #3A4658">All papers acknowledging the center’s grants, from every funding cycle, are listed on PubMed.</p>
+<a href="https://pubmed.ncbi.nlm.nih.gov/?term=P41+EB028741+OR+P41EB028741+OR+P41+EB015898+OR+P41EB015898&amp;sort=pubdate&amp;size=200" style="font-weight: 600">See all publications on PubMed →</a>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; border: 1px solid #E3E8EF; border-radius: 14px; padding: 24px">
+<h2 style="margin: 0 0 8px; font-size: 22px">Is your paper missing?</h2>
+<p style="margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #3A4658">If your work used the center’s technology, data, equipment or staff, please acknowledge P41EB028741 and let us know, so we can feature it here.</p>
+<a href="Main.dc.html#about" style="font-weight: 600">How to acknowledge the center →</a>
+</div>
+</section>
+<footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741</div></footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3600}}'>
+class Component extends DCLogic {
+renderVals() {
+return {"major": [{"title": "A spatially resolved implantable microdevice for multiplexed in situ screening of engineered cellular therapies in solid tumors", "venue": "Science Advances, Aug 2026", "project": "TR&D 2", "senior": "Oliver Jonas", "first": "Sajanlal R. Panikkanvalappil (BWH)", "why": "Extends the microdevice platform from drugs to engineered cell therapies, screened side by side inside solid tumors.", "doi": "https://doi.org/10.1126/sciadv.aee6195"}, {"title": "Optimization of diffusion MRI with consideration of the signal decay in biological tissues", "venue": "Magn Reson Med, Jul 2026", "project": "TR&D 1", "senior": "Stephan E. Maier", "first": "Stefan Kuczera (University of Gothenburg)", "why": "A principled way to choose diffusion MRI settings for real tissue, with a long-standing Swedish partner.", "doi": "https://doi.org/10.1002/mrm.70346"}, {"title": "An in vivo platform to jointly monitor cellular and metabolic responses to chemotherapy (preprint)", "venue": "bioRxiv, Jun 2026", "project": "TR&D 2", "senior": "Oliver Jonas", "first": "Veronika Pister (MIT)", "why": "Combines microdevice drug testing with metabolic readouts in the same tumor.", "doi": "https://doi.org/10.64898/2026.06.25.734296"}, {"title": "Multimodal cross-attention fusion of B-mode ultrasound and strain elastography for tumor segmentation in robotics-assisted surgery", "venue": "IEEE Trans Med Robot Bionics, May 2026", "project": "TR&D 3", "senior": "Jagadeesan Jayender", "first": "Sara Abkhofte (Western University, Canada)", "why": "Combines two ultrasound views with deep learning to outline tumors during robotic surgery.", "doi": "https://doi.org/10.1109/tmrb.2026.3681001"}, {"title": "Clinical feasibility study of generative depth estimation to diagnose airway stenosis using 3D Slicer", "venue": "Int J Comput Assist Radiol Surg, May 2026", "project": "Robotic bronchoscopy", "senior": "Nobuhiko Hata", "first": "Artur Banach (BWH)", "why": "A public 3D Slicer tool that estimates airway narrowing from bronchoscopy video, tested on 30 patients; with Canon Medical Research USA and EPFL.", "doi": "https://doi.org/10.1007/s11548-026-03721-0"}, {"title": "Development and pre-clinical feasibility of a catheter-based platform for interventional phase-0 drug response measurements", "venue": "Ann Biomed Eng, Mar 2026", "project": "TR&D 2", "senior": "Oliver Jonas", "first": "Sharath K. Bhagavatula (BWH)", "why": "Brings in situ drug testing to catheter-based interventional radiology procedures.", "doi": "https://doi.org/10.1007/s10439-026-04113-w"}, {"title": "Clinical validation of a novel robotic device for MR-guided prostate biopsy: initial patient experience", "venue": "J Med Robot Res, Mar 2026", "project": "TR&D 3", "senior": "Junichi Tokuda", "first": "Pedro Moreira (BWH)", "why": "First patient use of a robotic needle-guide template, developed with Physical Sciences Inc.", "doi": "https://doi.org/10.1142/s2424905x26500042"}, {"title": "AI-assisted cryo-dose estimation and tissue injury modeling for assessing side effects in MRI-guided prostate cryoablation", "venue": "Phys Med Biol, Mar 2026", "project": "TR&D 3", "senior": "Junichi Tokuda", "first": "Pedro Moreira (BWH)", "why": "Links predicted freezing dose to side effects, toward safer prostate cryoablation.", "doi": "https://doi.org/10.1088/1361-6560/ae4847"}, {"title": "Unified cross-modal medical image synthesis with hierarchical mixture of product-of-experts", "venue": "IEEE Trans Pattern Anal Mach Intell, Feb 2026", "project": "Image computing", "senior": "William M. Wells III", "first": "Reuben Dorent", "why": "One model that synthesizes missing imaging modalities, such as MRI and ultrasound, for surgical guidance.", "doi": "https://doi.org/10.1109/TPAMI.2025.3616632"}, {"title": "Transperineal 3T MRI-guided and transrectal MRI-ultrasound fusion prostate biopsies: do lesion location and size impact diagnostic yield?", "venue": "Urol Oncol, Jan 2026", "project": "Clinical research", "senior": "Clare M. Tempany", "first": "Quinn Rainer (BWH)", "why": "Shows which prostate lesions benefit most from in-bore MRI-guided biopsy.", "doi": "https://doi.org/10.1016/j.urolonc.2025.08.024"}, {"title": "Benchmarking NousNav: quantifying the spatial accuracy and clinical performance of an affordable, open-source neuronavigation system", "venue": "Int J Comput Assist Radiol Surg, Dec 2025", "project": "Global health", "senior": "Alexandra J. Golby", "first": "Colton Barr (Queen\u0027s University, Canada)", "why": "Validates a low-cost, open-source navigation system for brain surgery, built with Kitware and Isomics.", "doi": "https://doi.org/10.1007/s11548-025-03494-y"}], "collabs": [{"title": "Unveiling neuronal microstructure in the human brain in vivo with time-dependent radial diffusivity in a head-only high-performance gradient 3T MRI system", "venue": "Hum Brain Mapp, Nov 2026", "leadinst": "GE HealthCare", "first": "Ante Zhu (GE HealthCare)", "partners": "GE HealthCare (industry); University of Iowa; King\u0027s College London; Uniformed Services University and Walter Reed; University of Wisconsin-Madison", "center": "Stephan E. Maier, Carl-Fredrik Westin", "doi": "https://doi.org/10.1002/hbm.70664"}, {"title": "Toward autonomous robotic-assisted and microrobotic surgery", "venue": "Science Advances, Jul 2026", "leadinst": "Massachusetts Institute of Technology", "first": "Sungyun Yang (MIT)", "partners": "MIT; Johns Hopkins University; Vanderbilt University; Northwestern University; University of North Carolina; UC San Diego; Boston University; Boston Children’s Hospital; Activ Surgical (industry)", "center": "Nobuhiko Hata", "doi": "https://doi.org/10.1126/sciadv.aec4197"}, {"title": "MIAAIM: multi-omics image integration with dimensional reduction for tissue state mapping", "venue": "PLoS Comput Biol, May 2026", "leadinst": "Massachusetts General Hospital", "first": "Joshua M. Hess (MGH Vaccine and Immunotherapy Center)", "partners": "Broad Institute; Northeastern University; University of Texas at Austin; Tufts University; Heidelberg University; Weill Cornell Medicine; Beth Israel Deaconess", "center": "Nathalie Y. R. Agar", "doi": "https://doi.org/10.1371/journal.pcbi.1014274"}, {"title": "Implantable microdevices for in vivo assessment of chemotherapy response in patient-derived organoid orthotopic pancreatic cancer models", "venue": "Ann Surg, May 2026", "leadinst": "Cold Spring Harbor Laboratory", "first": "Oliver J. Standring (Cold Spring Harbor Laboratory)", "partners": "Cold Spring Harbor Laboratory; Northwell Health", "center": "Oliver Jonas", "doi": "https://doi.org/10.1097/SLA.0000000000007071"}, {"title": "Machine learning model for fast prediction and uncertainty quantification of needle deflection during prostate biopsy", "venue": "Med Phys, Feb 2026", "leadinst": "University of Maryland", "first": "Nathan Hoffman (University of Maryland)", "partners": "University of Maryland; Johns Hopkins University; ETH Zürich", "center": "Junichi Tokuda, Pedro Moreira", "doi": "https://doi.org/10.1002/mp.70314"}, {"title": "Integration of trackerless surface reconstruction-based surgical navigation with exoscopic trans-mastoid surgery", "venue": "Otolaryngol Head Neck Surg, Jan 2026", "leadinst": "Massachusetts Eye and Ear", "first": "Ryan A. Bartholomew (Mass Eye and Ear)", "partners": "Massachusetts Eye and Ear; BWH Neurosurgery and Otolaryngology", "center": "Jagadeesan Jayender", "doi": "https://doi.org/10.1002/ohn.70062"}, {"title": "Window of opportunity evaluation of blood-brain barrier permeability heterogeneity within and across high-grade glioma patients", "venue": "Neuro-Oncology, Jan 2026", "leadinst": "University of Minnesota", "first": "Ju-Hee Oh (University of Minnesota)", "partners": "University of Minnesota; Mayo Clinic", "center": "Nathalie Y. R. Agar", "doi": "https://doi.org/10.1093/neuonc/noaf204"}, {"title": "Real-time SLAM-based correction and 3D visualization for fluorescence lifetime imaging", "venue": "MICCAI, 2026", "leadinst": "Massachusetts Eye and Ear", "first": "Murali Krishnamoorthy (Mass Eye and Ear)", "partners": "Massachusetts Eye and Ear", "center": "Jagadeesan Jayender", "doi": "https://doi.org/10.1007/978-3-032-05141-7_47"}, {"title": "Robot-assisted minimally invasive photoacoustic imaging for monitoring liver ablation using diffusing fiber illumination", "venue": "J Biomed Opt, 2026", "leadinst": "Worcester Polytechnic Institute", "first": "Shang Gao (WPI)", "partners": "Worcester Polytechnic Institute; MGH Wellman Center for Photomedicine", "center": "Sharath Bhagavatula, Oliver Jonas", "doi": "https://doi.org/10.1117/1.JBO.31.12.123302"}, {"title": "Automated segmentation of trunk musculature with a deep CNN trained from sparse annotations in radiation therapy patients with metastatic spine disease", "venue": "Front Bioeng Biotechnol, 2025", "leadinst": "Technical University of Munich", "first": "Vy Hong (Technical University of Munich)", "partners": "Technical University of Munich; Beth Israel Deaconess Medical Center; Isomics (industry); EBATINCA (industry, Spain); Rocky Vista University", "center": "Ron Kikinis", "doi": "https://doi.org/10.3389/fbioe.2025.1707724"}], "nmajor": 11, "ncollab": 10, "ninst": 9, "insts": "Cold Spring Harbor Laboratory, GE HealthCare, Massachusetts Eye and Ear, Massachusetts General Hospital, Massachusetts Institute of Technology, Technical University of Munich, University of Maryland, University of Minnesota, Worcester Polytechnic Institute"};
+}
+}
+</script>
+</body>
+</html>

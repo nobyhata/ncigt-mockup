@@ -27,6 +27,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="Main.dc.html#research" style="color: #0F1B2D">Research</a>
 <a href="People.dc.html" style="color: #0F1B2D">People</a>
 <a href="Main.dc.html#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Publications.dc.html" style="color: #0F1B2D">Publications</a>
 <a href="Main.dc.html#resources" style="color: #0F1B2D">Resources</a>
 <a href="Main.dc.html#training" style="color: #0F1B2D">Training</a>
 <a href="Industry.dc.html" style="color: #0F1B2D">Industry</a>
@@ -67,7 +68,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
 <h2 style="margin: 0 0 8px; font-size: 28px">Research highlights</h2>
-<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668">Recent publications from this project and its collaborators.</p>
+<p style="margin: 0 0 24px; font-size: 16px; line-height: 1.6; color: #4A5668">Publications from the past 12 months by this project and its collaborators.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
 <sc-for list="{{papers}}" as="p" hint-placeholder-count="4">
 <article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
@@ -191,28 +192,22 @@ return {
 ],
 "papers": [
 {
+"title": "A spatially resolved implantable microdevice for multiplexed in situ screening of engineered cellular therapies in solid tumors",
+"authors": "Panikkanvalappil SR, … Bhagavatula SK, Jonas O",
+"venue": "Science Advances, Aug 2026",
+"doi": "https://doi.org/10.1126/sciadv.aee6195"
+},
+{
+"title": "Implantable microdevices for in vivo assessment of chemotherapy response in patient-derived organoid orthotopic pancreatic cancer models",
+"authors": "Standring OJ, … Jonas O, … Weiss MJ",
+"venue": "Ann Surg, May 2026",
+"doi": "https://doi.org/10.1097/SLA.0000000000007071"
+},
+{
 "title": "Development and pre-clinical feasibility of a catheter-based platform for interventional phase-0 drug response measurements",
 "authors": "Bhagavatula SK, … Jonas O",
-"venue": "Ann Biomed Eng, 2026",
+"venue": "Ann Biomed Eng, Mar 2026",
 "doi": "https://doi.org/10.1007/s10439-026-04113-w"
-},
-{
-"title": "An interventional radiology method for in situ assessments of cancer drug response",
-"authors": "Bhagavatula SK, … Hata N, Silverman SG, Jonas O",
-"venue": "Radiol Imaging Cancer, 2025",
-"doi": "https://doi.org/10.1148/rycan.250055"
-},
-{
-"title": "Feasibility of MRI-guided transperineal implantation of microdevices for drug delivery and response assessment in prostate cancer",
-"authors": "Rainer Q, … Tempany C, Jonas O, Kibel AS, Hata N",
-"venue": "J Magn Reson Imaging, 2025",
-"doi": "https://doi.org/10.1002/jmri.29784"
-},
-{
-"title": "Intratumoral drug-releasing microdevices allow in situ high-throughput pharmaco phenotyping in patients with gliomas",
-"authors": "Peruzzi P, … Wen PY, Jonas O",
-"venue": "Sci Transl Med, 2023",
-"doi": "https://doi.org/10.1126/scitranslmed.adi0069"
 }
 ],
 "team": [

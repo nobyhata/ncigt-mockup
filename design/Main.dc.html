@@ -28,6 +28,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="#research" style="color: #0F1B2D">Research</a>
 <a href="People.dc.html" style="color: #0F1B2D">People</a>
 <a href="#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Publications.dc.html" style="color: #0F1B2D">Publications</a>
 <a href="#resources" style="color: #0F1B2D">Resources</a>
 <a href="#training" style="color: #0F1B2D">Training</a>
 <a href="#industry" style="color: #0F1B2D">Industry</a>
@@ -88,33 +89,19 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </sc-for>
 </div>
 
-<h3 style="margin: 56px 0 8px; font-size: 26px">Major achievements, past 12 months</h3>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #4A5668; max-width: 860px">Papers led by center investigators as senior author that acknowledge center support (PubMed, P41EB028741 and P41EB015898, December 2025 to November 2026).</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
-<sc-for list="{{major}}" as="p" hint-placeholder-count="6">
+<h3 style="margin: 56px 0 8px; font-size: 26px">Latest major achievements</h3>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #4A5668; max-width: 860px">Recent papers led by center investigators. See the Publications page for all achievements and collaborations from the past 12 months.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px">
+<sc-for list="{{latest}}" as="p" hint-placeholder-count="3">
 <article style="border: 1px solid #E3E8EF; border-left: 4px solid #0B5F86; border-radius: 0 12px 12px 0; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
 <span style="font-size: 13px; font-weight: 600; color: #8A5A2B">{{p.venue}} · {{p.project}}</span>
 <a href="{{p.doi}}" style="color: #0F1B2D; font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; font-weight: 600; line-height: 1.35">{{p.title}}</a>
 <span style="font-size: 14px; color: #3A4658; line-height: 1.5">{{p.why}}</span>
-<span style="font-size: 13px; color: #4A5668">Senior author: <strong>{{p.senior}}</strong> · First author: {{p.first}}</span>
+<span style="font-size: 13px; color: #4A5668">Senior author: <strong>{{p.senior}}</strong></span>
 </article>
 </sc-for>
 </div>
-
-<h3 style="margin: 48px 0 8px; font-size: 26px">Collaborations</h3>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #4A5668; max-width: 860px">Papers led by partner institutions and companies, with center investigators as co-authors and center support acknowledged.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
-<sc-for list="{{collabs}}" as="c" hint-placeholder-count="5">
-<article style="background: #F7F9FC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Led by {{c.leadinst}}</span>
-<a href="{{c.doi}}" style="color: #0F1B2D; font-size: 16px; font-weight: 600; line-height: 1.4">{{c.title}}</a>
-<span style="font-size: 13px; color: #4A5668">{{c.venue}} · First author: {{c.first}}</span>
-<span style="font-size: 13px; color: #3A4658; line-height: 1.5"><strong>Partners:</strong> {{c.partners}}</span>
-<span style="font-size: 13px; color: #0B5F86; font-weight: 600">Center co-authors: {{c.center}}</span>
-</article>
-</sc-for>
-</div>
-<p style="margin: 20px 0 0; font-size: 15px"><a href="#research" style="font-weight: 600">All publications acknowledging the center →</a></p>
+<p style="margin: 20px 0 0; font-size: 15px; display: flex; flex-wrap: wrap; gap: 8px 24px"><a href="Publications.dc.html" style="font-weight: 600">All publications, past 12 months →</a><a href="https://pubmed.ncbi.nlm.nih.gov/?term=P41+EB028741+OR+P41EB028741+OR+P41+EB015898+OR+P41EB015898&amp;sort=pubdate&amp;size=200" style="font-weight: 600">Full list on PubMed →</a></p>
 </section>
 
 <section id="clinical" style="background: #0F1B2D; color: #FFFFFF; margin-top: 56px">
@@ -265,7 +252,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <section aria-labelledby="partner-research" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
 <p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Partner research</p>
 <h2 id="partner-research" style="margin: 0 0 12px; font-size: 32px; line-height: 1.2">Work enabled through collaborative and service projects</h2>
-<p style="margin: 0 0 28px; font-size: 17px; line-height: 1.6; color: #4A5668; max-width: 820px">Our partners' discoveries are the best measure of the center's value. These papers were led by partner investigators and co-authored with center investigators or made possible by center services.</p>
+<p style="margin: 0 0 28px; font-size: 17px; line-height: 1.6; color: #4A5668; max-width: 820px">Our partners' discoveries are the best measure of the center's value. Papers from the past 12 months led by partner investigators and co-authored with center investigators or made possible by center services.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
 <sc-for list="{{partners}}" as="x" hint-placeholder-count="6">
 <article style="border-left: 3px solid #A8763E; background: #F7F9FC; border-radius: 0 10px 10px 0; padding: 16px 18px">
@@ -419,12 +406,17 @@ stats: [
 { v: '50', l: 'free online lectures' }
 ],
 wins: [
-{ kind: 'Award', title: 'Junichi Tokuda receives the Distinguished Investigator Award of the Academy for Radiology and Biomedical Imaging Research', date: 'September 2025' },
+{ kind: 'Major paper', title: 'Implantable microdevice screens engineered cell therapies inside solid tumors (Jonas, Science Advances)', date: 'August 2026' },
 { kind: 'Lecture', title: 'Clare Tempany delivers the Negendak Memorial Lecture at the ISMRM MR of Cancer Workshop', date: '2026' },
-{ kind: 'Partner paper', title: 'Service project with Daniel Wahl (University of Michigan) published in Nature', date: 'October 2025' },
-{ kind: 'New grant', title: 'Former trainee Haoyin Zhou awarded an independent NIBIB R01', date: 'August 2025' },
-{ kind: 'Clinical milestone', title: 'Initial patient experience with a robotic template for MRI-guided prostate biopsy published', date: 'March 2026' },
+{ kind: 'Clinical milestone', title: 'First patient experience with a robotic template for MRI-guided prostate biopsy (Tokuda, J Med Robot Res)', date: 'March 2026' },
+{ kind: 'Community', title: 'Project Week 45 at MIT brings the open-source image-guided therapy community together', date: 'June 2026' },
+{ kind: 'Outreach', title: 'The center launches its YouTube channel for public education', date: 'January 2026' },
 { kind: 'Invited talk', title: 'Carl-Fredrik Westin at the 5th High Performance Neuroimaging Symposium', date: 'November 2026' }
+],
+latest: [
+{ title: 'A spatially resolved implantable microdevice for multiplexed in situ screening of engineered cellular therapies in solid tumors', venue: 'Science Advances, Aug 2026', project: 'TR&D 2', senior: 'Oliver Jonas', why: 'Extends the microdevice platform from drugs to engineered cell therapies, screened side by side inside solid tumors.', doi: 'https://doi.org/10.1126/sciadv.aee6195' },
+{ title: 'Optimization of diffusion MRI with consideration of the signal decay in biological tissues', venue: 'Magn Reson Med, Jul 2026', project: 'TR&D 1', senior: 'Stephan E. Maier', why: 'A principled way to choose diffusion MRI settings for real tissue, with a long-standing Swedish partner.', doi: 'https://doi.org/10.1002/mrm.70346' },
+{ title: 'Clinical feasibility study of generative depth estimation to diagnose airway stenosis using 3D Slicer', venue: 'Int J Comput Assist Radiol Surg, May 2026', project: 'Robotic bronchoscopy', senior: 'Nobuhiko Hata', why: 'A public 3D Slicer tool that estimates airway narrowing from bronchoscopy video, tested on 30 patients.', doi: 'https://doi.org/10.1007/s11548-026-03721-0' }
 ],
 rising: [
 { name: '[Name]', role: '[Assistant Professor of Radiology]', focus: '[One line on their research]', open: 'collaborations, invited talks, faculty positions' },
@@ -447,23 +439,14 @@ pis: [
 { name: 'Tina Kapur', area: 'Neurosurgical imaging data and machine learning', paper: 'ReMIND: the brain resection multimodal imaging database', venue: 'Sci Data, 2024', doi: 'https://doi.org/10.1038/s41597-024-03295-z' },
 { name: 'William M. Wells III', area: 'Image registration and multimodal learning', paper: 'Unified cross-modal medical image synthesis with hierarchical mixture of product-of-experts', venue: 'IEEE Trans Pattern Anal Mach Intell, 2026', doi: 'https://doi.org/10.1109/TPAMI.2025.3616632' }
 ],
-partners: [
-{ type: 'Service project', lead: 'Daniel Wahl, University of Michigan', title: 'Rewiring of cortical glucose metabolism fuels human brain cancer growth', venue: 'Nature, 2025', doi: 'https://doi.org/10.1038/s41586-025-09460-7' },
-{ type: 'Collaborative project', lead: 'Jann Sarkaria, Mayo Clinic', title: 'Preclinical modeling of navtemadlin pharmacokinetics, pharmacodynamics, and efficacy in IDH-wild-type glioblastoma', venue: 'Clin Cancer Res, 2025', doi: 'https://doi.org/10.1158/1078-0432.CCR-25-0244' },
-{ type: 'Service project', lead: 'Peter Canoll and Jeffrey Bruce, Columbia University', title: 'Chronic convection-enhanced delivery of topotecan for patients with recurrent glioblastoma: a first-in-patient, phase 1b trial', venue: 'Lancet Oncol, 2022', doi: 'https://doi.org/10.1016/S1470-2045(22)00599-X' },
-{ type: 'Service project', lead: 'Forest White, MIT', title: 'WSD-0922, a novel brain-penetrant inhibitor of EGFR, promotes survival in glioblastoma mouse models', venue: 'Neurooncol Adv, 2023', doi: 'https://doi.org/10.1093/noajnl/vdad066' },
-{ type: 'Collaborative project', lead: 'Haichong Zhang, Worcester Polytechnic Institute', title: 'Robot-assisted minimally invasive photoacoustic imaging for monitoring liver ablation', venue: 'J Biomed Opt, 2026', doi: 'https://doi.org/10.1117/1.JBO.31.12.123302' },
-{ type: 'Collaborative project', lead: 'Vikas Gulani, University of Michigan', title: 'Multicenter repeatability and reproducibility of MR fingerprinting in phantoms and in prostatic tissue', venue: 'Magn Reson Med, 2022', doi: 'https://doi.org/10.1002/mrm.29264' },
-{ type: 'Service project', lead: 'Jesung Park, Physical Sciences Inc.', title: 'Motorized template for MRI-guided focal cryoablation of prostate cancer', venue: 'IEEE Trans Med Robot Bionics, 2023', doi: 'https://doi.org/10.1109/TMRB.2023.3272025' },
-{ type: 'Service project', lead: 'Adam Wittek, University of Western Australia', title: 'SlicerCBM: automatic framework for biomechanical analysis of the brain', venue: 'Int J Comput Assist Radiol Surg, 2023', doi: 'https://doi.org/10.1007/s11548-023-02881-7' }
-],
+partners: [{"type": "Service project", "lead": "Jesung Park, Physical Sciences Inc.", "title": "Clinical validation of a novel robotic device for MR-guided prostate biopsy: initial patient experience", "venue": "J Med Robot Res, Mar 2026", "doi": "https://doi.org/10.1142/s2424905x26500042"}, {"type": "Collaborative project", "lead": "Haichong Zhang, Worcester Polytechnic Institute", "title": "Robot-assisted minimally invasive photoacoustic imaging for monitoring liver ablation using diffusing fiber illumination", "venue": "J Biomed Opt, 2026", "doi": "https://doi.org/10.1117/1.JBO.31.12.123302"}, {"type": "Collaborative project", "lead": "Jann Sarkaria, Mayo Clinic", "title": "Window of opportunity evaluation of blood-brain barrier permeability heterogeneity within and across high-grade glioma patients", "venue": "Neuro-Oncology, Jan 2026", "doi": "https://doi.org/10.1093/neuonc/noaf204"}],
 clinical: [
-{ field: 'Prostate cancer', people: 'Clare Tempany, Kemal Tuncali, Adam Kibel, Fiona Fennessy', what: 'MRI-guided biopsy, focal cryoablation and implantation of drug-response microdevices.', paper: 'A phase II prospective blinded trial of MRI and in-bore biopsy in active surveillance for prostate cancer. Urology, 2024' },
-{ field: 'Brain tumor surgery', people: 'Alexandra Golby and neurosurgery colleagues', what: 'Intraoperative imaging, navigation and tissue analysis during brain tumor resection in AMIGO.', paper: 'ReMIND: the brain resection multimodal imaging database. Sci Data, 2024' },
-{ field: 'Neuro-oncology trials', people: 'Patrick Wen, Jong Woo Lee, Nathalie Agar', what: 'Measuring drug levels and response in tumor tissue within clinical trials.', paper: 'Pilot trial of perampanel on peritumoral hyperexcitability in newly diagnosed high-grade glioma. Clin Cancer Res, 2024' },
-{ field: 'Breast surgery', people: 'Eva Gombos and breast surgery colleagues', what: 'Intraoperative supine breast MRI to assess residual tumor during breast-conserving surgery.', paper: 'Intraoperative supine breast MRI for residual tumor assessment. Radiol Imaging Cancer, 2025' },
-{ field: 'Thoracic and skull base surgery', people: 'Scott Swanson, C. Eduardo Corrales, Jagadeesan Jayender', what: 'Real-time margin assessment and trackerless navigation in thoracic and otologic surgery.', paper: 'Real-time margin assessment for video-assisted thoracic surgery: a pilot clinical trial. JTCVS Tech, 2025' },
-{ field: 'Interventional radiology', people: 'Paul Shyn, Sharath Bhagavatula', what: 'PET/CT-guided ablation and in situ measurement of cancer drug response.', paper: 'An interventional radiology method for in situ assessments of cancer drug response. Radiol Imaging Cancer, 2025' }
+{ field: 'Prostate cancer', people: 'Clare Tempany, Kemal Tuncali, Adam Kibel, Fiona Fennessy', what: 'MRI-guided biopsy, focal cryoablation and implantation of drug-response microdevices.', paper: 'Transperineal 3T MRI-guided and transrectal MRI-ultrasound fusion prostate biopsies: do lesion location and size impact diagnostic yield? Urol Oncol, Jan 2026' },
+{ field: 'Brain tumor surgery', people: 'Alexandra Golby and neurosurgery colleagues', what: 'Intraoperative imaging, navigation and tissue analysis during brain tumor resection in AMIGO.', paper: 'Benchmarking NousNav, an affordable, open-source neuronavigation system. Int J Comput Assist Radiol Surg, Dec 2025' },
+{ field: 'Neuro-oncology trials', people: 'Patrick Wen, Jong Woo Lee, Nathalie Agar', what: 'Measuring drug levels and response in tumor tissue within clinical trials.', paper: 'Window of opportunity evaluation of blood-brain barrier permeability heterogeneity in high-grade glioma patients. Neuro-Oncology, Jan 2026' },
+{ field: 'Breast surgery', people: 'Eva Gombos and breast surgery colleagues', what: 'Intraoperative supine breast MRI to assess residual tumor during breast-conserving surgery.', paper: '' },
+{ field: 'Thoracic and skull base surgery', people: 'Scott Swanson, C. Eduardo Corrales, Jagadeesan Jayender', what: 'Real-time margin assessment and trackerless navigation in thoracic and otologic surgery.', paper: 'Integration of trackerless surface reconstruction-based surgical navigation with exoscopic trans-mastoid surgery. Otolaryngol Head Neck Surg, Jan 2026' },
+{ field: 'Interventional radiology', people: 'Paul Shyn, Sharath Bhagavatula', what: 'PET/CT-guided ablation and in situ measurement of cancer drug response.', paper: 'Development and pre-clinical feasibility of a catheter-based platform for interventional phase-0 drug response measurements. Ann Biomed Eng, Mar 2026' }
 ],
 equip: [
 { name: 'Mass spectrometry imaging', what: 'MALDI timsTOF imaging for spatially resolved metabolomics and rapid molecular frozen-section analysis.', who: 'Nathalie Agar' },

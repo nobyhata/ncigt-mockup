@@ -3,6 +3,7 @@ NAV='''<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 20
 <a href="Main.dc.html#research" style="color: #0F1B2D">Research</a>
 <a href="People.dc.html" style="color: #0F1B2D">People</a>
 <a href="Main.dc.html#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Publications.dc.html" style="color: #0F1B2D">Publications</a>
 <a href="Main.dc.html#resources" style="color: #0F1B2D">Resources</a>
 <a href="Main.dc.html#training" style="color: #0F1B2D">Training</a>
 <a href="Industry.dc.html" style="color: #0F1B2D">Industry</a>
