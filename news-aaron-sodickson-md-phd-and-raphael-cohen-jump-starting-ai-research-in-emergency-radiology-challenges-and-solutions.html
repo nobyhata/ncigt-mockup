@@ -40,7 +40,26 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
 .hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style></head>
+</style><style id="mm-css">
+.mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
+.mm-item{position:relative}
+.mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
+.mm-top::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
+.mm-item:hover .mm-top,.mm-item:focus-within .mm-top{background:#F3F6FA;color:#0B5F86}
+.mm-panel{display:none;position:absolute;top:100%;left:0;padding-top:8px;min-width:300px}
+.mm-item.mm-right .mm-panel{left:auto;right:0}
+.mm-item:hover .mm-panel,.mm-item:focus-within .mm-panel{display:block}
+.mm-box{background:#FFFFFF;border:1px solid #E3E8EF;border-top:3px solid #0B5F86;border-radius:10px;box-shadow:0 12px 32px rgba(15,27,45,.16);padding:18px 20px}
+.mm-head{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;text-decoration:none}
+.mm-head:hover{color:#0B5F86}
+.mm-sub{font-size:13px;color:#4A5668;margin:2px 0 12px;font-weight:400}
+.mm-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid #E3E8EF;display:flex;flex-direction:column;gap:2px}
+.mm-list a{display:block;padding:7px 8px;margin:0 -8px;border-radius:6px;color:#0F1B2D;text-decoration:none;font-size:15px;font-weight:600}
+.mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
+.mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
+@media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+</head>
 <body>
 <a href="#content" class="skip">Skip to content</a>
 <div role="note" style="background:#FFF4D6;color:#5A4300;font:600 14px/1.4 Inter,system-ui,sans-serif;padding:10px 16px;text-align:center;border-bottom:1px solid #E8D49A">Draft mockup for internal review — not the official AT-NCIGT website. Bracketed items and grey circles are placeholders.</div>
@@ -53,17 +72,63 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <img src="ncigt-logo.png" alt="AT-NCIGT logo" width="52" height="52" style="display:block">
 <span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">AT-NCIGT</strong><span style="font-size: 12px; color: #4A5668">Advanced Technologies - National Center for Image Guided Therapy</span></span>
 </a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; font-weight: 500">
-<a href="index.html#research" style="color: #0F1B2D">Research</a>
-<a href="people.html" style="color: #0F1B2D">People</a>
-<a href="index.html#clinical" style="color: #0F1B2D">AMIGO</a>
-<a href="publications.html" style="color: #0F1B2D">Publications</a>
-<a href="index.html#resources" style="color: #0F1B2D">Resources</a>
-<a href="index.html#training" style="color: #0F1B2D">Training</a>
-<a href="industry.html" style="color: #0F1B2D">Industry</a>
-<a href="index.html#partner" style="color: #0F1B2D">Partner with us</a>
-<a href="news.html" style="color: #0F1B2D">News</a>
-<a href="index.html#about" style="color: #0F1B2D">About</a>
+<nav aria-label="Main" class="mm">
+<div class="mm-item"><a class="mm-top" href="index.html#research" aria-haspopup="true">Research</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#research">Research →</a><div class="mm-sub">Three technology research and development projects</div><ul class="mm-list">
+<li><a href="trd1.html">TR&amp;D 1: Imaging cancer heterogeneity<small>Advanced diffusion and CEST MRI</small></a></li>
+<li><a href="trd2.html">TR&amp;D 2: Implantable microdevices<small>Testing drugs inside the tumor</small></a></li>
+<li><a href="trd3.html">TR&amp;D 3: Enabling technologies<small>Robotic guidance and AR navigation</small></a></li>
+<li><a href="publications.html">Publications<small>Major achievements and collaborations</small></a></li>
+<li><a href="page-collaborations.html">Collaborations</a></li>
+</ul></div></div></div>
+<div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
+<li><a href="people.html">Leadership and investigators</a></li>
+<li><a href="page-team.html">Center team</a></li>
+<li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
+</ul></div></div></div>
+<div class="mm-item"><a class="mm-top" href="index.html#clinical" aria-haspopup="true">AMIGO</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#clinical">AMIGO →</a><div class="mm-sub">Clinical research in the AMIGO suite</div><ul class="mm-list">
+<li><a href="page-amigo.html">About the AMIGO suite</a></li>
+<li><a href="page-amigoprocedures.html">Procedures in AMIGO</a></li>
+<li><a href="page-clinical-trials.html">Clinical trials</a></li>
+<li><a href="index.html#clinical">Clinical studies with the center<small>Prostate, brain, breast, thoracic and more</small></a></li>
+</ul></div></div></div>
+<div class="mm-item"><a class="mm-top" href="index.html#resources" aria-haspopup="true">Resources</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#resources">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
+<li><a href="index.html#resources">Equipment and tools</a></li>
+<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="page-fast-imaging-library.html">Fast Imaging Library</a></li>
+<li><a href="page-online-lectures.html">Online lectures</a></li>
+</ul></div></div></div>
+<div class="mm-item"><a class="mm-top" href="index.html#training" aria-haspopup="true">Training</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#training">Training →</a><div class="mm-sub">Where training with us can lead</div><ul class="mm-list">
+<li><a href="page-trainees.html">Trainees and alumni</a></li>
+<li><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars</a></li>
+<li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program<small>Image Guidance, Precision Diagnosis and Therapy</small></a></li>
+<li><a href="page-project-week.html">Project Week hackathons</a></li>
+<li><a href="page-seminars.html">Research seminars</a></li>
+</ul></div></div></div>
+<div class="mm-item"><a class="mm-top" href="index.html#partner" aria-haspopup="true">Partner with us</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#partner">Partner with us →</a><div class="mm-sub">Collaborate with the center</div><ul class="mm-list">
+<li><a href="index.html#partner">How to partner with us</a></li>
+<li><a href="industry.html">Working with industry<small>From a clinical need to a device ready for patients</small></a></li>
+<li><a href="page-collaborations.html">Collaborations</a></li>
+</ul></div></div></div>
+<div class="mm-item mm-right"><a class="mm-top" href="news.html" aria-haspopup="true">News &amp; events</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="news.html">News &amp; events →</a><div class="mm-sub">News, seminars and meetings</div><ul class="mm-list">
+<li><a href="news.html">News and seminars</a></li>
+<li><a href="page-imri-2024.html">iMRI Symposium</a></li>
+<li><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops</a></li>
+<li><a href="page-project-week.html">Project Week</a></li>
+</ul></div></div></div>
+<div class="mm-item mm-right"><a class="mm-top" href="index.html#about" aria-haspopup="true">About</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#about">About →</a><div class="mm-sub">The center and its history</div><ul class="mm-list">
+<li><a href="index.html#about">About the center</a></li>
+<li><a href="page-history.html">History<small>Image-guided therapy research at the Brigham</small></a></li>
+<li><a href="index.html#contact">Contact</a></li>
+<li><a href="sitemap.html">All pages</a></li>
+</ul></div></div></div>
 </nav>
 </div>
 </header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="news.html" style="color:#D9B98F">News and seminars</a> · Past FM Seminars</p><h1>Aaron Sodickson, MD, PhD and Raphael Cohen: Jump-Starting AI Research in Emergency Radiology: Challenges and Solutions</h1><p style="margin:10px 0 0;color:#C9D3E0;font-size:15px">2022-05-02</p></div></section><article class="arc"><table>
