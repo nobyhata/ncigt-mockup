@@ -21,8 +21,7 @@ card('Stephan E. Maier','TR&D 1 project lead','Quantitative diffusion MRI','step
 card('Clare M. Tempany','Multiple PI, contact PI · Administration Core','Prostate MRI and image-guided therapy','clare-m-tempany'),
 card('Junichi Tokuda','TR&D 3 project lead','MRI-guided robotic interventions','junichi-tokuda','TRD3.dc.html','TR&D 3'),
 card('Carl-Fredrik Westin','Training and Dissemination lead · TR&D 1','Diffusion MRI methods','carl-fredrik-westin','TRD1.dc.html','TR&D 1')]
-current=[card('[First name] Akgul','TR&D 2','[Research focus]','','TRD2.dc.html','TR&D 2'),
-card('Mariana Bernardes','TR&D 3','MRI-guided robotic needle placement','mariana-bernardes','TRD3.dc.html','TR&D 3'),
+current=[card('Mariana Bernardes','TR&D 3','MRI-guided robotic needle placement','mariana-bernardes','TRD3.dc.html','TR&D 3'),
 card('Sharath Bhagavatula','TR&D 2','Interventional radiology','sharath-bhagavatula','TRD2.dc.html','TR&D 2'),
 card('Arthur Chakwizira','TR&D 1','Diffusion MRI methods','','TRD1.dc.html','TR&D 1'),
 card('Jagadeesan Jayender','TR&D 3','Surgical navigation and computer vision','jagadeesan-jayender','TRD3.dc.html','TR&D 3'),
