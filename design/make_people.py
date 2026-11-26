@@ -30,6 +30,17 @@ card('Daniel Paech','TR&D 1','Quantitative CEST MRI of tumor chemistry','daniel-
 card('William M. Wells III','TR&D 1','Image registration and multimodal learning','william-m-wells-iii','TRD1.dc.html','TR&D 1'),
 card('Haoyin Zhou','TR&D 3','Trackerless navigation for minimally invasive surgery','haoyin-zhou','TRD3.dc.html','TR&D 3')]
 past=[card(n,'Investigator, 2021–2026 cycle',f,p) for n,f,p in [('Nathalie Y. R. Agar','Mass spectrometry imaging (TRD 1 lead)','nathalie-y-r-agar'),('Tina Kapur','Training and Dissemination (core lead)','tina-kapur'),('Alexandra J. Golby','Image-guided neurosurgery; AMIGO clinical director','alexandra-j-golby'),('Sarah F. Frisken','Image analysis for brain tumor surgery','sarah-f-frisken'),('Ron Kikinis','Open-source medical image computing','ron-kikinis'),("Lauren J. O\u2019Donnell",'Diffusion MRI tractography','lauren-j-odonnell'),('Fiona M. Fennessy','Quantitative prostate MRI','fiona-m-fennessy'),('Kemal Tuncali','MRI-guided interventions','kemal-tuncali')]]
+past+=[card(n,r,f) for n,r,f in [
+('Andriy Fedorov','Investigator, 2021–2026 cycle','Imaging data curation and Imaging Data Commons (TR&D 2)'),
+('Sandro Santagata','Investigator, 2021–2026 cycle','Neuropathology and multiplexed tissue imaging (TR&D 1)'),
+('Filip Szczepankiewicz','Investigator, 2021–2026 cycle','Advanced diffusion MRI pulse sequences (TR&D 1)'),
+('Mark Vangel','Lead biostatistician, 2005–2026','Biostatistics for validation studies'),
+('Reuben Dorent','Postdoctoral fellow, 2021–2026 cycle','Multimodal image registration for neurosurgery (TR&D 2)'),
+('Alexander L. Ling','T32 postdoctoral fellow, 2021–2026 cycle','MALDI mass spectrometry imaging (TR&D 1)'),
+('Alireza Mehrtash','Postdoctoral fellow, 2021–2026 cycle',''),
+('Ferenc A. Jolesz','Founding principal investigator, NCIGT','Image-guided therapy and the AMIGO suite'),
+('Bruno Madore','Investigator, earlier NCIGT cycle','MR imaging physics'),
+('Matthew Toews','Fellow, earlier NCIGT cycle','')]]
 inv=[('Oliver Jonas','Implantable microdevices for measuring drug response','oliver-jonas','TRD2'),
 ("Lauren J. O’Donnell",'Diffusion MRI tractography and white-matter analysis','lauren-j-odonnell',''),
 ('Nobuhiko Hata','Robotic navigation for bronchoscopy and prostate interventions','nobuhiko-hata','TRD3'),
