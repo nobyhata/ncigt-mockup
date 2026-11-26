@@ -14,7 +14,18 @@ open('/home/claude/build/nav.html','w').write(NAV)
 P='portraits/'
 def card(name, role, focus='', photo='', link='', linktext=''):
     return {'name':name,'role':role,'focus':focus,'photo':P+photo+'.jpg' if photo else '','nophoto':not photo,'link':link,'linktext':linktext,'haslink':bool(link)}
-leaders=[card('Clare M. Tempany','Contact PI','Prostate MRI and image-guided therapy','clare-m-tempany'),card('Nobuhiko Hata','Multiple PI','Robotic navigation and image-guided interventions','nobuhiko-hata')]
+leaders=[card('Clare M. Tempany','Contact PI · Administration Core','Prostate MRI and image-guided therapy','clare-m-tempany'),card('Nobuhiko Hata','Multiple PI · Administration Core','Robotic navigation and image-guided interventions','nobuhiko-hata')]
+current=[card('Stephan E. Maier','TR&D 1 lead','Quantitative diffusion MRI','stephan-e-maier','TRD1.dc.html','TR&D 1'),
+card('Carl-Fredrik Westin','TR&D 1 · Training and Dissemination lead','Diffusion MRI methods','','TRD1.dc.html','TR&D 1'),
+card('William M. Wells III','TR&D 1 co-investigator','Image registration and multimodal learning','william-m-wells-iii','TRD1.dc.html','TR&D 1'),
+card('[First name] Paech','TR&D 1 investigator','[Research focus]','','TRD1.dc.html','TR&D 1'),
+card('Oliver Jonas','TR&D 2 lead','Implantable microdevices','oliver-jonas','TRD2.dc.html','TR&D 2'),
+card('Sharath Bhagavatula','TR&D 2 investigator','Interventional radiology','sharath-bhagavatula','TRD2.dc.html','TR&D 2'),
+card('[First name] Akgul','TR&D 2 co-investigator','[Research focus]','','TRD2.dc.html','TR&D 2'),
+card('Junichi Tokuda','TR&D 3 lead','MRI-guided robotic interventions','junichi-tokuda','TRD3.dc.html','TR&D 3'),
+card('Jagadeesan Jayender','TR&D 3 investigator','Surgical navigation and computer vision','jagadeesan-jayender','TRD3.dc.html','TR&D 3'),
+card('Haoyin Zhou','TR&D 3 co-investigator','Trackerless navigation for minimally invasive surgery','','TRD3.dc.html','TR&D 3')]
+past=[card(n,'Investigator, 2021–2026 cycle',f,p) for n,f,p in [('Nathalie Y. R. Agar','Mass spectrometry imaging (TRD 1 lead)','nathalie-y-r-agar'),('Tina Kapur','Training and Dissemination (core lead)','tina-kapur'),('Alexandra J. Golby','Image-guided neurosurgery; AMIGO clinical director','alexandra-j-golby'),('Sarah F. Frisken','Image analysis for brain tumor surgery','sarah-f-frisken'),('Ron Kikinis','Open-source medical image computing','ron-kikinis'),("Lauren J. O\u2019Donnell",'Diffusion MRI tractography','lauren-j-odonnell'),('Fiona M. Fennessy','Quantitative prostate MRI','fiona-m-fennessy'),('Pedro Moreira','Image-guided prostate cryoablation and robotics','pedro-moreira'),('Kemal Tuncali','MRI-guided interventions','kemal-tuncali')]]
 inv=[('Oliver Jonas','Implantable microdevices for measuring drug response','oliver-jonas','TRD2'),
 ("Lauren J. O’Donnell",'Diffusion MRI tractography and white-matter analysis','lauren-j-odonnell',''),
 ('Nobuhiko Hata','Robotic navigation for bronchoscopy and prostate interventions','nobuhiko-hata','TRD3'),
@@ -39,7 +50,7 @@ labs=[('Jonas Lab','TRD2',[('Sebastian Ahn','sebastian-ahn'),('Simon Chow','simo
 ('Tokuda Lab','TRD3',[('Mariana Bernardes','mariana-bernardes'),('Ruofeng Wei','ruofeng-wei')])]
 labgroups=[{'lab':l,'page':t+'.dc.html','proj':'TR&D '+t[-1],'people':[{'name':n,'photo':P+f+'.jpg'} for n,f in ppl]} for l,t,ppl in labs]
 collab=[{'name':n,'photo':P+f+'.jpg','role':r} for n,f,r in [('Iulian Iordachita','iulian-iordachita','Research Professor'),('Axel Krieger','axel-krieger','Assistant Professor'),('Gregory Fischer','gregory-fischer','Professor'),('Simon Leonard','simon-leonard','Assistant Research Professor'),('Tamas Ungi','tamas-ungi','Assistant Professor'),('Ehud Schmidt','ehud-schmidt','Associate Professor'),('Robert Cormack','robert-cormack','Associate Professor of Radiation Oncology'),('Mark Fuge','mark-fuge','Associate Professor'),('Yue Chen','yue-chen','Assistant Professor'),('Gregory Ekchian','gregory-ekchian','CEO')]]
-data={'leaders':leaders,'investigators':investigators,'clinicians':clinicians,'labs':labgroups,'collab':collab,
+data={'leaders':leaders,'current':current,'past':past,
  'rising':[{'name':'[Name]','role':'[Assistant Professor of Radiology]','open':'collaborations, invited talks, faculty positions'},{'name':'[Name]','role':'[Instructor in Radiology]','open':'collaborations, invited talks, faculty positions'},{'name':'[Name]','role':'[Senior research fellow]','open':'collaborations, faculty positions'}]}
 CARD='''<article style="background: #FFFFFF; border: 1px solid #E3E8EF; border-radius: 14px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px">
 <sc-if value="{{c.photo}}" hint-placeholder-val="{{ true }}"><img src="{{c.photo}}" alt="{{c.name}}" style="width: 104px; height: 104px; border-radius: 50%; object-fit: cover; margin-bottom: 8px"></sc-if>
@@ -73,35 +84,14 @@ body = f'''<header style="border-bottom: 1px solid #E3E8EF">
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9D3E0; max-width: 760px">Investigators, clinicians, scientists, students and collaborators who carry out the center's research. Reach out to any of them to collaborate, invite a talk or join a lab.</p>
 </div></section>
 ''' + sec('Leadership','Principal investigators of the center.',grid('leaders')) \
-  + sec('Center investigators','Investigators who lead research published with center support. Follow a link to see their project.',grid('investigators'),'#F7F9FC') \
-  + sec('Clinical investigators','Clinicians who use the center’s resources in their own clinical studies.',grid('clinicians')) \
+  + sec('Center investigators','Investigators funded in the current cycle (2P41EB028741, 2026–2031), including clinician-scientists. Follow a link to see their project.',grid('current'),'#F7F9FC') \
   + sec('Rising investigators','Early-career faculty and senior fellows ready for their next step. They welcome conversations about collaborations, invited talks and career opportunities.','''<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
 <sc-for list="{{rising}}" as="r" hint-placeholder-count="3"><article style="background: #FFFFFF; border-radius: 12px; padding: 18px; display: flex; gap: 12px; align-items: center"><div role="img" aria-label="Portrait to come" style="flex: 0 0 64px; height: 64px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div><div><strong>{{r.name}}</strong><div style="font-size: 13px; color: #4A5668">{{r.role}}</div><div style="font-size: 12px; font-weight: 600; color: #8A5A2B; margin-top: 2px">Open to: {{r.open}}</div></div></article></sc-for>
 </div>''','#F6F1EA') \
-  + sec('Lab members','Scientists, fellows and students in the center’s laboratories.','''<sc-for list="{{labs}}" as="g" hint-placeholder-count="2">
-<h3 style="margin: 24px 0 12px; font-size: 20px">{{g.lab}} <a href="{{g.page}}" style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 600">{{g.proj}} →</a></h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px">
-__MEMBERS__
-</div>
-</sc-for>''') \
-  + sec('Collaborators','Investigators at other institutions and companies who work with center projects.','''<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px">
-<sc-for list="{{collab}}" as="u" hint-placeholder-count="6"><div style="text-align: center"><img src="{{u.photo}}" alt="{{u.name}}" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover"><div style="font-size: 14px; font-weight: 600; margin-top: 6px">{{u.name}}</div><div style="font-size: 12px; color: #6B5640">{{u.role}}</div></div></sc-for>
-</div>''','#F7F9FC') \
+      + sec('Investigators of past funding cycles','We gratefully acknowledge the investigators of the 2021–2026 cycle (P41EB028741-01 to -05) and of earlier NCIGT cycles (P41EB015898), whose work is the foundation of the center today.',grid('past'),'#F7F9FC') \
   + sec('External Advisory Committee','Leaders in the field who review the center’s progress and advise its leadership.','<p style="margin: 0; font-size: 15px; color: #4A5668">[Committee members and chair]</p>') \
   + '''<section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 72px"><div style="background: #0B5F86; color: #FFFFFF; border-radius: 16px; padding: 28px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between"><div style="flex: 999 1 420px"><h2 style="margin: 0 0 6px; font-size: 24px; color: #FFFFFF">Join us</h2><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #E2EEF4">Open positions in center labs, visiting appointments and training opportunities.</p></div><a href="Main.dc.html#training" style="background: #FFFFFF; color: #0B5F86; padding: 13px 20px; border-radius: 8px; font-weight: 600">Open positions →</a></div></section>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741</div></footer>'''
-# nested loop: members inside labs. Renderer handles one level; flatten by pre-expanding labs into separate lists.
-inner_members_tpl='<sc-for list="{{LIST}}" as="u" hint-placeholder-count="8"><div style="text-align: center"><img src="{{u.photo}}" alt="{{u.name}}" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover"><div style="font-size: 14px; font-weight: 600; margin-top: 6px; line-height: 1.3">{{u.name}}</div></div></sc-for>'
-lab_html=''
-for i,g in enumerate(labgroups):
-    data[f'lab{i}']=g['people']
-    lab_html+=f'''<h3 style="margin: 24px 0 12px; font-size: 20px">{g["lab"]} <a href="{g["page"]}" style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 600">{g["proj"].replace("&","&amp;")} project →</a></h3>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px">
-{inner_members_tpl.replace("LIST",f"lab{i}")}
-</div>
-'''
-body=re.sub(r'<sc-for list="\{\{labs\}\}".*?</sc-for>',lambda m:lab_html,body,flags=re.S)
-del data['labs']
 doc='''<!doctype html>
 <html lang="en">
 <head>

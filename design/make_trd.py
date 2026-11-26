@@ -188,17 +188,16 @@ pages = {
   {'title':'Human prostate MRI at ultrahigh-performance gradient: a feasibility study','authors':'Zhu A, … Westin CF, … Tempany C, Akin O, Foo TKF','venue':'Magn Reson Med, 2024','doi':D+'10.1002/mrm.29874'},
   {'title':'Early change in apparent diffusion coefficient as a predictor of response to neoadjuvant therapy for prostate cancer','authors':'Franco FB, Leeman JE, Fedorov A, Vangel M, Fennessy FM','venue':'Clin Radiol, 2024','doi':D+'10.1016/j.crad.2023.12.022'},
   {'title':'Truly reproducible uniform estimation of the ADC with multi-b diffusion data','authors':'Kuczera S, Langkilde F, Maier SE','venue':'Magn Reson Med, 2023','doi':D+'10.1002/mrm.29533'}],
- team=[{'name':'[TR&D 1 lead]','role':'Project lead','focus':'[Research focus]'},
-  {'name':'Stephan E. Maier','role':'Investigator','focus':'Quantitative diffusion MRI'},
-  {'name':'Fiona M. Fennessy','role':'Investigator','focus':'Quantitative prostate MRI'},
+ team=[{'name':'Stephan E. Maier','role':'Project lead','focus':'Quantitative diffusion MRI'},
   {'name':'Carl-Fredrik Westin','role':'Investigator','focus':'Diffusion MRI methods'},
-  {'name':'Clare M. Tempany','role':'Clinical investigator','focus':'Prostate MRI and image-guided therapy'}],
+  {'name':'William M. Wells III','role':'Co-investigator','focus':'Image registration and multimodal learning'},
+  {'name':'[First name] Paech','role':'Investigator','focus':'[Research focus]'}],
  rising=[{'name':'[Name]','role':'[Instructor in Radiology]'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Collaborative project','lead':'Vikas Gulani, University of Michigan','what':'Multicenter repeatability of MR fingerprinting in prostate tissue'},
   {'type':'Service project','lead':'Peter LaViolette, Medical College of Wisconsin','what':'Multi-site concordance of diffusion-weighted imaging in prostate cancer'},
   {'type':'[Partner type]','lead':'[Current partner]','what':'[One line on the project]'}],
  equip=[{'name':'High-performance gradient MRI (MAGNUS)','what':'Ultra-high-performance gradients for advanced diffusion imaging.'},{'name':'7T and 3T research MRI','what':'Quantitative and CEST imaging protocols.'},{'name':'Analysis software','what':'Diffusion and quantitative MRI processing tools.'}],
- lead='[TR&D 1 lead]'),
+ lead='Stephan Maier'),
 'TRD2': dict(tag='TR&D 2', title='Implantable microdevices', figure='a microdevice implantation study',
  goal='Tiny devices placed in a tumor that test many drugs at once inside the patient, so treatment can be chosen by how that tumor actually responds.',
  problem='Patients with the same cancer type often respond very differently to the same drug, and today most treatment choices are made without testing them on the patient’s own tumor. Microdevices that release minute doses of many drugs into different regions of a tumor, then are removed with the surrounding tissue, can show which drugs work before a full course of systemic therapy begins.',
@@ -208,17 +207,16 @@ pages = {
   {'title':'An interventional radiology method for in situ assessments of cancer drug response','authors':'Bhagavatula SK, … Hata N, Silverman SG, Jonas O','venue':'Radiol Imaging Cancer, 2025','doi':D+'10.1148/rycan.250055'},
   {'title':'Feasibility of MRI-guided transperineal implantation of microdevices for drug delivery and response assessment in prostate cancer','authors':'Rainer Q, … Tempany C, Jonas O, Kibel AS, Hata N','venue':'J Magn Reson Imaging, 2025','doi':D+'10.1002/jmri.29784'},
   {'title':'Intratumoral drug-releasing microdevices allow in situ high-throughput pharmaco phenotyping in patients with gliomas','authors':'Peruzzi P, … Wen PY, Jonas O','venue':'Sci Transl Med, 2023','doi':D+'10.1126/scitranslmed.adi0069'}],
- team=[{'name':'[TR&D 2 lead]','role':'Project lead','focus':'[Research focus]'},
-  {'name':'Oliver Jonas','role':'Investigator','focus':'Implantable microdevices'},
-  {'name':'Sharath Bhagavatula','role':'Clinical investigator','focus':'Interventional radiology'},
-  {'name':'Nathalie Y. R. Agar','role':'Investigator','focus':'Mass spectrometry imaging'},
-  {'name':'Adam Kibel','role':'Clinical investigator','focus':'Urologic oncology'}],
+ team=[{'name':'Oliver Jonas','role':'Project lead','focus':'Implantable microdevices'},
+  {'name':'Sharath Bhagavatula','role':'Investigator','focus':'Interventional radiology'},
+  {'name':'Nobuhiko Hata','role':'Investigator','focus':'Image-guided device placement'},
+  {'name':'[First name] Akgul','role':'Co-investigator','focus':'[Research focus]'}],
  rising=[{'name':'[Name]','role':'[Instructor]'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Partner site','lead':'University of California, San Francisco','what':'Enrolling patients in the three-day microdevice implantation study'},
   {'type':'Collaborative project','lead':'Jann Sarkaria, Mayo Clinic','what':'Drug delivery and response in glioblastoma models'},
   {'type':'[Partner type]','lead':'[Current partner]','what':'[One line on the project]'}],
  equip=[{'name':'Microdevice fabrication and implantation','what':'Device design, loading and image-guided placement.'},{'name':'Mass spectrometry imaging','what':'Spatially resolved measurement of drugs and metabolites in tissue.'},{'name':'The AMIGO suite','what':'MRI-guided implantation during clinical procedures.'}],
- lead='[TR&D 2 lead]'),
+ lead='Oliver Jonas'),
 'TRD3': dict(tag='TR&D 3', title='Enabling technologies for data-driven interventions', figure='a robotic or navigated procedure',
  goal='Robotic needle guidance and augmented-reality navigation that help physicians reach small targets precisely, across MRI, CT, ultrasound and endoscopy.',
  problem='Many procedures depend on placing a needle or instrument exactly on a small target that moves or deforms, while the physician watches images that are not perfectly aligned with the patient. Needles bend, organs shift and anatomy differs from the preoperative scan. Robots that correct their path from imaging data, and navigation that tracks the anatomy as it moves, can make these procedures more accurate and more consistent.',
@@ -228,18 +226,16 @@ pages = {
   {'title':'AI-assisted cryo-dose estimation and tissue injury modeling in MRI-guided prostate cryoablation','authors':'Moreira P, … Tempany C, Tuncali K, Tokuda J','venue':'Phys Med Biol, 2026','doi':D+'10.1088/1361-6560/ae4847'},
   {'title':'In vivo feasibility study: autonomous data-driven robotic needle trajectory correction in MRI-guided transperineal procedures','authors':'Bernardes MC, … Hata N, Iordachita I, Tokuda J','venue':'IEEE Robot Autom Lett, 2024','doi':D+'10.1109/lra.2024.3455940'},
   {'title':'Integration of trackerless surface reconstruction-based surgical navigation with exoscopic trans-mastoid surgery','authors':'Bartholomew RA, … Jagadeesan J, Corrales CE','venue':'Otolaryngol Head Neck Surg, 2026','doi':D+'10.1002/ohn.70062'}],
- team=[{'name':'[TR&D 3 lead]','role':'Project lead','focus':'[Research focus]'},
-  {'name':'Junichi Tokuda','role':'Investigator','focus':'MRI-guided robotic prostate interventions'},
-  {'name':'Nobuhiko Hata','role':'Investigator','focus':'Robotic navigation for bronchoscopy and prostate interventions'},
+ team=[{'name':'Junichi Tokuda','role':'Project lead','focus':'MRI-guided robotic interventions'},
   {'name':'Jagadeesan Jayender','role':'Investigator','focus':'Surgical navigation and computer vision'},
-  {'name':'Pedro Moreira','role':'Investigator','focus':'Image-guided prostate cryoablation and robotics'},
-  {'name':'Kemal Tuncali','role':'Clinical investigator','focus':'MRI-guided interventions'}],
+  {'name':'Nobuhiko Hata','role':'Investigator','focus':'Robotic navigation for bronchoscopy and prostate interventions'},
+  {'name':'Haoyin Zhou','role':'Co-investigator','focus':'Trackerless navigation for minimally invasive surgery'}],
  rising=[{'name':'[Name]','role':'[Instructor in Radiology]'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Service project','lead':'Jesung Park, Physical Sciences Inc.','what':'Robotic template for MRI-guided prostate biopsy and cryoablation'},
   {'type':'Collaborative project','lead':'Haichong Zhang, Worcester Polytechnic Institute','what':'Robot-assisted photoacoustic imaging for monitoring liver ablation'},
   {'type':'[Partner type]','lead':'[Current partner]','what':'[One line on the project]'}],
  equip=[{'name':'MRI-guided robotics','what':'MRI-compatible needle-guidance robots and shape-sensing needles.'},{'name':'Robotic navigation and bronchoscopy','what':'Continuum robots and vision-based navigation.'},{'name':'Surgical vision and augmented reality','what':'Stereo endoscopy, 3D reconstruction and AR navigation.'},{'name':'The AMIGO suite','what':'Robotic and navigated procedures under MRI, PET/CT and X-ray.'}],
- lead='[TR&D 3 lead]'),
+ lead='Junichi Tokuda'),
 }
 P='portraits/'
 def ph(n): return P+n+'.jpg'
@@ -252,9 +248,9 @@ for k,v in pages.items():
     for m in v['team']:
         f=photos.get(m['name']); m['photo']=ph(f) if f else ''; m['nophoto']= not f
     v['members']=[]; v['collab']=[]
-    if k=='TRD2':
+    if False:
         v['members']=[{'name':n,'photo':ph(f),'lab':'Jonas Lab'} for n,f in jonas]+[{'name':n,'photo':ph(f),'lab':'Agar Lab'} for n,f in agar]
-    if k=='TRD3':
+    if False:
         v['members']=[{'name':n,'photo':ph(f),'lab':'Tokuda Lab'} for n,f in tokuda]
         v['collab']=[{'name':n,'photo':ph(f),'role':r} for n,f,r in collab3]
     v['hasMembers']=bool(v['members']); v['hasCollab']=bool(v['collab'])
