@@ -102,7 +102,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: flex; flex-wrap: wrap; gap: 16px">
 <sc-for list="{{rising}}" as="r" hint-placeholder-count="2">
 <div style="display: flex; gap: 12px; align-items: center; flex: 1 1 260px">
-<div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 56px; height: 56px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div>
+<sc-if value="{{r.photo}}" hint-placeholder-val="{{ false }}"><img src="{{r.photo}}" alt="{{r.name}}" style="flex: 0 0 56px; width: 56px; height: 56px; border-radius: 50%; object-fit: cover"></sc-if>
+<sc-if value="{{r.nophoto}}" hint-placeholder-val="{{ true }}"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 56px; height: 56px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div></sc-if>
 <div><strong style="font-size: 16px">{{r.name}}</strong><div style="font-size: 13px; color: #4A5668">{{r.role}}</div></div>
 </div>
 </sc-for>
@@ -242,12 +243,16 @@ return {
 ],
 "rising": [
 {
-"name": "[Name]",
-"role": "[Instructor]"
+"name": "Guigen Liu, PhD",
+"role": "NIBIB K25 awardee: 4D microimaging of implanted microdevices",
+"photo": "portraits/guigen-liu.jpg",
+"nophoto": false
 },
 {
 "name": "[Name]",
-"role": "[Research fellow]"
+"role": "[Research fellow]",
+"photo": "",
+"nophoto": true
 }
 ],
 "partners": [

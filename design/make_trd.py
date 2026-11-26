@@ -103,7 +103,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: flex; flex-wrap: wrap; gap: 16px">
 <sc-for list="{{rising}}" as="r" hint-placeholder-count="2">
 <div style="display: flex; gap: 12px; align-items: center; flex: 1 1 260px">
-<div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 56px; height: 56px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div>
+<sc-if value="{{r.photo}}" hint-placeholder-val="{{ false }}"><img src="{{r.photo}}" alt="{{r.name}}" style="flex: 0 0 56px; width: 56px; height: 56px; border-radius: 50%; object-fit: cover"></sc-if>
+<sc-if value="{{r.nophoto}}" hint-placeholder-val="{{ true }}"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 56px; height: 56px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div></sc-if>
 <div><strong style="font-size: 16px">{{r.name}}</strong><div style="font-size: 13px; color: #4A5668">{{r.role}}</div></div>
 </div>
 </sc-for>
@@ -209,7 +210,7 @@ pages = {
   {'name':'Sharath Bhagavatula','role':'Investigator','focus':'Interventional radiology'},
   {'name':'Nobuhiko Hata','role':'Investigator','focus':'Image-guided device placement'},
   {'name':'[First name] Akgul','role':'Co-investigator','focus':'[Research focus]'}],
- rising=[{'name':'[Name]','role':'[Instructor]'},{'name':'[Name]','role':'[Research fellow]'}],
+ rising=[{'name':'Guigen Liu, PhD','role':'NIBIB K25 awardee: 4D microimaging of implanted microdevices','photo':'portraits/guigen-liu.jpg'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Partner site','lead':'University of California, San Francisco','what':'Enrolling patients in the three-day microdevice implantation study'},
   {'type':'Collaborative project','lead':'Jann Sarkaria, Mayo Clinic','what':'Drug delivery and response in glioblastoma models'},
   {'type':'[Partner type]','lead':'[Current partner]','what':'[One line on the project]'}],
@@ -245,6 +246,8 @@ collab3=[('Iulian Iordachita','iulian-iordachita','Research Professor'),('Axel K
 for k,v in pages.items():
     for m in v['team']:
         f=photos.get(m['name']); m['photo']=ph(f) if f else ''; m['nophoto']= not f
+    for r in v.get('rising',[]):
+        r.setdefault('photo',''); r['nophoto']=not r['photo']
     v['members']=[]; v['collab']=[]
     if False:
         v['members']=[{'name':n,'photo':ph(f),'lab':'Jonas Lab'} for n,f in jonas]+[{'name':n,'photo':ph(f),'lab':'Agar Lab'} for n,f in agar]
