@@ -24,10 +24,10 @@ card('Carl-Fredrik Westin','Training and Dissemination lead · TR&D 1','Diffusio
 current=[card('[First name] Akgul','TR&D 2','[Research focus]','','TRD2.dc.html','TR&D 2'),
 card('Mariana Bernardes','TR&D 3','MRI-guided robotic needle placement','mariana-bernardes','TRD3.dc.html','TR&D 3'),
 card('Sharath Bhagavatula','TR&D 2','Interventional radiology','sharath-bhagavatula','TRD2.dc.html','TR&D 2'),
+card('Arthur Chakwizira','TR&D 1','Diffusion MRI methods','','TRD1.dc.html','TR&D 1'),
 card('Jagadeesan Jayender','TR&D 3','Surgical navigation and computer vision','jagadeesan-jayender','TRD3.dc.html','TR&D 3'),
 card('Florian Kroh','TR&D 1 · postdoctoral fellow','CEST MRI','','TRD1.dc.html','TR&D 1'),
 card('Daniel Paech','TR&D 1','Quantitative CEST MRI of tumor chemistry','daniel-paech','TRD1.dc.html','TR&D 1'),
-card('[Name], Westin Lab','TR&D 1','[Research focus]','','TRD1.dc.html','TR&D 1'),
 card('William M. Wells III','TR&D 1','Image registration and multimodal learning','william-m-wells-iii','TRD1.dc.html','TR&D 1'),
 card('Haoyin Zhou','TR&D 3','Trackerless navigation for minimally invasive surgery','haoyin-zhou','TRD3.dc.html','TR&D 3')]
 past=[card(n,'Investigator, 2021–2026 cycle',f,p) for n,f,p in [('Nathalie Y. R. Agar','Mass spectrometry imaging (TRD 1 lead)','nathalie-y-r-agar'),('Tina Kapur','Training and Dissemination (core lead)','tina-kapur'),('Alexandra J. Golby','Image-guided neurosurgery; AMIGO clinical director','alexandra-j-golby'),('Sarah F. Frisken','Image analysis for brain tumor surgery','sarah-f-frisken'),('Ron Kikinis','Open-source medical image computing','ron-kikinis'),("Lauren J. O\u2019Donnell",'Diffusion MRI tractography','lauren-j-odonnell'),('Fiona M. Fennessy','Quantitative prostate MRI','fiona-m-fennessy'),('Kemal Tuncali','MRI-guided interventions','kemal-tuncali')]]
