@@ -65,10 +65,6 @@ pages=[('Main','index','AT-NCIGT · Advanced Technologies - National Center for 
 ('Publications','publications','Publications · AT-NCIGT (draft)','Research outcomes of AT-NCIGT from the past 12 months: major achievements and collaborations.'),
 ('TRD1','trd1','TR&D 1: Imaging cancer heterogeneity · AT-NCIGT (draft)','AT-NCIGT TR&D 1: advanced diffusion and CEST MRI at 3T and 7T.'),
 ('TRD2','trd2','TR&D 2: Implantable microdevices · AT-NCIGT (draft)','AT-NCIGT TR&D 2: implantable microdevices that measure drug response inside tumors.'),
-('Clinical','clinical','AMIGO and clinical research · AT-NCIGT (draft)','The AMIGO suite and clinical studies that use AT-NCIGT imaging, guidance and analysis resources.'),
-('Partner','partner','Partner with us · AT-NCIGT (draft)','How to partner with AT-NCIGT: collaborations, collaborative and service projects, and industry.'),
-('Resources','resources','Resources · AT-NCIGT (draft)','Equipment, tools, software and data AT-NCIGT shares with collaborators.'),
-('About','about','About · AT-NCIGT (draft)','About AT-NCIGT: Mass General Brigham, acknowledging the center, and the center history.'),
 ('TRD3','trd3','TR&D 3: Enabling technologies for data-driven interventions · AT-NCIGT (draft)','AT-NCIGT TR&D 3: robotic needle guidance and augmented-reality navigation.')]
 import re as _re
 ld='<script type="application/ld+json">{"@context":"https://schema.org","@type":"ResearchOrganization","name":"Advanced Technologies - National Center for Image Guided Therapy","alternateName":"AT-NCIGT","parentOrganization":{"@type":"Hospital","name":"Brigham and Women\'s Hospital"},"funder":{"@type":"GovernmentOrganization","name":"National Institute of Biomedical Imaging and Bioengineering"}}</script>'

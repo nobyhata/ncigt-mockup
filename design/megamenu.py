@@ -20,7 +20,6 @@ MENU = [
     ]),
     ('People', 'people.html', 'Investigators, trainees and advisors', [
         ('Leadership and investigators', 'people.html', 'Who leads and carries out the research'),
-        ('Center team', 'page-team.html', 'Principal investigators and project leads'),
         ('Trainees and alumni', 'page-trainees.html', 'Current trainees and where graduates are now'),
     ]),
     ('AMIGO', 'clinical.html', 'Clinical research in the AMIGO suite', [
@@ -31,8 +30,7 @@ MENU = [
     ]),
     ('Resources', 'resources.html', 'Tools and equipment open to collaborators', [
         ('Equipment and tools', 'resources.html', 'Imaging, robotics and devices you can use'),
-        ('Recently shared software and data', 'resources.html#shared', 'New releases from center investigators'),
-        ('Software and tutorials', 'page-software-and-tutorials.html', '3D Slicer, OpenIGTLink and more'),
+        ('Software, tutorials and data', 'resources.html#software', '3D Slicer, OpenIGTLink, datasets and more'),
         ('Fast Imaging Library', 'page-fast-imaging-library.html', 'Reconstruction code for accelerated MRI'),
         ('Online lectures', 'page-online-lectures.html', 'Free recorded talks and seminars'),
     ]),

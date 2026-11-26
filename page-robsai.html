@@ -47,7 +47,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
 .snav a.sub{padding-left:22px;font-size:13.5px}
 .snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
-.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -81,6 +82,15 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
 .arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
@@ -130,7 +140,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
 <li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-team.html">Center team<small>Principal investigators and project leads</small></a></li>
 <li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
 </ul></div></div></div>
 <div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
@@ -143,8 +152,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
 <li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#shared">Recently shared software and data<small>New releases from center investigators</small></a></li>
-<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
@@ -180,38 +188,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a></p><h1>RobsAI workshop, MICCAI 2023</h1><p class="lede">Robotics, AI and imaging for point-of-care surgical guidance</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="News &amp; events section"><a class="sh" href="news.html">News &amp; events</a><span class="sg">Seminars</span><a href="page-seminars.html">Research seminars</a><a href="page-acs.html">Seminar announcements, 2023</a><span class="sg">Meetings we organize</span><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops</a><a class="sub" href="page-past-igt-workshops.html">Past workshops</a><a href="page-imri-2024.html">iMRI Symposium 2024</a><a href="page-imri-symposium-2022.html">iMRI Symposium 2022</a><a href="page-project-week.html">Project Week</a><a href="page-robsai.html" aria-current="page">RobsAI workshop, MICCAI 2023</a><span class="sg">Archive</span><a href="page-events.html">Events calendar, previous website</a><a href="page-news.html">News, previous website</a></nav></aside><article class="arc">
-<p>MICCAI 2023 Workshop on Robotics, AI, and Imaging for Point of Care Surgical Guidance</p>
-<p>October 8<sup>th</sup>, 2023</p>
-<a href="https://cmt3.research.microsoft.com/RobsAI2023/Submission/Index">Submit Your Paper</a> Call for Papers
-
-<p>We are pleased to announce the Workshop on Robotics, AI, and Imaging for Point of Care Surgical Guidance, to be held virtually as part of the MICCAI conference on October 8, 2023. The workshop is organized by Laura Brattain, Jayender Jagadeesan, and Tina Kapur, and the URL for the workshop is <a href="http://www.ncigt.org/RobsAI">www.ncigt.org/RobsAI</a>.</p>
-<p>The workshop aims to bring together researchers, clinicians, and industry leaders to discuss recent advances and challenges in the development and translation of innovative technologies for point of care surgical guidance. We invite original contributions that address the following topics:</p>
-<ul>
-<li>Integration of robotics, AI, and imaging for surgical guidance</li>
-<li>Image-guided navigation and visualization for surgical interventions</li>
-<li>Machine learning and deep learning for therapy guidance and decision support</li>
-<li>Novel sensors and modalities for point of care guidance</li>
-<li>Clinical translation and evaluation of point of care surgical guidance technologies</li>
-</ul>
-<p>We welcome both theoretical and practical contributions, as well as papers that report on work in progress or describe novel approaches. All submissions will undergo a rigorous peer-review process by the program committee, and accepted papers will be published in the workshop proceedings as 8-page papers.</p>
-<p>We look forward to your submissions and your participation in the workshop.</p>
-<p>Best regards,</p>
-<p>Laura Brattain, Jayender Jagadeesan, and Tina Kapur<br/>
-Workshop Organizers</p>
-
-Submission Guidelines
-
-<p>Papers must be written in English and formatted according to the MICCAI 2023 guidelines. The maximum length of the paper is 10 pages (excluding references), and the submission should include an abstract of no more than 300 words. Papers should be submitted electronically through the workshop submission site <a href="https://cmt3.research.microsoft.com/RobsAI2023/Submission/Index">CMT</a> between May 15 and June 30, 2023.</p>
-<a href="https://cmt3.research.microsoft.com/RobsAI2023/Submission/Index">Submit Your Paper</a> Important Dates
-
-<ul>
-<li>Paper submissions open: <strong>May 15, 2023</strong></li>
-<li>Paper submission deadline: <strong>June 30, 2023</strong></li>
-<li>Notification of paper acceptance: <strong>July 30, 2023</strong></li>
-<li>Camera-ready paper deadline: <strong>August 15, 2023</strong></li>
-</ul>
-<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/robsai/">https://ncigt.org/robsai/</a></p></article></div></main>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a></p><h1>RobsAI workshop, MICCAI 2023</h1><p class="lede">Robotics, AI and imaging for point-of-care surgical guidance</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="News &amp; events section"><a class="sh" href="news.html">News &amp; events</a><span class="sg">Seminars</span><a href="page-seminars.html">Research seminars</a><span class="sg">Meetings we organize</span><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops</a><a class="sub" href="page-past-igt-workshops.html">Past workshops</a><a href="page-imri-2024.html">iMRI Symposium 2024</a><a href="page-imri-symposium-2022.html">iMRI Symposium 2022</a><a href="page-project-week.html">Project Week</a><a href="page-robsai.html" aria-current="page">RobsAI workshop, MICCAI 2023</a></nav><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#at-a-glance">At a glance</a><a href="#topics">Topics</a><a href="#contact-and-links">Contact and links</a></nav></aside><article class="arc"><figure aria-label="Picture to come" class="banner ph"><span>[Image: robotics and imaging at the point of care]</span></figure><p class="lead">A MICCAI 2023 workshop on robotics, AI and imaging for surgical guidance at the point of care, organized by center investigators.</p><section class="glance"><h2 id="at-a-glance">At a glance</h2><dl><div><dt>Date</dt><dd>October 8, 2023, virtual, at MICCAI</dd></div><div><dt>Organizers</dt><dd>Laura Brattain, Jayender Jagadeesan, Tina Kapur</dd></div><div><dt>Papers</dt><dd>Peer reviewed, 8 pages</dd></div></dl></section><h2 id="topics">Topics</h2><ul><li>Robotics, AI and imaging for surgical guidance</li><li>Image-guided navigation and visualization</li><li>Machine learning for therapy guidance and decisions</li><li>New sensors for point-of-care guidance</li><li>Clinical translation and evaluation</li></ul><section class="next"><h2 id="contact-and-links">Contact and links</h2><p><strong>Contact:</strong> Jayender Jagadeesan, PhD</p><div class="cards"><a class="card" href="news.html"><strong>Meetings we organize</strong></a><a class="card" href="trd3.html"><strong>TR&amp;D 3</strong></a></div></section><p class="src">Rewritten from the previous NCIGT website: <a href="https://ncigt.org/robsai/">https://ncigt.org/robsai/</a></p></article></div></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

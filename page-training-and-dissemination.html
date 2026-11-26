@@ -47,7 +47,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
 .snav a.sub{padding-left:22px;font-size:13.5px}
 .snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
-.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -81,6 +82,15 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
 .arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
@@ -130,7 +140,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
 <li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-team.html">Center team<small>Principal investigators and project leads</small></a></li>
 <li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
 </ul></div></div></div>
 <div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
@@ -143,8 +152,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
 <li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#shared">Recently shared software and data<small>New releases from center investigators</small></a></li>
-<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
@@ -180,24 +188,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="training.html">Training</a></p><h1>Training and dissemination core</h1><p class="lede">Who leads training and dissemination</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Training section"><a class="sh" href="training.html">Training</a><a href="page-trainees.html">Trainees and alumni</a><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars</a><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program</a><a class="sub" href="page-eligibility.html">Eligibility</a><a class="sub" href="page-application.html">How to apply</a><a href="page-training-and-dissemination.html" aria-current="page">Training and dissemination core</a></nav></aside><article class="arc">
-<p><strong>Training &amp; Dissemination Core:</strong> <a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/49006">Carl-Fredrik Westin, PhD</a> (Lead) • <a href="https://connects.catalyst.harvard.edu/Profiles/profile/1234043">Clare Tempany, MD</a> (MPI) • <a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/55352">Nobuhiko Hata, PhD</a> (MPI)</p>
-<p>Together, the training and dissemination programs promote and enable the broadest possible use of our technologies.</p>
-<p><strong>Training</strong> is a cornerstone of the national center of image-guided therapy. We teach the scientific advances made by AT-NCIGT to clinicians and biomedical researchers through individualized training opportunities as well as electronically available tutorials.</p>
-<ul>
-<li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">Training in Image-Guidance, Precision Diagnosis and Therapy</a></li>
-<li><a href="page-trainees.html">Trainees</a></li>
-<li><a href="page-visiting-scholars-program.html">Visiting Scholars Program</a></li>
-<li><a href="page-online-lectures.html">Online Lectures</a></li>
-<li><a href="page-software-and-tutorials.html">Software and Tutorials</a></li>
-</ul>
-<p>The goal of our <strong>dissemination</strong> program is to inform the broader scientific community about the technical capabilities and resources of our center.</p>
-<ul>
-<li><a href="page-national-image-guided-therapy-workshops.html">Image Guided Therapy Workshops</a></li>
-<li><a href="page-project-week.html">Project Week</a></li>
-<li><a href="page-seminars.html">Seminars</a></li>
-</ul>
-<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/training-and-dissemination/">https://ncigt.org/training-and-dissemination/</a></p></article></div></main>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="training.html">Training</a></p><h1>Training and dissemination core</h1><p class="lede">Who leads training and dissemination</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Training section"><a class="sh" href="training.html">Training</a><a href="page-trainees.html">Trainees and alumni</a><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars</a><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program</a><a href="page-training-and-dissemination.html" aria-current="page">Training and dissemination core</a></nav><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#at-a-glance">At a glance</a><a href="#training">Training</a><a href="#dissemination">Dissemination</a><a href="#contact-and-links">Contact and links</a></nav></aside><article class="arc"><figure aria-label="Picture to come" class="banner ph"><span>[Photo: a hands-on workshop at Project Week]</span></figure><p class="lead">The core that shares the center’s technology: it trains clinicians and researchers, and it informs the wider community through workshops, Project Week, seminars and online material.</p><section class="glance"><h2 id="at-a-glance">At a glance</h2><dl><div><dt>Lead</dt><dd>Carl-Fredrik Westin, PhD</dd></div><div><dt>Members</dt><dd>Clare Tempany, MD; Nobuhiko Hata, PhD</dd></div><div><dt>Mandate</dt><dd>NIBIB requires P41 centers to train and disseminate</dd></div></dl></section><h2 id="training">Training</h2><ul><li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program</a></li><li><a href="page-trainees.html">Trainees and alumni</a></li><li><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars</a></li><li><a href="page-online-lectures.html">Online lectures</a> and <a href="resources.html#software">software tutorials</a></li></ul><h2 id="dissemination">Dissemination</h2><ul><li><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops</a></li><li><a href="page-project-week.html">Project Week</a></li><li><a href="page-seminars.html">Research seminars</a></li></ul><section class="next"><h2 id="contact-and-links">Contact and links</h2><p><strong>Contact:</strong> Carl-Fredrik Westin, PhD</p><div class="cards"><a class="card" href="training.html"><strong>Training</strong></a><a class="card" href="news.html"><strong>News &amp; events</strong></a></div></section><p class="src">Rewritten from the previous NCIGT website: <a href="https://ncigt.org/training-and-dissemination/">https://ncigt.org/training-and-dissemination/</a></p></article></div></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

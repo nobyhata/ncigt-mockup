@@ -47,7 +47,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
 .snav a.sub{padding-left:22px;font-size:13.5px}
 .snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
-.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -81,6 +82,15 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
 .arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
@@ -130,7 +140,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
 <li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-team.html">Center team<small>Principal investigators and project leads</small></a></li>
 <li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
 </ul></div></div></div>
 <div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
@@ -143,8 +152,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
 <li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#shared">Recently shared software and data<small>New releases from center investigators</small></a></li>
-<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
@@ -180,174 +188,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="resources.html">Resources</a></p><h1>Fast Imaging Library</h1><p class="lede">Reconstruction code for accelerated MRI</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Resources section"><a class="sh" href="resources.html">Resources</a><a href="page-software-and-tutorials.html">Software and tutorials</a><a href="page-fast-imaging-library.html" aria-current="page">Fast Imaging Library</a><a href="page-online-lectures.html">Online lectures</a></nav><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#igt-applications">IGT Applications</a><a href="#downloads">Downloads</a><a href="#version-2-2-released-on-january-19-2015">Version 2.2 Released on January 19, 2015.</a><a href="#version-2-2-released-on-january-19-2015-2">Version 2.2 Released on January 19, 2015.</a><a href="#change-log">Change Log</a><a href="#version-2-00-released-on-july-24-2014">Version 2.00 Released on July 24, 2014.</a><a href="#change-log-2">Change Log</a></nav></aside><article class="arc">
-<p>This library of functions provides a number of algorithms to reconstruct<br/>
-accelerated MR data, including</p>
-<ul>
-<li>UNFOLD</li>
-<li>Parallel Imaging Methods</li>
-<li>SENSE, Variable Density SENSE, regularized SPACE RIP, GRAPPA, and GROG</li>
-</ul>
-<p>as well as a number of associated MR image reconstruction algorithms, including:</p>
-<ul>
-<li>Homodyne processing of partial-Fourier data</li>
-<li>Gradient field inhomogeneity correction (gradwarp)</li>
-<li>Nyquist Ghost correction</li>
-</ul>
-<p>The complete package includes a reference manual (PDF and HTML), a binary library file, and demos in both C and Matlab (via MEX). To get started, follow the “Quick Start Guide” given in the manual.<br/>
-Please direct support and other inquires to: ncigt-imaging-toolkit at bwh.harvard.edu</p>
-<h2 id="igt-applications">IGT Applications</h2>
-<p>The library is currently used for reconstruction of EPI data by the BWH Functional Neuroimaging Lab in z-shimmed applications.<br/>
-Previously, this imaging toolkit was used in two projects within the IGT Center</p>
-<ul>
-<li>Temperature Monitoring</li>
-<li>Prostate Biopsy Tracking</li>
-</ul>
-<h2 id="downloads">Downloads</h2>
-<ul>
-<li><a href="http://projects.iq.harvard.edu/files/ncigt/files/ncigt_fil_license.txt?m=1437067676">License</a></li>
-<li>Reference Manual</li>
-</ul>
-<h2 id="version-2-2-released-on-january-19-2015">Version 2.2 Released on January 19, 2015.</h2>
-<div class="tbl"><table>
-<tbody>
-<tr>
-<td>
-<h3>OS</h3>
-</td>
-<td>
-<h3>Package</h3>
-</td>
-<td>
-<h3>MD5 Checksum</h3>
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64.zip">ncigt_fil_v2.2_20150119_MSWin64.zip</a></td>
-<td>801b28d8e8e48a818824b602c1c0e69d</td>
-</tr>
-<tr>
-<td>Windows MEX files</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64_mex.zip">ncigt_fil_v2.2_20150119_MSWin64_mex.zip</a></td>
-<td>842a47a16f93b1e6bf71978f484e6943</td>
-</tr>
-<tr>
-<td>Mac OS-X (darwin 64-bit)</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_darwin_x64.zip">ncigt_fil_v2.2_20150119_darwin_x64.zip</a></td>
-<td>31f1028c9c5ee3850997473a134802b3</td>
-</tr>
-<tr>
-<td>Linux 32-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x32.zip">ncigt_fil_v2.2_20150119_x32.zip</a></td>
-<td>b52f7685a6af92ca7d17cb20c2534d2b</td>
-</tr>
-<tr>
-<td>Linux 64-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x64_0.zip">ncigt_fil_v2.2_20150119_x64.zip</a></td>
-<td>62183690a4c07be064dfcd2ecdd2c327</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="version-2-2-released-on-january-19-2015-2">Version 2.2 Released on January 19, 2015.</h2>
-<div class="tbl"><table>
-<tbody>
-<tr>
-<td>
-<h3>OS</h3>
-</td>
-<td>
-<h3>Package</h3>
-</td>
-<td>
-<h3>MD5 Checksum</h3>
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64.zip">ncigt_fil_v2.2_20150119_MSWin64.zip</a></td>
-<td>801b28d8e8e48a818824b602c1c0e69d</td>
-</tr>
-<tr>
-<td>Windows MEX files</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64_mex.zip">ncigt_fil_v2.2_20150119_MSWin64_mex.zip</a></td>
-<td>842a47a16f93b1e6bf71978f484e6943</td>
-</tr>
-<tr>
-<td>Mac OS-X (darwin 64-bit)</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_darwin_x64.zip">ncigt_fil_v2.2_20150119_darwin_x64.zip</a></td>
-<td>31f1028c9c5ee3850997473a134802b3</td>
-</tr>
-<tr>
-<td>Linux 32-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x32.zip">ncigt_fil_v2.2_20150119_x32.zip</a></td>
-<td>b52f7685a6af92ca7d17cb20c2534d2b</td>
-</tr>
-<tr>
-<td>Linux 64-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x64_0.zip">ncigt_fil_v2.2_20150119_x64.zip</a></td>
-<td>62183690a4c07be064dfcd2ecdd2c327</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="change-log">Change Log</h2>
-<ul>
-<li>”the data order for GRAPPA has changed.” Previously, the GRAPPA functions expected data ordered as ky-kx-coil. With this release, the data should now be ordered as kx-ky-coil.  This change makes the code a bit more efficient and more consistent with other functions in the library.</li>
-<li>added field for slice-order and user_parameters to the SCAN_INFO structure</li>
-<li>updated the phase_align code to use a more robust line-fitting algorithm</li>
-<li>added a function to grappa_recon__all_slices</li>
-</ul>
-<h2 id="version-2-00-released-on-july-24-2014">Version 2.00 Released on July 24, 2014.</h2>
-<div class="tbl"><table>
-<tbody>
-<tr>
-<td>
-<h3>OS</h3>
-</td>
-<td>
-<h3>Package</h3>
-</td>
-<td>
-<h3>MD5 Checksum</h3>
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td><a href="media/2023_01_ncigt_fil_v2.0_20140724_mswin64.zip">ncigt_fil_v2.0_20140724_MSWin64.zip</a></td>
-<td>0779cde41956771508582b690d4d77b1</td>
-</tr>
-<tr>
-<td>Windows MEX files</td>
-<td><a href="media/2023_01_ncigt_fil_v2.0_20140724_mswin64_mex.zip">ncigt_fil_v2.0_20140724_MSWin64_mex.zip</a></td>
-<td>0d1d4d25206f8a6877eee1e43f5215de</td>
-</tr>
-<tr>
-<td>Mac OS-X (darwin 64-bit)</td>
-<td><a href="media/2023_01_ncigt_fil_v2.0_20140724_darwin_x64.zip">ncigt_fil_v2.0_20140724_darwin_x64.zip</a></td>
-<td>1a0d71e81e92d6ace9a7ff76d0a54972</td>
-</tr>
-<tr>
-<td>Linux 32-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.0_20140724_x32.zip">ncigt_fil_v2.0_20140724_x32.zip</a></td>
-<td>4d7d09ac3a0e2880d1aa48e3e00c3c06</td>
-</tr>
-<tr>
-<td>Linux 64-bit</td>
-<td><a href="media/2023_01_ncigt_fil_v2.0_20140724_x64.zip">ncigt_fil_v2.0_20140724_x64.zip</a></td>
-<td>1e8fdaa64380b6ffa382b56c9ebd6194</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="change-log-2">Change Log</h2>
-<ul>
-<li>Added functions for GROG, specifically to support PROPELLER with multi-channel data</li>
-<li>Re-arranged the parameter order for gwarp_prep, so that it is consistent with gwarp_calc.  Both now start with { tl, tr, br, bl, … }</li>
-<li>The DICOM demo can now replace image data as well as DICOM tag data</li>
-<li>GRAPPA coefficients can now be saved and shared between Matlab and C programs</li>
-<li>revived the GE ref.dat Nyquist ghost correction code, and made it reusable with other NGC methods</li>
-<li>added sliding target GRAPPA calibration code, to support GROG</li>
-</ul>
-<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/fast-imaging-library/">https://ncigt.org/fast-imaging-library/</a></p></article></div></main>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="resources.html">Resources</a></p><h1>Fast Imaging Library</h1><p class="lede">Reconstruction code for accelerated MRI</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Resources section"><a class="sh" href="resources.html">Resources</a><a href="page-fast-imaging-library.html" aria-current="page">Fast Imaging Library</a><a href="page-online-lectures.html">Online lectures</a></nav><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#at-a-glance">At a glance</a><a href="#what-it-does">What it does</a><a href="#where-it-is-used">Where it is used</a><a href="#download-version-2-2">Download version 2.2</a><a href="#contact-and-links">Contact and links</a></nav></aside><article class="arc"><figure aria-label="Picture to come" class="banner ph"><span>[Image: accelerated MRI reconstruction]</span></figure><p class="lead">A C and Matlab library for reconstructing accelerated MRI data, with a reference manual and demos.</p><section class="glance"><h2 id="at-a-glance">At a glance</h2><dl><div><dt>Latest version</dt><dd>2.2, January 19, 2015</dd></div><div><dt>Platforms</dt><dd>Windows, macOS, Linux</dd></div><div><dt>Languages</dt><dd>C and Matlab (MEX)</dd></div><div><dt>Support</dt><dd>ncigt-imaging-toolkit at bwh.harvard.edu</dd></div></dl></section><h2 id="what-it-does">What it does</h2><ul><li>UNFOLD</li><li>Parallel imaging: SENSE, variable-density SENSE, regularized SPACE RIP, GRAPPA, GROG</li><li>Homodyne partial-Fourier processing, gradient nonlinearity correction (gradwarp), Nyquist ghost correction</li></ul><h2 id="where-it-is-used">Where it is used</h2><p>Reconstruction of EPI data in z-shimmed functional imaging at BWH; earlier, temperature monitoring and prostate biopsy tracking in the center.</p><h2 id="download-version-2-2">Download version 2.2</h2><div class="tbl"><table><thead><tr><th>Platform</th><th>Package</th></tr></thead><tbody><tr><td>Windows 64-bit</td><td><a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64.zip">library</a> · <a href="media/2023_01_ncigt_fil_v2.2_20150119_mswin64_mex.zip">MEX files</a></td></tr><tr><td>macOS 64-bit</td><td><a href="media/2023_01_ncigt_fil_v2.2_20150119_darwin_x64.zip">library</a></td></tr><tr><td>Linux 64-bit</td><td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x64_0.zip">library</a></td></tr><tr><td>Linux 32-bit</td><td><a href="media/2023_01_ncigt_fil_v2.2_20150119_x32.zip">library</a></td></tr></tbody></table></div><p>Read the <a href="http://projects.iq.harvard.edu/files/ncigt/files/ncigt_fil_license.txt?m=1437067676">license</a> before use. Version 2.0 (2014) is available on request.</p><section class="next"><h2 id="contact-and-links">Contact and links</h2><p><strong>Contact:</strong> ncigt-imaging-toolkit at bwh.harvard.edu</p><div class="cards"><a class="card" href="resources.html#software"><strong>Software and tutorials</strong></a><a class="card" href="page-computation-core.html"><strong>Computation Core (earlier cycle)</strong></a></div></section><p class="src">Rewritten from the previous NCIGT website: <a href="https://ncigt.org/fast-imaging-library/">https://ncigt.org/fast-imaging-library/</a></p></article></div></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

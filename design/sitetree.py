@@ -17,15 +17,9 @@ SECTIONS = [
          ]),
          ('Results', [
            ('publications.html', 'Publications', 'Major achievements and collaborations, past 12 months', []),
-           ('page-publications.html', 'Publication archive', 'Recent publications as listed on the previous website', []),
-         ]),
-         ('From the previous website', [
-           ('page-research.html', 'Research overview, previous website', 'Image-guided therapy research as described before 2026', []),
-           ('page-trd-1-imaging-cancer-heterogeneity.html', 'TR&D 1, previous website', 'Imaging cancer heterogeneity', []),
-           ('page-trd-2-deep-learning.html', 'TR&D 2, previous website', 'Deep learning', []),
-           ('page-trd-3-intraoperative-devices.html', 'TR&D 3, previous website', 'Intraoperative devices', []),
          ]),
          ('Earlier funding cycles', [
+           ('page-research.html', 'Research by funding cycle', 'How the research was organized, 2015 to today', []),
            ('page-neurosurgery-core.html', 'Neurosurgery Core', 'NCIGT core, earlier cycle', []),
            ('page-prostate-core.html', 'Prostate Core', 'NCIGT core, earlier cycle', []),
            ('page-guidance-core.html', 'Guidance Core', 'NCIGT core, earlier cycle', []),
@@ -36,9 +30,6 @@ SECTIONS = [
   dict(key='people', label='People', landing='people.html',
        blurb='The investigators, staff and advisors of the center.',
        groups=[
-         (None, [
-           ('page-team.html', 'Center team', 'Principal investigators and project leads, 2026–2030', []),
-         ]),
        ]),
   dict(key='amigo', label='AMIGO', landing='clinical.html',
        blurb='The AMIGO suite and the clinical research that uses it.',
@@ -62,7 +53,6 @@ SECTIONS = [
        blurb='Software, data, equipment and recorded lectures that the center shares.',
        groups=[
          (None, [
-           ('page-software-and-tutorials.html', 'Software and tutorials', '3D Slicer, OpenIGTLink and more', []),
            ('page-fast-imaging-library.html', 'Fast Imaging Library', 'Reconstruction code for accelerated MRI', []),
            ('page-online-lectures.html', 'Online lectures', 'Free recorded talks and seminars', []),
          ]),
@@ -73,10 +63,7 @@ SECTIONS = [
          (None, [
            ('page-trainees.html', 'Trainees and alumni', 'Our roster since 2001 and where alumni went', []),
            ('page-visiting-scholars-program.html', 'Postdoctoral and visiting scholars', 'Train with us for months or years', []),
-           ('page-training-in-image-guidance-precision-diagnosis-and-therapy.html', 'T32 training program', 'Image Guidance, Precision Diagnosis and Therapy', [
-             ('page-eligibility.html', 'Eligibility', 'Who can apply to the T32 program', []),
-             ('page-application.html', 'How to apply', 'Applying to the T32 program', []),
-           ]),
+           ('page-training-in-image-guidance-precision-diagnosis-and-therapy.html', 'T32 training program', 'Image Guidance, Precision Diagnosis and Therapy', []),
            ('page-training-and-dissemination.html', 'Training and dissemination core', 'Who leads training and dissemination', []),
          ]),
        ]),
@@ -93,7 +80,6 @@ SECTIONS = [
        groups=[
          ('Seminars', [
            ('page-seminars.html', 'Research seminars', 'The Ferenc Jolesz Research Seminar Series', []),
-           ('page-acs.html', 'Seminar announcements, 2023', 'Seminar notices from the previous website', []),
          ]),
          ('Meetings we organize', [
            ('page-national-image-guided-therapy-workshops.html', 'National IGT Workshops', 'Our national image-guided therapy workshop series', [
@@ -104,22 +90,17 @@ SECTIONS = [
            ('page-project-week.html', 'Project Week', 'Twice-yearly open-source hackathon', []),
            ('page-robsai.html', 'RobsAI workshop, MICCAI 2023', 'Robotics, AI and imaging for point-of-care surgical guidance', []),
          ]),
-         ('Archive', [
-           ('page-events.html', 'Events calendar, previous website', 'Upcoming events as listed before 2026', []),
-           ('page-news.html', 'News, previous website', 'The news list as it appeared before 2026', []),
-         ]),
        ]),
   dict(key='about', label='About', landing='about.html',
        blurb='The center, its home at Mass General Brigham, and its history.',
        groups=[
          (None, [
            ('page-history.html', 'Image-guided therapy research at the Brigham', 'How image-guided therapy began here', []),
-           ('page-home.html', 'Home page, previous website', 'The center as introduced before 2026', []),
            ('sitemap.html', 'All pages', 'The complete site, section by section', []),
          ]),
        ]),
 ]
-HIDDEN = {'page-people.html'}   # empty page on the previous website
+HIDDEN = set()   # empty page on the previous website
 
 def walk():
     """yield (section, group_title, item, parent_item) for every page in the tree"""

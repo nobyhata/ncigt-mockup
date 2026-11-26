@@ -48,7 +48,7 @@ clinical = clinical.replace('<div style="background: #F6F1EA; border-radius: 16p
                             '<div style="background: #F6F1EA; border-radius: 16px; padding: 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">')
 
 resources = S['resources'].replace('</section>', linkrow([('All equipment, software and data', 'Resources.dc.html'),
-    ('Recently shared software and data', 'Resources.dc.html#shared'), ('Software and tutorials', 'page-software-and-tutorials.html'),
+    ('Recently shared software and data', 'Resources.dc.html#shared'), ('Software, tutorials and data', 'Resources.dc.html#software'),
     ('Online lectures', 'page-online-lectures.html')]) + '</section>')
 
 training = S['training']
@@ -73,7 +73,7 @@ community = cut(community, '<div style="margin-top: 24px; background: #FFFFFF; b
 about = S['about'].replace('<a href="page-history.html">History of the center →</a>', '<a href="About.dc.html#history">History of the center →</a>')
 about = cut(about, '<div style="margin-top: 20px; background: #F6F1EA; border-radius: 14px; padding: 22px 24px">', '</section>',
             linkrow([('About the center', 'About.dc.html'), ('History of the center', 'About.dc.html#history'),
-                     ('Acknowledging the center', 'About.dc.html#acknowledge'), ('Leadership and organization', 'page-team.html')]) + '</section>')
+                     ('Acknowledging the center', 'About.dc.html#acknowledge'), ('Leadership and organization', 'People.dc.html')]) + '</section>')
 
 home = [S['top'], research, clinical, resources, training, S['industry'], partner, community, S['events'], about, S['contact']]
 

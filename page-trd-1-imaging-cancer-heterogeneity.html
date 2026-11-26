@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="TR&amp;D 1 – Imaging Cancer Heterogeneity">
 <link rel="icon" href="ncigt-logo.png">
-<title>TR&amp;D 1, previous website · AT-NCIGT (draft)</title>
+<title>TR&amp;D 1 · AT-NCIGT (draft)</title>
 
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
@@ -47,7 +47,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
 .snav a.sub{padding-left:22px;font-size:13.5px}
 .snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
-.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -81,11 +82,22 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
 .arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
 @media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.side{position:static;max-height:none}.snav{flex-direction:row;flex-wrap:wrap;gap:4px 8px}.snav .sh,.snav .sg{width:100%}.snav a:not(.sh){border-left:0;padding:4px 8px;background:#F3F6FA;border-radius:6px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
+<meta http-equiv="refresh" content="0; url=trd1.html">
+<link rel="canonical" href="trd1.html">
 <style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
@@ -130,7 +142,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
 <li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-team.html">Center team<small>Principal investigators and project leads</small></a></li>
 <li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
 </ul></div></div></div>
 <div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
@@ -143,8 +154,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
 <li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#shared">Recently shared software and data<small>New releases from center investigators</small></a></li>
-<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
@@ -180,15 +190,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="research.html">Research</a></p><h1>TR&amp;D 1, previous website</h1><p class="lede">Imaging cancer heterogeneity</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Research section"><a class="sh" href="research.html">Research</a><span class="sg">Current projects</span><a href="trd1.html">TR&amp;D 1: Imaging cancer heterogeneity</a><a href="trd2.html">TR&amp;D 2: Implantable microdevices</a><a href="trd3.html">TR&amp;D 3: Enabling technologies</a><span class="sg">Results</span><a href="publications.html">Publications</a><a href="page-publications.html">Publication archive</a><span class="sg">From the previous website</span><a href="page-research.html">Research overview, previous website</a><a href="page-trd-1-imaging-cancer-heterogeneity.html" aria-current="page">TR&amp;D 1, previous website</a><a href="page-trd-2-deep-learning.html">TR&amp;D 2, previous website</a><a href="page-trd-3-intraoperative-devices.html">TR&amp;D 3, previous website</a><span class="sg">Earlier funding cycles</span><a href="page-neurosurgery-core.html">Neurosurgery Core</a><a href="page-prostate-core.html">Prostate Core</a><a href="page-guidance-core.html">Guidance Core</a><a href="page-computation-core.html">Computation Core</a><a href="page-prostate-image-reporting-and-data-system-pi-rads.html">PI-RADS</a></nav></aside><article class="arc">
-<p><strong>TR&amp;D 1 Team:</strong> <a href="https://ncigt.org/stephan-e-maier-md-phd/">Stephan E. Maier, MD, PhD</a> (Project Lead) • <a href="https://ncigt.org/daniel-paech-md-phd/">Daniel Paech, MD, PhD</a> • <a href="https://ncigt.org/carl-fredrik-westin-phd/">Carl-Fredrik Westin, PhD</a></p>
-<p>Led by <strong>STEPHAN MAIER</strong>, the focus areas of the <strong>IMAGING CANCER HETEROGENEITY WITH HIGH-FIDELITY MRI</strong> TRD are:</p>
-<ul>
-<li>Developing a motion-compensated, multi-shot, multi-echo 3D diffusion imaging sequence for unprecedented isotropic high-resolution imaging with improved spatial fidelity, on a high-performance head-only 3T MRI system.</li>
-<li>Establishing a robust fitting framework for reproducible apparent diffusion coefficient (ADC) measurements that eliminate protocol- and scanner-position dependence for consistent, multi-site comparable imaging biomarkers.</li>
-<li>Building a harmonization framework — using temperature-stabilized phantoms, vendor-neutral Pulseq sequences, and automated optimization — to detect and correct scanner-induced bias in chemical exchange saturation transfer (CEST) MRI.</li>
-</ul>
-<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/trd-1-imaging-cancer-heterogeneity/">https://ncigt.org/trd-1-imaging-cancer-heterogeneity/</a></p></article></div></main>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a></p><h1>This page has moved</h1><p class="lede">It is now part of <a href="trd1.html" style="color:#fff;text-decoration:underline">TR&amp;D 1</a>.</p></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

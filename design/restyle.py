@@ -303,7 +303,8 @@ CSS = '''<style id="arc2">
 .snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
 .snav a.sub{padding-left:22px;font-size:13.5px}
 .snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
-.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -337,6 +338,15 @@ CSS = '''<style id="arc2">
 .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
 .arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
 .box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
@@ -349,15 +359,18 @@ def shell_parts(doc):
     foot = doc[doc.index('</main>') + len('</main>'):]
     head = re.sub(r'<style>\n?\.arc\{max-width:900px.*?</style>', '', head, flags=re.S)
     head = re.sub(r'<style id="arc2">.*?</style>\n?', '', head, flags=re.S)
+    head = re.sub(r'<meta http-equiv="refresh"[^>]*>\n?|<link rel="canonical"[^>]*>\n?', '', head)
     head = head.replace('</head>', CSS + '</head>', 1)
     return head, foot
 
-def section_nav(f):
+def section_nav(f, sec=None):
     """side navigation listing the page's section, current page marked"""
-    hit = sitetree.lookup(f)
-    if not hit or not hit[2]: return ''
-    sec = hit[0]
-    out = [f'<nav class="snav" aria-label="{html.escape(sec["label"])} section"><a class="sh" href="{sec["landing"]}">{html.escape(sec["label"])}</a>']
+    if sec is None:
+        hit = sitetree.lookup(f)
+        if not hit or not hit[2]: return ''
+        sec = hit[0]
+    cur0 = ' aria-current="page"' if f == sec['landing'] else ''
+    out = [f'<nav class="snav" aria-label="{html.escape(sec["label"])} section"><a class="sh" href="{sec["landing"]}"{cur0}>{html.escape(sec["label"])}</a>']
     for gt, items in sec['groups']:
         if gt: out.append(f'<span class="sg">{html.escape(gt)}</span>')
         for it in items:
@@ -377,6 +390,17 @@ def build(f, s):
         body, lede = custom
     else:
         body = transform(s['body'], f); lede = ''
+    if is_news:
+        bs = BeautifulSoup(body, 'html.parser')
+        im = bs.find('img')
+        if im is not None:
+            src_ = im.get('src', ''); alt_ = im.get('alt', '') or ''
+            holder = im.find_parent('figure') or (im.parent if im.parent.name == 'a' and not im.parent.get_text(strip=True) else im)
+            holder.decompose()
+            ban = f'<figure class="banner"><img src="{html.escape(src_)}" alt="{html.escape(alt_)}" loading="lazy"></figure>'
+        else:
+            ban = '<figure class="banner ph" aria-label="Picture to come"><span>[Photo for this story]</span></figure>'
+        body = ban + str(bs)
     body, toc = add_ids(body)
     title = s['title']
     if is_caps(title): title = smart_title(title)
@@ -407,7 +431,7 @@ def build(f, s):
     snav = '' if is_news else section_nav(f)
     tochtml = ('<nav class="toc" aria-label="On this page"><strong>On this page</strong>' + ''.join(f'<a href="#{i}">{html.escape(t)}</a>' for t, i in toc) + '</nav>') if len(toc) >= 3 and not is_news else ''
     aside = f'<aside class="side">{snav}{tochtml}</aside>' if (snav or tochtml) else ''
-    src = f'<p class="src">Carried over from the previous NCIGT website: <a href="{s["src"]}">{s["src"]}</a></p>' if s['src'] else ''
+    src = (f'<p class="src">{"Rewritten from" if custom else "Carried over from"} the previous NCIGT website: <a href="{s["src"]}">{s["src"]}</a></p>') if s['src'] else ''
     lay = f'<div class="lay{"" if aside else " one"}">{aside}<article class="arc">{body}{src}</article></div>'
     rel = ''
     if is_news:
@@ -420,10 +444,18 @@ def build(f, s):
 def main(argv):
     files = argv or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page-*.html')) + glob.glob(os.path.join(ROOT, 'news-*.html'))) + ['news.html']
     db = load_sources(files)
+    import pages_content
     for f in files:
         path = os.path.join(ROOT, f)
         doc = open(path, encoding='utf-8').read()
         head, foot = shell_parts(doc)
+        if f in pages_content.REDIRECTS:
+            to, label = pages_content.REDIRECTS[f]
+            h = head.replace('</head>', f'<meta http-equiv="refresh" content="0; url={to}">\n<link rel="canonical" href="{to}">\n</head>', 1)
+            h = re.sub(r'<title>.*?</title>', f'<title>{html.escape(label)} · AT-NCIGT (draft)</title>', h, count=1)
+            m = (f'<main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a></p><h1>This page has moved</h1>'
+                 f'<p class="lede">It is now part of <a href="{to}" style="color:#fff;text-decoration:underline">{html.escape(label)}</a>.</p></div></section></main>')
+            open(path, 'w', encoding='utf-8').write(h + m + foot); continue
         main_html, title = build(f, db[f])
         page = head + main_html + foot
         page = re.sub(r'<title>.*?·', lambda m: f'<title>{html.escape(title)} ·', page, count=1)

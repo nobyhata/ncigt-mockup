@@ -39,7 +39,7 @@ CSS = '''<style id="secidx-css">
 def apply(doc, f):
     """add the section index to a section landing page"""
     sec = next((s for s in sitetree.SECTIONS if s['landing'] == f), None)
-    if not sec: return doc
+    if not sec or not any(items for _, items in sec['groups']): return doc
     doc = re.sub(r'<section class="secidx".*?</section>', '', doc, flags=re.S)
     doc = re.sub(r'<style id="secidx-css">.*?</style>\n?', '', doc, flags=re.S)
     doc = doc.replace('</head>', CSS + '</head>', 1)
@@ -64,12 +64,6 @@ def main():
     head, foot = shell()
     head = head.replace('</head>', CSS + '</head>', 1)
     home = '<a href="index.html">Home</a>'
-    for key, extra in [('research', '<div class="lay one"><article class="arc"><p>The center’s technology research and development (TR&amp;D) projects each take a clinical problem from new technology to testing in patients. Collaborative and service projects bring outside teams into that work; see <a href="partner.html">Partner with us</a>.</p></article></div>'),
-                       ('training', '<div class="lay one"><article class="arc"><p>Clinical and technical trainees work alongside center investigators on real clinical problems. More than 350 have graduated since 2001; see <a href="index.html#training">where training with us can lead</a> for some of their stories.</p></article></div>')]:
-        sec = next(s for s in sitetree.SECTIONS if s['key'] == key)
-        body = extra + index_block(sec, 'Pages in this section')
-        open(os.path.join(ROOT, sec['landing']), 'w', encoding='utf-8').write(
-            page(head, foot, sec['label'], sec['blurb'], [home], body, sec['blurb']))
     # site map
     b = ['<div class="lay one"><article class="arc"><p>Every page of the site, section by section. News items are listed on <a href="news.html">News and seminars</a>.</p>']
     for sec in sitetree.SECTIONS:
@@ -85,11 +79,11 @@ def main():
         page(head, foot, 'All pages', 'The complete site, section by section.', [home, '<a href="about.html">About</a>'], ''.join(b), 'All pages of AT-NCIGT'))
     n = 0
     for sec in sitetree.SECTIONS:
-        if sec['key'] in ('research', 'training'): continue
+        if sec['key'] in ('research', 'amigo', 'resources', 'training', 'partner', 'about'): continue
         p = os.path.join(ROOT, sec['landing'])
         d = open(p, encoding='utf-8').read(); d2 = apply(d, sec['landing'])
         if d2 != d: open(p, 'w', encoding='utf-8').write(d2); n += 1
-    print('landing pages built: research, training, sitemap; section index added to', n)
+    print('sitemap built; section index added to', n)
 
 if __name__ == '__main__':
     main()

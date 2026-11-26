@@ -4,10 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Equipment, tools, software and data AT-NCIGT shares with collaborators.">
+<meta name="description" content="Software, data, equipment and recorded lectures that the center shares.">
 <link rel="icon" href="ncigt-logo.png">
 <title>Resources · AT-NCIGT (draft)</title>
-
 
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
@@ -32,6 +31,71 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.side{position:sticky;top:20px;display:flex;flex-direction:column;gap:22px;max-height:calc(100vh - 40px);overflow:auto}
+.side .toc{position:static}
+.snav{display:flex;flex-direction:column;font-size:14px;line-height:1.35}
+.snav .sh{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;margin-bottom:8px}
+.snav .sg{font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:12px 0 4px}
+.snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
+.snav a.sub{padding-left:22px;font-size:13.5px}
+.snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
+.snav a.sh[aria-current]{color:#0B5F86}
+.snav a:not(.sh)[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.banner{margin:0 0 24px;position:relative}.banner img{width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:center 35%;border-radius:14px;display:block;background:#EEF1F5}
+.banner figcaption{font-size:13px;color:#6B778A;margin-top:6px}
+.banner.ph{aspect-ratio:16/7;border-radius:14px;background:#EEF1F5;border:1px dashed #B8C3D1;display:flex;align-items:center;justify-content:center;color:#6B778A;font-size:14px;text-align:center;padding:12px}
+.arc p.lead{font-size:19px;line-height:1.65;color:#0F1B2D;margin:0 0 24px}
+.glance{background:#F3F6FA;border-radius:14px;padding:18px 22px;margin:0 0 8px}.glance h2{font-size:13px!important;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:0 0 10px!important;padding:0!important;font-family:Inter,system-ui,sans-serif!important}
+.glance dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px 24px}.glance dt{font-size:13px;color:#4A5668;font-weight:600}.glance dd{margin:2px 0 0;font-size:15px;line-height:1.45;color:#0F1B2D}
+.next{margin-top:40px;padding-top:4px;border-top:1px solid #E3E8EF}.next .cards{margin-top:14px}.next .card strong{font-size:16px}
+.arc h3 .count{display:inline-block;background:#EEF1F5;color:#4A5668;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;vertical-align:middle;font-family:Inter,system-ui,sans-serif}
+.arc div.card{cursor:default}.arc .card a.more{margin:4px 0 0;font-size:14px}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.side{position:static;max-height:none}.snav{flex-direction:row;flex-wrap:wrap;gap:4px 8px}.snav .sh,.snav .sg{width:100%}.snav a:not(.sh){border-left:0;padding:4px 8px;background:#F3F6FA;border-radius:6px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
+</style>
 <style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
@@ -51,15 +115,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
 </style>
-<style id="secidx-css">
-.secidx{background:#F7F9FC;border-top:1px solid #E3E8EF}.secidx .w{max-width:1200px;margin:0 auto;padding:48px 24px 56px}
-.secidx h2{font-family:'Source Serif 4',Georgia,serif;font-size:26px;margin:0 0 6px}.secidx h3{font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:24px 0 10px}
-.secidx .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.secidx .card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;background:#fff;color:#0F1B2D;text-decoration:none;line-height:1.45}
-.secidx .card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
-.secidx .card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}.secidx .card span{font-size:14px;color:#4A5668}
-.secidx .card .chl{font-size:13px;color:#0B5F86}
-</style>
 </head>
 <body>
 <a href="#content" class="skip">Skip to content</a>
@@ -67,10 +122,9 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 
 
 <div style="font-family: Inter, system-ui, sans-serif; color: #0F1B2D; background: #FFFFFF">
-
-<header style="border-bottom: 1px solid #E3E8EF; background: #FFFFFF">
+<header style="border-bottom: 1px solid #E3E8EF">
 <div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #0F1B2D; text-decoration: none">
+<a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #0F1B2D">
 <img src="ncigt-logo.png" alt="AT-NCIGT logo" width="52" height="52" style="display:block">
 <span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">AT-NCIGT</strong><span style="font-size: 12px; color: #4A5668">Advanced Technologies - National Center for Image Guided Therapy</span></span>
 </a>
@@ -86,7 +140,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
 <li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-team.html">Center team<small>Principal investigators and project leads</small></a></li>
 <li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
 </ul></div></div></div>
 <div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
@@ -99,8 +152,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
 <div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
 <li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#shared">Recently shared software and data<small>New releases from center investigators</small></a></li>
-<li><a href="page-software-and-tutorials.html">Software and tutorials<small>3D Slicer, OpenIGTLink and more</small></a></li>
+<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
@@ -136,99 +188,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header>
-<div id="content"></div>
-<section id="top" style="background: #0F1B2D; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 44px">
-<p style="margin: 0 0 10px; font-size: 14px; font-weight: 600"><a href="index.html" style="color: #D9B98F">Home</a></p>
-<h1 style="margin: 0 0 10px; font-size: 40px; line-height: 1.15; color: #FFFFFF">Resources for collaborators</h1>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9D3E0; max-width: 820px">Equipment, tools, software and data that center investigators share with collaborators.</p>
-</div>
-</section>
-<section id="resources" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 24px">
-<p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Resources and equipment</p>
-<h2 style="margin: 0 0 12px; font-size: 32px; line-height: 1.2">Equipment and tools available to collaborators</h2>
-<p style="margin: 0 0 32px; font-size: 17px; line-height: 1.6; color: #4A5668; max-width: 820px">Center resources are available to collaborators through the investigators who run them. Each listing names the person to contact.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">High-performance MRI</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Ultra-high-performance gradient (MAGNUS) and 7T MRI for advanced diffusion and quantitative imaging.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Stephan Maier</span></div>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">MRI-guided robotics</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">MRI-compatible needle-guidance robots and shape-sensing needles for prostate and pelvic procedures.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Junichi Tokuda</span></div>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">Robotic navigation and bronchoscopy</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Continuum robots and vision-based navigation for bronchoscopy and endoluminal procedures.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Nobuhiko Hata</span></div>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">Implantable microdevices</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Microdevice design, implantation and multi-omic analysis of in situ drug response.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Oliver Jonas</span></div>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">Surgical vision and augmented reality</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Stereo endoscopy, 3D surface reconstruction and AR navigation for surgery.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Jagadeesan Jayender</span></div>
-</article>
-
-</div>
-</section>
-<section aria-labelledby="shared" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 24px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 24px">
-<div><p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Shared with the community</p>
-<h2 id="shared" style="margin: 0; font-size: 28px; line-height: 1.2">Recently shared software and data</h2></div>
-<a href="page-software-and-tutorials.html" style="font-weight: 600">All software, data and tutorials →</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Software</span>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">3D Slicer and OpenIGTLink</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">The open platform and device-communication protocol behind the center’s navigation tools.</p>
-<a href="#shared" style="margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 14px">Get the software →</a>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Software</span>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">Iceball prediction and cryo-dose modules</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Tools for planning and monitoring MRI-guided prostate cryoablation.</p>
-<a href="#shared" style="margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 14px">Get the modules →</a>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Software</span>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">SlicerProstate / SliceTracker</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Planning and tracking for MRI-guided prostate biopsy.</p>
-<a href="#shared" style="margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 14px">Get the software →</a>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Data</span>
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">ReMIND brain resection dataset</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Multimodal imaging from brain tumor surgeries in AMIGO, on The Cancer Imaging Archive.</p>
-<a href="#shared" style="margin-top: auto; padding-top: 6px; font-weight: 600; font-size: 14px">Get the data →</a>
-</article>
-
-</div>
-</section>
-<section class="secidx" aria-label="Resources: In this section"><div class="w"><h2>In this section</h2><div class="cards"><a class="card" href="page-software-and-tutorials.html"><strong>Software and tutorials</strong><span>3D Slicer, OpenIGTLink and more</span></a><a class="card" href="page-fast-imaging-library.html"><strong>Fast Imaging Library</strong><span>Reconstruction code for accelerated MRI</span></a><a class="card" href="page-online-lectures.html"><strong>Online lectures</strong><span>Free recorded talks and seminars</span></a></div></div></section>
-<footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px">
-<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between">
-<div style="flex: 1 1 320px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong><br>Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School<br>[Street address], Boston, MA</div>
-<div style="flex: 1 1 260px; line-height: 1.6">Supported by the National Institute of Biomedical Imaging and Bioengineering, P41EB028741</div>
-<nav aria-label="Footer" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px"><a href="index.html#about" style="color: #FFFFFF">About</a><a href="news.html" style="color: #FFFFFF">News and seminars archive</a><a href="publications.html" style="color: #FFFFFF">Publications</a><a href="sitemap.html" style="color: #FFFFFF">All pages</a><a href="index.html#contact" style="color: #FFFFFF">LinkedIn</a></nav>
-</div>
-</footer>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a></p><h1>Resources</h1><p class="lede">Software, data, equipment and recorded lectures that the center shares.</p></div></section><div class="lay"><aside class="side"><nav class="snav" aria-label="Resources section"><a class="sh" href="resources.html" aria-current="page">Resources</a><a href="page-fast-imaging-library.html">Fast Imaging Library</a><a href="page-online-lectures.html">Online lectures</a></nav><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#at-a-glance">At a glance</a><a href="#equipment">Equipment and tools</a><a href="#shared">Recently shared</a><a href="#software">Software, tutorials and data</a><a href="#pages-in-this-section">Pages in this section</a><a href="#contact-and-links">Contact and links</a></nav></aside><article class="arc"><figure aria-label="Picture to come" class="banner ph"><span>[Photo: equipment in a center laboratory]</span></figure><p class="lead">Equipment, software, tutorials and data that the center shares. Equipment is available to collaborators through the investigator who runs it; software and data are open to everyone.</p><section class="glance"><h2 id="at-a-glance">At a glance</h2><dl><div><dt>Equipment</dt><dd>5 shared facilities</dd></div><div><dt>Software</dt><dd>Open source, built on 3D Slicer</dd></div><div><dt>Data</dt><dd>Prostate MRI, ReMIND brain resection</dd></div><div><dt>Lectures</dt><dd><a href="page-online-lectures.html">50 recorded talks</a></dd></div></dl></section><h2 id="equipment">Equipment and tools</h2><div class="cards"><div class="card"><span class="kicker">Contact: Stephan Maier</span><strong>High-performance MRI</strong><span>Ultra-high-performance gradient (MAGNUS) and 7T MRI for advanced diffusion and quantitative imaging.</span></div><div class="card"><span class="kicker">Contact: Junichi Tokuda</span><strong>MRI-guided robotics</strong><span>MRI-compatible needle-guidance robots and shape-sensing needles for prostate and pelvic procedures.</span></div><div class="card"><span class="kicker">Contact: Nobuhiko Hata</span><strong>Robotic navigation and bronchoscopy</strong><span>Continuum robots and vision-based navigation for bronchoscopy and endoluminal procedures.</span></div><div class="card"><span class="kicker">Contact: Oliver Jonas</span><strong>Implantable microdevices</strong><span>Microdevice design, implantation and multi-omic analysis of in situ drug response.</span></div><div class="card"><span class="kicker">Contact: Jagadeesan Jayender</span><strong>Surgical vision and augmented reality</strong><span>Stereo endoscopy, 3D surface reconstruction and AR navigation for surgery.</span></div></div><h2 id="shared">Recently shared</h2><div class="cards"><div class="card"><span class="kicker">Software</span><strong>3D Slicer and OpenIGTLink</strong><span>The open platform and device-communication protocol behind the center’s navigation tools.</span></div><div class="card"><span class="kicker">Software</span><strong>Iceball prediction and cryo-dose modules</strong><span>Tools for planning and monitoring MRI-guided prostate cryoablation.</span></div><div class="card"><span class="kicker">Software</span><strong>SlicerProstate / SliceTracker</strong><span>Planning and tracking for MRI-guided prostate biopsy.</span></div><div class="card"><span class="kicker">Data</span><strong>ReMIND brain resection dataset</strong><span>Multimodal imaging from brain tumor surgeries in AMIGO, on The Cancer Imaging Archive.</span></div></div><h2 id="software">Software, tutorials and data</h2><div class="cards"><a class="card" href="http://download.slicer.org/"><span class="kicker">Software</span><strong>3D Slicer</strong><span>The open platform behind our navigation tools</span></a><a class="card" href="http://openigtlink.org/"><span class="kicker">Software</span><strong>OpenIGTLink</strong><span>Connects devices in the operating room</span></a><a class="card" href="https://rosmed.github.io/"><span class="kicker">Software</span><strong>ROS for Medical Robotics (ROS-MED)</strong><span>Robot software for image-guided interventions</span></a><a class="card" href="https://github.com/QIICR/TCIABrowser"><span class="kicker">Software</span><strong>TCIA Browser</strong><span>Load Cancer Imaging Archive data into 3D Slicer</span></a><a class="card" href="http://www.slicerigt.org/wp/user-tutorial/"><span class="kicker">Tutorials</span><strong>SlicerIGT tutorials</strong><span>Building navigation systems with 3D Slicer</span></a><a class="card" href="https://training.slicer.org/"><span class="kicker">Tutorials</span><strong>All 3D Slicer tutorials</strong><span>From basic use to development</span></a><a class="card" href="http://perktutor.github.io/index.html"><span class="kicker">Tutorials</span><strong>Perk Tutor</strong><span>Training platform for image-guided interventions</span></a><a class="card" href="http://www.youtube.com/channel/UC11x1iQ7ydSIFYw4L6wveXg/playlists"><span class="kicker">Tutorials</span><strong>Video playlists and demos</strong><span>Recorded demonstrations</span></a><a class="card" href="http://prostatemrimagedatabase.com/Database/index.html"><span class="kicker">Data</span><strong>Prostate MR Image Database</strong><span>Prostate MRI for research</span></a><a class="card" href="https://www.cancerimagingarchive.net/collection/remind/"><span class="kicker">Data</span><strong>ReMIND</strong><span>Brain resection multimodal imaging, on TCIA</span></a><a class="card" href="https://snr.spl.harvard.edu/data/"><span class="kicker">Data</span><strong>Surgical Navigation and Robotics Laboratory data</strong><span>Datasets and open-source software</span></a></div><h2 id="pages-in-this-section">Pages in this section</h2><div class="cards"><a class="card" href="page-fast-imaging-library.html"><strong>Fast Imaging Library</strong><span>Reconstruction code for accelerated MRI</span></a><a class="card" href="page-online-lectures.html"><strong>Online lectures</strong><span>Free recorded talks and seminars</span></a></div><section class="next"><h2 id="contact-and-links">Contact and links</h2><p><strong>Contact:</strong> The investigator named on each piece of equipment; for software, the project leads</p><div class="cards"><a class="card" href="page-fast-imaging-library.html"><strong>Fast Imaging Library</strong></a><a class="card" href="page-online-lectures.html"><strong>Online lectures</strong></a></div></section></article></div></main>
+<footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 
 </body>
