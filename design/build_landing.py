@@ -137,7 +137,7 @@ def main():
         for h, b in p['body']:
             hid = f' id="{IDS[h]}"' if h in IDS else ''
             body += f'<h2{hid}>{esc(h)}</h2>{b}'
-        body += pages_block(sec)
+        if sec['key'] != 'about': body += pages_block(sec)
         body += nextblock(p['contact'], p['links'])
         body, toc = restyle.add_ids(body)
         snav = restyle.section_nav(f, sec)
