@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NCIGT homepage on a phone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
+</style>
+</helmet>
+<div style="width: 390px; height: 9000px; overflow: hidden; font-family: Inter, system-ui, sans-serif; color: #0F1B2D; background: #FFFFFF">
+
+<header style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid #E3E8EF">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; color: #0F1B2D">
+<svg width="30" height="30" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="none" stroke="#0B5F86" stroke-width="2.5"></circle><circle cx="18" cy="18" r="6" fill="#A8763E"></circle><path d="M18 2v8M18 26v8M2 18h8M26 18h8" stroke="#0B5F86" stroke-width="2.5"></path></svg>
+<strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px">NCIGT</strong>
+</a>
+<button aria-label="Open menu" style="width: 44px; height: 44px; border: 1px solid #E3E8EF; border-radius: 10px; background: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F1B2D" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</header>
+
+<section id="top" style="background: #0F1B2D; color: #FFFFFF; padding: 32px 20px 28px">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Mass General Brigham · Harvard Medical School</p>
+<h1 style="margin: 0 0 14px; font-size: 28px; line-height: 1.22">A community for image-guided therapy research</h1>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.55; color: #C9D3E0">Investigators, clinicians, partner institutions and trainees, brought together around shared research, clinical and training resources.</p>
+<div style="display: flex; gap: 8px; margin-bottom: 18px"><div role="img" aria-label="Placeholder for portrait" style="flex: 1 1 0; width: auto; aspect-ratio: 1 / 1; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 1 1 0; width: auto; aspect-ratio: 1 / 1; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 1 1 0; width: auto; aspect-ratio: 1 / 1; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 1 1 0; width: auto; aspect-ratio: 1 / 1; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 1 1 0; width: auto; aspect-ratio: 1 / 1; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div></div>
+<a href="#research" style="display: block; background: #FFFFFF; color: #0F1B2D; padding: 14px; border-radius: 8px; font-weight: 600; text-align: center">Meet our people</a>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+<a href="#partner" style="border: 1.5px solid #FFFFFF; color: #FFFFFF; padding: 13px 8px; border-radius: 8px; font-weight: 600; text-align: center; font-size: 15px">Partner with us</a>
+<a href="#training" style="border: 1.5px solid #FFFFFF; color: #FFFFFF; padding: 13px 8px; border-radius: 8px; font-weight: 600; text-align: center; font-size: 15px">Training</a>
+</div>
+</section>
+
+<section aria-label="The center at a glance" style="background: #F3F6FA; padding: 22px 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<sc-for list="{{stats}}" as="s" hint-placeholder-count="4">
+<div><div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 26px; font-weight: 600; color: #0B5F86">{{s.v}}</div><div style="font-size: 13px; line-height: 1.4; color: #4A5668">{{s.l}}</div></div>
+</sc-for>
+</section>
+
+<section id="research" style="padding: 32px 20px 8px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Our people</p>
+<h2 style="margin: 0 0 8px; font-size: 24px; line-height: 1.25">The investigators behind the research</h2>
+<p style="margin: 0 0 12px; font-size: 15px; line-height: 1.55; color: #4A5668">Investigators who led work published in the past five years with center support.</p>
+<sc-for list="{{pis}}" as="p" hint-placeholder-count="6">
+<div style="padding: 12px 0; border-top: 1px solid #E3E8EF; display: flex; gap: 12px"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div><div style="min-width: 0">
+<div style="font-weight: 600; font-size: 16px">{{p.name}}</div>
+<div style="font-size: 14px; color: #4A5668; margin-top: 2px; line-height: 1.4">{{p.area}}</div>
+<div style="display: flex; gap: 14px; margin-top: 6px; font-size: 13px; font-weight: 600"><a href="#contact">Collaborate</a><a href="#contact">Invite to speak</a><a href="#training">Join the lab</a></div>
+</div></div>
+</sc-for>
+<a href="#research" style="display: block; padding-top: 12px; border-top: 1px solid #E3E8EF; font-weight: 600; font-size: 15px">All publications →</a>
+<div style="margin-top: 18px; background: #F6F1EA; border-radius: 12px; padding: 16px">
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Rising investigators</div>
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; font-weight: 600; margin: 4px 0 10px">Ready for their next step</div>
+<sc-for list="{{rising}}" as="r" hint-placeholder-count="3">
+<div style="padding: 10px 0; border-top: 1px solid #E2D6C6"><strong style="font-size: 15px">{{r.name}}</strong><div style="font-size: 13px; color: #4A5668">{{r.role}}</div><div style="font-size: 12px; font-weight: 600; color: #8A5A2B; margin-top: 2px">Open to: {{r.open}}</div></div>
+</sc-for>
+</div>
+</section>
+
+<section style="padding: 28px 20px 8px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Partner research</p>
+<h2 style="margin: 0 0 14px; font-size: 22px; line-height: 1.25">Enabled through collaborative and service projects</h2>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{partners}}" as="x" hint-placeholder-count="4">
+<article style="border-left: 3px solid #A8763E; background: #F7F9FC; border-radius: 0 10px 10px 0; padding: 12px 14px">
+<div style="display: flex; gap: 10px; align-items: center"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div><div style="font-size: 12px; font-weight: 600; color: #8A5A2B">{{x.type}} · {{x.lead}}</div></div>
+<div style="font-size: 14px; line-height: 1.4; margin-top: 4px"><em>{{x.title}}</em></div>
+<div style="font-size: 13px; color: #4A5668; margin-top: 2px">{{x.venue}}</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section id="industry" style="padding: 28px 20px 8px">
+<div style="background: #0F1B2D; color: #FFFFFF; border-radius: 12px; padding: 20px">
+<p style="margin: 0 0 6px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Industry partners</p>
+<h2 style="margin: 0 0 8px; font-size: 21px; line-height: 1.25; color: #FFFFFF">From a clinical need to a device ready for patients</h2>
+<p style="margin: 0 0 14px; font-size: 14px; line-height: 1.55; color: #C9D3E0">We particularly welcome companies, with a long record of SBIR and STTR collaboration, from clinical needs to patient studies and regulatory data.</p>
+<a href="#industry" style="display: block; background: #FFFFFF; color: #0F1B2D; padding: 13px; border-radius: 8px; font-weight: 600; text-align: center">Working with industry →</a>
+</div>
+</section>
+
+<section id="partner" style="padding: 32px 20px 8px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Partner with the center</p>
+<h2 style="margin: 0 0 10px; font-size: 24px; line-height: 1.25">Talk to us. We can help.</h2>
+<p style="margin: 0 0 16px; font-size: 15px; line-height: 1.55; color: #4A5668">We are especially interested in partnerships that connect with our technology projects. Any part of our methods, tools or technology can be a starting point.</p>
+<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="3">
+<div style="background: #F3F6FA; border-radius: 10px; padding: 14px; display: flex; gap: 12px">
+<span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 600; color: #A8763E">{{s.n}}</span>
+<div><strong style="font-size: 15px">{{s.title}}</strong><div style="font-size: 14px; line-height: 1.5; color: #4A5668; margin-top: 2px">{{s.text}}</div></div>
+</div>
+</sc-for>
+</div>
+<h3 style="margin: 0 0 8px; font-size: 19px">Where your work could connect</h3>
+<sc-for list="{{trds}}" as="t" hint-placeholder-count="3">
+<div style="padding: 12px 0; border-top: 1px solid #E3E8EF">
+<div style="font-size: 12px; font-weight: 600; color: #8A5A2B">{{t.tag}}</div>
+<div style="font-weight: 600; font-size: 15px; margin-top: 2px">{{t.title}}</div>
+<a href="#partner" style="display: block; font-size: 14px; font-weight: 600; margin-top: 4px">Talk to {{t.lead}} →</a>
+</div>
+</sc-for>
+<div style="margin-top: 12px; background: #F3F6FA; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.5"><strong>Formal partnerships.</strong> Collaborations can grow into collaborative or service projects, open to groups leading active, funded research.</div>
+<div style="margin-top: 12px; background: #F6F1EA; border-radius: 12px; padding: 16px">
+<strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px">A place to exchange ideas</strong>
+<p style="margin: 6px 0 12px; font-size: 14px; line-height: 1.55; color: #3A4658">We hope to bring partners together at meetings to share results and interests.</p>
+<a href="#partner" style="display: block; background: #0B5F86; color: #FFFFFF; padding: 13px; border-radius: 8px; font-weight: 600; text-align: center">Start a conversation</a>
+</div>
+</section>
+
+<section id="training" style="padding: 32px 20px 8px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Training</p>
+<h2 style="margin: 0 0 14px; font-size: 24px; line-height: 1.25">Where training with us can lead</h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{alumni}}" as="a" hint-placeholder-count="3">
+<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 16px; display: flex; gap: 14px">
+<div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 56px; height: 56px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div>
+<div style="min-width: 0"><div style="font-weight: 600; font-size: 16px">{{a.name}}</div><div style="font-size: 13px; font-weight: 600; color: #8A5A2B; margin-top: 2px; line-height: 1.4">{{a.path}}</div></div>
+</article>
+</sc-for>
+</div>
+<div style="margin-top: 14px; background: #0B5F86; color: #FFFFFF; border-radius: 12px; padding: 18px">
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #CFE3EE">Career accelerator</div>
+<h3 style="margin: 4px 0 8px; font-size: 18px; color: #FFFFFF">T32 Training in Image Guidance, Precision Diagnosis and Therapy</h3>
+<p style="margin: 0 0 10px; font-size: 14px; line-height: 1.55; color: #E2EEF4">NIH NIBIB support for postdoctoral fellows, with structured mentoring toward independent careers.</p>
+<a href="#training" style="color: #FFFFFF; font-weight: 600; text-decoration: underline; font-size: 15px">About the T32 →</a>
+</div>
+</section>
+
+<section id="clinical" style="background: #0F1B2D; color: #FFFFFF; padding: 32px 20px; margin-top: 24px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Clinical research</p>
+<h2 style="margin: 0 0 8px; font-size: 24px; line-height: 1.25">Clinicians using the center as a platform</h2>
+<p style="margin: 0 0 16px; font-size: 15px; line-height: 1.55; color: #C9D3E0">Clinical investigators across the Brigham use center resources in their own studies. New clinical collaborators are warmly invited.</p>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{clinical}}" as="c" hint-placeholder-count="6">
+<article style="background: #1A2A42; border-radius: 10px; padding: 14px 16px">
+<div style="display: flex; gap: 6px; margin-bottom: 8px"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: #24385A; border: 1px dashed #4A5E7A"></div></div>
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; font-weight: 600">{{c.field}}</div>
+<div style="font-size: 13px; color: #D9B98F; font-weight: 600; margin-top: 2px">{{c.people}}</div>
+<div style="font-size: 14px; line-height: 1.5; color: #C9D3E0; margin-top: 6px">{{c.what}}</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section id="resources" style="padding: 32px 20px 8px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Resources and equipment</p>
+<h2 style="margin: 0 0 14px; font-size: 24px; line-height: 1.25">Work with us, and work with these resources</h2>
+<div style="background: #F6F1EA; border-radius: 12px; padding: 16px">
+<div role="img" aria-label="Placeholder for a photograph of the AMIGO suite" style="height: 170px; border-radius: 10px; background: #E9DFD2; border: 1px dashed #B79C7C; display: flex; align-items: center; justify-content: center; color: #6B5640; font-size: 14px">[Photograph of the AMIGO suite]</div>
+<h3 style="margin: 14px 0 6px; font-size: 20px">The AMIGO suite</h3>
+<p style="margin: 0 0 8px; font-size: 14px; line-height: 1.55; color: #3A4658">MRI, PET/CT and X-ray imaging with a fully equipped procedure room, for research during clinical procedures.</p>
+<a href="#resources" style="font-weight: 600; font-size: 15px">Research use of AMIGO →</a>
+</div>
+<div style="display: flex; flex-direction: column; margin-top: 8px">
+<sc-for list="{{equip}}" as="e" hint-placeholder-count="6">
+<div style="padding: 12px 0; border-bottom: 1px solid #E3E8EF; display: flex; gap: 12px; align-items: center"><div role="img" aria-label="Placeholder for portrait" style="flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div><div><div style="font-weight: 600; font-size: 16px">{{e.name}}</div><div style="font-size: 14px; color: #0B5F86; margin-top: 2px">Contact: {{e.who}}</div></div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section id="community" style="background: #F6F1EA; padding: 32px 20px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Celebrating our community</p>
+<h2 style="margin: 0 0 16px; font-size: 24px">Recent achievements</h2>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{wins}}" as="w" hint-placeholder-count="4">
+<article style="background: #FFFFFF; border-radius: 10px; padding: 14px 16px">
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">{{w.kind}} · {{w.date}}</div>
+<div style="font-size: 15px; font-weight: 600; line-height: 1.4; margin-top: 4px">{{w.title}}</div>
+</article>
+</sc-for>
+</div>
+<p style="margin: 16px 0 6px; font-size: 14px; line-height: 1.5">We feature publications, talks, awards and grants from investigators, partners and trainees.</p>
+<a href="#community" style="font-weight: 600; font-size: 15px">Share your news →</a>
+</section>
+
+<section id="about" style="padding: 32px 20px 8px">
+<div style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px">
+<p style="margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Our home</p>
+<h2 style="margin: 0 0 8px; font-size: 21px; line-height: 1.25">Made possible by Mass General Brigham</h2>
+<p style="margin: 0 0 12px; font-size: 14px; line-height: 1.6; color: #3A4658">The center's work depends on the clinical expertise, research infrastructure and patients of Brigham and Women's Hospital and Mass General Brigham, and on our collaborators at Massachusetts General Hospital.</p>
+<a href="#about" style="font-weight: 600; font-size: 15px">Leadership and organization →</a>
+</div>
+</section>
+
+<section id="history" style="padding: 28px 20px 8px">
+<h2 style="margin: 0 0 8px; font-size: 22px">History of the center</h2>
+<p style="margin: 0 0 14px; font-size: 14px; line-height: 1.55; color: #4A5668">We gratefully acknowledge the investigators, staff and trainees of each funding cycle.</p>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{cycles}}" as="y" hint-placeholder-count="3">
+<article style="border-left: 4px solid {{y.color}}; background: #F7F9FC; border-radius: 0 10px 10px 0; padding: 12px 14px">
+<div style="font-size: 12px; font-weight: 600; color: #8A5A2B">{{y.years}} · {{y.grant}}</div>
+<div style="font-weight: 600; font-size: 15px; margin-top: 2px">{{y.name}}</div>
+<p style="margin: 4px 0 0; font-size: 13px; line-height: 1.5; white-space: pre-line">{{y.people}}</p>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section id="contact" style="padding: 24px 20px 28px">
+<div style="border-top: 1px solid #E3E8EF; padding-top: 18px">
+<h2 style="margin: 0 0 10px; font-size: 22px">Get in touch</h2>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<a href="#contact" style="border: 1.5px solid #0B5F86; padding: 12px; border-radius: 8px; font-weight: 600; text-align: center">Research collaboration</a>
+<a href="#contact" style="border: 1.5px solid #0B5F86; padding: 12px; border-radius: 8px; font-weight: 600; text-align: center">Industry partnership</a>
+<a href="#contact" style="border: 1.5px solid #0B5F86; padding: 12px; border-radius: 8px; font-weight: 600; text-align: center">Positions and training</a>
+<a href="#contact" style="border: 1.5px solid #0B5F86; padding: 12px; border-radius: 8px; font-weight: 600; text-align: center">Invite a speaker</a>
+</div>
+</div>
+</section>
+
+<footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px; line-height: 1.6; padding: 24px 20px">
+<strong style="color: #FFFFFF">National Center for Image Guided Therapy</strong><br>Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School<br>Supported by NIBIB P41EB028741
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":9000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+steps: [
+{ n: '1', title: 'Start a conversation', text: 'Tell us about your research. No formal proposal is needed, and we will connect you with the right investigators.' },
+{ n: '2', title: 'Collaborate', text: 'Begin working together as a collaborator, using our tools, methods or expertise where they help.' },
+{ n: '3', title: 'Grow into a formal partnership', text: 'When the work grows, it can become a collaborative or service project with the center.' }
+],
+trds: [
+{ tag: 'TR&D 1', title: 'Imaging cancer heterogeneity', lead: '[TR&D 1 lead]' },
+{ tag: 'TR&D 2', title: 'Implantable microdevices', lead: '[TR&D 2 lead]' },
+{ tag: 'TR&D 3', title: 'Enabling technologies for data-driven interventions', lead: '[TR&D 3 lead]' }
+],
+stats: [
+{ v: '170+', l: 'publications since 2021' },
+{ v: '14', l: 'center investigators' },
+{ v: '22', l: 'partner projects' },
+{ v: '209', l: 'Project Week participants' }
+],
+wins: [
+{ kind: 'Award', date: 'Sep 2025', title: 'Junichi Tokuda receives the Academy for Radiology and Biomedical Imaging Research Distinguished Investigator Award' },
+{ kind: 'Lecture', date: '2026', title: 'Clare Tempany delivers the Negendak Memorial Lecture at ISMRM' },
+{ kind: 'Partner paper', date: 'Oct 2025', title: 'Service project with the University of Michigan published in Nature' },
+{ kind: 'New grant', date: 'Aug 2025', title: 'Former trainee Haoyin Zhou awarded an independent NIBIB R01' }
+],
+rising: [
+{ name: '[Name]', role: '[Assistant Professor of Radiology]', open: 'collaborations, talks, faculty positions' },
+{ name: '[Name]', role: '[Instructor in Radiology]', open: 'collaborations, talks, faculty positions' },
+{ name: '[Name]', role: '[Senior research fellow]', open: 'collaborations, faculty positions' }
+],
+pis: [
+{ name: 'Oliver Jonas', area: 'Implantable microdevices for measuring drug response' },
+{ name: 'Lauren J. O’Donnell', area: 'Diffusion MRI tractography and white-matter analysis' },
+{ name: 'Nobuhiko Hata', area: 'Robotic navigation for bronchoscopy and prostate interventions' },
+{ name: 'Junichi Tokuda', area: 'MRI-guided robotic prostate interventions' },
+{ name: 'Jagadeesan Jayender', area: 'Surgical navigation and computer vision' },
+{ name: 'Stephan E. Maier', area: 'Quantitative diffusion MRI' },
+{ name: 'Fiona M. Fennessy', area: 'Quantitative prostate MRI' },
+{ name: 'Sarah F. Frisken', area: 'Image analysis for brain tumor surgery' },
+{ name: 'Nathalie Y. R. Agar', area: 'Mass spectrometry imaging' },
+{ name: 'Clare M. Tempany', area: 'Prostate MRI and image-guided therapy' },
+{ name: 'Alexandra J. Golby', area: 'Image-guided neurosurgery' },
+{ name: 'Ron Kikinis', area: 'Open-source medical image computing' },
+{ name: 'Tina Kapur', area: 'Neurosurgical imaging data and machine learning' },
+{ name: 'William M. Wells III', area: 'Image registration and multimodal learning' }
+],
+partners: [
+{ type: 'Service project', lead: 'University of Michigan', title: 'Rewiring of cortical glucose metabolism fuels human brain cancer growth', venue: 'Nature, 2025' },
+{ type: 'Collaborative project', lead: 'Mayo Clinic', title: 'Preclinical modeling of navtemadlin in IDH-wild-type glioblastoma', venue: 'Clin Cancer Res, 2025' },
+{ type: 'Service project', lead: 'Columbia University', title: 'Chronic convection-enhanced delivery of topotecan for recurrent glioblastoma', venue: 'Lancet Oncol, 2022' },
+{ type: 'Collaborative project', lead: 'Worcester Polytechnic Institute', title: 'Robot-assisted photoacoustic imaging for monitoring liver ablation', venue: 'J Biomed Opt, 2026' }
+],
+clinical: [
+{ field: 'Prostate cancer', people: 'Tempany, Tuncali, Kibel, Fennessy', what: 'MRI-guided biopsy, cryoablation and microdevice implantation.' },
+{ field: 'Brain tumor surgery', people: 'Golby and neurosurgery colleagues', what: 'Intraoperative imaging and navigation in AMIGO.' },
+{ field: 'Neuro-oncology trials', people: 'Wen, Lee, Agar', what: 'Drug levels and response measured in tumor tissue.' },
+{ field: 'Breast surgery', people: 'Gombos and breast surgery colleagues', what: 'Intraoperative supine breast MRI.' },
+{ field: 'Thoracic and skull base surgery', people: 'Swanson, Corrales, Jayender', what: 'Margin assessment and trackerless navigation.' },
+{ field: 'Interventional radiology', people: 'Shyn, Bhagavatula', what: 'PET/CT-guided ablation and in situ drug response.' }
+],
+equip: [
+{ name: 'Mass spectrometry imaging', who: 'Nathalie Agar' },
+{ name: 'High-performance and 7T MRI', who: 'Stephan Maier' },
+{ name: 'MRI-guided robotics', who: 'Junichi Tokuda' },
+{ name: 'Robotic navigation and bronchoscopy', who: 'Nobuhiko Hata' },
+{ name: 'Implantable microdevices', who: 'Oliver Jonas' },
+{ name: 'Surgical vision and AR', who: 'Jagadeesan Jayender' }
+],
+alumni: [
+{ name: 'Haoyin Zhou, PhD', path: 'Trainee → K99 → NIBIB R01 → Assistant Professor' },
+{ name: '[Name]', path: '[Training role] → [current position]' },
+{ name: '[Name]', path: '[Training role] → [current position]' }
+],
+cycles: [
+{ years: '[Years]', name: 'National Center for Image Guided Therapy', grant: 'P41EB015898', people: 'Founded by Ferenc A. Jolesz, MD.', color: '#9FB0C6' },
+{ years: '[Years]–2026', name: 'Advanced Technologies for NCIGT', grant: 'P41EB028741', people: 'PI: Clare Tempany, MD\nTRD 1: Nathalie Agar · TRD 2: Junichi Tokuda\nTRD 3: Nobuhiko Hata · Training: Tina Kapur', color: '#0B5F86' },
+{ years: '2026–2031', name: 'NCIGT, current cycle', grant: '2P41EB028741-06', people: 'Contact PI: Clare Tempany, MD\nMultiple PI: Nobuhiko Hata, PhD', color: '#A8763E' }
+]
+};
+}
+}
+</script>
+</body>
+</html>
