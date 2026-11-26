@@ -57,10 +57,11 @@ img{max-width:100%}
  [style*="padding: 40px"],[style*="padding: 36px"],[style*="padding: 32px;"]{padding:22px!important}
 }
 '''
-links = {'href="Industry.dc.html"':'href="industry.html"','href="Main.dc.html"':'href="index.html"','href="TRD1.dc.html"':'href="trd1.html"','href="TRD2.dc.html"':'href="trd2.html"','href="TRD3.dc.html"':'href="trd3.html"'}
+links = {'Industry.dc.html':'industry.html','Main.dc.html':'index.html','TRD1.dc.html':'trd1.html','TRD2.dc.html':'trd2.html','TRD3.dc.html':'trd3.html','People.dc.html':'people.html'}
 P='/home/claude/ncigt/project/'
 pages=[('Main','index','AT-NCIGT · Advanced Technologies - National Center for Image Guided Therapy (draft)','Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT) at Brigham and Women\'s Hospital: imaging, microdevices, robotics and navigation research for image-guided therapy.'),
 ('Industry','industry','Working with industry · AT-NCIGT (draft)','How AT-NCIGT partners with companies, from clinical needs to patient studies and regulatory data.'),
+('People','people','People · AT-NCIGT (draft)','Investigators, clinicians, scientists and collaborators of AT-NCIGT.'),
 ('TRD1','trd1','TR&D 1: Imaging cancer heterogeneity · AT-NCIGT (draft)','AT-NCIGT TR&D 1: advanced diffusion and CEST MRI at 3T and 7T.'),
 ('TRD2','trd2','TR&D 2: Implantable microdevices · AT-NCIGT (draft)','AT-NCIGT TR&D 2: implantable microdevices that measure drug response inside tumors.'),
 ('TRD3','trd3','TR&D 3: Enabling technologies for data-driven interventions · AT-NCIGT (draft)','AT-NCIGT TR&D 3: robotic needle guidance and augmented-reality navigation.')]

@@ -24,11 +24,16 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="none" stroke="#0B5F86" stroke-width="2.5"></circle><circle cx="18" cy="18" r="6" fill="#A8763E"></circle><path d="M18 2v8M18 26v8M2 18h8M26 18h8" stroke="#0B5F86" stroke-width="2.5"></path></svg>
 <span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">NCIGT</strong><span style="font-size: 12px; color: #4A5668">National Center for Image Guided Therapy</span></span>
 </a>
-<nav aria-label="Research projects" style="display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; font-weight: 500">
-<a href="TRD1.dc.html" style="color: #0F1B2D">TR&amp;D 1</a>
-<a href="TRD2.dc.html" style="color: #0F1B2D">TR&amp;D 2</a>
-<a href="TRD3.dc.html" style="color: #0F1B2D">TR&amp;D 3</a>
-<a href="Main.dc.html" style="color: #0F1B2D">Home</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; font-weight: 500">
+<a href="Main.dc.html#research" style="color: #0F1B2D">Research</a>
+<a href="People.dc.html" style="color: #0F1B2D">People</a>
+<a href="Main.dc.html#clinical" style="color: #0F1B2D">AMIGO</a>
+<a href="Main.dc.html#resources" style="color: #0F1B2D">Resources</a>
+<a href="Main.dc.html#training" style="color: #0F1B2D">Training</a>
+<a href="Industry.dc.html" style="color: #0F1B2D">Industry</a>
+<a href="Main.dc.html#partner" style="color: #0F1B2D">Partner with us</a>
+<a href="Main.dc.html#community" style="color: #0F1B2D">News</a>
+<a href="Main.dc.html#about" style="color: #0F1B2D">About</a>
 </nav>
 </div>
 </header>
