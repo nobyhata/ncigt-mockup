@@ -23,14 +23,15 @@ MENU = [
         ('Center team', 'page-team.html', ''),
         ('Trainees and alumni', 'page-trainees.html', 'Current trainees and where graduates are now'),
     ]),
-    ('AMIGO', 'index.html#clinical', 'Clinical research in the AMIGO suite', [
+    ('AMIGO', 'clinical.html', 'Clinical research in the AMIGO suite', [
         ('About the AMIGO suite', 'page-amigo.html', ''),
         ('Procedures in AMIGO', 'page-amigoprocedures.html', ''),
         ('Clinical trials', 'page-clinical-trials.html', ''),
-        ('Clinical studies with the center', 'index.html#clinical', 'Prostate, brain, breast, thoracic and more'),
+        ('Clinical studies with the center', 'clinical.html#studies', 'Prostate, brain, breast, thoracic and more'),
     ]),
-    ('Resources', 'index.html#resources', 'Tools and equipment open to collaborators', [
-        ('Equipment and tools', 'index.html#resources', ''),
+    ('Resources', 'resources.html', 'Tools and equipment open to collaborators', [
+        ('Equipment and tools', 'resources.html', ''),
+        ('Recently shared software and data', 'resources.html#shared', ''),
         ('Software and tutorials', 'page-software-and-tutorials.html', '3D Slicer, OpenIGTLink and more'),
         ('Fast Imaging Library', 'page-fast-imaging-library.html', ''),
         ('Online lectures', 'page-online-lectures.html', ''),
@@ -42,10 +43,11 @@ MENU = [
         ('Project Week hackathons', 'page-project-week.html', ''),
         ('Research seminars', 'page-seminars.html', ''),
     ]),
-    ('Partner with us', 'index.html#partner', 'Collaborate with the center', [
-        ('How to partner with us', 'index.html#partner', ''),
+    ('Partner with us', 'partner.html', 'Collaborate with the center', [
+        ('How to partner with us', 'partner.html', ''),
+        ('Collaborative and service projects', 'partner.html#partner-research', ''),
         ('Working with industry', 'industry.html', 'From a clinical need to a device ready for patients'),
-        ('Collaborations', 'page-collaborations.html', ''),
+        ('Collaborations archive', 'page-collaborations.html', ''),
     ]),
     ('News & events', 'news.html', 'News, seminars and meetings', [
         ('News and seminars', 'news.html', ''),
@@ -53,10 +55,11 @@ MENU = [
         ('National IGT Workshops', 'page-national-image-guided-therapy-workshops.html', ''),
         ('Project Week', 'page-project-week.html', ''),
     ]),
-    ('About', 'index.html#about', 'The center and its history', [
-        ('About the center', 'index.html#about', ''),
-        ('History', 'page-history.html', 'Image-guided therapy research at the Brigham'),
-        ('Contact', 'index.html#contact', ''),
+    ('About', 'about.html', 'The center and its history', [
+        ('About the center', 'about.html', ''),
+        ('History of the center', 'about.html#history', 'NIH funding cycles since the NCIGT'),
+        ('IGT research at the Brigham', 'page-history.html', ''),
+        ('Contact', 'about.html#contact', ''),
         ('All pages', 'sitemap.html', ''),
     ]),
 ]
