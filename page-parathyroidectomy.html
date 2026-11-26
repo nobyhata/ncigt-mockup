@@ -31,16 +31,7 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style>
-.arc{max-width:900px;margin:0 auto;padding:48px 24px 80px;font-size:17px;line-height:1.7;color:#1F2B3D}
-.arc h2{font-size:26px;margin:40px 0 12px;line-height:1.3}.arc h3{font-size:21px;margin:32px 0 10px}.arc h4,.arc h5{font-size:18px;margin:24px 0 8px}
-.arc img{max-width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
-.arc table{border-collapse:collapse;width:100%;font-size:15px;margin:16px 0;display:block;overflow-x:auto}.arc td,.arc th{border:1px solid #E3E8EF;padding:8px 10px;vertical-align:top}
-.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-.arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
-.crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
-.hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style><style id="mm-css">
+<style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
 .mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
@@ -58,6 +49,52 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 </head>
 <body>
@@ -134,143 +171,35 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="sitemap.html" style="color:#D9B98F">All pages</a></p><h1>Parathyroidectomy</h1></div></section><article class="arc">
-
-
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="clinical.html">AMIGO</a></p><h1>Parathyroidectomy</h1></div></section><div class="lay one"><article class="arc">
 <p>We have used AMIGO for the localization of parathyroid glands during parathyroidectomy and recurrent laryngeal nerves during thyroidectomy. Finding parathyroid glands can be challenging, even for the experienced endocrine surgeon, particularly when the glands are ectopic or are present in a re-operative setting. The current methods for localization of parathyroid adenomas rely on preoperative localization with ultrasound and sestamibi; however, these tests are not totally reliable and there are no useful intra-operative imaging methods for detecting parathyroid adenomas. The AMIGO-guided surgery allows the surgeon to focus in on the target parathyroid gland using the navigation system. By comparing the virtual space model of the tumor to the actual dissection, the surgeon can assess the location of the tumor and the extent to which the resection is complete.</p>
 <p>Currently, there are no intra-operative imaging techniques that can aid in the localization of a parathyroid tumor. The surgeon must rely on expertise and judgment when the preoperative localization fails or is discordant. The AMIGO-guided parathyroid surgery provides real-time intraoperative feedback that assesses the location and degree of resection of parathyroid tumors that has not heretofore been possible.</p>
 <p>We have attempted to map the recurrent laryngeal nerve — a nerve that controls the voice — during thyroid surgery. There are currently widely used nerve stimulators for detecting these nerves, but none is able to image them and define their course preoperatively. Using this innovation, we would be able to map this important nerve during thyroid surgery for large goiters or invasive cancers. This technology has the potential for becoming useful in the future, for re-operative parathyroid surgery, and in cases of invasive/anaplastic thyroid cancer in which the nerves can be mapped out in advance.</p>
 <p>The case below illustrates the workflow for parathyroidectomy in AMIGO. A 28-year-old male presented with hypercalcemia and multiple symptoms associated with hyperparathyroidism. A diagnostic workup confirmed autonomous hypersecretion of the parathyroid hormone. Preoperative Tc-Sestamibi imaging revealed a focus of increased radiotracer uptake deep within the central neck in the tracheoesophageal groove. The small and deep-seated tumor would have required a larger incision and more extensive field of dissection without image-guidance. The patient underwent focused left parathyroidectomy in AMIGO.</p>
-
-
-<h2>Parathyroidectomy Workflow in AMIGO</h2>
-
-<figure>
-<img alt="" height="225" loading="lazy" src="media/2023_01_300px-parathyroid1-1.jpg" width="300"/>
-</figure>
-
-
-
-
+<h2 id="parathyroidectomy-workflow-in-amigo">Parathyroidectomy Workflow in AMIGO</h2>
+<div class="cards three"><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_300px-parathyroid1-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_300px-parathyroid1b-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_300px-parathyroid1c-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_parathyroid2a-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_parathyroid2b-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_parathyroid2c-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_300px-parathyroid3-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_parathyroidigt-short31-1.gif"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_300px-parathyroidamigosetting-1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a></div>
 <p><strong>Diagnostic</strong><br/>
 CT Imaging showing the parathyroid adenoma</p>
-
-
-
-
-<figure>
-<img alt="" height="226" loading="lazy" src="media/2023_01_300px-parathyroid1b-1.jpg" width="300"/>
-</figure>
-
-
-
-
 <p><strong>Diagnostic</strong><br/>
 Tc-Sestamibi imaging showing an abnormal tracer uptake</p>
-
-
-
-
-<figure>
-<img alt="" height="225" loading="lazy" src="media/2023_01_300px-parathyroid1c-1.jpg" width="300"/>
-</figure>
-
-
-
-
 <p><strong>Diagnostic</strong><br/>
 US imaging showing the adenoma<br/>
 </p>
-
-
-
-
-<figure>
-<img alt="" height="225" loading="lazy" src="media/2023_01_parathyroid2a-1.jpg" width="300"/>
-</figure>
-
-
-
-
 <p><strong>Surgical Planning</strong><br/>
 3D model generated from preoperative CT using 3D Slicer software – anterior view</p>
-
-
-
-
-<figure>
-<img alt="" height="212" loading="lazy" src="media/2023_01_parathyroid2b-1.jpg" width="283"/>
-</figure>
-
-
-
-
 <p><strong>3D Model</strong><br/>
 Using 3D Slicer software – left view</p>
-
-
-
-
-<figure>
-<img alt="" height="222" loading="lazy" src="media/2023_01_parathyroid2c-1.jpg" width="296"/>
-</figure>
-
-
-
-
 <p><strong>3D Model</strong><br/>
 Using 3D Slicer software – posterior view</p>
-
-
-
-
-<figure>
-<img alt="" height="225" loading="lazy" src="media/2023_01_300px-parathyroid3-1.jpg" width="300"/>
-</figure>
-
-
-
-
 <p>The patient was placed on the operating table in the surgical position and intraoperative MRI was obtained. Using these intraoperative images, three dimensional models of the anatomy were created and provided to the navigation system</p>
-
-
-
-
-<figure>
-<img alt="" height="240" loading="lazy" src="media/2023_01_parathyroidigt-short31-1.gif" width="320"/>
-</figure>
-
-
-
-
 <p>A Bovi pointer was instrumented with a position/orientation sensor to localize the different structures within the neck and guide the surgeon to the adenoma. The use of the navigation system allowed for the procedure to be completed promptly through a tiny incision with minimal dissection. The navigation system display showing the instrument (red cylinder) with respect to the neck anatomy (skin-peach, trachea-aqua, thyroid-yellow, tumor-green (deformed) and blue (undeformed))</p>
-
-
-
-
-<figure>
-<img alt="" height="225" loading="lazy" src="media/2023_01_300px-parathyroidamigosetting-1.jpg" width="300"/>
-</figure>
-
-
-
-
 <p>AMIGO setup showing the Slicer navigation display on the monitor (indicated by red arrow)</p>
-
-
-<h2>Recent Publications</h2>
-
-
-
+<h2 id="recent-publications">Recent Publications</h2>
 <ul>
 <li>Calligaris D, Feldman DR, Norton I, Olubiyi O, Changelian AN, Machaidze R, Vestal ML, Laws ER, Dunn IF, Santagata S, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/26216958/">MALDI Mass Spectrometry Imaging Analysis of Pituitary Adenomas for Near-real-time Tumor Delineation.</a> Proc Natl Acad Sci U S A. 2015;112 (32) :9978-83. PMID: 26216958. PMC4538649</li>
 <li>Jayender J, Lee TC, Ruan DT. <a href="https://pubmed.ncbi.nlm.nih.gov/26132962/">Real-Time Localization of Parathyroid Adenoma during Parathyroidectomy.</a> N Engl J Med. 2015;373 (1) :96-8. PMID: 26132962. PMC4594796.</li>
 </ul>
-
-
-
-
-<p class="src">Content carried over from <a href="https://ncigt.org/parathyroidectomy/">https://ncigt.org/parathyroidectomy/</a>.</p></article></main>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/parathyroidectomy/">https://ncigt.org/parathyroidectomy/</a></p></article></div><section class="rel"><div class="in"><h2>More in AMIGO</h2><div class="cards"><a class="card" href="page-amigo.html"><strong>About the AMIGO suite</strong><span>MRI, PET/CT and X-ray in one procedure suite</span></a><a class="card" href="page-amigoprocedures.html"><strong>Procedures in AMIGO</strong><span>Procedures that are part of clinical trials</span></a><a class="card" href="page-clinical-trials.html"><strong>Clinical trials</strong><span>Current studies, such as MRI-guided prostate biopsy</span></a><a class="card" href="clinical.html#studies"><strong>Clinical studies with the center</strong><span>Prostate, brain, breast, thoracic and more</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

@@ -31,16 +31,7 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style>
-.arc{max-width:900px;margin:0 auto;padding:48px 24px 80px;font-size:17px;line-height:1.7;color:#1F2B3D}
-.arc h2{font-size:26px;margin:40px 0 12px;line-height:1.3}.arc h3{font-size:21px;margin:32px 0 10px}.arc h4,.arc h5{font-size:18px;margin:24px 0 8px}
-.arc img{max-width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
-.arc table{border-collapse:collapse;width:100%;font-size:15px;margin:16px 0;display:block;overflow-x:auto}.arc td,.arc th{border:1px solid #E3E8EF;padding:8px 10px;vertical-align:top}
-.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-.arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
-.crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
-.hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style><style id="mm-css">
+<style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
 .mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
@@ -58,6 +49,52 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 </head>
 <body>
@@ -134,9 +171,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="sitemap.html" style="color:#D9B98F">All pages</a></p><h1>Breast Cancer Surgery</h1></div></section><article class="arc">
-
-
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="clinical.html">AMIGO</a></p><h1>Breast Cancer Surgery</h1></div></section><div class="lay"><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#breast-conserving-surgery-workflow-in-amigo">Breast Conserving Surgery Workflow in AMIGO</a><a href="#media-coverage">Media Coverage</a><a href="#recent-publications">Recent Publications</a></nav><article class="arc">
 <p>For patients with early stage breast carcinoma, the ability to achieve complete tumor resection with breast conservation therapy (BCT) remains imperfect despite advances in surgical, pathologic and imaging techniques. The goal of BCT is to remove a patient’s breast cancer with negative surgical margins while achieving a cosmetically acceptable result. The presence or absences of malignant cells on the edge or close to the edge of a lumpectomy specimen is called the surgical margin, and it serves as a marker of residual disease in the breast.</p>
 <p>Currently re-excision rates to achieve clear margins in the United States range between 15-40%. The negative impacts of re-excision include delays in the completion of adjuvant therapies, increased infection rates, increased health care costs, increased mastectomy rates and negative psychological impacts on the patients. The principle of clear margins is imperative since presence of positive margins is associated with increased loco-regional recurrence, and the failure to maintain local control is associated with a decrease in long-term breast cancer specific survival.</p>
 <p>In AMIGO, we are studying the use of novel intraoperative mass spectrometry and magnetic resonance imaging (MRI) as methods to detect residual cancer in the hopes of reducing the rates of re-excision for breast cancer patients. AMIGO enables surgeons to incorporate existing and novel imaging technologies including intraoperative MRI and mass spectrometry, to efficiently and precisely guide treatment — before, during, and after surgery — without the patient or medical team ever leaving the operating room.</p>
@@ -147,185 +182,41 @@ Distinguished Chair in Surgical Oncology</p>
 <p>Review the clinical trial <a href="https://clinicaltrials.gov/ct2/show/NCT02335671" title="">here</a>.</p>
 <p>Study Contact:<br/>
 <a href="mailto:Stephen_Desantis@DFCI.HARVARD.EDU">Stephen (Dan) DeSantis</a></p>
-
-
-
-
-
 <div class="vid"><iframe allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/IwFluD_0yKE" title="Image-guided Breast Conserving Therapy Video - Brigham and Women's Hospital"></iframe></div>
-
-
-<h2>Breast Conserving Surgery Workflow in AMIGO</h2>
-
-<figure>
-<img alt="" height="248" loading="lazy" src="media/2023_01_330px-breast1a.jpg" width="330"/>
-</figure>
-
-
-
-
+<h2 id="breast-conserving-surgery-workflow-in-amigo">Breast Conserving Surgery Workflow in AMIGO</h2>
+<div class="cards three"><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_330px-breast1a.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_330px-breast1b.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_breastmrimoving.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastprepintra.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastintraopening.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastresectionnew.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastintraclosing.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastintrasaline.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastpost.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_330px-breastpostsalinecavity.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_330px-breastpost3d.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href=""><img alt="" loading="lazy" src="media/2023_01_s-breastreexision.png"/><span class="kicker">Open</span><strong></strong><span></span></a></div>
 <p><strong>Diagnostic Imaging</strong><br/>
 3D volume rendered MIP images showing the main mass and satellites. The presence of satellite tumors poses a difficulty in ensuring complete tumor resection.</p>
-
-
-
-
-<figure>
-<img alt="" height="247" loading="lazy" src="media/2023_01_330px-breast1b.jpg" width="330"/>
-</figure>
-
-
-
-
 <p><strong>Diagnostic Imaging</strong><br/>
 Color overlay by a Computer-aided software over the rapidly enhancing mass (invasive ductal cancer).</p>
-
-
-
-
-<figure>
-<img alt="" height="236" loading="lazy" src="media/2023_01_breastmrimoving.png" width="319"/>
-</figure>
-
-
-
-
 <p><strong>Preoperative</strong><br/>
 In the AMIGO operating room the patient is placed under general anesthesia. A contrast enhanced 3D MRI then is performed while the patient is in supine position. In this case, an MRI is performed before and after contrast injection, delineating the tumor boundaries in relationship to fixed landmarks. Upon completion of the preprocedural MRI, the MRI machine leaves the room and the images are evaluated.</p>
-
-
-
-
-<figure>
-<img alt="" height="236" loading="lazy" src="media/2023_01_s-breastprepintra.png" width="318"/>
-</figure>
-
-
-
-
 <p><strong>Intraoperative</strong><br/>
 The woman’s breast is then prepared and draped in standard sterile fashion. Through palpation, the tumor is identified and surgical incisions marked.</p>
-
-
-
-
-<figure>
-<img alt="" height="240" loading="lazy" src="media/2023_01_s-breastintraopening.png" width="317"/>
-</figure>
-
-
-
-
 <p><strong>Intraoperative</strong><strong><br/>
 </strong>As part of the lymph node evaluation procedure, marcaine and 2cc of 1% methylene blue diluted with 3cc of saline are injected. The breast is then massaged to distribute the methylene blue to the lymphatics before beginning the incision between the pectorals and latissimus muscles, below the marked line.</p>
-
-
-
-
-<figure>
-<img alt="" height="240" loading="lazy" src="media/2023_01_s-breastresectionnew.png" width="325"/>
-</figure>
-
-
-
-
 <p><strong>Intraoperative</strong><br/>
 The methylene blue renders the sentinel lymph nodes detectable. The lymph nodes sent to pathology for evaluation. After the lumpectomy is performed, the resected tumor is sent to pathology.</p>
-
-
-
-
-<figure>
-<img alt="" height="238" loading="lazy" src="media/2023_01_s-breastintraclosing.png" width="320"/>
-</figure>
-
-
-
-
 <p><strong>Intraoperative</strong><br/>
 The lumpectomy cavity is temporarily closed with a nylon suture.</p>
-
-
-
-
-<figure>
-<img alt="" height="238" loading="lazy" src="media/2023_01_s-breastintrasaline.png" width="311"/>
-</figure>
-
-
-
-
 <p><strong>Intraoperative</strong><strong><br/>
 </strong>Before completing closure, the lumpectomy cavity is filled with exact volume of resected tumor and a 1cm margin. Finally, the incision is covered.</p>
-
-
-
-
-<figure>
-<img alt="" height="178" loading="lazy" src="media/2023_01_s-breastpost.jpg" width="242"/>
-</figure>
-
-
-
-
 <p><strong>Postoperative</strong><br/>
 Immediately post-surgery, a second MRI scan (again, with contrast) is obtained while the patient is on the operating table. The purpose of this MRI is to examine the saline filled cavity to identify areas of enhancement that may be suspicious for residual carcinoma. Following the imaging, the MRI scanner leaves the operating room. A radiologist compares the resected tumor to an MRI of the second breast for possible areas of residual tissue. On the left side, the preoperative images are shown; on the right side, the new images are displayed.</p>
-
-
-
-
-<figure>
-<img alt="" height="248" loading="lazy" src="media/2023_01_330px-breastpostsalinecavity.jpg" width="330"/>
-</figure>
-
-
-
-
 <p><strong>Postoperative</strong><strong><br/>
 </strong>Post-surgical post-contrast MRI showing the saline cavity filled with saline.</p>
-
-
-
-
-<figure>
-<img alt="" height="248" loading="lazy" src="media/2023_01_330px-breastpost3d.jpg" width="330"/>
-</figure>
-
-
-
-
 <p><strong>Postoperative</strong><br/>
 3D volume rendered image showing the surgical cavity.</p>
-
-
-
-
-<figure>
-<img alt="" height="241" loading="lazy" src="media/2023_01_s-breastreexision.png" width="313"/>
-</figure>
-
-
-
-
 <p><strong>Re-excision</strong><strong><br/>
 </strong>If suspicious remaining tissue is detected on the MRI images, the breast is reopened and the residual tumor removed.</p>
-
-
-<h2>Media Coverage</h2>
-
-
+<h2 id="media-coverage">Media Coverage</h2>
 <ul>
 <li>Amigo Innovative Breast Cancer Surgery. Nexstar Broadcasting, Inc.- August 14, 2013</li>
 <li><a href="http://boston.cbslocal.com/2012/12/07/new-operating-room-at-bwh-helps-breast-cancer-patients-avoid-multiple-surgeries/" title="New Operating Room At BWH Helps Breast Cancer Patients Avoid Multiple Surgeries.">New Operating Room at BWH Helps Breast Cancer Patients Avoid Multiple Surgeries.</a> CBS Boston – December 7, 2012</li>
 <li>Reducing Repeat Surgeries After Breast Cancer. BWH Health Hub – January, 2013</li>
 <li>The Fine Line Between Breast Cancer and Normal Tissue. MedicalPress – September, 2014</li>
 </ul>
-
-
-<h2>Recent Publications</h2>
-
-
-
+<h2 id="recent-publications">Recent Publications</h2>
 <ul>
 <li>Basu SS, Stopka SA, Abdelmoula WM, Randall EC, Gimenez-Cassina Lopez B, Regan MS, Calligaris D, Lu FF, Norton I, Mallory MA, Santagata S, Dillon DA, Golshan M, Agar NYR. <a href="https://pubmed.ncbi.nlm.nih.gov/34504095/">Interim Clinical Trial Analysis of Intraoperative Mass Spectrometry for Breast Cancer Surgery.</a> NPJ Breast Cancer. 2021 Sep 9;7(1):116.  PMID: 34504095; PMC8429658.
 <li>Wong SM, Freedman RA, Sagara Y, Aydogan F, Barry WT, Golshan M. <a href="https://pubmed.ncbi.nlm.nih.gov/28169929/">Growing Use of Contralateral Prophylactic Mastectomy Despite no Improvement in Long-term Survival for Invasive Breast Cancer.</a> Ann Surg. 2017;265 (3) :581-9. PMID: 28169929.</li>
@@ -339,11 +230,7 @@ Immediately post-surgery, a second MRI scan (again, with contrast) is obtained w
 <li>Calligaris D, Caragacianu D, Liu X, Norton I, Thompson CJ, Richardson AL, Golshan M, Easterling ML, Santagata S, Dillon DA, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/25246570/">Application of Desorption Electrospray Ionization Mass Spectrometry Imaging in Breast Cancer Margin Analysis.</a> Proc Natl Acad Sci U S A. 2014;111 (42) :15184-9. PMID: 25246570; PMC4210338.</li>
 <li>Jayender J, Chikarmane S, Jolesz FA, Gombos E. <a href="https://pubmed.ncbi.nlm.nih.gov/24115175/">Automatic Segmentation of Invasive Breast Carcinomas from Dynamic Contrast-Enhanced MRi using Time Series Analysis.</a> J Magn Reson Imaging. 2014;40 (2) :467-75. PMID: 24115175; PMC3962815.</li>
 </li></ul>
-
-
-
-
-<p class="src">Content carried over from <a href="https://ncigt.org/breast-cancer-surgery/">https://ncigt.org/breast-cancer-surgery/</a>.</p></article></main>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/breast-cancer-surgery/">https://ncigt.org/breast-cancer-surgery/</a></p></article></div><section class="rel"><div class="in"><h2>More in AMIGO</h2><div class="cards"><a class="card" href="page-amigo.html"><strong>About the AMIGO suite</strong><span>MRI, PET/CT and X-ray in one procedure suite</span></a><a class="card" href="page-amigoprocedures.html"><strong>Procedures in AMIGO</strong><span>Procedures that are part of clinical trials</span></a><a class="card" href="page-clinical-trials.html"><strong>Clinical trials</strong><span>Current studies, such as MRI-guided prostate biopsy</span></a><a class="card" href="clinical.html#studies"><strong>Clinical studies with the center</strong><span>Prostate, brain, breast, thoracic and more</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

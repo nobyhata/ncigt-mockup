@@ -31,16 +31,7 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style>
-.arc{max-width:900px;margin:0 auto;padding:48px 24px 80px;font-size:17px;line-height:1.7;color:#1F2B3D}
-.arc h2{font-size:26px;margin:40px 0 12px;line-height:1.3}.arc h3{font-size:21px;margin:32px 0 10px}.arc h4,.arc h5{font-size:18px;margin:24px 0 8px}
-.arc img{max-width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
-.arc table{border-collapse:collapse;width:100%;font-size:15px;margin:16px 0;display:block;overflow-x:auto}.arc td,.arc th{border:1px solid #E3E8EF;padding:8px 10px;vertical-align:top}
-.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-.arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
-.crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
-.hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style><style id="mm-css">
+<style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
 .mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
@@ -58,6 +49,52 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 </head>
 <body>
@@ -134,40 +171,18 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="sitemap.html" style="color:#D9B98F">All pages</a></p><h1>Neurosurgery Core</h1></div></section><article class="arc"><figure><a href="media/2022_12_alexandragolby.png"><img alt="" height="220" loading="lazy" src="media/2022_12_alexandragolby.png" width="180"/>
-
-<svg><path></path></svg>
-
-</a><figcaption>Alexandra J. Golby, MD</figcaption></figure><figure><a href="media/2022_12_nathalieagar.jpg"><img alt="" height="220" loading="lazy" src="media/2022_12_nathalieagar.jpg" width="180"/>
-
-<svg><path></path></svg>
-
-</a><figcaption>Nathalie Y. R. Agar, PhD</figcaption></figure><figure><a href="media/2022_12_laurenodonnell1.jpg"><img alt="" height="220" loading="lazy" src="media/2022_12_laurenodonnell1.jpg" width="180"/>
-
-<svg><path></path></svg>
-
-</a><figcaption>Lauren J. O’Donnell, PhD</figcaption></figure>
-
-
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="index.html#research">Research</a></p><h1>Neurosurgery Core</h1></div></section><div class="lay"><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#software-and-documentation">Software and Documentation</a><a href="#data">Data</a><a href="#presentations">Presentations</a><a href="#links">Links</a></nav><article class="arc"><div class="cards three"><a class="card media" href="media/2022_12_alexandragolby.png"><img alt="" loading="lazy" src="media/2022_12_alexandragolby.png"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href="media/2022_12_nathalieagar.jpg"><img alt="" loading="lazy" src="media/2022_12_nathalieagar.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a><a class="card media" href="media/2022_12_laurenodonnell1.jpg"><img alt="" loading="lazy" src="media/2022_12_laurenodonnell1.jpg"/><span class="kicker">Open</span><strong></strong><span></span></a></div>
 <p>The neurosurgery project is developing new technologies toward the long-term goal of allowing neurosurgeons in diverse settings to implement the advantages of image-guided therapy (IGT) for their patients. We investigate, develop, and validate approaches that address the two key problems in brain tumor surgery: to define the critical brain regions that must not be resected, and to define the extent and nature of the lesion. Put more simply, we create tools that support the neurosurgeon’s crucial decision of what to preserve, and what to remove. Maximizing tumor resection improves patients’ progression-free survival and overall survival; avoiding neurological deficits also improves survival and deeply impacts daily life for patients. Our strategies leverage preoperative and intraoperative imaging data to optimize brain tumor surgery. We are focusing on multimodality imaging data including diffusion MRI (dMRI), functional MRI (fMRI), and on applying mass spectrometry (MS) as a molecular analysis tool for tumor detection. To improve understanding of critical, individual patient brain functional anatomy, we jointly model functional and structural data for semi-automatic and improved localization of eloquent brain structures. To guide surgical decision making by better defining tumor margins, we investigate MS as an intraoperative molecular diagnostic method. Achievement of these goals supports the overall goal of NCIGT that is relevant for brain tumor surgery: to maximize the extent of tumor resection while minimizing the risk of neurologic deficit. Our projects are:</p>
 <p><strong>Computer-aided individualized labeling of critical brain structures.</strong> fMRI and dMRI provide pre-operative non-invasive maps of patients’ functional activations and white matter connections. fMRI and dMRI have been shown to increase resection and time of survival, but their translation to widespread clinical use faces significant challenges. Interpretation of the data is difficult, requiring extensive experience and time, and requiring software tools that are unwieldy and not clinically oriented. In order to provide more useful pre-operative mapping, we create a system that produces labeled maps of individual brain functional anatomy, even in cases with missing data, distortion, edema, or reorganization. Our overall strategy is to model the anatomical relationship between structural connections and functional activations, and to build models designed to generalize to patients with mass lesions or displacement, with the aid of machine learning algorithms. We are investigating the following novel and complementary tools: labeling of fMRI activations to produce a segmentation of a discrete set of cortical features of importance for neurosurgery, semi-automatic fMRI thresholding, multimodal calculation of language lateralization, and iterative joint labeling of fMRI activations and fiber tracts. We are developing the computational tools in stages so that each tool can be used either alone, or as part of the full system. We especially focus on the challenge of language mapping interpretation that requires identification of both the crucial language-specific functional cortical regions and the crucial language-specific fiber tracts. We are validating results using expert raters and intraoperative electrocortical stimulation data. Overall, we are creating the first image analysis software that can semi-automatically produce a multimodal structure-function map of individual patient anatomy for neurosurgery. (Contact: <a href="mailto:odonnell@bwh.harvard.edu">Lauren O’Donnell</a>)</p>
 <p><strong>Optimal resection guided by mass spectrometry.</strong> Intraoperative decision making regarding how much tissue to resect during brain tumor surgery is of critical importance, yet as the surgery progresses the surgeon has access to less and less reliable data to guide this decision. To optimize the surgical resection of brain tumors, surgeons need more information to assess the boundaries between tumor and healthy tissue. In order to give surgeons a better understanding of the tissue being resected, we are investigating MS as an intra-operative molecular analysis tool for surgical guidance in the Advanced Multimodality Image Guided Operating Suite (AMIGO). The introduction of MS into routine surgical protocols for real-time characterization of tissue relies on the development and validation of the molecular reference system. The current iteration of the intraoperative platform is based on an ambient ionization methodology that allows for the analysis of tissue with little to no sample preparation. We validate the technology for real-time identification of surgical margins and molecular diagnosis by comparing against standard histopathology. The neurosurgeon stereotactically samples multiple specimens from each brain tumor resection and these are analyzed with a mass spectrometer in the AMIGO suite. We also correlate molecular, imaging and histopathologic findings in the 3D tumor space. Overall, our goal is to provide data equivalent or better to intraoperative MRI with less workflow disruption, less cost, and far less infrastructure needs. (Contact: <a href="mailto:nathalie_agar@dfci.harvard.edu">Nathalie Agar</a>)</p>
-
-
-<h2>Software and Documentation</h2>
-
-
+<h2 id="software-and-documentation">Software and Documentation</h2>
 <p><a href="http://slicer.org/" title="http://download.slicer.org/">3D Slicer</a>, a comprehensive open source platform for medical image analysis, contains several modules that have been contributed by us for Image-Guided Brain Tumor Surgery. These include:</p>
 <ul>
 <li><a href="https://www.slicer.org/wiki/Documentation/Nightly/Modules/UKFTractography">UKF Tractography</a> Two-tensor modeling with Kalman filtering to track through regions of crossing and edema.</li>
 <li><a href="http://dmri.slicer.org/whitematteranalysis/">White Matter Analysis</a> Software for modeling and segmentation of white matter tracts. The output is visualized in 3D Slicer.</li>
 <li><a href="http://dmri.slicer.org/">Diffusion MRI in 3D Slicer</a> Diffusion magnetic resonance imaging in 3D Slicer open-source software.</li>
 </ul>
-
-
-<h2>Data</h2>
-
-
+<h2 id="data">Data</h2>
 <ul>
 <li>Pre- and Post-operative Brain Tumor MRI Dataset with Resection</li>
 <li>Brain Tumor Resection Image Dataset</li>
@@ -175,29 +190,18 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <li><a href="http://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/IGT_GLIOMA" title="http://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/IGT_GLIOMA">NCIGT Brain Tumor (Glioma) Resection Data on XNAT</a></li>
 <li><a href="http://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/IGT_FMRI_NEURO" title="http://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/IGT_FMRI_NEURO">NCIGT fMRI for Neurosurgery</a></li>
 </ul>
-
-
-<h2>Presentations</h2>
-
-
+<h2 id="presentations">Presentations</h2>
 <p>These presentations have been selected as tutorials for readers interested in learning about the clinical science and technology of the Neurosurgery Core.</p>
 <ul>
 <li><a href="media/2024_04_odonnell_eindhoven_2013_for_web.pdf">Introduction to Diffusion Imaging: MRI of the Brain’s Connections</a> (O’Donnell, Keynote talk at IST/e Symposium 2013. Eindhoven University of Technology, The Netherlands.)</li>
 </ul>
-
-
-<h2>Links</h2>
-
-
+<h2 id="links">Links</h2>
 <ul>
 <li>DTI Challenge</li>
 <li><a href="http://golbylab.bwh.harvard.edu/">Golby Lab</a></li>
 <li><a href="http://agarlab.bwh.harvard.edu/" title="http://agarlab.bwh.harvard.edu">Agar Lab</a></li>
 </ul>
-
-
-
-<p class="src">Content carried over from <a href="https://ncigt.org/neurosurgery-core/">https://ncigt.org/neurosurgery-core/</a>.</p></article></main>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/neurosurgery-core/">https://ncigt.org/neurosurgery-core/</a></p></article></div><section class="rel"><div class="in"><h2>More in Research</h2><div class="cards"><a class="card" href="trd1.html"><strong>TR&amp;D 1: Imaging cancer heterogeneity</strong><span>Advanced diffusion and CEST MRI</span></a><a class="card" href="trd2.html"><strong>TR&amp;D 2: Implantable microdevices</strong><span>Testing drugs inside the tumor</span></a><a class="card" href="trd3.html"><strong>TR&amp;D 3: Enabling technologies</strong><span>Robotic guidance and AR navigation</span></a><a class="card" href="publications.html"><strong>Publications</strong><span>Major achievements and collaborations</span></a><a class="card" href="page-collaborations.html"><strong>Collaborations</strong><span>NIH-funded researchers using center technology</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

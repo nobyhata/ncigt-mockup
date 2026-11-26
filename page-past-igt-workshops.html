@@ -31,16 +31,7 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style>
-.arc{max-width:900px;margin:0 auto;padding:48px 24px 80px;font-size:17px;line-height:1.7;color:#1F2B3D}
-.arc h2{font-size:26px;margin:40px 0 12px;line-height:1.3}.arc h3{font-size:21px;margin:32px 0 10px}.arc h4,.arc h5{font-size:18px;margin:24px 0 8px}
-.arc img{max-width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
-.arc table{border-collapse:collapse;width:100%;font-size:15px;margin:16px 0;display:block;overflow-x:auto}.arc td,.arc th{border:1px solid #E3E8EF;padding:8px 10px;vertical-align:top}
-.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-.arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
-.crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
-.hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style><style id="mm-css">
+<style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
 .mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
@@ -58,6 +49,52 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 </head>
 <body>
@@ -134,20 +171,14 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="sitemap.html" style="color:#D9B98F">All pages</a></p><h1>Past National Image Guided Therapy Workshops</h1></div></section><article class="arc"><h4><a href="#1673647856708-d7ee7820-50e6">The <strong>12<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2022 Virtual</strong><i></i></a></h4><h2>The 12<sup>th</sup> National Image Guided Therapy Workshop</h2>
-
-
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a></p><h1>Past National Image Guided Therapy Workshops</h1></div></section><div class="lay"><nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#the-12-th-national-image-guided-therapy-workshop">The 12 th National Image Guided Therapy Workshop</a><a href="#organizing-chairs">Organizing Chairs</a><a href="#program-chairs">Program Chairs</a><a href="#media-committee">Media Committee</a><a href="#program-thursday-may-19-2022-12-30-4-30pm">PROGRAM | Thursday, May 19, 2022, 12:30 – 4:30pm</a><a href="#program-at-a-glance">Program at a Glance</a><a href="#zoom-information">Zoom Information</a><a href="#12-30-12-35pm-opening-remarks">12:30-12:35pm | Opening Remarks</a><a href="#m-a-i-n">M A I N</a><a href="#12-35-1-15pm-plenary-talks">12:35-1:15pm | Plenary Talks</a><a href="#m-a-i-n-2">M A I N</a><a href="#focused-ultrasound-surgery">Focused Ultrasound Surgery</a><a href="#imaging-and-sensing">Imaging and Sensing</a><a href="#surgery">Surgery</a><a href="#medical-robotics">Medical Robotics</a><a href="#1-20-2-50pm-webinar-session">1:20-2:50pm | Webinar Session</a><a href="#abstracts-of-the-oral-presentations">Abstracts of the Oral Presentations</a><a href="#m-a-i-n-3">M A I N</a><a href="#medical-robotics-2">Medical Robotics</a><a href="#room">Room</a><a href="#imaging-and-sensing-2">Imaging and Sensing</a><a href="#room-2">Room</a><a href="#focused-ultrasound-ultrasound-ablation">Focused Ultrasound/ultrasound/ablation</a><a href="#room-3">Room</a><a href="#surgery-2">Surgery</a><a href="#3-00-3-20pm-nih-information-and-q-a">3:00-3:20pm | NIH Information and Q&amp;A</a><a href="#m-a-i-n-4">M A I N</a><a href="#3-30-4-30pm-interactive-oral-sessions">3:30-4:30pm | Interactive Oral Sessions</a><a href="#m-a-i-n-5">M A I N</a><a href="#medical-robotics-3">Medical Robotics</a><a href="#room-4">Room</a><a href="#imaging-and-sensing-3">Imaging and Sensing</a><a href="#room-5">Room</a><a href="#mri-guided-fus-and-therapies">Mri-guided FUS and Therapies</a><a href="#room-6">Room</a><a href="#neurosurgery">Neurosurgery</a><a href="#confirmed-attendees-as-of-05-18-2022">Confirmed Attendees (as of 05/18/2022)</a><a href="#the-11-th-national-image-guided-therapy-workshop">The 11 th National Image Guided Therapy Workshop</a><a href="#the-10-th-national-image-guided-therapy-workshop">The 10 th National Image Guided Therapy Workshop</a><a href="#workshop-registration">Workshop Registration</a><a href="#workshop-program">Workshop Program</a><a href="#goal">Goal</a><a href="#important-dates">Important Dates</a><a href="#submission-guidelines">Submission Guidelines</a><a href="#guidelines-for-abstracts">Guidelines for Abstracts</a><a href="#guidelines-for-oral-presentations">Guidelines for Oral Presentations</a><a href="#guidelines-for-poster-presentations">Guidelines for Poster Presentations</a><a href="#chairs">Chairs</a><a href="#workshop-coordinator">Workshop Coordinator</a><a href="#venue">Venue</a><a href="#contact">Contact</a><a href="#registration">Registration</a><a href="#workshop-program-2">Workshop Program</a><a href="#the-9-th-national-image-guided-therapy-workshop">The 9 th National Image Guided Therapy Workshop</a><a href="#program">Program</a><a href="#day-one-tuesday-march-14-2017">Day One – Tuesday, March 14, 2017</a><a href="#day-two-wednesday-march-15-2017">Day Two – Wednesday, March 15, 2017</a><a href="#the-8-th-national-image-guided-therapy-workshop">The 8 th National Image Guided Therapy Workshop</a><a href="#workshop-program-3">Workshop Program</a><a href="#guidelines-for-oral-presentations-2">Guidelines for Oral Presentations</a><a href="#guidelines-for-poster-presentations-2">Guidelines for Poster Presentations</a><a href="#background">Background</a><a href="#important-dates-2">Important Dates</a><a href="#registration-2">Registration</a><a href="#call-for-abstracts">Call for Abstracts</a><a href="#abstract-guidelines">Abstract Guidelines</a><a href="#poster-guidelines">Poster guidelines</a><a href="#chairs-2">Chairs</a><a href="#registered-attendees">Registered Attendees</a><a href="#the-6-th-national-image-guided-therapy-workshop">The 6 th National Image Guided Therapy Workshop</a><a href="#w-orkshop-chairs">W orkshop Chairs</a><a href="#program-chairs-2">Program Chairs</a><a href="#program-committee">Program Committee</a><a href="#call-for-poster-abstracts">Call for Poster Abstracts</a><a href="#submission-site">Submission site</a><a href="#important-dates-3">Important Dates</a><a href="#the-5-th-national-image-guided-therapy-workshop">The 5 th National Image Guided Therapy Workshop</a><a href="#workshop-proceedings">Workshop Proceedings</a><a href="#program-2">Program</a><a href="#poster-session">Poster Session</a><a href="#friday-september-21-2012">Friday, September 21, 2012</a><a href="#invitation">Invitation</a><a href="#program-committee-2">Program Committee</a><a href="#organizing-committee">Organizing Committee</a><a href="#hotel-logistics">Hotel Logistics</a><a href="#registered-attendees-as-of-september-20-2012">Registered Attendees as of September 20, 2012</a><a href="#the-4-th-national-image-guided-therapy-workshop">The 4 th National Image Guided Therapy Workshop</a><a href="#workshop-proceedings-2">Workshop Proceedings</a><a href="#program-3">Program</a><a href="#speaker-presentations">Speaker Presentations</a><a href="#program-committee-3">Program Committee</a><a href="#registered-attendees-as-of-october-7-2011">Registered Attendees as of October 7, 2011</a><a href="#fourth-ncigt-and-nih-image-guided-therapy-worksh">Fourth NCIGT and NIH Image Guided Therapy Workshop Announcement</a><a href="#call-for-poster-abstracts-2">Call for Poster Abstracts</a><a href="#important-dates-4">Important Dates</a><a href="#venue-2">Venue</a><a href="#the-3-rd-national-image-guided-therapy-workshop">The 3 rd National Image Guided Therapy Workshop</a><a href="#summary">Summary</a><a href="#meeting-agenda">Meeting Agenda</a><a href="#posters">Posters</a><a href="#meeting-attendees">Meeting Attendees</a><a href="#the-2-nd-national-image-guided-therapy-workshop">The 2 nd National Image Guided Therapy Workshop</a><a href="#goal-2">Goal</a><a href="#program-contacts">Program Contacts</a><a href="#call-for-poster-abstracts-3">Call for Poster Abstracts</a><a href="#poster-sessions">Poster Sessions</a><a href="#abstract-format-submission-and-acceptance">Abstract Format, Submission and Acceptance</a><a href="#guidelines-for-poster-format">Guidelines for Poster Format</a><a href="#program-committee-4">Program Committee</a><a href="#proceedings">Proceedings</a><a href="#program-4">Program</a><a href="#monday-march-10">Monday March 10</a><a href="#tuesday-march-11">Tuesday March 11</a><a href="#poster-session-2">Poster Session</a><a href="#the-1-st-national-image-guided-therapy-workshop">The 1 st National Image Guided Therapy Workshop</a><a href="#registration-and-attendee-list">Registration and Attendee List</a><a href="#goal-3">Goal</a><a href="#background-on-this-workshop">Background on this workshop</a><a href="#sponsors">Sponsors</a><a href="#hotel-logistics-2">Hotel Logistics</a><a href="#subway-information">Subway Information</a><a href="#program-committee-5">Program Committee</a><a href="#organizing-committee-2">Organizing Committee</a><a href="#agenda">Agenda&gt;&gt;</a><a href="#community-links">Community Links</a><a href="#contact-2">Contact</a><a href="#list-of-attendees">List of Attendees</a></nav><article class="arc"><h3>The <strong>12<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2022 Virtual</strong></h3><h2 id="the-12-th-national-image-guided-therapy-workshop">The 12<sup>th</sup> National Image Guided Therapy Workshop</h2>
 <p>The 12<sup>th</sup> National Image Guided Therapy Workshop was held on May 19, 2022, in virtual format. The workshop drew 289 registrations, including 29 NIH personnel and 48 industry representatives. The workshop started with four plenary lecturers covering state-of-art Image Guided Therapy research: Dr. Kim Butts-Pauly of Stanford University introduced her recent progress on Focused Ultrasound Therapy, and Dr. Oliver Jonas of Harvard Medical School on Drug Response measurements by intra-tumor device, Dr. Mathias Unberath on In Silico Experiment, and Dr. Ken Goldberg of UC Berkley on Artificial Intelligence robotic surgery. The plenary talks were followed by 35 oral presentations by Principal Investigators of active NIH grants on Image Guided Therapy research and 30 short presentations by fellows and post-docs to discuss their research progress with experts. The research presentation topics included Medical Robotics, Surgical technologies, Imaging and Sensing Technologies, and MRI-guided Focused Ultrasound therapies. The website for the workshop consists of the participants’ list and titles and authors of the talks. The link to the grants’ NIH Reporter page is provided for the talks covering the active NIH funding.</p>
 <p>The overall goal of this workshop series is to foster discourse in translational research in image-guided therapy in the NIH-funded community and to communicate the availability of <strong>AT-NCIGT</strong> as a national resource for tools and technologies in the field. Attendees include NIH-funded academic scientists, clinicians, and leaders from industry and federal agencies interested in image-guided interventions. In the previous workshop also held in an online format, 454 participants, including 39 NIH Officers, learned the state-of-art in IGT from oral and poster presentations. Please view the <a href="http://researchlist.partners.org/t/389325/15299060/55063/13/">participants’ list</a> from the last workshop.</p>
-
-
-
-
-<h2>ORGANIZING CHAIRS</h2>
+<h2 id="organizing-chairs">Organizing Chairs</h2>
 <p><a href="https://ncigt.org/people/nobuhiko-hata" title="">Nobuhiko Hata, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School<br/>
 <a href="https://engineering.vanderbilt.edu/bio/robert-webster/" title="">Robert J, Webster III, PhD</a>, Vanderbilt University<br/>
 <a href="https://ncigt.org/people/clare-m-tempany" title="">Clare Tempany, MD</a>, Brigham and Women’s Hospital and Harvard Medical School</p>
-<h2>PROGRAM CHAIRS</h2>
+<h2 id="program-chairs">Program Chairs</h2>
 <p><a href="https://ncigt.org/people/nathalie-agar" title="">Nathalie Agar, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School<br/>
 <a href="https://www.nibib.nih.gov/about-nibib/staff/qi-duan" title="">Qi Duan, PhD</a>, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health<br/>
 <a href="https://www.dfhcc.harvard.edu/insider/member-detail?tx_hcc_persondetail%5Baction%5D=show&amp;tx_hcc_persondetail%5Bcontroller%5D=Person&amp;tx_hcc_persondetail%5Bperson%5D=977&amp;cHash=73d96b382b7d0f535d25520246930cc7" title="">Nathan McDannold, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School<br/>
@@ -155,31 +186,26 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="https://www.nibib.nih.gov/about-nibib/staff/behrouz-shabestari" title="">Behrouz Shabestari, PhD</a>, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health<br/>
 <a href="https://radiology.ucsf.edu/research/labs/vigneron" title="">Daniel B. Vigneron, PhD</a>, University of California San Francisco<br/>
 <a href="https://ncigt.org/people/william-m-wells" title="">William (Sandy) Wells, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School</p>
-<h2><strong>MEDIA COMMITTEE</strong></h2>
+<h2 id="media-committee"><strong>Media Committee</strong></h2>
 <p><a href="https://ncigt.org/people/junichi-tokuda" title="">Junichi Tokuda, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School</p>
-
-
-
-
-<table>
+<div class="tbl"><table><thead><tr>
+<th>
+<h2 id="program-thursday-may-19-2022-12-30-4-30pm">PROGRAM | Thursday, May 19, 2022, 12:30 – 4:30pm</h2>
+</th>
+</tr></thead>
 <tbody>
-<tr>
-<td>
-<h2><strong>PROGRAM | Thursday, May 19, 2022, 12:30 – 4:30pm</strong></h2>
-</td>
-</tr>
 <tr>
 <td>
 <h3>All events are in Eastern Daylight Time (EDT)</h3>
 </td>
 </tr>
 </tbody>
-</table>
-<table>
+</table></div>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td colspan="6">
-<h2>PROGRAM AT A GLANCE</h2>
+<h2 id="program-at-a-glance">Program at a Glance</h2>
 </td>
 </tr>
 <tr>
@@ -233,12 +259,12 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <td>Neurosurgery</td>
 </tr>
 </tbody>
-</table>
-<table>
+</table></div>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td colspan="4">
-<h2>ZOOM INFORMATION</h2>
+<h2 id="zoom-information">Zoom Information</h2>
 </td>
 </tr>
 <tr>
@@ -273,32 +299,27 @@ Passcode embedded direct link sent via email</strong></td>
 <td>Sent via Email</td>
 </tr>
 </tbody>
-</table>
-<table>
+</table></div>
+<div class="tbl"><table><thead><tr>
+<th colspan="2">
+<h2 id="12-30-12-35pm-opening-remarks">12:30-12:35pm | Opening Remarks</h2>
+</th>
+</tr></thead>
 <tbody>
 <tr>
-<td colspan="2">
-<h2><strong>12:30-12:35pm | Opening Remarks</strong></h2>
-</td>
-</tr>
-<tr>
 <td>
-<h2><strong>M<br/>
-A<br/>
-I<br/>
-N</strong></h2>
+<h2 id="m-a-i-n"><strong>M<br/>A<br/>I<br/>N</strong></h2>
 <p>H<br/>
 A<br/>
 L<br/>
 L</p></td>
 <td>
-<table>
+<div class="tbl"><table><thead><tr>
+<th><figure><img alt="" height="144" loading="lazy" src="media/2023_01_ClareTempany.jpg" width="118"/></figure></th>
+<th><figure><img alt="" height="144" loading="lazy" src="media/2022_12_nobyhata.jpg" width="118"/></figure></th>
+<th><figure><img alt="" height="144" loading="lazy" src="media/2023_01_bob-webster.jpg" width="144"/></figure></th>
+</tr></thead>
 <tbody>
-<tr>
-<td><img alt="" height="144" loading="lazy" src="media/2023_01_ClareTempany.jpg" width="118"/></td>
-<td><img alt="" height="144" loading="lazy" src="media/2022_12_nobyhata.jpg" width="118"/></td>
-<td><img alt="" height="144" loading="lazy" src="media/2023_01_bob-webster.jpg" width="144"/></td>
-</tr>
 <tr>
 <td><strong>Clare Tempany, MD</strong><br/>
 Brigham and Women’s Hospital<br/>
@@ -310,114 +331,102 @@ Harvard Medical School</td>
 Vanderbilt University</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong>12:35-1:15pm | Plenary Talks</strong></h2>
+<h2 id="12-35-1-15pm-plenary-talks"><strong>12:35-1:15pm | Plenary Talks</strong></h2>
 </td>
 </tr>
 <tr>
 <td>
-<h2><strong>M<br/>
-A<br/>
-I<br/>
-N</strong></h2>
+<h2 id="m-a-i-n-2"><strong>M<br/>A<br/>I<br/>N</strong></h2>
 <p>H<br/>
 A<br/>
 L<br/>
 L</p></td>
 <td>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>
-<h2><strong>FOCUSED ULTRASOUND SURGERY</strong></h2>
-<table>
+<h2 id="focused-ultrasound-surgery"><strong>Focused Ultrasound Surgery</strong></h2>
+<div class="tbl"><table>
 <tbody>
 <tr>
-<td><img alt="" height="190" loading="lazy" src="media/2023_01_kim_butts.png" width="190"/></td>
 <td>
 <h3>Kim Butts-Pauly, Professor, Stanford University</h3>
 <p><em>High Resolution Transcranial Ultrasound Stimulation (TUS) with Crossbeam</em></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2><strong>IMAGING AND SENSING</strong></h2>
-<table>
+<h2 id="imaging-and-sensing"><strong>Imaging and Sensing</strong></h2>
+<div class="tbl"><table>
 <tbody>
 <tr>
-<td><img alt="" height="190" loading="lazy" src="media/2022_12_oliverjonas.jpg" width="156"/></td>
 <td>
 <h3>Oliver Jonas, Associate Professor, Harvard Medical School</h3>
 <p><em>Intratumor Microdevices for Multiple Drug Response Measurements in Patients</em></p></td>
 </tr>
 </tbody>
-</table>
-<table>
+</table></div>
+<div class="tbl"><table><thead><tr>
+<th>
+<h2 id="surgery">Surgery</h2>
+</th>
+</tr></thead>
 <tbody>
 <tr>
-<td>
-<h2><strong>SURGERY</strong></h2>
-</td>
-<td></td>
-</tr>
-<tr>
-<td><img alt="" height="190" loading="lazy" src="media/2023_01_mathias_unberath.jpg" width="190"/></td>
 <td>
 <h3>Mathias Unberath, Assistant Professor, Johns Hopkins University</h3>
 <p><em>SyntheX — Catalyzing the Design of Intelligent Surgical Systems Through In Silico Experiment</em></p></td>
 </tr>
 </tbody>
-</table>
-<h2><strong>MEDICAL ROBOTICS</strong></h2>
-<table>
+</table></div>
+<h2 id="medical-robotics"><strong>Medical Robotics</strong></h2>
+<div class="tbl"><table>
 <tbody>
 <tr>
-<td><img alt="" height="190" loading="lazy" src="media/2023_01_ken_goldberg.jpg" width="190"/></td>
 <td>
 <h3>Ken Goldberg, Professor, UC Berkley</h3>
 <p><em>The Cutting Edge of Robot Surgery</em></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong>1:20-2:50pm | Webinar Session  </strong></h2>
+<h2 id="1-20-2-50pm-webinar-session"><strong>1:20-2:50pm | Webinar Session  </strong></h2>
 </td>
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong><a href="https://ncigt.org/files/ncigt/files/igtws2022-program_-_oral_-_proceedings.pdf" title="">Abstracts of the Oral Presentations</a></strong></h2>
+<h2 id="abstracts-of-the-oral-presentations"><strong><a href="https://ncigt.org/files/ncigt/files/igtws2022-program_-_oral_-_proceedings.pdf" title="">Abstracts of the Oral Presentations</a></strong></h2>
 </td>
 </tr>
 <tr>
 <td>
-<h2><strong>M<br/>
-A<br/>
-I<br/>
-N</strong></h2>
+<h2 id="m-a-i-n-3"><strong>M<br/>A<br/>I<br/>N</strong></h2>
 <p>H<br/>
 A<br/>
 L<br/>
 L</p></td>
 <td>
-<h2><strong>MEDICAL ROBOTICS</strong></h2>
+<h2 id="medical-robotics-2"><strong>Medical Robotics</strong></h2>
 <p>Session Chairs:<br/>
 <strong>Robert J, Webster III, PhD</strong>, <em>Vanderbilt University</em><br/>
 <strong>Nobuhiko Hata, PhD</strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em></p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>1:20 – 1:30pm</td>
@@ -493,24 +502,19 @@ NSF EFRI-1935291; Philips Research North America through MIT-Philips research al
 <p><a href="https://reporter.nih.gov/project-details/10101074">1R01EB030539</a></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>F<br/>
-E<br/>
-N<br/>
-W<br/>
-A<br/>
-Y</strong></p></td>
+<h2 id="room">Room</h2>
+<h3>F E N W a Y</h3></td>
 <td>
-<h2><strong>IMAGING AND SENSING</strong></h2>
+<h2 id="imaging-and-sensing-2"><strong>Imaging and Sensing</strong></h2>
 <p>Session Chairs:<br/>
 <strong>William (Sandy) Wells, PhD</strong>, Brigham and Women’s Hospital and Harvard Medical School<br/>
 <strong>Daniel B. Vigneron, PhD</strong>, University of California San Francisco</p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>1:20 – 1:30pm</td>
@@ -595,25 +599,19 @@ BWH Radiology Department Research Pilot Grant Award</p></td>
 <p><a href="https://reporter.nih.gov/project-details/10248379">R01HL145786</a></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>A<br/>
-L<br/>
-L<br/>
-S<br/>
-T<br/>
-O<br/>
-N</strong></p></td>
+<h2 id="room-2">Room</h2>
+<h3>A L L S T O N</h3></td>
 <td>
-<h2>FOCUSED ULTRASOUND/ULTRASOUND/ABLATION</h2>
+<h2 id="focused-ultrasound-ultrasound-ablation">Focused Ultrasound/ultrasound/ablation</h2>
 <p>Session Chairs:<br/>
 <strong>Nathan McDannold, PhD</strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em><br/>
 <strong>Allison Payne, PhD</strong>, University of Utah</p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>1:20 – 1:30pm</td>
@@ -692,27 +690,19 @@ Advanced Practice Research Award, Mayo Clinic Center for Clinical and Translatio
 Bridge Project Grant</p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>C<br/>
-A<br/>
-M<br/>
-B<br/>
-R<br/>
-I<br/>
-D<br/>
-G<br/>
-E</strong></p></td>
+<h2 id="room-3">Room</h2>
+<h3>C a M B R I D G E</h3></td>
 <td>
-<h2><strong>SURGERY</strong></h2>
+<h2 id="surgery-2"><strong>Surgery</strong></h2>
 <p>Session Chairs:<br/>
 <strong>Nathalie Agar, PhD, </strong><em>Brigham and Women’s Hospital and Harvard Medical School</em><br/>
 <strong>Clare Tempany, MD</strong>, Brigham and Women’s Hospital and Harvard Medical School</p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>1:20 – 1:30pm</td>
@@ -798,20 +788,17 @@ Norris Cotton Cancer Center Pilot Awards</p></td>
 <a href="https://imaging.datacommons.cancer.gov/" title="">NCI Imaging Data Commons</a></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong>3:00-3:20pm | NIH Information and Q&amp;A</strong></h2>
+<h2 id="3-00-3-20pm-nih-information-and-q-a"><strong>3:00-3:20pm | NIH Information and Q&amp;A</strong></h2>
 </td>
 </tr>
 <tr>
 <td>
-<h2><strong>M<br/>
-A<br/>
-I<br/>
-N</strong></h2>
+<h2 id="m-a-i-n-4"><strong>M<br/>A<br/>I<br/>N</strong></h2>
 <p>H<br/>
 A<br/>
 L<br/>
@@ -822,7 +809,7 @@ L</p></td>
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong>3:30-4:30pm | Interactive Oral Sessions</strong></h2>
+<h2 id="3-30-4-30pm-interactive-oral-sessions"><strong>3:30-4:30pm | Interactive Oral Sessions</strong></h2>
 </td>
 </tr>
 <tr>
@@ -832,20 +819,17 @@ L</p></td>
 </tr>
 <tr>
 <td>
-<h2><strong>M<br/>
-A<br/>
-I<br/>
-N</strong></h2>
+<h2 id="m-a-i-n-5"><strong>M<br/>A<br/>I<br/>N</strong></h2>
 <p>H<br/>
 A<br/>
 L<br/>
 L</p></td>
 <td>
-<h2><strong>MEDICAL ROBOTICS</strong></h2>
+<h2 id="medical-robotics-3"><strong>Medical Robotics</strong></h2>
 <p>Moderators:<br/>
 <strong><a href="https://lnkd.in/gQsyJExT" title="">Haoyin Zhou, PhD</a></strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em><br/>
 <strong><a href="https://lnkd.in/g2eh52A5" title="">Xiaoguang Dong, PhD</a></strong>, <em>Vanderbilt University</em></p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>3:30 – 3:37pm</td>
@@ -912,24 +896,19 @@ Natural Sciences and Engineering Research Council of Canada through grant RGPIN1
 <a href="https://reporter.nih.gov/project-details/10325810">Partial pilot funding from Norris Cotton Cancer Center</a></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>F<br/>
-E<br/>
-N<br/>
-W<br/>
-A<br/>
-Y</strong></p></td>
+<h2 id="room-4">Room</h2>
+<h3>F E N W a Y</h3></td>
 <td>
-<h2><strong>IMAGING AND SENSING</strong></h2>
+<h2 id="imaging-and-sensing-3"><strong>Imaging and Sensing</strong></h2>
 <p>Moderators:<br/>
 <strong><a href="https://lnkd.in/gBxreciP" title="">Sharath K. Bhagavatula, MD</a></strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em><br/>
 <strong>Guigen Liu, PhD</strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em></p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>3:30 – 3:37pm</td>
@@ -1002,25 +981,19 @@ Y</strong></p></td>
 <p>NSERC, CIHR</p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>A<br/>
-L<br/>
-L<br/>
-S<br/>
-T<br/>
-O<br/>
-N</strong></p></td>
+<h2 id="room-5">Room</h2>
+<h3>A L L S T O N</h3></td>
 <td>
-<h2><strong>MRI-GUIDED FUS AND THERAPIES</strong></h2>
+<h2 id="mri-guided-fus-and-therapies"><strong>Mri-guided FUS and Therapies</strong></h2>
 <p>Moderators:<br/>
 <strong><a href="https://lnkd.in/gDyHFYuU" title="">Pedro Lopes Da Frota Moreira, PhD</a></strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em><br/>
 <strong><a href="https://lnkd.in/gJCmZW3F" title="">Nicholas Todd, PhD</a></strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em></p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>3:30 – 3:37pm</td>
@@ -1078,27 +1051,19 @@ AHA-SDG261039 (PI: E. Schmidt)</p></td>
 <p><a href="https://reporter.nih.gov/project-details/10131024">R01 EB012031</a>; <a href="https://reporter.nih.gov/project-details/9207468">R21 EB020283</a></p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 <tr>
 <td>
-<h2>Room</h2>
-<p><strong>C<br/>
-A<br/>
-M<br/>
-B<br/>
-R<br/>
-I<br/>
-D<br/>
-G<br/>
-E</strong></p></td>
+<h2 id="room-6">Room</h2>
+<h3>C a M B R I D G E</h3></td>
 <td>
-<h2><strong>NEUROSURGERY</strong></h2>
+<h2 id="neurosurgery"><strong>Neurosurgery</strong></h2>
 <p>Moderators:<br/>
 <strong><a href="https://lnkd.in/gJ5Hxkhz" title="">Jie Ying Wu, PhD</a></strong>, <em>Vanderbilt University</em><br/>
 <strong><a href="https://lnkd.in/gi4eNeJA" title="">Nazim Haouchine, PhD</a></strong>, <em>Brigham and Women’s Hospital and Harvard Medical School</em></p>
-<table>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td>3:30 – 3:37pm</td>
@@ -1181,16 +1146,12 @@ Radiology Department Pilot Grant</p></td>
 Gabor Fichtinger is supported as a Canada Research Chair in Computer-Integrated Surgery; We acknowledge the support of the Natural Sciences and Engineering Research Council of Canada (NSERC) and Ontario Graduate Scholarship (OGS) program.</p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </td>
 </tr>
 </tbody>
-</table>
-
-
-
-
-<h2>Confirmed Attendees (as of 05/18/2022)</h2>
+</table></div>
+<h2 id="confirmed-attendees-as-of-05-18-2022">Confirmed Attendees (as of 05/18/2022)</h2>
 <ol>
 <li>
 <ol>
@@ -1406,12 +1367,8 @@ Gabor Fichtinger is supported as a Canada Research Chair in Computer-Integrated 
 </li>
 </ol>
 <p>22 others, including six NIH officers and industry colleagues from Intuitive Surgical, Northern Digital Inc, Medtronic, and NVIDIA.</p>
-
-
-
-
-<p><strong>Abstract Submission: Due Wednesday, April 20, 2022</strong></p>
-<p><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqQ961USMW6vP64pIrZ0rBIXzpv049Hz7XLTo24Y_1ylAlAg/viewform" title="">Abstract Submission Site</a></strong></p>
+<h3>Abstract Submission: Due Wednesday, April 20, 2022</h3>
+<h3>Abstract Submission Site</h3>
 <p>We are soliciting submissions of short abstracts up to 500 words. The abstract doesn’t have to be a presentation of new data, but rather a compilation of past published data supporting your vision in Image-Guided Therapy research or NIH-funded program.</p>
 <ol>
 <li>Place the presenter at the top of the authors’ list and designate him/her as the corresponding author. The priority is given to talks presented by the PI(s) of the NIH grant the study is based on.</li>
@@ -1420,983 +1377,34 @@ Gabor Fichtinger is supported as a Canada Research Chair in Computer-Integrated 
 <li>The work presented can certainly be supported by sources other than NIH.</li>
 <li>The program committee will review all submissions and assign acceptances to either poster or oral presentations. Notice of acceptance will be sent out on 05/05/2022.</li>
 </ol>
-
-
-<h4><a href="#1673647856822-46d99139-eb72">The <strong>11<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2020 Virtual</strong><i></i></a></h4>
-
-
+<h3>The <strong>11<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2020 Virtual</strong></h3>
 <header>
-<p><h2>The 11<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
+<p><h2 id="the-11-th-national-image-guided-therapy-workshop">The 11<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
 </p></header>
-
-
-
-
-
-
-<article>
-
-
-
-
-<p>The 11<sup>th</sup> National Image Guided Therapy Workshop was also our first fully virtual meeting. It was held by Zoom on April 16, 2020.  It recorded 454 registered attendees, the largest number in the history of the workshop. Participants joined from 28 states and Washington DC in the United States, and from 13 other countries.  As an additional metric available on the video conference platform, we are able to report that the average duration that an attendee stayed in the workshop was 2.5 hours.  In a feedback survey (with 182 responses) over 90% rated the performance of the workshop between 8 and 10 on a scale of 1-10.</p>
-<h2><a href="https://www.youtube.com/watch?v=WcRnHTHRiMo&amp;list=PLY7U1ym4BriPhf7YqJH_igKHfEx4ylGwz" title="">Presentations from the Workshop</a></h2>
-<h2><strong>CHAIRS</strong></h2>
-<ul>
-<li><a href="https://ncigt.org/tina-kapur-phd/" title="">Tina Kapur, PhD,</a> Brigham and Women’s Hospital and Harvard Medical School</li>
-<li><a href="http://childrensnational.org/research-and-education/about-cri/faculty-and-leadership-directory/kevin-cleary">Kevin Cleary, PhD</a>, Children’s National Health System</li>
-<li><a href="https://www.mskcc.org/research-areas/labs/milind-rajadhyaksha" title="">Milind Rajadhyaksha, PhD</a>, Memorial Sloan Kettering Cancer Center</li>
-<li><a href="https://www.uclahealth.org/maie-st-john" title="">Maie St. John, MD, PhD,</a> David Geffen School of Medicine at UCLA</li>
-<li><a href="https://www.nibib.nih.gov/about-nibib/staff/behrouz-shabestari" title="">Behrouz Shabestari, PhD,</a> National Institute of Biomedical Imaging and Bioengineering</li>
-</ul>
-<h2><strong>POSTER SESSION CHAIRS </strong></h2>
-<ul>
-<li><a href="http://kkose.github.io/about/" title="">Kivanc Kose, PhD</a>, Memorial Sloan Kettering Cancer Center</li>
-<li>Xiaotian (Dennis) Wu, PhD, Gordon Center for Medical Imaging at MGH<strong>  </strong></li>
-</ul>
-<h2>PROGRAM</h2>
-<table>
-<tbody>
-<tr>
-<td>12:30-1:00pm</td>
-<td colspan="2"><strong>Pre-Opening Setup Time for Presenters</strong></td>
-</tr>
-<tr>
-<td>1:00pm</td>
-<td colspan="2"><strong>Opening Remarks – Tina Kapur</strong></td>
-</tr>
-<tr>
-<td>1:02-1:10pm</td>
-<td colspan="2">
-<strong>Keynote Talk on Image Guided Therapy – Clare Tempany</strong>
-</td>
-</tr>
-<tr>
-<td><strong>SESSION 1</strong></td>
-<td colspan="2"><strong>Guidance for General Surgery, Liver Ablation, Brain and Spine Surgery, and Cancer</strong></td>
-</tr>
-<tr>
-<td> 1:10-1:15pm</td>
-<td>1.</td>
-<td>Jayender Jagadeesan (Boston, MA)<br/>
-<em>Navigation for General Surgery Applications</em></td>
-</tr>
-<tr>
-<td>1:15-1:20pm</td>
-<td>2.</td>
-<td>Kristy Brock (Houston, TX)<br/>
-<em>Anatomical Modeling to Improve the Precision of Image Guided Liver Ablation</em></td>
-</tr>
-<tr>
-<td>1:20-1:25pm</td>
-<td>3.</td>
-<td>Jeffrey Siewerdsen (Baltimore, MD)<br/>
-<em>Image Guidance in Brain and Spine Surgery Beyond Precision</em></td>
-</tr>
-<tr>
-<td>1:25-1:30pm</td>
-<td>4.</td>
-<td>Sarah Frisken (Boston, MA)<br/>
-<em>Insertion Paths for Laser Interstitial Thermal Therapy in the Brain</em></td>
-</tr>
-<tr>
-<td>1:30-1:35pm</td>
-<td>5.</td>
-<td>Moritz Kircher (Boston, MA)<br/>
-<em>Nanoprobes for Cancer Imaging and Therapy</em></td>
-</tr>
-<tr>
-<td><strong>SESSION 2</strong></td>
-<td colspan="2"><strong>Optical Imaging Guided Therapy</strong></td>
-</tr>
-<tr>
-<td>1:35-1:40pm</td>
-<td>6.</td>
-<td>Milind Rajadhyaksha (New York, NY)<br/>
-<em>Confocal Microscopy and Optical Coherence Tomography to guide Mohs Surgery</em></td>
-</tr>
-<tr>
-<td>1:40-1:45pm</td>
-<td>7.</td>
-<td>Summer Gibbs (Portland, OR)<br/>
-<em>Near Infrared Nerve-Specific Fluorophores for Nerve Sparing during Prostatectomy</em></td>
-</tr>
-<tr>
-<td>1:45-1:50pm</td>
-<td>8.</td>
-<td>Haichong Zhang (Worcester, MA)<br/>
-<em>Photoacoustic Image Instrumentation for Prostate Cancer Detection</em></td>
-</tr>
-<tr>
-<td>1:50-1:55pm</td>
-<td>9.</td>
-<td>Junichi Tokuda (Boston, MA)<br/>
-<em>MRI-Guided Prostate Focal Cryoablation</em></td>
-</tr>
-<tr>
-<td>1:55-2:00pm</td>
-<td>10.</td>
-<td>Baohong Yuan (Arlington, TX)<br/>
-<em>Ultrasound-switchable Fluorescence Imaging for Breast Cancer Surgery Guidance</em></td>
-</tr>
-<tr>
-<td>2:00-2:05pm</td>
-<td>11.</td>
-<td>Maie St. John (Los Angeles, CA)<br/>
-<em>Image-Guided Technologies for Head and Neck Cancer Surgery</em></td>
-</tr>
-<tr>
-<td><strong>SESSION 3</strong></td>
-<td colspan="2"><strong>Image Guided Drug Delivery</strong></td>
-</tr>
-<tr>
-<td><strong> </strong>2:05-2:10pm</td>
-<td>12.</td>
-<td>Nathan McDannold (Boston, MA)<br/>
-<em>MRI-guided focused Ultrasound Neurosurgery</em></td>
-</tr>
-<tr>
-<td>2:10-2:15pm</td>
-<td>13.</td>
-<td>Hak Soo Choi (Boston, MA)<br/>
-<em>Renal Clearable Fluorophores for Image-Guided Drug Delivery and Cancer Surgery</em></td>
-</tr>
-<tr>
-<td>2:15-2:20pm</td>
-<td>14.</td>
-<td>Hong Chen (St. Louis, MO)<br/>
-<em>MRI-guided Focused Ultrasound for Noninvasive Diagnosis of Brain Tumors</em></td>
-</tr>
-<tr>
-<td>2:20-2:25pm</td>
-<td>15.</td>
-<td>Miroslaw Janowski (Baltimore, MD)<br/>
-<em>Intra-arterial Delivery of Macromolecules to the Brain Guided by Interventional PET</em></td>
-</tr>
-<tr>
-<td>2:25-2:30pm</td>
-<td>16.</td>
-<td>Alexander Klibanov (Charlottesville, VA)<br/>
-<em>Perfluorocarbon Superheated Nanodroplets for US Triggered Tumor Therapy</em></td>
-</tr>
-<tr>
-<td>2:30-2:35pm</td>
-<td>17.</td>
-<td>Piotr Walczak (Baltimore, MD)<br/>
-<em>Real-time MRI and Intravital Microscopy to Visualize Extravasation of Intra-Arterially Administered Antibodies in Mice</em></td>
-</tr>
-<tr>
-<td><strong>SESSION 4</strong></td>
-<td colspan="2"><strong>Robots and Devices</strong></td>
-</tr>
-<tr>
-<td><strong> </strong>2:35-2:40pm</td>
-<td>18.</td>
-<td>Kevin Cleary (D.C.)<br/>
-<em>Body-mounted Robots for MRI-guided Interventions</em></td>
-</tr>
-<tr>
-<td>2:40-2:45pm</td>
-<td>19.</td>
-<td>Axel Krieger (College Park, MD)<br/>
-<em>Supervised Autonomous Robotic Laparoscopic Suturing</em></td>
-</tr>
-<tr>
-<td>2:45-2:50pm</td>
-<td>20.</td>
-<td>Punit Prakash (Manhattan, KS)<br/>
-<em>Virtual Bronchoscopy-Guided Microwave Ablation</em></td>
-</tr>
-<tr>
-<td>2:50-2:55pm</td>
-<td>21.</td>
-<td>Ling-Jian Meng (Urbana, IL)<br/>
-<em>Intraoperative C-arm SPECT for Hybrid Operating Room: a Design Study</em></td>
-</tr>
-<tr>
-<td>2:55-3:00pm</td>
-<td>22.</td>
-<td>Cristian Atria (Salt Lake City, UT)<br/>
-<em>NIH Funded Startup – nView Medical for Intraoperative 3D Imaging</em></td>
-</tr>
-<tr>
-<td>3:00-3:05pm</td>
-<td>23.</td>
-<td>Ryan Halter (Hanover, NH)<br/>
-<em>Image-Guidance in Soft-Tissue Surgical Applications</em></td>
-</tr>
-<tr>
-<td><strong>SESSION 5</strong></td>
-<td colspan="2"><strong><b>NIH Information and Q&amp;A</b></strong></td>
-</tr>
-<tr>
-<td>3:05-3:10pm</td>
-<td>24.</td>
-<td>Janet Eary (D.C.)<br/>
-<em>Imaging to Guide Cancer Interventions – New NCI Initiatives</em></td>
-</tr>
-<tr>
-<td>3:10-3:15pm</td>
-<td>25.</td>
-<td>Behrouz Shabestari (D.C.)<br/>
-<em>National Centers for Biomedical Imaging and Bioengineering (NCBIB)<br/>
-P41 </em><i>and New NIBIB Initiatives</i></td>
-</tr>
-<tr>
-<td>3:15-3:20pm</td>
-<td>26.</td>
-<td>Michael Wolfson (D.C.)<br/>
-<i>Initiatives for Junior Investigators at NIBIB</i></td>
-</tr>
-<tr>
-<td>3:20-3:35pm</td>
-<td></td>
-<td>Q&amp;A Panel Moderated by Behrouz Shabestari, PhD, NIBIB<br/>
-Panelists:
-<ul>
-<li>Tatjana Atanasijevic, NIBIB</li>
-<li>Manana Sukhareva, NIBIB</li>
-<li>Pushpa Tandon, NCI</li>
-<li>Michael Wolfson, NIBIB</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><strong>SESSION 6</strong></td>
-<td colspan="2"><strong>Posters</strong></td>
-</tr>
-<tr>
-<td>3:45-4:00pm</td>
-<td colspan="2">Posters are available before and after the meeting in the “Image Guided Therapy Workshop” Google Classroom.
-
-<p>Go to <a href="https://classroom.google.com/">https://classroom.google.com</a></p>
-<ol>
-<li>Log in with a gmail account for maximal success (can try with your other google accounts)</li>
-<li>Then click the plus symbol on the top right, and join the class with the code: <strong>7sfxt7u</strong></li>
-</ol>
-<p>During the Workshop these will be presented in Zoom breakout rooms by presenters.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<h2><strong>POSTERS</strong></h2>
-
-<table>
-<tbody>
-<tr>
-<td>
-<h3><strong>1. Surgical/Guide</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Stereovision-based Image Updating in Open Lumbar Fusion Surgery.</em><br/>
-Xiaoyao Fan, Maxwell Durtschi, Chen Li, Linton Evans, Songbai Ji, Yunliang Cai, Sohail Mirza and Keith Paulsen.</td>
-</tr>
-<tr>
-<td><em>Shift Compensation in Epilepsy Surgery.</em><br/>
-Xiaoyao Fan, David Roberts and Keith Paulsen.</td>
-</tr>
-<tr>
-<td><em>A Preliminary Study of Needle and Guide Dynamic Interaction for Targeted Interventions.</em><br/>
-Pankaj Kulkarni, Sakura Sikander, Pradipta Biswas and Sang-Eun Song.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>2. Optical</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Dynamic in Vivo Imaging of Tumor-Immune Microenvironment (TiME) and Microvasculature in Skin Cancers for Potential Prognosis Prediction.</em><br/>
-Aditi Sahu, Melissa Gill, Christi Alessi-Fox, Miguel Cordova, Kivanc Kose, Anthony Santella, Salvador Gonzalez, Ashfaq Marghoob, Chih Shan Chen and Milind Rajadhyaksha.</td>
-</tr>
-<tr>
-<td><em>Combined Reflectance Confocal Microscopy – Optical Coherence Tomography for Detection and Deep Margin Assessment of Basal Cell Carcinomas: A Clinical Study.</em><br/>
-Aditi Sahu, Oriol Yelamos, Nicusor Iftimia, Miguel Cordova, Christi Alessi-Fox, Melissa Gill, Gopi Maguluri, Stephen Dusza, Cristian Navarrete-Dechent, Salvador Gonzalez, Anthony Rossi, Ashfaq Marghoob, Chih-Shan Jason Chen and Milind Rajadhyaksha.</td>
-</tr>
-<tr>
-<td><em>Combining a Nuclear Contrast Agent (PARPi-FL) With Fluorescence Confocal Microscopy to Improve Noninvasive Diagnosis of Basal Cell Carcinomas.</em><br/>
-Aditi Sahu, Jose Cordero, Susanne Kossatz, Christian Brand, Arianna Strome, Niasia Everret, Paula Demetrio Desouza Franca, Allan Halpern, Thomas Reiner, Milind Rajadhyaksha and Manu Jain.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>3. Optical 2</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Dynamic Optical Contrast Imaging: A Technique of Potentials.</em><br/>
-Yong Hu, Shan Huang, Yazeed Alhiyar, Peter Pellionisz, Oscar Stafsudd and Maie St. John.</td>
-</tr>
-<tr>
-<td><em>Clinical Usability of Video Mosaicking with Reflectance Confocal Microscopy for Mapping Cancer Margins in vivo to guide Treatment.</em><br/>
-Kivanc Kose, Miguel Cordova, Oriol Yelamos, Eileen Flores, Gary Peterson and Milind Rajadhyaksha.</td>
-</tr>
-<tr>
-<td><em>Pre-Operative Imaging of Oral Cancer Margins in Vivo With a Handheld Reflectance Confocal Microscope and Video-Mosaicking Approach: A Feasibility Study.</em><br/>
-Gary Peterson, Daniella Karassawa Zanoni, Marco Ardigo, Aditi Sahu, Snehal Patel and Milind Rajadhyaksha.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>4. Robotics</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Body-Mounted Robotic Assistant for MRI-Guided Lumbar Spinal Injections.</em><br/>
-Gang Li, Nirav Patel, Karun Sharma, Kevin Cleary and Iulian Iordachita.</td>
-</tr>
-<tr>
-<td><em>3D CBT Image-Guided Autonomous Robotic Pedicle Screw Placement: A Feasibility Study.</em><br/>
-Cristian Atria, Andrew Hall, Najib El Tecle, Keith Nelson, Last Lisa, Alexander Smith and Robert Morgan.</td>
-</tr>
-<tr>
-<td><em>A Novel 4-DOF Manipulator for MRI-guided Transperineal Prostate Intervention.</em><br/>
-Pradipta Biswas and Sang-Eun Song.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>5. Robotics 2</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Development of Exposure Phase Navigation as a Training Aid in Robotic Surgery.</em><br/>
-Michael Kokko, John Seigne, Douglas Van Citters and Ryan Halter.</td>
-</tr>
-<tr>
-<td><em>Design and Workspace Analysis of a Patient Mounted Liver Ablation Robot.</em><br/>
-Mishek Musa, Karun Sharma, Kevin Cleary and Yue Chen.</td>
-</tr>
-<tr>
-<td><em>Image-Guided Robotic Surgery for Reduction and Fixation of Pelvic Fractures.</em><br/>
-Ali Uneri, Rohan Vijayan, Runze Han, Greg Osgood, Nicholas Theodore and Jeffrey Siewerdsen.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>6. Quality/Data</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Image Quality in Cone Beam Tomosynthesis.</em><br/>
-Lisa Last, Cristian Atria and Luke Newmeyer.</td>
-</tr>
-<tr>
-<td><em>A Machine-Readable Representation of PI-RADS Reports Using the DICOM Standard.</em><br/>
-Andrey Fedorov, David Clunie and Clare Tempany.</td>
-</tr>
-<tr>
-<td><em>National Cancer Institute Imaging Data Commons.</em><br/>
-Andrey Fedorov, William Longabaugh, David Pot, Steve Pieper, Erik Ziegler, Rob Lewis, Markus D. Herrmann, William Clifford, Hugo Aerts, André Homeyer, David Clunie and Ron Kikinis.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>7. Modeling/Planning</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Intraoperative Tongue Deformation Estimation Using FEM-Multibody Modeling and Intraoperative Tracking: Cadaver Cases.</em><br/>
-Xiaotian Wu, C. Antonio Sánchez, John Lloyd, Sidney Fels, Joseph Paydarfar and Ryan Halter.</td>
-</tr>
-<tr>
-<td><em>Development and Validation of a Finite Element Model for In Situ MR-Guided Conformal Ablation using Robotically Delivered Needle-Based Therapeutic Ultrasound.</em><br/>
-Katie Gandomi, Paulo Carvalho, Matthew Tarasek, Eric Fiveland, Chitresh Bhushan, Paul Neubauer, Zhanyue Zhao, Everette Burdette, Julie Pilitsis, Desmond Yeo, Christopher Nycz and Gregory Fischer.</td>
-</tr>
-<tr>
-<td><em>Surgical Port and Trajectory Planning for PCNL Surgery Using CT Imaging and Genetic Algorithms.</em><br/>
-Moiz Khan, Filipe Pedrosa, Lexuan Wang, Dianne Sacco, Rajni Patel and Jayender Jagadeesan.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>8. Registration</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Fusion Assisted Biopsy of a Heterogenous Left Thoracic Neurofibroma in a 23-Year-Old Female: A Case Study of a Multimodal Non-Rigid Registration Device.</em><br/>
-Christopher Gallo, Nikhil Gowda, William Plishker, Bhupender Yadav, Ranjith Vellody, Raj Shekhar and Karun Sharma.</td>
-</tr>
-<tr>
-<td><em>Deformable MR to Cone-Beam CT Registration for High-Precision Neuro-Endoscopic Surgery.</em><br/>
-Michael Ketcha, Craig Jones, Pengwei Wu, Runze Han, Ali Uneri, Junghoon Lee, Mark Luciano, William Anderson and Jeffrey Siewerdsen.</td>
-</tr>
-<tr>
-<td><em>A Surface Reconstruction and Registration-based Navigation System to Handle Tissue Deformation.</em><br/>
-Haoyin Zhou and Jayender Jagadeesan.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>9. Treatment/Diagnostics</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Reflectance Confocal Microscopy-Guided Carbon Dioxide Laser Ablation of Low-Risk Basal Cell Carcinomas: A Prospective Study.</em><br/>
-Saud Aleissa, Milind Rajadhyaksha and Anthony Rossi.</td>
-</tr>
-<tr>
-<td><em>Evaluation of Extramammary Paget Disease with Hand-Held Reflectance Confocal Microscopy.</em><br/>
-Saud Aleissa, Milind Rajadhyaksha and Anthony Rossi.</td>
-</tr>
-<tr>
-<td><em>Determining the Role of MR-Guided Biopsy in Indeterminate PI-RADS 3 Lesions.</em><br/>
-Andrés Camacho, Jonathan Waring, Andriy Fedorov, Renato Umeton, Clare M. Tempany, Massimo F. Loda and Fiona M. Fennessy.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>10. Fluorescence/Drug Delivery</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Real-time Fluorescence Lifetime Imaging System for Intraoperative Tissue Differentiation.</em><br/>
-Shan Huang, Yong Hu, Peter Pellionisz, Oscar Stafsudd and Maie St. John. A.</td>
-</tr>
-<tr>
-<td><em>Multimodal Deformable Registration via GAN-based Image Translation and Dual-Stream Learning Network.</em><br/>
-Zhe Xu and Jayender Jagadeesan.</td>
-</tr>
-<tr>
-<td><em>Efficacy of DNA-Functionalized Materials for Selective Removal of Chemotherapeutic Agents.</em><br/>
-Colin Yee, Parth Kumar, Bridget Kilbride and Steven Hetts.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>11. ML/DL</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Utilizing Machine Learning for Reflectance Confocal Microscopy in Skin Cancer Care.</em><br/>
-Kivanc Kose, Alican Bozkurt, Christi Alessi-Fox, Melissa Gill, Jennifer Dy, Dana H. Brooks and Milind Rajadhyaksha.</td>
-</tr>
-<tr>
-<td><em>Multimodal Deformable Registration via GAN-based Image Translation and Dual-Stream Learning Network.</em><br/>
-Zhe Xu and Jayender Jagadeesan.</td>
-</tr>
-<tr>
-<td><em>Confidence Calibration and Predictive Uncertainty Estimation for Deep Medical Image Segmentation.</em><br/>
-Alireza Mehrtash, William Wells, Clare Tempany, Purang Abolmaesumi and Tina Kapur.</td>
-</tr>
-<tr>
-<td>
-<h3><strong>12. Tissue Measurement</strong></h3>
-</td>
-</tr>
-<tr>
-<td><em>Feasibility Study of Q-Space Trajectory Imaging (QTI) for Assessment of Tissue Microstructure in Prostate Cancer to Assist With Target Selection for Prostate Biopsy.</em><br/>
-Bjoern Langbein, Filip Szczepankiewicz, Carl-Fredrik Westin, Adam Kibel, Clare Tempany, Martin Schostak, Andriy Fedorov, Fiona Fennessy and Camden Bay.</td>
-</tr>
-<tr>
-<td><em>Feasibility of Quantitative MR Based Hypoxia Measurements in the Setting of Interstitial High Dose Rate Brachytherapy of the Cervix.</em><br/>
-Larissa Lee, Robert Cormack, Gregory Ekchian, Junichi Tokuda, Evangelia Kaza and Michael Cima.</td>
-</tr>
-<tr>
-<td><em>Data-Driven Identification of Intra-tumor Metabolic Heterogeneity of Glioblastoma using Variational Autoencoder.</em><br/>
-Walid Abdelmoula, Begona Lopez, Elizabeth Randall, Jann Sarkaria, Jeffrey Agar, Tina Kapur, William Wells and Nathalie Agar.</td>
-</tr>
-</tbody>
-</table>
-
-<h2><strong>REGISTERED ATTENDEES</strong></h2>
-<ol>
-<li>
-<ol>
-<li>Allison Payne PhD, University of Utah, Salt Lake City, UT</li>
-<li>Gregory Fischer PhD, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Jing Wang PhD, UT Southwestern Medical Center, Dallas, TX</li>
-<li>Steve Pieper PhD, Isomics, Inc., Cambridge, MA</li>
-<li>Shreyas Chandra Sekhar PhD Candidate, MD Candidate, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Michelle Kline MS Computer Science, University of Utah, Salt Lake City, UT</li>
-<li>Ken Wang PhD, Johns Hopkins Hospital, Baltimore, MD</li>
-<li>Michael Daly PhD, Princess Margaret Cancer Centre, Toronto, Ontario, Canada</li>
-<li>Elodie Lugez PhD, Queen’s university, Kingston, Ontario, Canada</li>
-<li>Dania Daye MD, PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Rosemary Wong PhD, National Cancer Institute, Rockville, MD</li>
-<li>Dong-Hyun Kim PhD, Northwestern University, Chicago, IL</li>
-<li>Zion Tse PhD, University of York, York, UK</li>
-<li>Baohong Yuan PhD, University of Texas, Arlington, Arlington, TX</li>
-<li>Ron Kikinis MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Jaydev P. Desai PhD, Georgia Institute of Technology, Atlanta, GA</li>
-<li>Jerry Ackerman PhD, Massachusetts General Hospital, Charlestown, MA</li>
-<li>Sarah Frisken PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Gabor Fichtinger PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Lalitha K. Shankar MD, PhD, National Cancer Institute, Cancer Imaging Program, Bethesda, MD</li>
-<li>Shelley HuaLei Zhang PhD, Canon, Cambridge, MA</li>
-<li>Cristian Atria MBA, nView Medical, Salt Lake City, UT</li>
-<li>Dhruv Kool Rajamani Masters Student, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Ashim Subedee PhD, National Cancer Institute, Rockville, MD</li>
-<li>Xiaotian (Dennis) Wu PhD, Gordon Center for Medical Imaging, Massachusetts General Hospital, Boston, MA</li>
-<li>Shuwei Xing MD, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Drew Elliott Research Technician, Georgia Institute of Technology, Atlanta, GA</li>
-<li>YingLi Lu PhD, Robarts Research institute, London, Ontario, Canada</li>
-<li>Yue Sun PhD Candidate, University of Michigan, Ann Arbor, MI</li>
-<li>Alexander Klibanov PhD, University of Virginia, Charlottesville, VA</li>
-<li>Jacek Capala PhD, National Cancer Institute, Rockville, MD</li>
-<li>Marek Belohlavek MD, PhD, Mayo Clinic, Scottsdale, AZ</li>
-<li>Dennis Parker PhD, University of Utah, Salt Lake City, UT</li>
-<li>Kim Butts Pauly PhD, Stanford University, Stanford, CA</li>
-<li>Hak Soo Choi PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Maryam Rettmann PhD, Mayo Clinic, Rochester, MN</li>
-<li>Luke Mitchell Wiseman MD Candidate, Michigan State University, East Lansing, MI</li>
-<li>Kim Lawson MA, Philips, Cambridge, MA</li>
-<li>Kevin Cleary PhD, Children’s National Hospital, Washington, D.C.</li>
-<li>Elena Kaye PhD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Xenophon Papademetris PhD, Yale University, New Haven, CT</li>
-<li>Tina Kapur PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Prashin Unadkat MD, Northwell Health, Manhasset, NY</li>
-<li>Richard Wahl MD, Washington University in St. Louis, MO</li>
-<li>Ciprian N. Ionita PhD, State University of New York at Buffalo, Buffalo, NY</li>
-<li>Jeff Siewerdsen PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Paul Loschak PhD, Medtronic, Boston, MA</li>
-<li>Christina Yan MD Candidate, University of Ottawa, Ottawa, Ontario, Canada</li>
-<li>John Evans, Washington University in St. Louis, St. Louis, MO</li>
-<li>Emily Budziszewski MS Candidate, Case Western Reserve University, Cleveland, OH</li>
-<li>Daniel Margolis MD, Weill Cornell Medical College, New York, NY</li>
-<li>Alan Wang PhD, University of Auckland, Auckland, New Zealand</li>
-<li>Qi Duan PhD, NIBIB, National Institutes of Health, Bethesda, MD</li>
-<li>Viola Rieke PhD, University of Utah, Salt Lake City, UT</li>
-<li>Lily Yang MD, PhD, Emory University, Atlanta, GA</li>
-<li>Lyla Mu MS, Western University of Ontario, London, Ontario, Canada</li>
-<li>Henrik Odeen PhD, University of Utah, Salt Lake City, UT</li>
-<li>Simon Hao MD Candidate, Worcester Polytechnic Institute, Worcester, NY</li>
-<li>Andac Hamamci PhD, Yeditepe University, Istanbul, Turkey</li>
-<li>Javier Pascau PhD, Universidad Carlos III de Madrid, Madrid, Spain</li>
-<li>Rafael Moreta-Martinez PhD Candidate, Universidad Carlos III de Madrid, Madrid, Spain</li>
-<li>David García Mato PhD Candidate, Universidad Carlos III de Madrid, Madrid, Spain</li>
-<li>Mónica García Sevilla PhD Candidate, Universidad Carlos III de Madrid, Madrid, Spain</li>
-<li>Rashid Yasin PhD, Medtronic, Boston, MA</li>
-<li>Andrew Wiles PhD, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Ying Xiao PhD, UPenn, Philadelphia, PA</li>
-<li>Ashley Gilbank MD Candidate, Techna Institute – University Health Network, Toronto, Ontario, Canada</li>
-<li>Andy Johnston MSC, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Natasja Janssen Post-doctoral Researcher, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Andrea Weeks PhD, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Martin Kopcik MSc, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Armin Armbruster Scientist, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Isabela Choi PhD Candidate, University of Sao Paulo/ Massachusetts General Hospital, Boston, MA</li>
-<li>Bill Peine PhD, Medtronic, Boston, MA</li>
-<li>Jessica Rodgers PhD Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Iulian Iordachita PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Hareem Nisar PhD Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Katie Gandomi PhD Candidate, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Yiming Xiao PhD, Robarts Research Institute, Western University of Ontario, London, Ontario, Canada</li>
-<li>Uditha Jayarathne PhD, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>David Fuentes MD, PhD, The University of Texas MD Anderson Cancer Center, Houston, TX</li>
-<li>Clare Tempany MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Bruno Madore PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Goutam Ghoshal PhD, Acoustic MedSystems, South Grafton, MA</li>
-<li>Dan Gibson MA, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Alireza PhD Candidate, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Nancy Deaton PhD Candidate, Georgia Institute of Technology, Atlanta, GA</li>
-<li>Tamas Ungi MD, PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Walid Abdelmoula PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Kristy Brock MD, PhD, The University of Texas MD Anderson Cancer Center, Houston, TX</li>
-<li>Bongseo Choi PhD, Northwestern University, Chicago, IL</li>
-<li>Namrata Unnikrishnan Nayar PhD Candidate, Georgia Institute of Technology, Atlanta, GA</li>
-<li>Csaba Pinter PhD, Pixel Medical, Inc., Las Palmas de Gran Canaria, Spain</li>
-<li>Dieter Haemmerich PhD, Medical University of South Carolina, Charleston, SC</li>
-<li>Virginia Mamone PhD Candidate, University of Pisa, Pisa, Italy</li>
-<li>Selva Jeganathan PhD, Case Western Reserve University, Cleveland, OH</li>
-<li>Heather Newman BA, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Alastair Martin PhD, University of California – San Francisco, San Francisco, CA</li>
-<li>Steve van Hengstum BSc, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Graham Wright PhD, Sunnybrook Research Institute, Toronto, Ontario, Canada</li>
-<li>Vignesh Manoj Varier Master of Science, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Roberta Piazza PhD Candidate, University of Pisa, Pisa, Italy</li>
-<li>Nilesh Ghugre PhD, Sunnybrook Research Institute, Toronto, Ontario, Canada</li>
-<li>Kevin Lee Professional Engineer, Ryerson University, Waterloo, Ontario, Canada</li>
-<li>Jill Weyers PhD, Sunnybrook Research Institute, Toronto, Ontario, Canada</li>
-<li>Anthony Rossi MD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Jeff Stanley BMath, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Kivanc Kose PhD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>John Fischer Undergraduate Student, Northern Digital, Waterloo, Ontario, Canada</li>
-<li>Max Balter PhD, Medtronic, Boston, MA</li>
-<li>Summer Gibbs PhD, Oregon Health &amp; Science University, Portland, OR</li>
-<li>Connor Barth PhD, Oregon Health &amp; Science University, Portland, OR</li>
-<li>Rui Li PhD Candidate, University of Georgia, Athens, GA</li>
-<li>Jana Delfino PhD, US Food and Drug Administration, Silver Spring, MD</li>
-<li>Zijian Deng PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Hong Chen PhD, Washington University in St. Louis, St. Louis, MO</li>
-<li>Lei G. Wang PhD, Oregon Health &amp; Science University, Portland, OR</li>
-<li>Krishna Kumar Ramajayam PhD, Medical University of South Carolina, Charleston, SC</li>
-<li>Xiangkun Xu PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Elvis Chen PhD, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Logan Fisher BS Candidate, University of Utah, Salt Lake City, UT</li>
-<li>Achraj Sarma PhD Student, Georgia Institute of Technology, Atlanta, GA</li>
-<li>David Madoff MD, Yale School of Medicine, New Haven, CT</li>
-<li>Moritz Gross Medical Student, Yale School of Medicine, New Haven, CT</li>
-<li>Julius Chapiro MD, PhD, Yale University School of Medicine, New Haven, CT</li>
-<li>Simon Iseke MD Candidate, Yale School of Medicine, New Haven, CT</li>
-<li>Vasily Pekurovsky MD, Yale University, New Haven, CT</li>
-<li>Simon Drouin PhD, École de Technologie Supérieure, Montreal, Quebec, Canada</li>
-<li>Antonia Berz Postgraduate Fellow, Yale Radiology &amp; Biomedical Imaging, New Haven, CT</li>
-<li>Tom Kuhn Postgraduate Research Fellow, Yale University, New Haven, CT</li>
-<li>Taehoon Sim PhD, Northwestern University, Chicago, IL</li>
-<li>Neil Glossop PhD, ArciTrax Inc., Queen’s University, Toronto, Ontario, Canada</li>
-<li>Joshua Ehrlich MSc Candidate, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Ali Tavallaei PhD, Ryerson University, Toronto, Ontario, Canada</li>
-<li>Mihyun Choi PhD, Stanford University, Stanford, CA</li>
-<li>Sharan Ravigopal PhD Candidate, Georgia Institute of Technology, Lawrenceville, GA</li>
-<li>Marco Schneider PhD, Auckland Bioengineering Institute, Auckland, New Zealand</li>
-<li>Jaykumar Patel Master Candidate, University of Toronto, Toronto, Ontario, Canada</li>
-<li>Alfonso Estudillo-Romero PhD, Université de Rennes, Rennes, France</li>
-<li>Pushpa Tandon PhD, National Cancer Institute, Rockville, MD</li>
-<li>Christina Liu PhD, National Cancer Institute, Rockville, MD</li>
-<li>Chiayeng Wang PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Matthew Young PhD, National Cancer Institute, Rockville, MD</li>
-<li>Mercy Prabhudas PhD, NIAID, National Institutes of Health, Rockville, MD</li>
-<li>Aditi Sahu PhD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Gregory Ekchian PhD, MIT, Cambridge, MA</li>
-<li>Linton Evans MD, Dartmouth Hitchcock Medical Center, Lebanon, NH</li>
-<li>Susanne Kossatz PhD, Technical University Munich, Munich, Germany</li>
-<li>Christopher Nycz PhD, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Markus D. Herrmann MD, PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Christi Alessi-Fox MS, Caliber I.D., Rochester, NY</li>
-<li>Alexandra Golby MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Manu Jain MD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Michael D. Ketcha PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Nicusor Iftimia PhD, Physical Sciences Inc., Andover, MA</li>
-<li>Gary Peterson BS Mechanical Engineering, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Chih-Shan Jason Chen MD, PhD, Memorial Sloan Kettering Cancer Center, Hauppauge, NY</li>
-<li>Mike Kokko PhD Candidate, Dartmouth College – Thayer School of Engineering, Hanover, NH</li>
-<li>Tatjana Atanasijevic PhD, NIBIB, National Institutes of Health, Bethesda, MD</li>
-<li>Michael B. Wolfson PhD, National Institutes of Health/NIBIB, Bethesda, MD</li>
-<li>Punit Prakash PhD, Kansas State University, Manhattan, KS</li>
-<li>Eileen S. Flores PhD Student, Penn State College of Medicine, Hershey, PA</li>
-<li>Gang Li PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Thomas Noh MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Pablo Valdes Quevedo MD, PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Daniella Karassawa Zanoni MD, University of Iowa, Iowa City, IA</li>
-<li>Brian Mark Anderson PhD Candidate, The University of Texas MD Anderson Cancer Center, Houston, TX</li>
-<li>Pengwei Wu PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Ali Uneri PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Andrés Camacho MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Milind Rajadhyaksha PhD, Memorial Sloan Kettering Cancer Center, New York, NY</li>
-<li>Jinyun Yuan PhD, Washington University in St. Louis, St. Louis, MO</li>
-<li>Runze Han PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Xiaoxuan Zhang PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Alexander Smith PhD Candidate, MD Candidate, Carle-Illinois College of Medicine, Urbana, IL</li>
-<li>Andriy Fedorov PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Elena Maria Zannoni PhD Candidate, University of Illinois Urbana-Champaign, Urbana, IL</li>
-<li>Evangelia Kaza PhD, Brigham and Women’s Hospital, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA</li>
-<li>Ling-Jian Meng PhD, University of Illinois Urbana-Champaign, Urbana, IL</li>
-<li>Anna Jablonska PhD, University of Maryland, Baltimore, MD</li>
-<li>Junichi Tokuda PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Parikshit Juvekar MBBS, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>J.F. Eary MD, National Cancer Institute, Bethesda, MD</li>
-<li>Albert Sinusas MD, Yale University, New Haven, CT</li>
-<li>Joe Paydarfar MD, Dartmouth Hitchcock Medical Center, Lebanon, NH</li>
-<li>Wes Gilson PhD, Siemens Healthineers, Malvern, PA</li>
-<li>Thomas Tang PhD, Philips, Toronto, Ontario, Canada</li>
-<li>Axel Krieger PhD, University of Maryland, College Park, MD</li>
-<li>Jonathan Sorger PhD, Intuitive Surgical, Sunnyvale, CA</li>
-<li>Amoon Jamzad PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Mitchell Doughty PhD Candidate, University of Toronto, Toronto, Ontario, Canada</li>
-<li>Nikhil Gowda MD Candidate, The George Washington University, SMHS, Washington, D.C.</li>
-<li>Haichong Zhang PhD, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Samuel Kesner PhD, Medtronic, Boston, MA</li>
-<li>Steve Levine PhD, Medtronic, Boston, MA</li>
-<li>Saud Aleissa MD, Memorial Sloan Kettering, New York, NY</li>
-<li>Yong Hu PhD, University of California, Los Angeles, Los Angeles, CA</li>
-<li>Pankaj Pramod Kulkarni PhD Candidate, University of Central Florida, Orlando, FL</li>
-<li>Sakura Sikander PhD Candidate, University of Central Florida, Orlando, FL</li>
-<li>Pradipta Biswas PhD Candidate, University of Central Florida, Orlando, FL</li>
-<li>Homan Kang PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Anita Mahadevan-Jansen PhD, Vanderbilt University, Nashville, TN</li>
-<li>Sohrab Eslami PhD, Medtronic Co, Boston, MA</li>
-<li>Shan Huang PhD Student, University of California, Los Angeles, Los Angeles, CA</li>
-<li>Melissa Gill MD, SUNY Downstate, Brooklyn, NY</li>
-<li>Zhe Xu MS Candidate, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Ephi Most ScD, Medtronic, Boston, MA</li>
-<li>Alejandro Lepervanche Robotic Surgery Senior Software Engineer, Medtronic – Minimally Invasive Technologies, Boston, MA</li>
-<li>Alireza Sedghi PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Najib El Tecle MD, Saint Louis University, St. Louis, MO</li>
-<li>Dara Kraitchman VMD, PhD, Johns Hopkins School of Medicine, Baltimore, MD</li>
-<li>Emily Dahl PhD Candidate, Stanford University, Stanford, CA</li>
-<li>Jax Luo PhD Candidate, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Canwen Liu PhD, Medtronic, Boston, MA</li>
-<li>Mishek Musa PhD Candidate, University of Arkansas, Fayetteville, AK</li>
-<li>Xiaoyao Fan PhD, Dartmouth College, Hanover, NH</li>
-<li>Reid Vassallo MSc Candidate, Western University of Ontario/Robarts Research Institute, London, Ontario, Canada</li>
-<li>Lifei Zhu PhD Candidate, Washington University in St. Louis, St. Louis, MO</li>
-<li>Alican Bozkurt PhD Candidate, Northeastern University, Cambridge, MA</li>
-<li>Aurea Pascal DVM MPVM, Stanford University, Palo Alto, CA</li>
-<li>Manana Sukhareva PhD, NIBIB, National Institutes of Health, Bethesda, MD</li>
-<li>Moiz Khan PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Nobuhiko Hata PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Nazim Haouchine PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Peter Pellionisz PhD Candidate, MD Candidate, University of California, Los Angeles, Los Angeles, CA</li>
-<li>Artur Banach PhD Candidate, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Robert Cormack PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Nathalie Agar PhD, Brigham and Women’s Hospital, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA</li>
-<li>Mazdak Taghioskoui PhD, Trace Matters Scientific, Somerville, MA</li>
-<li>Joeana Cambranis MSc Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Christine Demore PhD, Sunnybrook Research Institute, Toronto, Ontario, Canada</li>
-<li>Gaurav Dular MD, Siemens Healthcare GmbH, Erlangen, Germany</li>
-<li>Nazar Rasul PhD, Siemens Healthineers, Erlangen, Germany</li>
-<li>Solita Wang PhD, NIDCR/National Institutes of Health, Bethesda, MD</li>
-<li>Ileana Hancu PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Denise Trochesset DDS, NYU College of Dentistry, New York, NY</li>
-<li>Houston Baker PhD, National Cancer Institute, Bethesda, MD</li>
-<li>George Redmond MS, MBA, National Cancer Institute, Bethesda, MD</li>
-<li>Frank J Bova PhD, University of Florida, Gainesville, FL</li>
-<li>Hamed Saeidi PhD, University of Maryland College Park, College Park, MD</li>
-<li>Zhuo Zhao PhD, University of Georgia, Athens, GA</li>
-<li>Miroslaw Janowski MD, PhD, University of Maryland, College Park, MD</li>
-<li>Rajni Patel PhD, University of Western Ontario and CSTAR, London, Ontario, Canada</li>
-<li>Angela Alarcon Master’s Student, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Kai Bao PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Ritvik Pulya High School Student, Research Trainee, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Takeshi Fukuda MD, PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Amy Daniel MSc, Northeastern University, Boston, MA</li>
-<li>Satoshi Kashiwagi MD, PhD, Massachusetts General Hospital, Charlestown, MA</li>
-<li>Hojjat Fallahi PhD, Kansas State University, Manhattan, KS</li>
-<li>Jan Sebek PhD, Kansas State University, Manhattan, KS</li>
-<li>J. Fernando Corredor BSBA, Invenio Imaging, San Francisco, CA</li>
-<li>John Carrino MD, Hospital for Special Surgery, New York, NY</li>
-<li>Salar Sajei PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Pegah Faridi PhD, Kansas State University, Manhattan, KS</li>
-<li>Laura Rigolo MA, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Ryan Campion BS Biomedical Engineering, Zimmer Biomet, Denver, CO</li>
-<li>Ivan Delevic, OrthoSensor Inc., Miami, FL</li>
-<li>Zhontao Hu PhD, Washington University in St. Louis, St. Louis, MO</li>
-<li>Ceferino Obcemea, National Cancer Institute, Bethesda, MD</li>
-<li>Leo Zekelman PhD Student, Harvard University, Cambridge, MA</li>
-<li>Naoyuki Shono MD, PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Cedric Goarant M&amp;A, Apparius, Lyon, France</li>
-<li>Stacie Chen PhD, Washington University in St. Louis, St. Louis, MO</li>
-<li>Lawrence H. Staib PhD, Yale University, New Haven, CT</li>
-<li>Christopher Pacia PhD Candidate, Washington University in St. Louis, St. Louis, MO</li>
-<li>Andrew Hall PhD, Saint Louis University, St. Louis, MO</li>
-<li>Fangwen Zhai PhD, Tsinghua University, Beijing, China</li>
-<li>Filipe Pedrosa PhD Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Yan Gong PhD Candidate, Washington University in St. Louis, St. Louis, MO</li>
-<li>Jayender Jagadeesan PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Behrouz Shabestari PhD, NIBIB, National Institutes of Health, Bethesda, MD</li>
-<li>Nathan McDannold PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Eric Gaudet BSc(Eng), Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Piotr Walczak MD, PhD, University of Maryland, Baltimore, MD</li>
-<li>Moritz Kircher MD, PhD, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA</li>
-<li>Maie St. John MD, PhD, David Geffen School of Medicine, University of California, Los Angeles, Los Angeles, CA</li>
-<li>Haoyin Zhou PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Giju Thomas PhD, Vanderbilt University, Nashville, TN</li>
-<li>Ryan Halter PhD, Dartmouth College, Hanover, NH</li>
-<li>Lisa Last MS, nView medical, Salt Lake City, UT</li>
-<li>Pedro Moreira PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Colin Yee BS Materials Engineering, University of California – San Francisco, San Francisco, CA</li>
-<li>Henky Wibowo MSc, phenoMapper, LLC., San Jose, CA</li>
-<li>Prasad Vagdargi PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Rohan Vijayan PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Sarah Capostagno PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Niral Sheth MS, Johns Hopkins University, Baltimore, MD</li>
-<li>Alejandro Sisniega PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Rock Hadley PhD, University of Utah, Salt Lake City, UT</li>
-<li>Seong-Eun Kim PhD, University of Utah, Salt Lake City, UT</li>
-<li>Mark Wilbrink BSc, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Lorne W Hofstetter PhD Candidate, MD Candidate, University of Utah, Salt Lake City, UT</li>
-<li>Johanna Dwyer PhD, Tufts Medical Center, Boston, MA</li>
-<li>Brian Rodgers MD, National Institutes of Health, Bethesda, MD</li>
-<li>Robert Pearsall MS, Medtronic Robotic Assisted Surgery, Boston, MA</li>
-<li>Robert Nordsrom PhD, National Cancer Institute, Rockville, MD</li>
-<li>Laurence Chabanas MSc, Surgivisio, France</li>
-<li>Luv Kohli PhD, InnerOptic, Durham, NC</li>
-<li>William (Sandy) Wells PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Carl-Fredrik Westin PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Islam Elhelf MD, PhD, BIDMC, Harvard Medical School, Boston, MA</li>
-<li>Lauren J. O’Donnell PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Fan Zhang PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Chengyan Chu MD, Radiology, Baltimore, MD</li>
-<li>Yaoheng Yang PhD Candidate, Washington University in St. Louis, St. Louis, MO</li>
-<li>Dhirajsinh Deshmukh MS, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Yichuan Tang PhD Student, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Xinxiao Li MD, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Yajie (Kevin) Liang MD, PhD, University of Maryland School of Medicine, Baltimore, MD</li>
-<li>Jose Alarcon PhD, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Stephan Maier MD, PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Parvin Mousavi PhD, Queen’s University, Toronto, Ontario, Canada</li>
-<li>Morteza Mohammadjavadi MSc, Stanford University, Stanford, CA</li>
-<li>Alice Santilli MSc Computing, Queen’s University, Toronto, Ontario, Canada</li>
-<li>Ilker Hacihaliloglu PhD, Rutgers University, Piscataway, NJ</li>
-<li>Brad Wood MD, NIH Clinical Center, National Cancer Institute, NIBIB, Bethesda, MD</li>
-<li>Farshid Alambeigi PhD, University of Texas at Austin, Austin, TX</li>
-<li>Nicholas Theodore MD, Johns Hopkins Hospital, Baltimore, MD</li>
-<li>Jiawei Ge MS, University of Maryland, College Park, MD</li>
-<li>Qingyu Zhao PhD, Stanford University, Stanford, CA</li>
-<li>Mehdi Moradi PhD, IBM Research, San Jose, CA</li>
-<li>Meysam Torabi MS, UC Berkeley, Verb Surgical Inc., Santa Clara, CA</li>
-<li>Merle Weitzenberg PhD Candidate, Leibniz University Hannover, Hannover, Germany</li>
-<li>Mehrdad Mohseni MD, National Institutes of Health, Bethesda, MD</li>
-<li>Michal Zawadzki PhD, CSK MSWiA, Warsaw, Poland</li>
-<li>Justin Gerolami, MSc, Queens University, Kingston, Ontario, Canada</li>
-<li>Gernot Kronreif PhD, ACMIT, Wiener Neustadt, Germany</li>
-<li>Thomas Bischof PhD, Helmholtz Zentrum München, Munich, Germany</li>
-<li>Bernardo Assein Arús PhD Candidate, Helmholtz Pioneer Campus, Neuherberg, Germany</li>
-<li>Tjadina Klein PhD Candidate, Helmholtz Zentrum München, Munich, Germany</li>
-<li>Andinet Enquobahrie PhD, Kitware, Carborro, NC</li>
-<li>George Stetten MD, PhD, University of Pittsburgh, Pittsburgh, PA</li>
-<li>Dilara Long PhD Candidate MD Candidate, National Institutes of Health, Bethesda, MD</li>
-<li>Janice Fairhurst, Interventional MRI Technologist, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Ayele Negussie PhD, Clinical Center, Bethesda, MD</li>
-<li>Khan Iftekharuddin  PhD, Old Dominion University, Norfolk, VA</li>
-<li>Chadwick L. Wright MD, PhD, Ohio State University, Columbus, OH</li>
-<li>Raj Shekhar PhD, Children’s National Hospital, Washington, D.C.</li>
-<li>Adam Dixon PhD, Rivanna Medical, Charlottesville, VA</li>
-<li>Joonil Seog, PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Gabriel Quintana, BA, ESIME IPN, Mexico City, Mexico</li>
-<li>Amber Simpson PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Vikram Bhadrasain  MD, National Institutes of Health, Bethesda, MD</li>
-<li>Andrew S. Mikhail PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Chen Li  PhD Candidate, Dartmouth College, Hanover, NH</li>
-<li>Patricia Lima PhD, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Christine Wei MS, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Ronak Ansaripour PhD Candidate, Northeastern University, Boston, MA</li>
-<li>Sofia Kieffa, BSc Candidate, Helmholtz Zentrum, Munich, Germany</li>
-<li>Ghina Zia PhD, Kansas State University, Manhattan, KS</li>
-<li>Bjoern Langbein MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Amber Williams, PhD Candidate, Northeastern University, Boston, MA</li>
-<li>Jim Basilion PhD, Case Western Reserve University, Cleveland, OH</li>
-<li>Ming Li PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Quirina de Ruiter PhD, NIH Clinical Center, Bethesda, MD</li>
-<li>Sjoerd Vos PhD, University College London, London, UK</li>
-<li>Steven Allen PhD, Univeristy of Virginia Charlottesville, VA</li>
-<li>Annie Papadaki MSc, University College Hospital, London, UK</li>
-<li>William Pritchard MD, PhD, National Institutes of Health, Bethesda, MD</li>
-<li>Eren Dursun MSc, University College London, London, UK</li>
-<li>Shibly Sadique Graduate Student, Old Dominion University, Norfolk, VA</li>
-<li>Abigail Hellman PhD Candidate, Albany Medical College, New York, NY</li>
-<li>Harley Chan PhD, Guided Therapeutics Program, Techna Institute – University Health Network, Toronto, Ontario, Canada</li>
-<li>Laura Mancini PhD, University College Hospital, London, UK</li>
-<li>Bryan Bednarz PhD, University of Wisconsin-Madison, Madison, WI</li>
-<li>Teresa Maietta Lab Technician, Albany Medical Center, Albany, NY</li>
-<li>Vejay Vakharia MD, PhD, University College Hospital, London, UK</li>
-<li>Daniel Allen MSc Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Jin U. Kang PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Patrick Carnahan PhD Candidate, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Ahmed Temtam PhD, Old Dominion University, Norfolk, VA</li>
-<li>Daniel Lindegger MD, PhD Candidate, Moorfields Eye Hospital, London, UK</li>
-<li>James Holmes PhD, University of Wisconsin-Madison, Madison, WI</li>
-<li>Sam Song PhD, University of Central Florida, Orlando, FL</li>
-<li>Anna Yaroslavsky PhD, University of Massachusetts, Lowell, MA</li>
-<li>Terry Peters PhD, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Luiz Murta PhD, University of São Paulo Ribeirão Preto, Sao Paolo, Brazil</li>
-<li>Janette Wallace Research Manager, Peters Lab, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Chris Munson BS, Villanova University, Villanova, PA</li>
-<li>Steve Bandula PhD, University College London, London, UK</li>
-<li>Yixuan Huang PhD Candidate, Johns Hopkins University, Baltimore, MD</li>
-<li>Yue Chen PhD, University of Arkansas, Fayetteville, AR</li>
-<li>Neal Clinthorne MS, Ehmet Health, Ann Arbor, MI</li>
-<li>Neel Shihora PhD Candidate, Vanderbilt University, Nashville, TN</li>
-<li>Charisse Garcia RN, National Institutes of Health, Bethesda, MD</li>
-<li>Monica Smith Pearl MD, Johns Hopkins University, Baltimore, MD</li>
-<li>John Onofrey PhD, Yale School of Medicine, New Haven, CT</li>
-<li>Clover Su PhD, Massachusetts General Hospital, Charlestown, MA</li>
-<li>Patrick Doran PhD Candidate, Boston University, Boston, MA</li>
-<li>Walid Ibn Essayed MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Leah Groves PhD Candidate, Western University of Ontario, London, Ontario, Canada</li>
-<li>Chloë Nicholson-Smith MESc, Western University of Ontario, London, Ontario, Canada</li>
-<li>Lukas Lindenroth PhD, University College London, London, UK</li>
-<li>Stephen Rudin PhD, State University of New York at Buffalo, Buffalo, NY</li>
-<li>Jinendra Ekanayake MD, PhD, University College, London Hospital, London, UK</li>
-<li>Marcus Kwon RA, Oregon Health &amp; Science University, Portland, OR</li>
-<li>Scott MBA, IGI Technologies, Longmont, CO</li>
-<li>Fumitaro Masaki MS, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Akshaj Darbar Research Assistant, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Samah Al Mbarak Phd Candidate, Helmholtz Zentrum München, Hannover, Germany</li>
-<li>Edward Xu PhD Candidate, Northeastern University, Boston, MA</li>
-<li>Mike Guttman MS, Johns Hopkins University, SOM, Cardiology, Baltimore, MD</li>
-<li>Fiona Fennessy MD, PhD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Laura Volz, MS, OrthoGrid Systems, Charlotte, NC</li>
-<li>Paula Demetrio de Souza Franca, MD, PhD Candidate, MSK, New York, NY</li>
-<li>Amber Ming, Salt Lake City, UT</li>
-<li>Samuel Kadoury PhD, Polytechnique Montréal, Montreal, Quebec, Canada</li>
-<li>Niravkumar Patel PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>Faranak Akbarifar PhD Candidate, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Danielle Chamberlain BS, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Mathis Zimmermann  MS, MBA, Siemens Healthineers, Salt Lake City, UT</li>
-<li>Ivane Bakhutashvili PhD, NIH/CC, Bethesda, MD</li>
-<li>Peter Pinto MD, National Institutes of Health, Bethesda, MD</li>
-<li>Jose M Cordero MD, PhD, UT Southwestern, Dallas, TX</li>
-<li>John Snell PhD, Focused Ultrasound Foundation, Charlottesville, VA</li>
-<li>Eva Gombos MD, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA</li>
-<li>Songbai Ji PhD, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Rahul Pal PhD, Massachusetts General Hospital, Boston, MA</li>
-<li>Stephanie Alley PhD Candidate, Polytechnique Montréal, Montreal, Quebec, Canada</li>
-<li>Kai Ding PhD, Johns Hopkins University, Baltimore, MD</li>
-<li>James Duncan PhD, Yale University, New Haven, CT</li>
-<li>Andrea Borsic PhD, NE Scientific, Boston, MA</li>
-<li>Mike Chicoine MD, Washington University, St. Louis, MO</li>
-<li>Cristian Linte PhD, Rochester Institute of Technology, Rochester, NY</li>
-<li>Shaoju Wu, PhD Candidate, Worcester Polytechnic Institute, Worcester, MA</li>
-<li>Afshan Bari BEng, Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Michael Regan Graduate Student, Brigham and Women’s Hospital, Boston, MA</li>
-<li>Yiming Xiao PhD, Robarts Research Institute, London, Ontario, Canada</li>
-<li>Stamatia Giannarou PhD, Imperial College London, London, UK</li>
-<li>Jeff Buchsbaum MD, PhD, AM, National Cancer Institute, Bethesda, MD</li>
-<li>Tina Ehtiati PhD, Siemens Healthineers, Washington D.C.</li>
-<li>Michael McDonald MD, PhD, National Cancer Institute, Cancer Imaging Program, Shady Grove, MD</li>
-<li>David Ristau B.Math (CS/EEE), Northern Digital Inc., Waterloo, Ontario, Canada</li>
-<li>Anand T. Kumar PhD, Massachusetts General Hospital, Harvard Medical School, Charlestown, MA</li>
-<li>Johannes Passand PhD, OVGU Magdeburg, Magdeburg, Germany</li>
-<li>Piotr Grodzinski PhD, National Cancer Institute, Rockville, MD</li>
-<li>Kristine Ma PhD Candidate, Northeastern University, Boston, MA</li>
-<li>Laura Connolly MASc Candidate, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Rebecca Hisey  PhD Candidate, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Julia Wiercigroch Undergraduate Student, Queen’s University, Kingston, Ontario, Canada</li>
-<li>Sidhartha Tavri MBBS DABR, University Hospitals Cleveland, Cleveland, OH</li>
-<li>Édouard Saget Co-CEO, OrthoGrid Systems, Salt Lake City, UT</li>
-<li>Alan Morris MS, University of Utah, Salt Lake City, UT</li>
-<li>Richard Boddington MS, OrthoGrid Systems, Salt Lake City, UT</li>
-<li>Brett Anderson, Engineering, OrthoGrid Systems, Salt Lake City, UT</li>
-<li>Robert McGough PhD, Michigan State University, East Lansing, MI</li>
-<li>Joshua Cates PhD, OrthoGrid Systems &amp; University of Utah, Salt Lake City, UT</li>
-<li>Michael Kassin MD, National Cancer Institute, Bethesda, MD</li>
-<li>Michal Maudahavakuk MD, PhD, National Cancer Institute, Bethesda, MD</li>
-<li>Sumana Ramanathan MS, Rutgers University, Piscataway, NJ</li>
-<li>Sujitha Jayaraj MS, Rutgers University, New Brunswick, NJ</li>
-<li>Arya Nabavi MD, KRH, Hannover, Germany</li>
-</ol>
-</li>
-</ol>
-
-
-
-
-</article>
-
-
-
-
-
-
-
-
-<h4><a href="#1673647880926-4a8814f7-5e2d">The <strong>10<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2018</strong><i></i></a></h4>
-
-
+<div class="cards"><a class="card" href="https://www.youtube.com/watch?v=WcRnHTHRiMo&amp;list=PLY7U1ym4BriPhf7YqJH_igKHfEx4ylGwz"><span class="kicker"></span><strong>Presentations from the Workshop</strong><span>The 11 th National Image Guided Therapy Workshop was also our first fully virtual meeting.</span></a></div>
+<h3>The <strong>10<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2018</strong></h3>
 <header>
-<p><h2>The 10<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
+<p><h2 id="the-10-th-national-image-guided-therapy-workshop">The 10<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
 </p></header>
 <p>The 10<sup>th</sup> National Image Guided Therapy Workshop was successfully held with 98 registered attendees on October 7, 2018 at the <a href="http://www.marriott.com/hotels/maps/travel/boslw-boston-marriott-long-wharf/" title="">Boston Marriott Long Wharf Hotel</a>, 296 State Street, Boston.  The attendees represented 39 academic institutions and 8 companies, as shown in the map below.</p>
-
-
-
-
 <figure>
 <img alt="" height="746" loading="lazy" src="media/2023_01_map_of_the_10th_ncigt_workshop_2018-geographic_distribution_of_attendees-mj100918.png" width="1283"/>
 </figure>
-
-
-
-
 <p>The program began with keynote presentations on the NCIGT Resource by Dr. Clare Tempany, and on Molecular Technologies for Image Guided Therapy by Dr. Christine Lorenz.  This was followed by 24 oral presentations divided into four oral sessions entitled: Imaging Innovations for my practice of medicine: viewpoints from interventional radiology, surgery, radiation oncology, and gastroentrology; Medical Image Computing to Guide Interventions; Robotic Surgery, Surgical Training, Therapy Delivery; and Innovations in Imaging and Sensors. This was followed by a presentation of 30 posters.  A highlight of the meeting was an interactive session between investigators and programs staff from NCI and NIBIB.</p>
-<h2><strong><a href="https://www.eventbrite.com/e/2018-ncigt-workshop-registration-42913561618" title="">Workshop Registration</a></strong></h2>
-<h2><strong><a href="https://easychair.org/smart-program/2018IGTWorkshop/" title="">Workshop Program</a></strong></h2>
-<h2>Goal</h2>
+<h2 id="workshop-registration"><strong><a href="https://www.eventbrite.com/e/2018-ncigt-workshop-registration-42913561618" title="">Workshop Registration</a></strong></h2>
+<h2 id="workshop-program"><strong><a href="https://easychair.org/smart-program/2018IGTWorkshop/" title="">Workshop Program</a></strong></h2>
+<h2 id="goal">Goal</h2>
 <p>The overall goal of this workshop series is to foster a discourse in translational research in image-guided therapy in the <a href="http://www.nih.gov/">NIH</a>-funded community, and to communicate the availability of <a href="index.html">NCIGT</a> as a national resource for tools and technologies in the field. Attendees include NIH funded academic scientists, clinicians, and leaders from industry and federal agencies interested in image-guided interventions.</p>
-<h2>Important Dates</h2>
+<h2 id="important-dates">Important Dates</h2>
 <ul>
 <li>Abstracts due Friday, <strong>August 10, 2018</strong>. Please submit <a href="https://easychair.org/conferences/?conf=2018igtworkshop" title="">here</a> using the EasyChair conference management system.</li>
 <li>Acceptance decisions announced Friday, <strong>August 17, 2018 </strong>by email to authors.</li>
 <li>Camera ready copies of the abstracts due Friday, <strong>August 31, 2018 </strong>on the EasyChair website.</li>
 </ul>
-<h2>Submission Guidelines</h2>
+<h2 id="submission-guidelines">Submission Guidelines</h2>
 <p>Abstract submissions are solicited in areas of image-guided surgery, interventional radiology, adaptive radiation therapy, image-guided drug delivery, image-guided robotics, imaging informatics, and related areas.  The workshop is a single track meeting that includes oral and poster presentations of refereed abstracts, invited talks, and individual interactions with NIH Programs Staff.</p>
 <p>Electronic submissions will be accepted until Friday, <strong>August 10, 2018</strong>, 11pm Pacific Standard Time on the Easy Chair Conference Management Website.</p>
-<h2>Guidelines for Abstracts</h2>
+<h2 id="guidelines-for-abstracts">Guidelines for Abstracts</h2>
 <ul>
 <li>Abstracts should be 1 page (8.5 inch x 11 inch page, US letter size), submitted in acrobat pdf format, with 1 inch margins, maximum 6 lines per inch (single spaced in software such as MS Word), in size 11 Arial Font. Please click <a href="https://ncigt.org/files/ncigt/files/2018ncigtworkshopabstracttemplate.docx" title="">here</a> for the IGT Workshop Abstract Template.</li>
 <li>Abstract submissions should include Title, Author(s), Affiliation(s), and five sections: Purpose, Methods, Results, Conclusions, Funding Source(s), identified by bold headers.</li>
@@ -2405,11 +1413,11 @@ Walid Abdelmoula, Begona Lopez, Elizabeth Randall, Jann Sarkaria, Jeffrey Agar, 
 <li>Please do not submit material that is not ready for public dissemination, or has been previously published in the form that you submit for this workshop.</li>
 <li>The program committee will review all submissions, and assign acceptances to either poster or oral presentation.</li>
 </ul>
-<h2>Guidelines for Oral Presentations</h2>
+<h2 id="guidelines-for-oral-presentations">Guidelines for Oral Presentations</h2>
 <p>The speaking time is 10 minutes including questions. The talk should cater to non-experts who are interested in learning about the big picture goal of your work (technology-wise, disease-wise) and then into the specifics of the project. Please plan to deliver the presentation using your own laptop computer.</p>
-<h2>Guidelines for Poster Presentations</h2>
+<h2 id="guidelines-for-poster-presentations">Guidelines for Poster Presentations</h2>
 <p>The posters should be prepared in an electronic format of the authors’  choice, and presented using individual laptops at the meeting. Suggested format is 5-10 slides that can be cycled through in 10 minutes.</p>
-<h2>Chairs</h2>
+<h2 id="chairs">Chairs</h2>
 <ul>
 <li><a href="https://ncigt.org/tina-kapur-phd/">Tina Kapur, PhD</a>, Brigham and Women’s Hospital and Harvard Medical School</li>
 <li><a href="http://childrensnational.org/research-and-education/about-cri/faculty-and-leadership-directory/kevin-cleary">Kevin Cleary, PhD</a>, Children’s National Health System</li>
@@ -2417,27 +1425,23 @@ Walid Abdelmoula, Begona Lopez, Elizabeth Randall, Jann Sarkaria, Jeffrey Agar, 
 <li><a href="https://www.linkedin.com/in/keyvan-farahani-b145b023/" title="">Keyvan Farahani, PhD</a>, National Cancer Institute</li>
 <li><a href="https://www.nibib.nih.gov/about-nibib/staff/steven-krosnick" title="Steven Krosnick, MD">Steven Krosnick, MD</a>, National Institute of Biomedical Imaging and Bioengineering</li>
 </ul>
-<h2>Workshop Coordinator</h2>
+<h2 id="workshop-coordinator">Workshop Coordinator</h2>
 <ul>
 <li><a href="mailto:dchamberlain@bwh.harvard.edu">Danielle Chamberlain</a>, Brigham and Women’s Hospital and Harvard Medical School</li>
 </ul>
-<h2>Venue</h2>
+<h2 id="venue">Venue</h2>
 <p><a href="http://www.marriott.com/hotels/maps/travel/boslw-boston-marriott-long-wharf/" title="">Boston Marriott Long Wharf Hotel</a>, 296 State Street, Boston.<br/>
 <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Brigham%20and%20Women%27s%20Hospital%20NCIGT%20Event%5EBOSLW%60NCINCIE%60309.00%60USD%60false%602%6010/6/18%6010/7/18%609/21/18&amp;app=resvlink&amp;stop_mobi=yes" title="">Book your group rate with the Marriot Long Wharf Hotel</a></p>
 <p>Reservations can be made directly with Marriott reservations at (800) 228-9290 or (617) 227-0800. The negotiated room rate of USD 309 is available until September 21, 2018. Parking (USD 55/day) is not validated so please use public transportation if possible.</p>
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 <p>All questions about submissions should be emailed to Danielle Chamberlain.</p>
-<h2><a href="https://www.eventbrite.com/e/2018-ncigt-workshop-registration-42913561618" title="">Registration</a></h2>
+<h2 id="registration"><a href="https://www.eventbrite.com/e/2018-ncigt-workshop-registration-42913561618" title="">Registration</a></h2>
 <p>Please note, the registration fee of $300 applies to all attendees, including presenters.</p>
-<h2>Workshop Program</h2>
+<h2 id="workshop-program-2">Workshop Program</h2>
 <p><strong>Please note that the 12th Interventional MRI Symposium  (iMRI 2018) will be held on October 5-6, at the Boston Marriott Long Wharf Hotel, 296 State Street, Boston, MA.</strong></p>
-
-
-<h4><a href="#1673648309576-8e2704fd-87cf">The <strong>9<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2017</strong><i></i></a></h4>
-
-
+<h3>The <strong>9<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2017</strong></h3>
 <header>
-<p><h2>The 9<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
+<p><h2 id="the-9-th-national-image-guided-therapy-workshop">The 9<sup>th</sup> National Image Guided Therapy Workshop</h2><br/>
 </p></header>
 <p>The 9<sup>th</sup> Image Guided Therapy Workshop was successfully held with 98 registered attendees on March 14-15, 2017 at the <a href="http://bethesda.hyatt.com/">Hyatt Regency Hotel</a>, One Bethesda Metro Center, Bethesda (1.301.657.1234).</p>
 <p>The program was divided into 8 oral sessions and a poster session. It included 25 talks and 35 poster presentations. The oral sessions included Image-Guided Interventions, Surgery, Radiation Therapy, Perspectives from NCI, NIBIB, CSR, Perspectives from Industry, Novel Techniques for Living Tissue Microscopy and Spectroscopy, Robotics and Navigation, and Precision Therapy. The general chairs of this workshop were Drs. Tina Kapur, Alexandra Golby, Sarah Frisken, William Wells, Noby Hata, and Jayender Jagadeesan of Brigham and Women’s Hospital and Harvard Medical School, along with Dr. Maie St. John of University of California, Los Angeles, Dr. Zion Tse, of University of Georgia, and Dr. Milind Rajadhyaksha of Memorial Sloan Kettering Cancer Center. The program chairs were Dr. Tina Kapur of Brigham and Women’s Hospital and Harvard Medical School, Dr. Kevin Cleary of Children’s National Medical Center, and Dr. Keyvan Farahani of the National Cancer Institute, NIH, Dr. Steven Krosnick of National Institute of Biomedical Imaging and Bioengineering, Dr. Kristy Brock of University of Texas MD Anderson Cancer Center.</p>
@@ -2456,9 +1460,9 @@ Walid Abdelmoula, Begona Lopez, Elizabeth Randall, Jann Sarkaria, Jeffrey Agar, 
 <h3>Registration</h3>
 <p>To register for the workshop, please click <a href="https://www.eventbrite.com/e/2017-ncigt-workshop-tickets-28155724530" title="here">here</a>.  Please note, the registration fee of $250 is to be paid by all attendees, including presenters.</p>
 <p>Very limited financial support towards the registration fee is available for students/fellows/junior faculty who would otherwise not be able to attend the meeting. After submitting your abstract, please <a href="mailto:tkapur@bwh.harvard.edu">email us</a> to indicate your need this support, and we will do our best to accommodate you.</p>
-<h2><a href=""></a>Program</h2>
-<h2><strong>Day One – Tuesday, March 14, 2017</strong></h2>
-<table>
+<h2 id="program">Program</h2>
+<h2 id="day-one-tuesday-march-14-2017"><strong>Day One – Tuesday, March 14, 2017</strong></h2>
+<div class="tbl"><table>
 <tbody>
 <tr>
 <td><strong>13:00-15:30</strong></td>
@@ -2549,7 +1553,7 @@ Keyvan Farahani, PhD, (NCI), Pushpa Tandon, PhD, (NCI), Houston Baker, PhD, (NCI
 </tr>
 <tr>
 <td colspan="2">
-<h2><strong>Day Two – Wednesday, March 15, 2017</strong></h2>
+<h2 id="day-two-wednesday-march-15-2017"><strong>Day Two – Wednesday, March 15, 2017</strong></h2>
 </td>
 </tr>
 <tr>
@@ -2678,35 +1682,31 @@ Alexandra Golby, MD, <em>Brigham and Women’s Hospital and Harvard Medical Sch
 <td><strong>Adjourn</strong></td>
 </tr>
 </tbody>
-</table>
-
-
-<h4><a href="#1673648358050-26571020-df82">The <strong>8<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2016</strong><i></i></a></h4>
-
-
-<p><h2>The 8<sup>th</sup> National Image Guided Therapy Workshop</h2>
+</table></div>
+<h3>The <strong>8<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2016</strong></h3>
+<p><h2 id="the-8-th-national-image-guided-therapy-workshop">The 8<sup>th</sup> National Image Guided Therapy Workshop</h2>
 <p>The 8<sup>th</sup> Image Guided Therapy Workshop was successfully held with 103 registered attendees, on March 15-16, 2016 at the <a href="http://bethesda.hyatt.com/">Hyatt Regency Hotel</a>, One Bethesda Metro Center, Bethesda, MD. Phone: 1.301.657.1234<br/>
 The program was divided into 9 oral sessions and a poster session. It included 35 talks and 28 poster presentations. The oral sessions included Multimodality Image-Guided Surgery and Radiation Therapy, Perspectives from NCI, NIBIB, CSR, Robot Assisted Procedures, Optical Imaging for Surgery, MR Guided Interventions, HIFU, Image Analysis, Navigation, and Visualization for Surgery. The general chairs of this workshop were Drs. Clare Tempany, Alexandra Golby, Sarah Frisken, William Wells, and Jayender Jagadeesan of Brigham and Women’s Hospital and Harvard Medical School, along with Dr. Vikram  Bhadrasain of National Cancer Institute, Dr. Steven Krosnick of the National Institute of Biomedical Imaging and Bioengineering, NIH, Dr. Jaydev Desai of University of Maryland, Dr. Steven Hetts of USCF, and Dr. Zion Tse of University of Georgia.The program chairs were Dr. Tina Kapur of Brigham and Women’s Hospital and Harvard Medical School, Dr. Kevin Cleary of Children’s National Medical Center, and Dr. Keyvan Farahani of the National Cancer Institute, NIH.</p>
-<h2><strong><a href="http://easychair.org/smart-program/2016IGTWorkshop/index.html">Workshop Program</a></strong></h2>
-<h2>GUIDELINES FOR ORAL PRESENTATIONS</h2>
+<h2 id="workshop-program-3"><strong><a href="http://easychair.org/smart-program/2016IGTWorkshop/index.html">Workshop Program</a></strong></h2>
+<h2 id="guidelines-for-oral-presentations-2">Guidelines for Oral Presentations</h2>
 <p>The speaking time is 10 minutes, and 5 minutes for questions. The talk should cater to non-experts who are interested in learning about the big picture goal of your work (technology-wise, disease-wise) and then into the specifics of the project. Please plan to deliver the presentation using your own laptop computer.</p>
-<h2>GUIDELINES FOR POSTER PRESENTATIONS</h2>
+<h2 id="guidelines-for-poster-presentations-2">Guidelines for Poster Presentations</h2>
 <p>The posters should printed, up to 48 inches by 48 inches, and may be in landscape or portrait orientation. Please bring the posters to the Ballroom between 12:30pm and 2:30pm on the first day of the workshop, and hang these in assigned spaces in the reception area between 2:30 and 3pm.</p>
-<h2>Background</h2>
+<h2 id="background">Background</h2>
 <p>The overall goal of this workshop series is to foster a discourse in translational research in image-guided therapy in the <a href="http://www.nih.gov/">NIH</a>-funded community, and to communicate the availability of <a href="index.html">NCIGT</a> as a national resource for tools and technologies in the field. Similar to previous workshops in this series, attendance is expected of members of academia, industry, and federal agencies interested in image-guided interventions.</p>
-<h2>Important Dates</h2>
+<h2 id="important-dates-2">Important Dates</h2>
 <ul>
 <li>Abstracts due by January 25, 2016. Please submit <a href="https://easychair.org/conferences/?conf=2016igtwkshp">here</a>. (We are using the EasyChair conference management website).</li>
 <li>Acceptance decisions emailed to authors by February 1, 2016.</li>
 <li>Camera ready copies of the abstracts due by February 20, 2016 on the EasyChair website</li>
 </ul>
-<h2>Registration</h2>
+<h2 id="registration-2">Registration</h2>
 <p>To register for the workshop, please click <a href="http://www.eventbrite.com/e/2016-ncigt-workshop-tickets-19400197513">here</a>.  Please note, the registration fee is to be paid by all presenters, both oral and poster.</p>
 <p>Financial support towards the registration fee is available for students/fellows/junior faculty who would otherwise not be able to attend the meeting.  After submitting your abstract, please <a href="mailto:tkapur@bwh.harvard.edu">email us</a> to indicate your interest in this support, and we will do our best to accommodate you.</p>
-<h2>Call for Abstracts</h2>
+<h2 id="call-for-abstracts">Call for Abstracts</h2>
 <p>Abstract submissions are solicited for the 8th National Image-Guided Therapy workshop, a translational research workshop that brings together NIH funded researchers in areas of image-guided surgery, interventional radiology, adaptive radiation therapy, image-guided drug delivery, image-guided robotics, and imaging informatics.  The workshop is a single track meeting that includes oral and poster presentations of refereed abstracts, invited talks, individual interactions with NIH Programs Staff, and industrial exhibits.  The 2016 workshop will be held on March 15-16 at the <a href="http://bethesda.hyatt.com/">Hyatt Regency Hotel</a>, Bethesda, MD.</p>
 <p>Abstract Submission process: Electronic submissions will be accepted until <strong>Monday, January 25, 2016</strong>, 11pm Pacific Standard Time on the <a href="https://easychair.org/conferences/?conf=2016igtwkshp">EasyChair conference management website.</a></p>
-<h2>Abstract Guidelines</h2>
+<h2 id="abstract-guidelines">Abstract Guidelines</h2>
 <ul>
 <li>
 <ul>
@@ -2720,13 +1720,13 @@ The program was divided into 9 oral sessions and a poster session. It included 3
 </ul>
 </li>
 </ul>
-<h2>Poster guidelines</h2>
+<h2 id="poster-guidelines">Poster guidelines</h2>
 <p>The posters should printed, up to 48 inches by 48 inches, and may be in landscape or portrait orientation. Please bring the posters to the workshop room (which will be announced here) between times (which will be announced here) on the first day of the workshop, and hang these in assigned spaces.</p>
-<h2>Chairs</h2>
+<h2 id="chairs-2">Chairs</h2>
 <p><a href="https://ncigt.org/tina-kapur-phd/">Tina Kapur, PhD</a> | Brigham and Women’s Hospital and Harvard Medical School<br/>
 <a href="http://childrensnational.org/research-and-education/about-cri/faculty-and-leadership-directory/kevin-cleary">Kevin Cleary, PhD</a> | Childrens National Health System<br/>
 Keyvan Farahani, PhD | National Cancer Institute</p>
-<h2>Registered Attendees</h2>
+<h2 id="registered-attendees">Registered Attendees</h2>
 <p>1. Nathalie Agar :: Brigham and Women’s Hospital and Harvard Medical School<br/>
 2. Michelle Arkhangorodsky :: Princess Margaret Hospital University of Toronto<br/>
 3. Dmitri Artemov :: Johns Hopkins University<br/>
@@ -2831,506 +1831,26 @@ Keyvan Farahani, PhD | National Cancer Institute</p>
 102. Chunwang Yuan :: Beijing YouAn Hospital<br/>
 103. Feng Zhang :: University of Washington</p>
 </p>
-
-<h4><a href="#1673648418618-d6e9710d-25f0">The <strong>7<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2014</strong><i></i></a></h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article>
-
-
-
-
-<h2>The 7<sup>th</sup> National Image Guided Therapy Workshop</h2>
-<p>The 7<sup>th</sup> Image Guided Therapy Workshop was successfully held on <strong>September 18-19, 2014</strong> at MIT with 109 registered attendees. The meeting was held in conjunction with MICCAI 2014. The program was divided into 5 oral sessions (Brain, Ultrasound, Robotics, Pelvic/Abdominal/Skin, and Endovascular) and a poster session. It included 23 talks and 22 poster presentations. On September 19, there were guided tours of the <a href="http://projects.iq.harvard.edu/ncigt/amigo">AMIGO Suite</a> at BWH.</p>
-<h2><a href="media/2023_01_2014_igt_workshop_proceedings.pdf">Proceedings of the Workshop</a></h2>
-<p>The goal of this workshop series was to introduce new investigators to the community, help foster collaborations across institutions, asses the current needs and opportunities in the field of image-guided interventions and NCIGT’s role as a US national center in relation to the greater IGT community.</p>
-<h2>Important Dates</h2>
-<p><strong>Workshop:</strong> Thursday, September 18, 2014 at MIT.</p>
-<p><strong>AMIGO Tours:</strong> Friday, September 19, 2014 at Brigham and Women’s Hospital.</p>
-<h2>Program</h2>
-<table>
-<tbody>
-<tr>
-<td colspan="4"><strong>Thursday, September 18, 2014</strong></td>
-</tr>
-<tr>
-<td colspan="4"><strong>MIT Building#W20 (Student Center), Room 306 (<a href="http://whereis.mit.edu/?go=W20" title="http://whereis.mit.edu/?go=W20">map</a>)</strong></td>
-</tr>
-<tr>
-<th>Session</th>
-<th>Time</th>
-<th>Title</th>
-<th>Presenter</th>
-</tr>
-<tr>
-<td></td>
-<td>7:00 AM</td>
-<td colspan="3"><strong>COFFEE BREAKFAST</strong></td>
-</tr>
-<tr>
-<td></td>
-<td>8:00 AM</td>
-<td>Opening Remarks</td>
-<td>Tina Kapur, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td colspan="4"></td>
-</tr>
-<tr>
-<td rowspan="7"><strong>SESSION I: BRAIN</strong><br/>
-<strong>8:10-9:30 AM</strong><br/>
-Session Chair: Michael Miga, PhD<br/>
-Vanderbilt</td>
-</tr>
-<tr>
-<td>8:10 AM</td>
-<td>Introduction to Session I</td>
-<td>Michael Miga, PhD<br/>
-Vanderbilt</td>
-</tr>
-<tr>
-<td>8:20 AM</td>
-<td>Open-Source 3D Ultrasound Visualization for ease of Interpretation during Brain Tumor Resection</td>
-<td>Alexandra Golby, MD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>8:32 AM</td>
-<td>Sensitivity-Based Acquisition Model for Intra-Operative Positron Imaging in Neurosurgery</td>
-<td>Frederic Monge, PhD Candidate<br/>
-Université de Rennes, France</td>
-</tr>
-<tr>
-<td>8:44 AM</td>
-<td>Importance of MR Imaging Feedback in the Administration of Therapeutics via Convection Enhanced Delivery</td>
-<td>Alastair J. Martin, PhD<br/>
-University of California, San Francisco</td>
-</tr>
-<tr>
-<td>8:56 AM</td>
-<td>Preliminary predictions from an inverse problem-trained model</td>
-<td>Samuel Fahrenholtz, PhD candidate<br/>
-University of Texas MD Anderson Cancer Center</td>
-</tr>
-<tr>
-<td>9:08 AM</td>
-<td>Two-tensor Unscented Kalman Filter Tractography Offers Improved Corticospinal Tract Modeling by Resolving the Effects of Peritumoral Edema and Crossing Fibers</td>
-<td>Lauren O’Donnell, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>9:30-11 AM</td>
-<td colspan="3"><strong>SESSION II: POSTERS &amp; COFFEE</strong></td>
-</tr>
-<tr>
-<td rowspan="6"><strong>SESSION III: ULTRASOUND</strong><br/>
-<strong>11:00 AM -12:00 PM</strong><br/>
-Session Chair: David Hawkes, PhD<br/>
-University College of London</td>
-</tr>
-<tr>
-<td>11:00 AM</td>
-<td>Introduction to Session III</td>
-<td>David Hawkes, PhD<br/>
-University College of London</td>
-</tr>
-<tr>
-<td>11:10 AM</td>
-<td>Real-time EM navigated breast conserving surgery: phantom and cadaver experiments</td>
-<td>Gabor Fichtinger, PhD<br/>
-Queen’s University, Kingston, ON, Canada</td>
-</tr>
-<tr>
-<td>11:22 AM</td>
-<td>Towards ProbeSight: Integration of a prior high-resolution 3D surface map into a probe-mounted camera system to locate the ultrasound probe relative to the patient</td>
-<td>Jihang Wang, PhD candidate<br/>
-University of Pittsburgh</td>
-</tr>
-<tr>
-<td>11:34 AM</td>
-<td>Bidimensional Localization of Active Ultrasound Markers</td>
-<td>Guillaume Custillon, PhD<br/>
-Grenoble CIC-IT, France</td>
-</tr>
-<tr>
-<td>11:46 AM</td>
-<td>Automatic Recognition of the Target Plane in 3D Ultrasound with EpiGuide</td>
-<td>Mehran Pesteie, PhD candidate<br/>
-University of British Columbia</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>12:00-1:00 PM</td>
-<td colspan="3"><strong>LUNCH</strong></td>
-</tr>
-<tr>
-<td rowspan="7"><strong>SESSION IV: ROBOTICS</strong><br/>
-<strong>1:00-2:00 PM</strong><br/>
-Session Chair: Junichi Tokuda, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>1:00 PM</td>
-<td>Introduction to Session IV</td>
-<td>Junichi Tokuda, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>1:08 PM</td>
-<td>Multisection Tendon-Driven Robot with Prismatic Joint for Neuroendoscopy</td>
-<td>Noby Hata, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>1:20 PM</td>
-<td>MRI-Powered, imaged and controlled actuators for interventional robots</td>
-<td>Ouajdi Felfoul, PhD<br/>
-Boston Children’s Hospital &amp; Harvard Medical School</td>
-</tr>
-<tr>
-<td>1:32 PM</td>
-<td>Real-Time Dynamic Scan Plane Control for Effective MRI-Guided Robotic Interventions</td>
-<td>Mahamadou Diakite, PhD<br/>
-University of Maryland</td>
-</tr>
-<tr>
-<td>1:44 PM</td>
-<td>Fusion of laparoscopic ultrasound with MRI during robotically assisted nephrectomies</td>
-<td>Samuel Kadoury, PhD<br/>
-Polytechnique Montreal</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td colspan="4"></td>
-</tr>
-<tr>
-<td rowspan="7"><strong>SESSION V: PELVIC, ABDOMINAL, SKIN</strong><br/>
-<strong>1:56-3:00 PM</strong><br/>
-Session Chair: Kristy Brock, PhD<br/>
-University of Michigan</td>
-</tr>
-<tr>
-<td>1:56 PM</td>
-<td>Introduction to Session V</td>
-<td>Kristy Brock, PhD<br/>
-University of Michigan</td>
-</tr>
-<tr>
-<td>2:04 PM</td>
-<td>Lightfield 3D Endoscope for Minimally Invasive Surgery</td>
-<td>Jason Geng, PhD<br/>
-Xigen</td>
-</tr>
-<tr>
-<td>2:16 PM</td>
-<td>Implementing Therapeutic Dose-Volume Liver Response in Biomechanical Modeling</td>
-<td>Daniel Polan<br/>
-University of Michigan</td>
-</tr>
-<tr>
-<td>2:28 PM</td>
-<td>Oxygenation Assessment in Residual Gynecologic Cancers after External Beam Radiation: Preliminary Characterization using T2* Mapping</td>
-<td>Pelin Aksit Ciris, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>2:40 PM</td>
-<td>Reflectance Confocal Microscopy to Guide Laser Ablation of Basal Cell Carcinomas</td>
-<td>Heidy Sierra, PhD<br/>
-Memorial Sloan-Kettering Cancer Center</td>
-</tr>
-<tr>
-<td>2:52 PM</td>
-<td>In vivo Confirmation of THz Wound Edema Imaging for Burn Surgery Using MR</td>
-<td>Neha Bajwa, MS<br/>
-University of California, Los Angeles</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>3:00-3:30 PM</td>
-<td colspan="3"><strong>COFFEE BREAK</strong></td>
-</tr>
-<tr>
-<td rowspan="7"><strong>SESSION VI: ENDOVASCULAR</strong><br/>
-<strong>3:30-5:00 PM</strong><br/>
-Session Chair:<br/>
-Pelin Ciris, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>3:30 PM</td>
-<td>Introduction to Session VI</td>
-<td>Pelin Ciris, PhD<br/>
-Harvard Medical School</td>
-</tr>
-<tr>
-<td>3:38 PM</td>
-<td>Magnetically Assisted Remote-controlled Endovascular Catheter for Interventional MR Imaging: In Vitro Navigation at 1.5 T versus X-ray Fluoroscopy</td>
-<td>Steven W. Hetts, MD<br/>
-University of California, San Francisco</td>
-</tr>
-<tr>
-<td>3:50 PM</td>
-<td>How New High-Resolution Detector Systems can have High Impact on Minimally Invasive Image-Guided Interventions</td>
-<td>Stephen Rudin, PhD<br/>
-University at Buffalo, State University of New York</td>
-</tr>
-<tr>
-<td>4:02 PM</td>
-<td>Positive contrast spiral imaging of a nitinol guidewire</td>
-<td>Adrienne E Campbell-Washburn, PhD<br/>
-National Heart, Lung and Blood Institute, National Institutes of Health, Bethesda, MD</td>
-</tr>
-<tr>
-<td>4:14 PM</td>
-<td>MRI-based computer models using T1-mapping for guiding electrophysiology interventions</td>
-<td>Mihaela Pop, PhD<br/>
-Sunnybrook Research Institute, University of Toronto, Canada</td>
-</tr>
-<tr>
-<td>4:26 PM</td>
-<td>Vascular Repair by MR RF Coagulation</td>
-<td>Ouri Cohen, PhD<br/>
-Massachusetts General Hospital &amp; Harvard Medical School</td>
-</tr>
-</tbody>
-</table>
-
-<h2>Poster Program</h2>
-<p>Finite element based biomechanical analysis of cranial shapes for craniosynostosis surgical correction. Ricardo Ortiz, Andrew Bauer, Andinet Enquobahrie, Nabile Safdar, Gary Rogers and Marius Linguraru</p>
-<p>Tissue characterization and blurring identification in temporal lobe epilepsy. Luiz Murta and Ron Kikinis</p>
-<p>Mutual Information Registration of MRI for Neurosurgical Applications. Meysam Torabi, Anil Shetty and Ashok Gowda</p>
-<p>Low Intensity Focused Ultrasound Acoustic Characterization Through Skull. Meghedi Babakhanian, Bryan Nowroozi, George Saddik, Ashkan Maccabi and Warren Grundfest</p>
-<p>Development and Validation of an Endovascular Chemotherapy Filter Device for Removing High-Dose Doxorubicin from the Blood: In Vivo Porcine Study. Anand Patel, Jeffrey Yang, Maythem Saeed, Bradford Thorne, Prasheel Lillaney, Leo Sze, Daniel Cooke, Albert Chin, Mark Wilson and Steven Hetts</p>
-<p>Quantitative ultra-high resolution MR imaging using magnetic nanoparticles. Codi Gharagouzloo and Srinivas Sridhar</p>
-<p>Water Relaxation Parameters and the State of Protein Coagulation in Vascular Repair by MR Coagulation. Ming Zhao and Jerome Ackerman</p>
-<p>Rapid Segmentation of the Median Nerve for a Video-Guided Ultrasound System. Aaron Sun, Vikas Shivaprabhu, Jihang Wang, John Galeotti, Vijay Gorantla and George Stetten</p>
-<p>Assessment of In-vivo Corneal Hydration using Terahertz Imaging. Shijun Sung, Neha Bajwa, James Garritano, David Bennett, Bryan Nowroozi, Jean-Pierre Hubschman, Sophie Deng, Warren Grundfest and Zachary Taylor</p>
-<p>Implementation of gesture control concepts for data accessibility in intraoperative settings. Franklin King, Saskia M. Camps, Andras Lasso, Tobias Penzkofer, Steve Pieper, Tina Kapur and Gabor Fichtinger</p>
-<p>Usability Evaluation of a Touchless User Interface for 3D Slicer. Saskia Camps, Franklin King, Andras Lasso, Steve Pieper, Tina Kapur, Gabor Fichtinger and Tobias Penzkofer</p>
-<p>Feasibility of intraoperative imaging with reflectance confocal microscopy to potentially guide Mohs surgery. Eileen Flores, Miguel Cordova, Kivanc Kose, William Phillips, Anthony Rossi, Kishwer Nehal and Milind Rajadyaksha</p>
-<p>Electromagnetic Tracking for Catheter Path Reconstruction. Elodie Lugez, Hossein Sadjadi, Selim G. Akl and Gabor Fichtinger</p>
-<p>Effect of Data Acquisition Speed and Technique on the Identification of Brachytherapy Source Positions with an Electromagnetic Tracker. Sarah Don, Robert Cormack, Akila Viswanathan and Antonio Damato</p>
-<p>Bi-exponential diffusion analysis in normal prostate and prostate cancer: transition vs peripheral zone considerations. Thiele Kobus, Andriy Fedorov, Fiona Fennessy, Robert Mulkern, Clare Tempany and Stephan Maier</p>
-<p>Quantitative and volumetric analysis of prostate cancer using mpMRI: a comparison of whole¬mount correlation versus routine histopathology report. Andriy Fedorov, Tobias Penzkofer, Mark Vangel, Michelle Hirsch, Clare Tempany and Fiona Fennessy</p>
-<p>Clinical Application of 4-DOF Needle Guiding Manipulator for MRI-guided Transperineal Prostate Biopsy. Junichi Tokuda, Kemal Tuncali, Sohrab Eslami, Weijian Shang, Gang Li, Niravkumar Amrutlal Patel, Tamas Heffter, Gregory Fischer, Iulian Iordachita, Everette Clif Burdette, Nobuhiko Hata and Clare Tempany</p>
-<p>Evaluation of Breast Tissue with Confocal Strip Mosaicking Microscopy: a potential platform for rapid pathology to guide surgery. Sanjee Abeytunge, Gary Peterson, Ricardo Toledo-Crow, Monica Morrow, Melissa Murray and Milind Rajadhyaksha</p>
-<p>CT based Radiomics data predicts for nodal involvement and overall survival in NSCLC. Thibaud Coroller, Patrick Grossmann, Emmanuel Rios Velazquez, Raymond Mak and Hugo Aerts</p>
-<p>Comparative Study of Validation Metrics for Percutaneous Microwave Ablation against a 4D Thermal Simulation. Garron Deshazer, Scott Collins, Edward Walsh, Damian Dupuy and Derek Merck</p>
-<p>Lung segmentation in 3D CT Images of Induced Acute Respiratory Distress Syndrome. Alfredo Morales Pinzón, Maciej Orkisz, Jean-Christophe Richard, Claude Guérin and Marcela Hernández Hoyos</p>
-<p>Advanced Approaches to Ultrasound Calibration: Planning a MICCAI Challenge. Emad Boctor, Kirby Vosburgh and Gabor Fichtinger</p>
-<h3>Registration Information</h3>
-<h3>To register, please visit the Registration Site.</h3>
-<p><strong>Registration Fee:</strong> USD 125</p>
-<p>PLEASE NOTE THAT WHEN YOU REGISTER, you will have the option to register for the MICCAI international conference as well as other meetings in addition to this Image Guided Therapy (IGT) Workshop. To register for this IGT workshop, please check the box for “Post-conference Workshops, Challenges, Tutorials, Thursday, September 18”, then choose the “attending full-day session” and then select the “Image Guided Therapy Workshop”, as illustrated below.</p>
-<p><img alt="" height="734" loading="lazy" src="https://static.projects.iq.harvard.edu/files/styles/os_files_xlarge/public/ncigt/files/postconferenceworkshops-igtworkshopregistration2014.png?m=1436885675&amp;itok=f8Rka98L" width="792"/></p>
-<p>On Friday September 19, we will be offering tours of the Advanced Multimodality Image Guided Operating (AMIGO) suite. Please check one of the Friday tours (morning or afternoon) (see picture below) to join these tours and experience first-hand this unique and innovative clinical testbed for IGT research. Please do register early because these tours have limited capacity (100) and are open to all MICCAI attendees (typically 1000) and will be filled on a first come first served basis.</p>
-<p><img alt="" height="431" loading="lazy" src="https://static.projects.iq.harvard.edu/files/styles/os_files_xlarge/public/ncigt/files/optionalevents-igtworkshopregistration2014.png?m=1436885719&amp;itok=TwHb-gY8" width="792"/></p>
-<h3>Post-Registration Information</h3>
-<p><strong>Registration Check-in:</strong> You may pick up your materials at the the pre-registration desk, which will be available in the lobby of MIT’s Kresge Auditorium on Sunday-Thursday, September 14-18, beginning at 7:00 am daily. Materials will be filed under your last name.</p>
-<p><strong>Cancellations and Changes:</strong> Cancellations before August 1, 2014 are subject to a 20% penalty fee. No refunds will be granted after that date. No refunds will be given for portions of the registration not being used. All refunds will be made in US dollars and will be processed in the manner in which the original payment was submitted, with the possible exception of wire payments which, at the organizers’ discretion, may be refunded via check. If a refund is made via wire transfer, any bank fees will be deducted from the refund. Credit card refunds will be issued to the original card.</p>
-<p>If the conference is cancelled for reasons beyond the organizers’ control, payments will be refund less any expenses incurred by the conference.</p>
-<p>Requests for cancellations, substitutions, or other changes may be made online until September 1, 2014. To cancel or make a change after that date, please send email to conferences-www at mit.edu.</p>
-<p><strong>Registration Questions:</strong> Please contact MIT Conference Services at conferences-www at mit.edu or call 617.253.1700.</p>
-<p><strong>Accessibility:</strong> To request disability accommodation, please contact MIT Conference Services at conferences-www at mit.edu.</p>
-<h2>GUIDELINES FOR ORAL PRESENTATIONS</h2>
-<p>The speaking time is 10 minutes, and 2 minutes for questions. The talk should cater to non-experts who are interested in learning about the big picture of what your lab does (technology-wise, disease-wise), why it is important to IGT, and then into the specifics of the project.</p>
-<p>Please create a summary slide for the talk and put in the shared Dropbox Folder (20140918_IGT_Workshop_MIT) by Sunday, September 14th. The session chair will use these slides to introduce the session.</p>
-<p>The final talk should be in the shared Dropbox Folder by Wednesday, September 17th 12noon so that we can test it on the podium laptop (mac) should a last minute need arise. The actual presentation can be done from your own laptop or the podium laptop.</p>
-<p>GUIDELINES FOR POSTER PRESENTATIONS</p>
-<p>The posters should printed, be no bigger than 48 inches by 48 inches, and may be in landscape or portrait orientation. Please bring the posters to the workshop room (which will be announced shortly) between 7:30 and 8am on the day of the workshop, and hang these in assigned spaces. We expect to be able to have the workshop room available to us the evening of the 17th, and if that is the case we will notify you and you are welcome to hang your posters on the evening of the 17th.</p>
-<p>REGISTERED ATTENDEES AS OF 11/03/14</p>
-<p>1. Jerome Ackerman :: Massachusetts General Hospital<br/>
-2. Meghedi Babakhanian :: UCLA-Center For Advanced Surgical &amp; Interventional<br/>
-3. Arthur Baghdanian :: Boston Medical Center<br/>
-4. Neha Bajwa :: UCLA<br/>
-5. Spyridon Bakas :: Kingston University<br/>
-6. Christos Bergeles :: The Hamlyn Centre, Imperial College<br/>
-7. Emad Boctor :: Johns Hopkins University<br/>
-8. Kristy Brock :: Princess Margaret Hospital University of Toronto<br/>
-9. Adrienne Campbell-Washburn :: National Institutes of Health<br/>
-10. Danielle Chamberlain :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-11. Gabriele Chiusano :: Universita’ Di Genova<br/>
-12. Pelin Ciris :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-13. Ouri Cohen :: Athinoula A. Martinos Center for Biomedical Imaging<br/>
-14. Assaf Cohen :: Haifa University<br/>
-15. Thibaud Coroller :: Dana Farber Cancer Institute<br/>
-16. Stephane Cotin :: INRIA Lille Nord Europe<br/>
-17. Neil Crawford :: Globus Medical Inc.<br/>
-18. Guillaume Custillon :: TIMC-IMAG<br/>
-19. Sandeep Dalal :: Philips Research North America<br/>
-20. Garron Deshuzer :: Brown University<br/>
-21. Samuel Deslauriers-Gauthier :: University of Sherbrooke<br/>
-22. Mahamadou Diakite :: University of Maryland<br/>
-23. Karl Diedrich :: AZE Technology Inc.<br/>
-24. Sarah Don :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-25. Pierre Dupont :: Boston Children’s Hospital<br/>
-26. Philip Edgcumbe :: University of British Columbia<br/>
-27. Samuel Fahrenholtz :: MD Anderson Cancer Center<br/>
-28. Andriy Fedorov :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-29. Ouajdi Felfoul :: Boston Children’s Hospital<br/>
-30. Aaron Fenster :: Robarts Research Institution<br/>
-31. Gabor Fichtinger :: Queen’s University<br/>
-32. Eileen Flores :: Memorial Sloan-Kettering Cancer Center<br/>
-33. Charles Florin :: Siemens<br/>
-34. David Fuentes :: MD Anderson Cancer Center<br/>
-35. Charles Garraud :: B-Com<br/>
-36. Jason Geng :: Xigen LLC<br/>
-37. Codi Gharagouzloo :: Northeastern University<br/>
-38. Xiaoyu Guo :: Johns Hopkins University<br/>
-39. Andac Hamamci :: Fondazione Santa Lucia<br/>
-40. Chafiaa Hamitouche :: Institut Mines Telecom / Telecom Bretagne<br/>
-41. Nobuhiko Hata :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-42. Frida Hauler :: Medical University Vienna<br/>
-43. Dave Hawkes :: University College London<br/>
-44. Steven Hetts :: University of California San Francisco<br/>
-45. Matthew Holden :: Queen’s University<br/>
-46. Leslie Holton :: Medtronic ST Neurosurgery<br/>
-47. Shelley HuaLei Zhang :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-48. Pierre Jannin :: LTSI INSERM U1099<br/>
-49. Norbert Johnson :: Globus Medical Inc.<br/>
-50. Samuel Kadoury :: Polytechnique Montreal<br/>
-51. Hiroshi Kage :: Mitsubishi Electric Corporation<br/>
-52. Tina Kapur :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-53. Ramy Khalil :: Scimitar Inc.<br/>
-54. Ron Kikinis :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-55. Franklin King :: Queen’s University<br/>
-56. Xiong Li :: Second Xiangya Hospital<br/>
-57. Frank Lindseth :: SINTEF / NTNU<br/>
-58. Elodie Lugez :: Queen’s University<br/>
-59. Ivan Macia :: Vicomtech-IK4<br/>
-60. Bruno Madore :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-61. John Magill ::<br/>
-62. Wang Manning :: Fudan University<br/>
-63. Alastair Martin :: University of California San Francisco<br/>
-64. Tejas Mathai :: Carnegie Mellon University<br/>
-65. Matt McGowan :: Globus Medical Inc.<br/>
-66. Guy Medan :: Hebrew University of Jerusalem<br/>
-67. Alireza Mehrtash :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-68. Frédéric Monge :: LTSI INSERM U1099<br/>
-69. Michel Moreau :: Elekta<br/>
-70. Luiz Murta :: University of Sao Paulo<br/>
-71. Ram Naidu :: BK Medical ApS<br/>
-72. Kishwer Nehal :: Memorial Sloan-Kettering Cancer Center<br/>
-73. John O’Connor ::<br/>
-74. Ricardo Ortiz :: Kitware, Inc.<br/>
-75. Hiroyuki Oya :: University of Iowa<br/>
-76. Xenophon Papademetris :: Yale University<br/>
-77. Javier Pascau :: Universidad Carlos III De Madrid<br/>
-78. Seyed Mehran Pesteie :: University of British Columbia<br/>
-79. Terry Peters :: Robarts Research Institution<br/>
-80. Steve Pieper :: Isomics, Inc.<br/>
-81. Alfredo Morales Pinzon :: Universidad De Los Andes<br/>
-82. Daniel Polan :: University of Michigan<br/>
-83. Mihaela Pop :: Sunnybrook Research Institute<br/>
-84. Philip Pratt :: Imperial College<br/>
-85. Milind Rajadhyaksha :: Memorial Sloan-Kettering Cancer Center<br/>
-86. Stephen Rudin :: SUNY<br/>
-87. Yusuke Sakamoto :: University of Texas<br/>
-88. Michael Scherer ::<br/>
-89. Ravi Seethamraju :: Siemens Healthcare<br/>
-90. Amitkumar Shah :: Technical University Munich<br/>
-91. Yonghong Shi :: Fudan University<br/>
-92. Heidy Sierra :: Memorial Sloan-Kettering Cancer Center<br/>
-93. Oudom Somphone :: Philips Research MediSys<br/>
-94. Hao Su ::<br/>
-95. Shijun Sung :: UCLA<br/>
-96. Zeike Taylor :: University of Sheffield<br/>
-97. Clare Tempany :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-98. Meysam Torabi :: Visualase Inc.<br/>
-99. Tom Vercauteren :: UCLA<br/>
-100. Kirby Vosburgh :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-101. Jihang Wang :: University of Pittsburgh<br/>
-102. Wei Wang :: Brigham and Women’s Hospital and Harvard Medical School<br/>
-103. Wolfgang Wein :: ImFusion GmbH<br/>
-104. Andrew Wiles :: Northern Digital Inc<br/>
-105. Sanjay Yengul :: Boston University<br/>
-106. Wenyao Zhang :: Beijing Institute of Technology<br/>
-107. Chenxi Zhang :: Fudan University<br/>
-108. Ming Zhao :: Massachusetts General Hospital<br/>
-109. Qingyu Zhao :: UNC<br/>
-110. Song Zhijian :: Fudan University</p>
-<p>CALL FOR POSTER ABSTRACTS</p>
-<p>Prospective attendees are encouraged to submit abstracts describing their research in image-guided therapy for consideration in the Oral and Poster Sessions of the workshop.</p>
-<h3>Abstract Guidelines</h3>
-<p>Abstracts should be 1 page (8.5 inch x 11 inch page, US letter size), submitted in acrobat pdf format, with 1 inch margins, maximum 6 lines per inch (single spaced in software such as MS Word), in size 11 Arial Font.</p>
-<p>Abstract submissions should include Title, Author(s), Affiliation(s), and five sections: Purpose, Methods, Results, Conclusions, Funding Source(s), identified by bold headers.</p>
-<p>Funding source(s) for the work, if any, must be acknowledged in the abstract.</p>
-<p>Images in abstracts are encouraged.</p>
-<p>Please do not submit material that is not ready for public dissemination, or has been previously published in the form that you submit for this workshop.</p>
-<p>The program committee will review all submissions, and assign acceptances to either poster or oral presentation.</p>
-<p><a href="https://www.easychair.org/conferences/?conf=2014ncigtworkshop" title="https://www.easychair.org/conferences/?conf=2014ncigtworkshop"><strong>Submission Page</strong></a></p>
-<p>Abstracts are due by <strong>July 12, 2014.</strong></p>
-
-
-
-
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h4><a href="#1673648460439-268ee91d-8fea">The <strong>6<sup>th</sup> </strong>National Image Guided Therapy Workshop - <strong>2013</strong><i></i></a></h4>
-
-
-<p><h2>The 6<sup>th</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>7<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2014</strong></h3>
+<div class="cards"><a class="card" href="http://projects.iq.harvard.edu/ncigt/amigo"><span class="kicker"></span><strong>AMIGO Suite</strong><span>The 7 th Image Guided Therapy Workshop was successfully held on September 18-19, 2014 at MIT with 109 registered attendees.</span></a></div>
+<h3>The <strong>6<sup>th</sup> </strong>National Image Guided Therapy Workshop - <strong>2013</strong></h3>
+<p><h2 id="the-6-th-national-image-guided-therapy-workshop">The 6<sup>th</sup> National Image Guided Therapy Workshop</h2>
 <p>The 6<sup>th</sup> Image Guided Therapy Workshop was successfully held on <strong>March 21-23, 2013</strong> with 99 registered attendees. The topic for this year was Interventional applications for a changing healthcare environment. The meeting was held in conjunction with SMIT (Society for Medical Innovation and Technology). The program was divided into 9 oral sessions and a poster session. It included 46 talks and 40 poster presentations. The NCIGT/NIH portion of the workshop consisted of 7 oral sessions (Cardiac; Pelvis; Robotics; NIH (NCI, NIBIB) Programs Directions; Intra-Operative, Optical, Fluorescent Imaging and Medical Image Computing). The SMIT section consisted of a session each on Emerging Technologies for Minimally Invasive Interventions and High Intensity Focused Ultrasound. There was a combined poster session with 40 poster presentations. On March 23rd, there was a tour of the operating rooms at CNMC (Children’s National Medical Center) and the Sheikh Zayed Institute for Pediatric Surgical Innovation.</p>
 <h3><a href="media/2023_01_ncigtworkshopproceedings2013.pdf"><strong>2013 Workshop Proceedings</strong></a></h3>
-<p><strong>Date and Venue</strong></p>
+<h3>Date and Venue</h3>
 <p>Date: March 21-23, 2013.</p>
 <p>Venue: We have a block of rooms booked at the conference hotel, the DoubleTree by Hilton Washington DC in Crystal City, VA at the rate of $189.00 USD/night plus tax. A limited number of rooms at $109.00 USD/night is available for Friday. Use the link to book at group rate, or use group code IGM. This rate will be available until 28 February 2013. You can also call Reservations at 1-800-222-8733 and ask for the “Image Guided Therapy Workshop” Room Block (group code IGM).</p>
-<p><strong>Hotel Contact Information</strong></p>
+<h3>Hotel Contact Information</h3>
 <p>DoubleTree by Hilton Hotel Washington DC-Crystal City,<br/>
 300 Army Navy Drive, Arlington, Virginia 22202<br/>
 Phone: 1.703.416.4100</p>
-<p><strong>Registration Link</strong></p>
+<h3>Registration Link</h3>
 <p>The registration fee for this event is $300. All speakers, poster presenters, and attendees must register using this <a href="http://www.cvent.com/d/dcqc4z">link</a>.</p>
-<p><strong>Program</strong></p>
-<table>
+<h3>Program</h3>
+<div class="tbl"><table><thead><tr>
+<th colspan="4">Thursday, March 21, 2013</th>
+</tr></thead>
 <tbody>
-<tr>
-<td colspan="4"><strong>Thursday, March 21, 2013</strong></td>
-</tr>
 <tr>
 <td colspan="4"><strong>Salon A<br/>
 DoubleTree by Hilton Hotel<br/>
@@ -3654,8 +2174,7 @@ High Intensity Focused Ultrasound</strong></td>
 <td colspan="3">Optional Self-Pay Group Dinner in Crystal City</td>
 </tr>
 </tbody>
-</table>
-
+</table></div>
 <p>Saturday, March 23</p>
 <ul>
 <li>8:30 am: Bus Pickup at DoubleTree Hotel for Children’s National Medical Center</li>
@@ -3691,7 +2210,7 @@ High Intensity Focused Ultrasound</strong></td>
 <li>1:30 pm: Bus return to DoubleTree</li>
 <li>Optional: Afternoon Museum Tour (free)</li>
 </ul>
-<p><strong>Poster Presentations</strong></p>
+<h3>Poster Presentations</h3>
 <p>All posters will be presented during each of the poster sessions of the meeting.</p>
 <h3>Abdomen</h3>
 <ol>
@@ -3739,7 +2258,6 @@ High Intensity Focused Ultrasound</strong></td>
 <li>Robert Cormack. Preliminary Experience with a Software System to Enable MR-Guided Adaptive Brachytherapy of the Pelvis</li>
 <li>Andriy Fedorov, Andras Lasso, Mehdi Moradi, Emily Neubauer Sugar, Sang-Eun Song, Robert Owen, Tina Kapur, William M Wells, Paul Nguyen, Gabor Fichtinger and Clare Tempany. Towards Open Source Infrastructure for Joint MRI/TRUS Guided Prostate Interventions</li>
 </ol>
-
 <h3>Robotics</h3>
 <ol>
 <li>Santhi Elayaperumal, Mark Cutkosky and Bruce Daniel. Development of a Passive Master-Slave System for MR-Guided Interventions</li>
@@ -3755,7 +2273,7 @@ High Intensity Focused Ultrasound</strong></td>
 <li>Hasan Sen and Peter Kazanzides. Dynamic Tracking with Electromagnetic Systems Using Particle Filters</li>
 <li>Tamas Ungi, Junichi Tokuda, Adam Rankin, Andras Lasso and Gabor Fichtinger. Prototyping Image-guided Therapy Applications using the SlicerIGT Platform</li>
 </ol>
-<h2>W<strong>orkshop Chairs</strong></h2>
+<h2 id="w-orkshop-chairs">W<strong>orkshop Chairs</strong></h2>
 <ul>
 <li>Ferenc Jolesz, MD, Brigham and Women’s Hospital &amp; Harvard Medical School, Boston</li>
 <li>Clare Tempany, MD, Brigham and Women’s Hospital &amp; Harvard Medical School, Boston</li>
@@ -3763,14 +2281,14 @@ High Intensity Focused Ultrasound</strong></td>
 <li>Andreas Melzer, MD, University of Dundee</li>
 <li>Michael Marohn, MD, Johns Hopkins Medical Institutions</li>
 </ul>
-<h2><strong>Program Chairs</strong></h2>
+<h2 id="program-chairs-2"><strong>Program Chairs</strong></h2>
 <ul>
 <li>Tina Kapur, PhD, Brigham and Women’s Hospital &amp; Harvard Medical School, Boston</li>
 <li>Raj Shekhar, PhD, Children’s National Medical Center, Washington DC</li>
 <li>Keyvan Farahani, PhD, National Cancer Institute, NIH, Bethesda, MD</li>
 <li>Steven Krosnick, MD, National Institute of Biomedical Imaging and Bioengineering, NIH, Bethesda, MD</li>
 </ul>
-<h2><strong>Program Committee</strong></h2>
+<h2 id="program-committee"><strong>Program Committee</strong></h2>
 <ul>
 <li>Ron Kikinis, MD</li>
 <li>William M. Wells, PhD</li>
@@ -3783,18 +2301,18 @@ High Intensity Focused Ultrasound</strong></td>
 <li>Marius Linguraru, PhD</li>
 <li>Ziv Yaniv, PhD</li>
 </ul>
-<h2><strong>Call for Poster Abstracts</strong></h2>
+<h2 id="call-for-poster-abstracts"><strong>Call for Poster Abstracts</strong></h2>
 <p>Prospective attendees are encouraged to submit abstracts describing their research in image-guided therapy for consideration in the Oral and Poster Sessions of the workshop. Please note that the abstracts will be published in a workshop proceedings and made available publicly on the workshop website, so do not submit material that is not ready for public dissemination.</p>
 <p>Abstracts should include Title, Author(s), Affiliation(s), and four sections: Purpose, Methods, Results, and Conclusions, identified by bold headers. Abstracts should be 1 page, submitted in acrobat pdf format, with 1-inch margins in size 11 Arial Font. All submissions will be reviewed by the Program Committee of the workshop for scientific merit and program relevance and assigned to either oral or poster (23″x33″ Portrait format) presentation.</p>
-<h2><a href="https://www.easychair.org/conferences/?conf=2013ncigt">Submission site</a></h2>
+<h2 id="submission-site"><a href="https://www.easychair.org/conferences/?conf=2013ncigt">Submission site</a></h2>
 <p>Abstracts are due by <strong>February 8, 2013</strong>.</p>
-<h2><strong>Important Dates</strong></h2>
+<h2 id="important-dates-3"><strong>Important Dates</strong></h2>
 <ul>
 <li><strong>February 8, 2013:</strong> Abstract Submission Deadline</li>
 <li><strong>February 12, 2013:</strong> Author Notification</li>
 <li><strong>February 19, 2013:</strong> Early Registration Deadline (Required for Presenters)</li>
 </ul>
-<p><strong>Registered Attendees as of March 20, 2013.</strong></p>
+<h3>Registered Attendees as of March 20, 2013.</h3>
 <p>1. Purang Abolmaesumi :: University of British Columbia<br/>
 2. Manjunath Anand :: Queen’s University<br/>
 3. Bamshad Azizi :: Children’s National Medical Center<br/>
@@ -3895,19 +2413,15 @@ High Intensity Focused Ultrasound</strong></td>
 98. Ziv Yaniv :: Children’s National Medical Center<br/>
 99. Pavel Yarmolenko :: National Institutes of Health</p>
 </p>
-
-<h4><a href="#1673648463893-fcfec19d-cf5c">The <strong>5<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2012</strong><i></i></a></h4>
-
-
-<p><h2>The 5<sup>th</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>5<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2012</strong></h3>
+<p><h2 id="the-5-th-national-image-guided-therapy-workshop">The 5<sup>th</sup> National Image Guided Therapy Workshop</h2>
 <p>The 5<sup>th</sup> Image Guided Therapy Workshop was successfully held on <strong>September 21, 2012</strong> with 147 registered attendees. The program was divided into 4 oral sessions and a poster session. It included 25 talks and 31 poster presentations.</p>
-<h2><a href="media/2023_01_2012igtworkshopproceedings.pdf"><strong>Workshop Proceedings</strong></a></h2>
-<h2>Program</h2>
-<table>
+<h2 id="workshop-proceedings"><a href="media/2023_01_2012igtworkshopproceedings.pdf"><strong>Workshop Proceedings</strong></a></h2>
+<h2 id="program-2">Program</h2>
+<div class="tbl"><table><thead><tr>
+<th colspan="4">September 21, 2012</th>
+</tr></thead>
 <tbody>
-<tr>
-<td colspan="4"><strong>September 21, 2012</strong></td>
-</tr>
 <tr>
 <td colspan="4"><strong>Joseph B. Martin Conference Center<br/>
 Harvard Medical School<br/>
@@ -3932,7 +2446,7 @@ Harvard Medical School<br/>
 <td colspan="3">Breakfast</td>
 </tr>
 <tr>
-<td rowspan="7">8:30-10:00 AM</td></tr></tbody></table></p>
+<td rowspan="7">8:30-10:00 AM</td></tr></tbody></table></div></p>
 <p><strong>SESSION I: Ultrasound Guided Therapy</strong><br/>
 Moderators:<br/>
 Jim Duncan, PhD<br/>
@@ -4109,8 +2623,7 @@ Second Stop Faculty Dinner at McCormick And Schmick Restaurant, 34 Columbus Ave,
 <td>6:15 PM</td>
 <td colspan="3">Shuttle Pick #2 up at Conference Center Destination Marriott Copley Hotel, Boston.</td>
 </tr>
-
-<h2>Poster Session</h2>
+<h2 id="poster-session">Poster Session</h2>
 <h3>Group A: Interventional CT/Ultrasound</h3>
 <ul>
 <li>1. Image-Guided Robotically-Steerable CT-Compatible Instrument for Multi-Adjacent-Point Targeting | Meysam Torabi, Andrew Harris, Alex Golden, Rajiv Gupta and Conor Walsh</li>
@@ -4154,12 +2667,12 @@ Second Stop Faculty Dinner at McCormick And Schmick Restaurant, 34 Columbus Ave,
 <li>30. Interactive Real Time Inductively Coupled Catheter Coil Tracking Using a Transmit Array System | Ugur Yilmaz, Li Pan and Ergin Atalar.</li>
 <li>31. Quantitative Imaging to Establish Distribution Parameters of Timed Release of Drug Eluting Nanoparticles from Implantable Devices for Image Guided Chemobrachytherapy | Rajiv Kumar, Stacey Markovic, Tej Jadhav, Mark Niedre, Paul Nguyen, Anthony D’Amico, Mike Makrigiorgos, Srinivas Sridhar and Robert Cormack</li>
 </ul>
-<h2>Friday, September 21, 2012</h2>
-<h2>Invitation</h2>
+<h2 id="friday-september-21-2012">Friday, September 21, 2012</h2>
+<h2 id="invitation">Invitation</h2>
 <p>Drs. Ferenc Jolesz and Clare Tempany would like to invite you you to the Fifth Image Guided Therapy workshop sponsored by the National Center for Image Guided Therapy (NCIGT), the Neuroimaging Analysis Center (NAC) and the National Institutes of Health (NIH). The workshop will be held on September 21, 2012 in the Joseph B. Martin Conference Center, Harvard Medical School, Boston.</p>
 <p>The goal of this workshop is to learn about state of the art and future trends in image guided interventions. The focus for this year is Molecular and Ultrasound Image Guided Therapy. The program for this workshop includes a single track of scientific talks by thought-leaders in the field, as well as a poster session. The oral presentations will be a combination of invited talks and those selected from submitted abstracts. The posters will be selected from the abstract submissions.</p>
 <p>The overall goal of this workshop series is to asses the current needs and opportunities in the field of image-guided interventions and NCIGT’s role as a national center in relation to the greater IGT community. Similar to previous workshops in this series, we expect attendance by the members of the academia, industry, and federal agencies interested in the field of image-guided interventions.</p>
-<h2>Program Committee</h2>
+<h2 id="program-committee-2">Program Committee</h2>
 <ul>
 <li>Ferenc Jolesz, MD, Chair</li>
 <li>Clare Tempany, MD, Chair</li>
@@ -4170,7 +2683,7 @@ Second Stop Faculty Dinner at McCormick And Schmick Restaurant, 34 Columbus Ave,
 <li>William Wells, PhD</li>
 <li>Nobuhiko Hata, PhD</li>
 </ul>
-<h2>Organizing Committee</h2>
+<h2 id="organizing-committee">Organizing Committee</h2>
 <ul>
 <li>Ferenc Jolesz, MD</li>
 <li>Clare Tempany, MD</li>
@@ -4184,7 +2697,7 @@ Second Stop Faculty Dinner at McCormick And Schmick Restaurant, 34 Columbus Ave,
 <li>Guillaume Pernelle, BS</li>
 <li>Tse Tsz Ho, PhD</li>
 </ul>
-<h2>Hotel Logistics</h2>
+<h2 id="hotel-logistics">Hotel Logistics</h2>
 <p>We have a block of rooms booked at the Copley Marriott Hotel in Boston at the rate of $249.00 USD/night. This rate will be available until August 30, 2012.<br/>
 Please call Reservations at 1-800-228-9290 and ask for the Partner’s Health Care Interventional MRI Symposium Room Block.</p>
 <p><a href="http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/">Copley Marriott Hotel</a><br/>
@@ -4204,7 +2717,7 @@ Best Western: The Inn at Longwood Medical<br/>
 342 Longwood Avenue<br/>
 Boston, MA 02115<br/>
 Phone: (617) 731-4700</p>
-<h2>Registered Attendees as of September 20, 2012</h2>
+<h2 id="registered-attendees-as-of-september-20-2012">Registered Attendees as of September 20, 2012</h2>
 <p>1. Sanjee Abeytunge :: Memorial Sloan-Kettering Cancer Center<br/>
 2. Jerome Ackerman :: Massachusetts General Hospital<br/>
 3. Neha Agrawal :: Brigham and Women’s Hospital and Harvard Medical School<br/>
@@ -4351,14 +2864,11 @@ Phone: (617) 731-4700</p>
 144. Lyubomir Zagorchev :: Philips Research<br/>
 145. Lei Zhao :: Symbow Medical Technology Co. Ltd.</p>
 </p>
-
-<h4><a href="#1673648524862-f292ecba-d10c">The <strong>4<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2011</strong><i></i></a></h4>
-
-
-<p><h2>The 4<sup>th</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>4<sup>th</sup></strong> National Image Guided Therapy Workshop - <strong>2011</strong></h3>
+<p><h2 id="the-4-th-national-image-guided-therapy-workshop">The 4<sup>th</sup> National Image Guided Therapy Workshop</h2>
 <p>The 4<sup>th</sup> Image Guided Therapy Workshop was successfully held on <strong>October 12-13, 2011</strong> in Arlington, VA, with 115 registered attendees from the NIH funded research community. The program was divided into 7 oral sessions and a poster session. It included 28 invited talks by thought leaders in the field, and 54 poster presentations.</p>
-<h2><a href="media/2023_01_2011igtworkshopproceedings.pdf"><strong>Workshop Proceedings</strong></a></h2>
-<h2>Program</h2>
+<h2 id="workshop-proceedings-2"><a href="media/2023_01_2011igtworkshopproceedings.pdf"><strong>Workshop Proceedings</strong></a></h2>
+<h2 id="program-3">Program</h2>
 <h3>Wednesday, October 12</h3>
 <ul>
 <li>10am: <strong>Advanced Multimodality Image Guided Operating (AMIGO) Suite.</strong> Ferenc Jolesz, MD, PI NCIGT, Brigham and Women’s Hospital and Harvard Medical School</li>
@@ -4423,7 +2933,7 @@ Phone: (617) 731-4700</p>
 </ul>
 </li>
 </ul>
-<h2>Speaker Presentations</h2>
+<h2 id="speaker-presentations">Speaker Presentations</h2>
 <ul>
 <li>David Boas: <a href="http://ncigt.org/files/ncigt/files/nih_ncigt_2011.pptx?m=1453823601">3D Optical Imaging and Digital X-ray of Breast Lesions</a></li>
 <li>Kim Butts-Pauly: <a href="http://ncigt.org/files/ncigt/files/2011ncigt2_copy2.pdf?m=1453823754">Focused Ultrasound of the Liver during Free Breathing</a></li>
@@ -4441,7 +2951,7 @@ Phone: (617) 731-4700</p>
 <li>Patrick Wolf: <a href="http://ncigt.org/files/ncigt/files/igt_2011.pptx?m=1453823536">Clinical Evaulation of an Ultrasound Based Imaging System for Guiding Cardiac Ablation</a></li>
 <li>Xiaoming Yang: <a href="http://ncigt.org/files/ncigt/files/igt-nih_dr._yang_intrabiliary_mr-public.pdf?m=1453823538">Development of an Intrabiliary MRI-monitored Local Agent Delivery Technique: Toward MR/RF-enhanced Chemotherapy of Malignant Biliary Obstructions</a></li>
 </ul>
-<h2>Program Committee</h2>
+<h2 id="program-committee-3">Program Committee</h2>
 <ul>
 <li>Ferenc Jolesz, MD, General Chair</li>
 <li>Clare Tempany, MD, General Chair</li>
@@ -4459,7 +2969,7 @@ Phone: (617) 731-4700</p>
 <li>John Haller, PhD, NIBIB</li>
 <li>Keyvan Farahani, PhD, NCI</li>
 </ul>
-<h2>Registered Attendees as of October 7, 2011</h2>
+<h2 id="registered-attendees-as-of-october-7-2011">Registered Attendees as of October 7, 2011</h2>
 <p>1. Miguel Valdivia y Alvarado :: Houston Methodist Hospital Research Institute<br/>
 2. Stephan Anderson :: Boston University<br/>
 3. Anthony Apicelli :: Washington University School of Medicine<br/>
@@ -4567,16 +3077,16 @@ Phone: (617) 731-4700</p>
 105. Atsushi Yamada :: Brigham and Women’s Hospital and Harvard Medical School<br/>
 106. Xiaoming Yang :: University of Washington</p>
 <p>The Fourth Image-Guided Therapy workshop sponsored by the <a href="index.html" title="http://www.ncigt.org">National Center for Image Guided Therapy (NCIGT)</a>, the <a href="http://nac.spl.harvard.edu/" title="http://nac.spl.harvard.edu">Neuroimaging Analysis Center (NAC)</a> and the <a href="http://www.nih.gov/" title="http://www.nih.gov">National Institutes of Health (NIH)</a>, which will be held on October 12-13, 2011 at the <a href="http://www.cpnationalairport.com/" title="http://www.cpnationalairport.com">Crowne Plaza National hotel, Arlington VA.</a> The topic for this workshop is “Advanced Imaging Technologies and Methods for Image Guided Therapy” and the goal is to learn about state of the art and future trends in imaging for therapy. The chairs of this workshop are Drs. Ferenc Jolesz and Clare Tempany of Brigham and Women’s Hospital and Harvard Medical School. The program for this workshop includes a single track of invited scientific talks by thought-leaders in the field, as well as a poster session based on abstract submissions. The talks will be divided into sessions that focus on imaging advances for prostate, cardiac, abdominal, and gynecological interventions, as well as on techniques for optical and thermal imaging across clinical specialities.</p>
-<h2><strong>Fourth NCIGT and NIH Image Guided Therapy Workshop Announcement</strong></h2>
+<h2 id="fourth-ncigt-and-nih-image-guided-therapy-worksh"><strong>Fourth NCIGT and NIH Image Guided Therapy Workshop Announcement</strong></h2>
 <p>The overall goal of this workshop series is to asses the current needs and opportunities in the field of image-guided interventions and NCIGT’s role as a national center in relation to the greater IGT community. Similar to previous workshops in this series, we expect attendance by the members of the academia, industry, and federal agencies interested in the field of image-guided interventions.</p>
 <p><a href="index.html" title="http://www.ncigt.org">NCIGT</a> is a national resource center in image-guided therapy that is funded jointly by two <a href="http://www.nih.gov/" title="http://www.nih.gov/">NIH</a> institutes: <a href="http://www.ncrr.nih.gov/" title="http://www.ncrr.nih.gov/">NCRR</a> and <a href="http://www.nibib.nih.gov/" title="http://www.nibib.nih.gov/">NIBIB</a>. In addition, funding for this conference was made possible (in part) by Grant# R13 CA 139764 from the National Cancer Institute. The views expressed in written conference materials or publications and by speakers and moderators do not necessarily reflect the official policies of the Department of Health and Human Services; nor does mention by trade names, commercial practices, or organizations imply endorsement by the U.S. Government.</p>
-<h2>Call for Poster Abstracts</h2>
+<h2 id="call-for-poster-abstracts-2">Call for Poster Abstracts</h2>
 <p>Prospective attendees are encouraged to submit abstracts describing their research in image-guided therapy for consideration of exhibition in the Poster Sessions of the workshop. Please note that the abstracts will be published in a workshop proceedings and made available publicly on the workshop website, so please do not submit material that is not ready for public dissemination.</p>
 <p>Authors should organize the abstract to include Title, Author(s), Affliation(s), and four sections: Purpose, Methods, Results, and Conclusions, identified by bold headers. The character count for the Purpose, Methods, Results, and Conclusions should be 2500. Submissions may be made by sending your abstract as a single page pdf format attachment to <a href="mailto:ncigt-workshop-posters@bwh.harvard.edu" title="mailto:ncigt-workshop-posters@bwh.harvard.edu">ncigt workshop posters mailing list</a>. Abstracts will be considered on a rolling basis starting Monday, August 29, 2011 until Monday, October 3, 2011. All submissions will be reviewed by the Program Committee of the workshop for scientific merit and program relevance. Submitting authors will be notified of the result of the abstract review within two weeks of submission, starting Tuesday September 13, 2011.</p>
 <p>Each accepted abstract will be presented at the meeting by the author(s) using a printed poster (23″x33″ Portrait format).</p>
 <p><strong>We are pleased to offer travel (airfare and hotel) reimbursement of upto $750 each and waiver of registration fee for select junior investigators, students, and underrepresented researchers. Selection criteria will be scientific merit of the submission, as determined by the Program Committee. To apply for this reimbursement and/or waiver, please send an <a href="mailto:ncigt-workshop-posters@bwh.harvard.edu" title="mailto:ncigt-workshop-posters@bwh.harvard.edu">email</a> along with your submission, and we will notify you of your selection for these funds along with your acceptance decision, within 2 weeks of your submission. PLEASE NOTE THAT ACCEPTANCES WILL BE ON A ROLLING BASIS, SO PLEASE SUBMIT EARLY TO MAXIMIZE YOUR CHANCES FOR THESE FUNDS.</strong></p>
 <p>For questions please <a href="mailto:ncigt-workshop@ncigt.org">us.</a></p>
-<h2>Important Dates</h2>
+<h2 id="important-dates-4">Important Dates</h2>
 <ul>
 <li>Registration opens: Monday, August 22, 2011 Click <a href="">here</a> to register. The registration fee is $260.
 <ul>
@@ -4584,7 +3094,7 @@ Phone: (617) 731-4700</p>
 <li>Abstract acceptance decisions: Every Tuesday beginning September 13 (Acceptances will be announced every week on a rolling basis until the workshop).</li>
 <li>The workshop: October 12-13, 2011</li>
 </ul>
-<h2>Venue</h2>
+<h2 id="venue-2">Venue</h2>
 <p><a href="http://www.cpnationalairport.com/" title="http://www.cpnationalairport.com">Crowne Plaza Hotel Washington National Airport</a><br/>
 1480 South Crystal Drive<br/>
 Arlington, VA 22202<br/>
@@ -4593,11 +3103,8 @@ Arlington, VA 22202<br/>
 <p>To register for the workshop, please click <a href="http://www.cvent.com/events/4th-ncigt-and-nih-image-guided-therapy-workshop/event-summary-7e7bd975c155478c84844200c65bd920.aspx" title="http://www.cvent.com/events/4th-ncigt-and-nih-image-guided-therapy-workshop/event-summary-7e7bd975c155478c84844200c65bd920.aspx">here</a>. The registration fee is $260.</p></li>
 </ul>
 </p>
-
-<h4><a href="#1673648559073-9fd52589-b074">The <strong>3<sup>rd</sup></strong> National Image Guided Therapy Workshop - <strong>2010</strong><i></i></a></h4>
-
-
-<p><h2>The 3<sup>rd</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>3<sup>rd</sup></strong> National Image Guided Therapy Workshop - <strong>2010</strong></h3>
+<p><h2 id="the-3-rd-national-image-guided-therapy-workshop">The 3<sup>rd</sup> National Image Guided Therapy Workshop</h2>
 <p>The 3<sup>rd</sup> Image Guided Therapy Workshop was successfully held on <strong>March 8-9, 2010,</strong> in Arlington, VA.</p>
 <h3><a href="media/2023_01_2010_igt_workshop.pdf"><strong>2010 Workshop Proceedings</strong></a></h3>
 <p>Sponsored by the National Center for Image-Guided Therapy (NCIGT) and the National Institute of Health (NIH), this workshop will be focused on Multimodal Imaging in the Operating Room. The goal is to learn about state of the art and future trends in operating suites that use more than one imaging modality, and serve more than one clinical specialty.</p>
@@ -4605,15 +3112,14 @@ Arlington, VA 22202<br/>
 <p>The chairs of this workshop are Dr. Ferenc Jolesz of Brigham and Women’s Hospital and Harvard Medical School, and Dr. Keyvan Farahani of the National Cancer Institute.</p>
 <p>NCIGT is a national resource center in image-guided therapy that is funded jointly by three NIH institutes: NCRR, NCI, and NIBIB.</p>
 <p>Funding for this conference was made possible (in part) by Grant# 1 R13 CA 139764-01 from the National Cancer Institute. The views expressed in written conference materials or publications and by speakers and moderators do not necessarily reflect the official policies of the Department of Health and Human Services; nor does mention by trade names, commercial practices, or organizations imply endorsement by the U.S. Government.</p>
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <p>The Third annual IGT workshop was held March 8th and 9th, 2010, in Arlington VA at the Crowne Plaza Hotel, Washington National Airport.The topic was Advanced Imaging Technology in the Operating Room. The workshop recorded 104 attendees.These attendees came from 32 institutions, 12 companies and the NIH. Participants traveled from 4 countries, Canada, France, Netherlands and Scotland, and from 17 states within the US.</p>
 <p>This program for the workshop included 24 oral presentations, two break-out sessions and 43 posters presentations. The oral presentations where from international thought leading clinicians, researchers, and scientist on topics in Neurosurgery, Radiation Therapy, Focused Ultrasound Therapy, Prostate Cancer Intervention, CT and Cone-Beam CT Imaging, Medical Robotics, and Ultrasound-Guided Drug Delivery. The breakout sessions covered hands-on use of Registration Algorithms and Software, and MRgFUS Therapy.The posters were presented in 6 categories, selected from submitted abstracts.The 6 categories were:Cardiac, Abdomen, Prostate, Brain and Spine, Breast, and General IGT. At the conclusion of this workshop, we compiled a collection of PowerPoint presentations from the speakers suitable for public dissemination and have provided these on our website for this workshop.</p>
-<h2>Meeting Agenda</h2>
-<table>
+<h2 id="meeting-agenda">Meeting Agenda</h2>
+<div class="tbl"><table><thead><tr>
+<th colspan="4">Monday, March 8, 2010</th>
+</tr></thead>
 <tbody>
-<tr>
-<td colspan="4"><strong>Monday, March 8, 2010</strong></td>
-</tr>
 <tr>
 <td><strong>Time</strong></td>
 <td><strong>Presenter</strong></td>
@@ -4716,7 +3222,7 @@ Arlington, VA 22202<br/>
 </tr>
 <tr>
 <td><strong>9:00 AM – 9:20 AM</strong></td>
-<td>Brad Wood, MD/td&gt;</td></tr></tbody></table></p>
+<td>Brad Wood, MD/td&gt;</td></tr></tbody></table></div></p>
 <td>Clinical Center, NIH</td>
 <td>Fusion Interventions for Ablation: The Wii Surgeon</td>
 <tr>
@@ -4800,15 +3306,15 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 <td><strong>3:00 PM – 3:15 PM</strong></td>
 <td colspan="3">Closing Comments</td>
 </tr>
-<h2>Posters</h2>
-<p><strong>CARDIAC</strong></p>
+<h2 id="posters">Posters</h2>
+<h3>Cardiac</h3>
 <ol>
 <li>Evaluation of the performance of MR-guided intramyocardial delivery of angiogenic genes in infarcted myocardium using cardiovascular MR imaging and histopathology. M. Saeed, A. Martin, D. Saloner, P. Ursell, S. Hetts, M. Wilson. Department of Radiology and Biomedical Imaging, and Pathology, University of California San Francisco, CA.</li>
 <li>Evaluation of Targeting Accuracy under Model-to-Subject Misregistrations Using Model-Enhanced Ultrasound-Assisted Guidance. C.A. Linte<sup>1,2</sup>, J. Moore<sup>1</sup>, A. Wiles<sup>3</sup>, C. Wedlake<sup>1</sup> and T.M. Peters<sup>1,2</sup>. <sup>1</sup>Biomedical Engineering, University of Western Ontario, London Ontario Canada. <sup>2</sup>Imaging Research Laboratories, Robarts Research Institute, London Ontario Canada. <sup>3</sup> Medical Division, Northern Digital Inc., Waterloo Ontario Canada.</li>
 <li>Forward-Looking Intracardiac Ultrasound Imaging Catheters Using CMUTs. A. Nikoozadeh<sup>1</sup>, O. Oralkan<sup>1</sup>, M. Gencel<sup>1</sup>, J. Woo Choe<sup>1</sup>, D.N. Stephens<sup>2</sup> A. de la Rama<sup>3</sup>, P. Chen<sup>3</sup>, K. Thomenius<sup>4</sup>, A. Dentinger<sup>4</sup>, D. Wildes<sup>4</sup>, K. Shivkumar<sup>5</sup>, A. Mahajan<sup>5</sup>, M. O’Donnell<sup>6</sup>, D. Sahn<sup>7</sup> and P.T. Khuri-Yakub<sup>1</sup>. <sup>1</sup>Stanford University; <sup>2</sup>University of California, Davis; <sup>3</sup>St. Jude Medical; <sup>4</sup>General Electric Corporate Research &amp; Development ; <sup>5</sup>Univeristy of California, Los Angeles; <sup>6</sup>University of Washington; <sup>7</sup>Oregon Health and Science University.</li>
 <li>Improved Cardiac MRI Gating, Physiological Monitoring and Cardiac-Output Estimation by MRI Compatible 12-Lead ECGs. Z.T.H. Tse<sup>1</sup>, C.L. Dumonulin<sup>2</sup>, G. Clifford<sup>3</sup>, M. Herosch-Herold<sup>1</sup>, D. Kacher<sup>1</sup>, R. Kwong<sup>4</sup>, W.G. Stevenson<sup>4</sup>, and E.J. Schmidt<sup>1</sup>. <sup>1</sup>Department of Radiology, Brigham and Women’s Hospital, Boston, MA; <sup>2</sup>University of Cincinnati College of Medicine, Cincinnati, OH; <sup>3</sup>Health Sciences and Technology, Massachusetts Institute of Technology, Boston, MA; <sup>4</sup>Cardiology, Brigham and Women’s Hospital, Boston, MA.</li>
 </ol>
-<p><strong>ABDOMEN</strong></p>
+<h3>Abdomen</h3>
 <ol>
 <li>Integrated MRI and HIFU Control System: Towards Real Time Treatment of the Liver. A. B. Holbrook<sup>1,2</sup>, C.L. Dumoulin<sup>3</sup>, J.M. Santos<sup>4,5</sup>, Y. Medan<sup>6</sup> and K. Butts Pauly<sup>2</sup>. <sup>1</sup>Bioengineering, Stanford University, Stanford, CA; <sup>2</sup>Radiology, Stanford, University, Stanford, CA; <sup>3</sup>Imaging Research Center, University of Cincinnati College of Medicine, Cincinnati, OH; <sup>4</sup>HeartVista, Los Altos, CA; <sup>5</sup>Electrical Engineering, Stanford University, Stanford, CA; <sup>6</sup>InSightec Ltd, Tirat Carmel, Israel.</li>
 <li>Image Guided Laproscopic Surgery System Using Open Source Software IGSTK. P. Cheng, E. Wilson, Z. Yaniv, P. Bhanot, K. Cleary. Georgetown University Medical Center, Washington D.C.</li>
@@ -4818,7 +3324,7 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 <li>New Kinematic Metric for Quantifying Surgical Skill for Flexible Instrument Manipulation. J. Jayender<sup>1,2</sup>, R. San Jose Estepar<sup>1</sup>, K. Obstein<sup>3</sup>, V.D. Patil<sup>1,2</sup>, C. Thompson<sup>3</sup>, K. Vosburgh<sup>1,2</sup>. <sup>1</sup>Department of Radiology, Harvard Medical School, Brigham and Women’s Hospital, Boston, MA; <sup>2</sup>CIMIT Image Guidance Laboratory, Boston, MA; <sup>3</sup>Division of Gastroenterology, Brigham and Women’s Hospital, Boston, MA.</li>
 <li>Advanced Navigation and Motion Characteristics in Natural Orifice Transluminal Endoscopic Surgery. B. Lengyel, R. San Jose Estepar, K. Obstein, V.D. Patil, J. Jayender, D.E. Azagury, M. Ryou, S.N. Shaikh, M.B. Ryan, C.C. Thompson, K.G. Vosburgh. Harvard Medical School and Brigham and Women’s Hospital; CIMIT.</li>
 </ol>
-<p><strong>PROSTATE</strong></p>
+<h3>Prostate</h3>
 <ol>
 <li>Multiphoton Microscopy of Human Prostate and Periprostatic Tissue for Real-Time Structure Identification During Nerve-Sparing Radical Prostatectomy. A.K. Tewari<sup>1</sup>, S. Mukherjee<sup>2</sup>, M. Hermani<sup>1</sup>, R. Yadav<sup>1</sup>, K. Mudalair<sup>1</sup>, J. Sterling<sup>2</sup>, S. Grover<sup>1</sup>, M. M. Shevchuk<sup>3</sup>, M.A. Rubin<sup>3</sup>, F.R. Maxfield<sup>2</sup>, W.R. Zipfel<sup>4</sup>, C. Xu<sup>5</sup> , W.W. Webb<sup>5</sup>. <sup>1</sup>Department of Urology, Weill Cornell Medical College, New York, NY; <sup>2</sup>Departmend of Biochemistry, Weill Cornell Medical College, New York, NY; <sup>3</sup>Department of Pathology and Laboratory Medicine, Weill Cornell Medical College, New York, NY; <sup>4</sup>Department of Biomedical Engineering, Cornell University, Ithaca, NY; <sup>5</sup>School of Applied and Engineering Physics, Cornell University, Ithaca, NY.</li>
 <li>Online Guidance of Tumor Targeted Prostate Brachytherapy using Histologically Referenced MRI. C. Ménard<sup>1</sup>, A. Rink<sup>1</sup>, J. Abed<sup>1</sup>, A. Simeonov<sup>1</sup>, J. Publicover<sup>1</sup>, J. Lee<sup>1</sup>, A.Beiki<sup>1</sup>, K. Brock<sup>1</sup>, W. Foltz<sup>1</sup>, C. Elliott<sup>2</sup>, G. Morton<sup>3</sup>, P. Warde1 and M. Haider<sup>1,3</sup>. <sup>1</sup>Princess Margaret Hospital, University of Toronto, Toronto, Ontario, Canada; <sup>2</sup>Sentineelle Medical Inc; <sup>3</sup>Odette Cancer Center, University of Toronto, Toronto, CA.</li>
@@ -4830,7 +3336,7 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 <li>Standardized Network Communication for MRI-guided Robotic Prostate Interventions. J. Tokuda<sup>1</sup>, G.S. Fischer<sup>2</sup>, J. Blevins<sup>3</sup>, N. Hata, E.C. Burdette<sup>3</sup>, G. Fichtinger<sup>4</sup>, C. M. Tempany<sup>1</sup>. <sup>1</sup>National Center for Image-Guided Therapy, Brigham and Women’s Hospital; <sup>2</sup>Worcester Polytechnic Instiute, <sup>3</sup>Acoustic MedSystems Inc., <sup>4</sup>Queen’s University.</li>
 <li>Real Time MR-Guided Prostate Ablation with Transurethral Multisectored Ultrasound Applicators and Multislice Treatment Planning and Control. A.B. Holbrook<sup>1,2</sup>, P. Prakash<sup>3</sup>, P. Jones<sup>3</sup>, C. Planey<sup>2</sup>, J.M. Santos<sup>4,5</sup> C. J. Diederich<sup>3</sup>, K. Butts Pauly<sup>2</sup>, and F. Graham Sommer<sup>2</sup>. <sup>1</sup>Bioengineering, Stanford University, Stanford, CA; <sup>2</sup>Radiology, Stanford, University, Stanford, CA; <sup>3</sup>Radiation Oncology, UCSF, San Francisco, CA; <sup>4</sup>HeartVista, Los Altos, CA; <sup>5</sup>Electrical Engineering, Stanford University, Stanford, CA.</li>
 </ol>
-<p><strong>BRAIN AND SPINE</strong></p>
+<h3>Brain and Spine</h3>
 <ol>
 <li>Pre-surgical Assessment of Language-dominant Hemisphere Using Task-free fMRI. Y. Tie, L. Rigolo, S. Shriver, A. Golby. Brigham and Women’s Hospital, Harvard Medical School, Boston, MA.</li>
 <li>Effects of Local Calcifications in Swine Brain During MR-guided HIFU. R. Bitton, K. Butts Pauly. Department of Radiology, Stanford University, Stanford, CA.</li>
@@ -4841,14 +3347,14 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 <li>Accuracy of an Electomagnectic Tracking (EM) System for Image-guided Placement of External Ventricuar Drain (EVD).V. Patil<sup>1,2</sup>, R. Shams<sup>2,3</sup>, J. Stoll<sup>4</sup>, A. Cheung<sup>5</sup>, R. San Jose Estepar<sup>1,2,6</sup>, R. Gupta<sup>3</sup>, K. Vosburgh<sup>1,2,4</sup>. <sup>1</sup>Surgical Planning Laboratory, Brigham and Women’s Hospital, Boston, MA; <sup>2</sup>CIMIT Image Guidance Laboratory, Massachusetts General Hospital, Boston, MA; <sup>3</sup>College of Engineering and Computer Science, Australian National University, Canberra, ACT, Australia; <sup>4</sup>Center for Integration of Medicine and Innovative Technology, Massachusetts General Hospital, Boston, MA; <sup>5</sup>Department of Radiology, Massachusetts General Hospital, Boston, MA; <sup>6</sup>Laboratory of Mathematics in Imaging, Brigham and Women’s Hospital, Boston, MA.</li>
 <li>Improved Visualization of the Extra Dural Spinal Nerves for Spine Pain Interventions. G. Danagoulian<sup>1</sup>, E.J. Schmidt<sup>1</sup>, S. Mukundan<sup>1</sup>, A. Shankaranarayanan<sup>2</sup>, K.S. Nayak<sup>3</sup>. <sup>1</sup>Radiology Department, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA; <sup>2</sup>GE Healthcare Applied Science Lab, Menlo Park, CA; <sup>3</sup>Electrical Engineering Department, University of Southern California, Los Angeles, CA.</li>
 </ol>
-<p><strong>BREAST</strong></p>
+<h3>Breast</h3>
 <ol>
 <li>MR-guided HIFU in Cadaver Breasts for Pre-Operative Tumor Localization of Non-Palpable Breast Tumors. R. Bitton, E. Kaye, B. Daniel, K. Butts Pauly. Department of Radiology, Stanford University, Stanford, CA.</li>
 <li>MRI Tools for Focal Spot Visualization During FUS Breast Treatment. E. Kaye, R. Bitton, K. Butts Pauly. Department of Radiology, Stanford University, Stanford, CA.</li>
 <li>3D Stereoscopic Vision for MRI Guided Interventions: Technical Feasibility. M. Philip<sup>1</sup>, B. Fetics<sup>1</sup>, Abraham Roth<sup>1</sup>, Amir Roth<sup>1</sup>, E. Nevo<sup>1</sup>, F. Wacker<sup>2</sup>. <sup>1</sup>Robin Medical, Inc., Baltimore, MD; <sup>2</sup>Department of Radiology and Radiological Science, Johns Hopkins School of Medicine, Baltimore, MD.</li>
 <li>Comprehensive Volumetric Microscopy Guided Biopsy. D. Kang, M.J. Suter, P.A. Jillella, H. Yoo, B.J. Vakoc, N.S. Nishioka, B.E. Bouma, G. J. Tearney. Harvard Medical School and Wellman Center for Photomedicine, Massachusetts General Hospital.</li>
 </ol>
-<p><strong>GENERAL IGT</strong></p>
+<h3>General IGT</h3>
 <ol>
 <li>Hybrid Referenceless and Multi-Baseline Subtraction MR Thermometry for Monitoring Thermal Therapies in Moving Organs. W. A. Grissom<sup>1</sup>, V. Rieke<sup>1</sup>, M. Lustig<sup>2</sup>, J. Santos<sup>3</sup>, M.M. McConnell<sup>4</sup> and K. Butts Pauly<sup>1</sup>. <sup>1</sup>Radiology, Stanford University, Stanford, CA; <sup>2</sup>Electrical Engineering and Computer Science, UC Berkely, Berkely, CA; <sup>3</sup>Electrical Engineering, Stanford University, Stanford, CA; <sup>4</sup>Cardiovascular Medicine, Stanford University, Stanford, CA.</li>
 <li>Minimizing Imaging Dose in X-ray Fluoroscopy Guided Interventions. S. Siddique<sup>1,2</sup>, E. Fiume<sup>2</sup>, D. A. Jaffray<sup>1,3</sup>. <sup>1</sup>Princess Margaret Hospital/Ontario Cancer Research Institute, Toronto Ontario M5G 2M9, Canada; <sup>2</sup>Department of Computer Science, University of Toronto, Toronto, Ontario M5S 3G4, Canada; <sup>3</sup>Departmens of Radiation Oncology and medical Biophysics, University of Toronto, Toronto, Ontario M5S 3E2, Canada.</li>
@@ -4862,7 +3368,7 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 <li>Image Guided Therapy Applications Using Time-Of-Flight Camera Data. M. Balda, C. Schaller, S. Placht. Friedrich-Alexander University Erlangen-Nuremberg, Germany.</li>
 <li>Fusion of Intraoperative Cone-Beam CT and Endoscopic Video for Image-Guided Procedures. M.J Daly<sup>1,2</sup>, H. Chan<sup>1</sup>, E. Prisman<sup>3</sup>, A. Vescan<sup>2,3</sup>, S. Nithiananthan<sup>4</sup>, J. Qiu<sup>1</sup>, R. Weersink<sup>1</sup>, D. Jaffray<sup>1</sup>, J.C. Irish<sup>3</sup>, J.H. Siewerden<sup>4</sup>. <sup>1</sup>Ontario Cancer Institute, Princess Margaret Hospital, Toronto ON; <sup>2</sup>Institute of Medical Science, University of Toronto, Toronto ON; <sup>3</sup>Department of Otolaryngology-Head and Neck Surgery, University of Toronto ON; <sup>4</sup> Department of Biomedical Engineering, Johns Hopkins University, Baltimore MD.</li>
 </ol>
-<h2>Meeting Attendees</h2>
+<h2 id="meeting-attendees">Meeting Attendees</h2>
 <p>This meeting recorded 104 attendees, whose names and affiliations are listed below:</p>
 <p>1. Stephen Aylward :: Kitware, Inc.<br/>
 2. Dominique Belhachemi :: Yale University<br/>
@@ -4968,20 +3474,16 @@ Moderator: Dominik Meier, PhD, Brigham and Women’s Hospital</td>
 102. Bradford Wood :: National Cancer Institute, National Institutes of Health<br/>
 103. Graham Wright :: Sunnybrook Health Sciences Centre<br/>
 104. Pavel Yarmolenko :: National Institutes of Health</p>
-
-
-<h4><a href="#1673648593959-e79ebe68-7cdd">The <strong>2<sup>nd</sup></strong> National Image Guided Therapy Workshop - <strong>2008</strong><i></i></a></h4>
-
-
-<p><h2>The 2<sup>nd</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>2<sup>nd</sup></strong> National Image Guided Therapy Workshop - <strong>2008</strong></h3>
+<p><h2 id="the-2-nd-national-image-guided-therapy-workshop">The 2<sup>nd</sup> National Image Guided Therapy Workshop</h2>
 <p>The 2<sup>nd</sup> Image Guided Therapy Workshop was successfully held on <strong>March 10-11, 2008</strong> in Arlington, VA.</p>
 <p><strong>Registration and Hotel</strong>: Registration and Hotel Information for the workshop. Please note that there is no registration fee for the workshop but the workshop capacity is limited to 100 attendees, and registration will be closed after that count is reached.</p>
-<h2>Goal</h2>
+<h2 id="goal-2">Goal</h2>
 <p>On behalf of the National Cancer Institute (NCI), National Center for Research Resources (NCRR), National Institute of Biomedical Imaging and Bioengineering (NIBIB), and the National Center for Image-Guided Therapy (NCIGT) at the Brigham &amp; Women’s Hospital, it is our pleasure to announce an upcoming workshop on “Clinical Image-Guided Therapy: Opportunities and Needs” and invite you to attend and participate in the workshop.</p>
 <p>This workshop will be held on March 10-11, 2008 at the Rockville Hilton in Rockville, Maryland and will be composed of scientific sessions in areas of neuro-, prostate, and body interventions, focused ultrasound, and targeted drug-delivery, as well as imaging, computation and visualization technologies in support of image-guided therapies (IGT). There will also be parallel hands-on breakout sessions focused on various applications of the Slicer visualization modules. In addition, the organizers would like to invite submission of abstracts on clinical IGT for poster presentations at the meeting. Scientific abstracts may be submitted for the poster session of this workshop. Deadline for submission of abstracts is 5 pm EST January 24, 2008, with further details available below.</p>
 <p>We expect attendance by the members of the academia, industry, and federal agencies interested in the field of image-guided interventions.</p>
 <p>The overall goal of this workshop is to asses the current needs and opportunities in the field of image-guided interventions and NCIGT’s role as a national center in relation to the greater IGT community. In order to best achieve this goal it is important for all participants to attend both days of the workshop. The preliminary program for the workshop is currently available below and further details on the program and the logistics will be available in January.</p>
-<h2>Program Contacts</h2>
+<h2 id="program-contacts">Program Contacts</h2>
 <p><strong>Keyvan Farahani, PhD</strong><br/>
 Acting Chief<br/>
 Image-Guided Interventions Branch<br/>
@@ -4993,14 +3495,14 @@ Professor of Radiology<br/>
 Harvard Medical School<br/>
 Brigham &amp; Women’s Hospital<br/>
 Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></p>
-<h2>Call for Poster Abstracts</h2>
-<h2>Poster Sessions</h2>
+<h2 id="call-for-poster-abstracts-3">Call for Poster Abstracts</h2>
+<h2 id="poster-sessions">Poster Sessions</h2>
 <p>There will be a working lunch poster session during both days of the workshop and abstract submissions will be considered for exhibits during the poster sessions. Prospective attendees are encouraged to submit abstracts describing their research in areas related to clinical image-guided therapy for consideration of exhibition in the Poster Sessions of the workshop.</p>
-<h2>Abstract Format, Submission and Acceptance</h2>
+<h2 id="abstract-format-submission-and-acceptance">Abstract Format, Submission and Acceptance</h2>
 <p>Authors should organize the abstract (250 words or less) in four sections: Purpose, Methods, Results, and Conclusions, identified by bold headers. Submissions may be made by sending your abstract to <a href="mailto:ncigt-workshop-posters@bwh.harvard.edu">ncigt-workshop-posters@bwh.harvard.edu</a>. Deadline for submission of abstracts is 5 pm EST <strong>January 24, 2008</strong>. All submissions will be reviewed by the Scientific Committee of the workshop for scientific merit and program relevance. Principal authors will be notified of the result of the abstract review by Feb 2, 2008.</p>
-<h2>Guidelines for Poster Format</h2>
+<h2 id="guidelines-for-poster-format">Guidelines for Poster Format</h2>
 <p>The poster boards are 8′ wide x 4′ long. Each poster should not be larger than 4′ wide and 4′ long so that two posters can fit on each board.</p>
-<h2>Program Committee</h2>
+<h2 id="program-committee-4">Program Committee</h2>
 <ul>
 <li>Ferenc Jolesz, MD, Brigham and Women’s Hospital</li>
 <li>Clare Tempany, MD, Brigham and Women’s Hospital</li>
@@ -5009,9 +3511,9 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>Abraham Levy, PhD, National Center for Research Resources, NIH</li>
 <li>John Haller, PhD, National Institute of Biomedical Imaging and Bioengineering, NIH</li>
 </ul>
-<h2><a href="media/2023_01_2008_igt_workshop.pdf">PrOCEEDINGS</a></h2>
-<h2>Program</h2>
-<h2><strong>Monday March 10</strong></h2>
+<h2 id="proceedings"><a href="media/2023_01_2008_igt_workshop.pdf">Proceedings</a></h2>
+<h2 id="program-4">Program</h2>
+<h2 id="monday-march-10"><strong>Monday March 10</strong></h2>
 <p>8:00 – 8:15 am Introduction: Keyvan Farahani, PhD (NIH)<br/>
 8:15 – 8:45 am Day 1 Keynote: Ferenc Jolesz, MD (BWH)</p>
 <p><strong>Session 1: Prostate</strong> Chair Keyvan Farahani (CIP/NCI)</p>
@@ -5019,21 +3521,21 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 9:05 – 9:20 am Clare Tempany, MD (NCIGT/BWH)<br/>
 9:20 – 9:35 am Cynthia Menard, MD (Toronto)<br/>
 9:35 – 10:05 am Speakers Panel</p>
-<p><strong>10:05-10:20am Break</strong></p>
+<h3>10:05-10:20am Break</h3>
 <p><strong>Session 2: Body</strong> Chair Pushpa Tandon (CIP/NCI)</p>
 <p>10:20 – 10:40 am Session Keynote: Gerald Dodd, III, MD (UTHSC, San Antonio)<br/>
 10:40 – 10:55 am Kemal Tuncali, MD (NCIGT/BWH)<br/>
 10:55 – 11:10 am Dennis Fowler, PhD (Columbia)<br/>
 11:10 – 11:25 am Mehran Armand, PhD (Johns Hopkins)<br/>
 11:25 – 11: 55 am Speakers Panel</p>
-<p><strong>11:55 am-1pm Lunch</strong></p>
+<h3>11:55 am-1pm Lunch</h3>
 <p><strong>Session 3: Neurosurgery</strong> Chair John Haller (NIBIB)</p>
 <p>1:00 – 1:20 pm Session Keynote: Walter Hall, MD, PhD (U Minnesota)<br/>
 1:20 – 1:35 pm Ferenc Jolesz (NCIGT/BWH)<br/>
 1:35 – 1:50 pm Xenophon Papademetris, PhD (Yale)<br/>
 1:50 – 2:05 pm Mathew Gounis, PhD (UMASS, Worcester)<br/>
 2:05 – 2:35 pm Speakers Panel</p>
-<p><strong>2:35-3:35 pm Poster Presentations</strong></p>
+<h3>2:35-3:35 pm Poster Presentations</h3>
 <p><strong>Session 4: Computation and Visualization</strong> Chair Abraham Levy (NCRR)</p>
 <p>3:35 – 4:05 pm George Chen, PhD (MGH)<br/>
 4:05 – 4:20 pm Sandy Wells, PhD (NCIGT/BWH) <a href="http://wiki.na-mic.org/Wiki/images/6/6d/2008_IGI_Clinical_Workshop_Wells.pdf" title="2008 IGI Clinical Workshop Wells.pdf">(slides)</a><br/>
@@ -5041,11 +3543,11 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 4:35 – 4:50 pm George Stetten, PhD (U Pittsburgh)<br/>
 4:50 – 5:05 pm Robert Cormack, PhD (Rad Onc, BWH) <a href="http://wiki.na-mic.org/Wiki/images/f/f9/2008_IGI_Clinical_Workshop_Cormack.ppt" title="2008 IGI Clinical Workshop Cormack.ppt">(slides)</a><br/>
 5:05 – 5:35 pm Speakers Panel</p>
-<p><strong>5:45-6:45 pm: Parallel Breakout Sessions: <a href="http://wiki.na-mic.org/Wiki/index.php/IGT:March_2008_IGT_Workshop:BreakOutSession" title="BreakOutSession">Link to the detailed page</a></strong></p>
+<h3>5:45-6:45 pm: Parallel Breakout Sessions: Link to the detailed page</h3>
 <p>Breakout Session 1: DTI/fMRI Acquisition and Visualization for Neurosurgery: Steve Whalen <a href="http://wiki.na-mic.org/Wiki/images/d/d9/2008_IGI_Clinical_Workshop_Whalen.pdf" title="2008 IGI Clinical Workshop Whalen.pdf">(slides)</a>, Lauren O’Donnell <a href="http://wiki.na-mic.org/Wiki/images/e/ec/2008_IGI_Clinical_Workshop_ODonnell.pdf" title="2008 IGI Clinical Workshop ODonnell.pdf">(slides)</a></p>
 <p>Breakout Session 2: Slicer Prostate Module: Steve Haker, Noby Hata <a href="http://wiki.na-mic.org/Wiki/images/9/9d/2008_IGI_Clinical_Workshop_Hata.pdf" title="2008 IGI Clinical Workshop Hata.pdf">(slides)</a></p>
 <p>Breakout Session 3: Liver Visualization: Nicu Archip, Paul Morrison <a href="http://wiki.na-mic.org/Wiki/index.php?title=Special:Upload&amp;wpDestFile=2008_IGI_Clinical_Workshop_Archip.pdf" title="2008 IGI Clinical Workshop Archip.pdf">(slides)</a></p>
-<h2><strong>Tuesday March 11</strong></h2>
+<h2 id="tuesday-march-11"><strong>Tuesday March 11</strong></h2>
 <p>8:00 – 8:10 am Introduction<br/>
 8:10 – 8:40 am Day 2 Keynote: Chrit Moonen, PhD (U Bordeaux, France)</p>
 <p><strong>Session 5: Focused Ultrasound</strong> Chair Hector Lopez (NIBIB)</p>
@@ -5054,14 +3556,14 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 9:15 – 9:30 am Patrick Wolf, PhD (Duke)<br/>
 9:30 – 9:45 am Guillerno Tearney, PhD (MGH)<br/>
 9:45 – 10:15 am Speakers Panel</p>
-<p><strong>10:15 -10:30 am Break</strong></p>
+<h3>10:15 -10:30 am Break</h3>
 <p><strong>Session 6: Imaging</strong> Chair Abraham Levy (NCRR)</p>
 <p>10:30 – 10:50 am Session Keynote: John Pauly, PhD (Stanford)<br/>
 10:50 – 11:05 am Larry Panych, PhD (NCIGT/BWH) <a href="http://wiki.na-mic.org/Wiki/images/d/da/2008_IGI_Clinical_Workshop_Panych.ppt" title="2008 IGI Clinical Workshop Panych.ppt">(slides)</a><br/>
 11:05 – 11:20 am Erez Nevo, MD, PhD (Robin Medical Inc.)<br/>
 11:20 – 11:35 am Ehud Schmidt, PhD (BWH)<br/>
 11:35 – 12:00 pm Speakers Panel</p>
-<p><strong>12:00 pm-1pm: Lunch</strong></p>
+<h3>12:00 pm-1pm: Lunch</h3>
 <p><strong>Session 7: Targeted Drug and Cell Delivery</strong> Chair Keyvan Farahani (NCI)</p>
 <p>1:00 – 1:20 pm Session Keynote: Zaver Bhujwalla, PhD (Johns Hopkins)<br/>
 1:20 – 1:35 pm Nathan McDannold, PhD (NCIGT/BWH)<br/>
@@ -5069,8 +3571,8 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 1:50 – 2:05 pm Jeff Bulte, PhD (Johns Hopkins)<br/>
 2:05 – 2:35 pm Speakers Panel<br/>
 2:35 – 2:45 pm Concluding Remarks</p>
-<p><strong>Adjournment</strong></p>
-<h2>Poster Session</h2>
+<h3>Adjournment</h3>
+<h2 id="poster-session-2">Poster Session</h2>
 <h3>Prostate</h3>
 <ol>
 <li>Song – A Pilot Study of Intraoperative Dynamic Dosimetry using Registered Ultrasound and Fluoroscopy (RUF) for Permanent Prostate Brachytherapy</li>
@@ -5121,20 +3623,17 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>Wiersma- Combined kV and MV Imaging for Real-Time Tracking of Implanted Fiducial Markers</li>
 </ol>
 </p>
-
-<h4><a href="#1673648642792-75c055d7-0a0d">The <strong>1<sup>st</sup></strong> National Image Guided Therapy Workshop - <strong>2006</strong><i></i></a></h4>
-
-
-<p><h2>The 1<sup>st</sup> National Image Guided Therapy Workshop</h2>
+<h3>The <strong>1<sup>st</sup></strong> National Image Guided Therapy Workshop - <strong>2006</strong></h3>
+<p><h2 id="the-1-st-national-image-guided-therapy-workshop">The 1<sup>st</sup> National Image Guided Therapy Workshop</h2>
 <p>The 1<sup>st</sup> Image Guided Therapy Workshop was successfully held on<strong> October 19-20, 2006</strong>, with over 75 registered attendees. A summary white paper was published in: Dimaio S, Kapur T, Cleary K, Aylward S, Kazanzides P, Vosburgh K, Ellis R, Duncan J, Farahani K, Lemke H, Peters T, Lorensen WB, Gobbi D, Haller J, Clarke LL, Pizer S, Taylor R, Galloway R Jr, Fichtinger G, Hata N, Lawson K, Tempany C, Kikinis R, Jolesz F. <a href="https://pubmed.ncbi.nlm.nih.gov/17644360/">Challenges in Image-guided Therapy System Design</a>. NeuroImage 2007 Sep; 37(Suppl 1):S144-S51. PMID: 17644360. PMC3780776.</p>
-<h2>Registration and Attendee List</h2>
+<h2 id="registration-and-attendee-list">Registration and Attendee List</h2>
 <p><strong>Registration Fee</strong>: US $250.00 payable onsite only by check payable to “BWPO Radiology” or cash. We can not accept credit cards, or payments before the meeting.</p>
 <p><strong>Registration</strong>: Registration for this workshop is quite simple. To register, please follow two steps:</p>
 <ol>
 <li>Create an account for yourself on this wiki by clicking <a href="http://wiki.na-mic.org/Wiki/index.php/Special:UserLogin">here</a>.</li>
 <li>After creating the account, go to the <a href="http://wiki.na-mic.org/Wiki/index.php/2006_IGT_Workshop_Attendee_List" title="2006 IGT Workshop Attendee List">2006 IGT Workshop Attendee List</a> and add your name, Institution, an email address, and the name of the breakout session you will be attending on Friday.</li>
 </ol>
-<h2>Goal</h2>
+<h2 id="goal-3">Goal</h2>
 <p>The goal of this workshop is to bring together researchers developing Image-Guided Therapy (IGT) systems for a 2-day workshop to share their recent advances and to identify synergies in future strategy. The intent of the workshop is to foster community-based development, to share best practices in engineering such systems, to identify gaps in the engineering infrastructure available to IGT researchers, and ultimately to facilitate the transfer of technology among NIH-sponsored research centers.</p>
 <p>In this program, we define IGT systems as the integrated devices for therapy delivery that incorporate intra-operative medical imaging, navigation, or robotics. In the lectures and breakout groups of this two-day workshop, we plan to:</p>
 <ol>
@@ -5145,9 +3644,9 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>identify opportunities for the <a href="index.html">National Center for Image Guided Therapy</a> (NCIGT) to help address these challenges and develop an open system architecture as part of its function as a biotechnology resource for the Image-Guided Therapy community.</li>
 </ol>
 <p>The workshop will concentrate on the computer science and engineering aspects of such systems, as the clinical aspects have been covered in previous NIH-related workshops. The agenda will include plenary talks that will review technical aspects of IGT as well as breakout sessions in which the participants will concentrate on issues raised by the talks.</p>
-<h2>Background on this workshop</h2>
+<h2 id="background-on-this-workshop">Background on this workshop</h2>
 <p>The initial idea of this workshop was developed in ad-hoc meetings with collaborators across institutions including Georgetown, Johns Hopkins, UNC, NIH, GE Global Research, Kitware Inc., and Brigham and Women’s Hospital. The Program Committee welcomed and encouraged suggestions from the IGT community on the content of this workshop until mid July, 2006, when the program was finalized.</p>
-<h2>Sponsors</h2>
+<h2 id="sponsors">Sponsors</h2>
 <p>We would like to gratefully acknowledge our industry sponsors whose financial support is helping us keep the registration fee low.</p>
 <ul>
 <li><strong>GE Healthcare</strong></li>
@@ -5158,11 +3657,11 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li><strong>Acoustic Med</strong></li>
 </ul>
 <p>If your company would like to sponsor the workshop, please send an email to tkapur at bwh.harvard.edu for additional information.</p>
-<h2>Hotel Logistics</h2>
+<h2 id="hotel-logistics-2">Hotel Logistics</h2>
 <p><strong>Date</strong>: October 19-20 (Thursday-Friday), 2006.</p>
 <p><strong>Location/Hotel</strong>: The Doubletree Hotel &amp; Executive Meeting Center, 1750 Rockville Pike, Rockville, Maryland 20852. Phone number: +1 (301) 468-1100. Room rates for the meeting were US $166/night (+ applicable taxes) for reservations made prior to September 29, 2006 12am using the group code “BRI”. After that date, rates revert to the regular ($300+/nt) and we are unable to get the hotel to release additional rooms at the lower rate.</p>
 <p>Please note that the conference hotel only has rooms blocked for October 19th night. If you are need accommodation for additional nights, a conveniently located area hotel is the Ramada Inn, 1775 Rockville Pike, Rockville, MD 20852. Phone (301) 881-2300.</p>
-<h2>Subway Information</h2>
+<h2 id="subway-information">Subway Information</h2>
 <p><a href="http://www.wmata.com/metrorail/systemmap.cfm" title="http://www.wmata.com/metrorail/systemmap.cfm">Subway Map</a></p>
 <ul>
 <li>Directions from Washington Reagan International Airport (DCA) to the Doubletree Hotel:
@@ -5173,7 +3672,7 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 </ul>
 </li>
 </ul>
-<h2>Program Committee</h2>
+<h2 id="program-committee-5">Program Committee</h2>
 <p>Ferenc Jolesz, MD, Brigham and Women’s Hospital, is the Workshop Chair. The program committee includes:</p>
 <ul>
 <li>Kevin Cleary, PhD, Georgetown</li>
@@ -5185,7 +3684,7 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>Ron Kikinis, MD, Brigham and Women’s Hospital</li>
 <li>Clare Tempany, MD, Brigham and Women’s Hospital</li>
 </ul>
-<h2>Organizing Committee</h2>
+<h2 id="organizing-committee-2">Organizing Committee</h2>
 <ul>
 <li>Simon DiMaio, PhD, Brigham and Women’s Hospital</li>
 <li>Noby Hata, PhD, Brigham and Women’s Hospital</li>
@@ -5197,7 +3696,7 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>Debbie O’Shea Begley, Brigham and Women’s Hospital, Workshop Coordinator</li>
 <li>Katie Mastrogiacomo, Brigham and Women’s Hospital, Workshop Staff</li>
 </ul>
-<h2><a href="media/2023_01_2006_igt_workshop_agenda.pdf">Agenda&gt;&gt;</a></h2>
+<h2 id="agenda"><a href="media/2023_01_2006_igt_workshop_agenda.pdf">Agenda&gt;&gt;</a></h2>
 <h3>Thursday, October 19, 2006</h3>
 <ul>
 <li>1:00-1:10pm: <a href="http://wiki.na-mic.org/Wiki/images/8/8e/Jolesz_IGT_Workshop_Oct_2006_Intro.ppt" title="Jolesz IGT Workshop Oct 2006 Intro.ppt">Welcome</a> (Ferenc Jolesz, Brigham and Women’s Hospital)</li>
@@ -5236,7 +3735,6 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <li>Breakout Session 5: <a href="http://wiki.na-mic.org/Wiki/index.php/2006_IGT_Workshop_Radiation_Therapy_Breakout" title="2006 IGT Workshop Radiation Therapy Breakout">IGT Case Study: Radiation Therapy for Prostate</a><strong>(RAD)</strong> (Moderator: Clare Tempany)</li>
 </ul>
 </li>
-
 <li>2:45pm-3:30pm: Plenary Session (report back from each breakout session)</li>
 <li>3:30pm: Adjourn (all except Program and Organizing Committees)</li>
 </ul>
@@ -5244,15 +3742,15 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 <ul>
 <li>3:30-4:30pm: Data gathering and documentation planning</li>
 </ul>
-<h2>Community Links</h2>
+<h2 id="community-links">Community Links</h2>
 <p>OpenTracker</p>
 <ul>
 <li>SPLOT – OpenTracker Extension</li>
 </ul>
-<h2>Contact</h2>
+<h2 id="contact-2">Contact</h2>
 <p>For further information about the program please contact: Tina Kapur (tkapur at bwh.harvard.edu)</p>
 <p>If you would like to be added to the mailing list for the workshop, please contact: Marianna Jakab (marianna at bwh.harvard.edu)</p>
-<h2>List of Attendees</h2>
+<h2 id="list-of-attendees">List of Attendees</h2>
 <p>1. Purang Abolmaesumi :: Queen’s University :: purang at cs.queensu.ca<br/>
 2. Arnon Amir :: IBM Research, San Jose, CA :: arnon at almaden.ibm.com<br/>
 3. Stephen Aylward :: Kitware, Inc. :: Stephen.Aylward at Kitware.com<br/>
@@ -5320,9 +3818,7 @@ Email: <a href="mailto:ctempany@bwh.harvard.edu">ctempany@bwh.harvard.edu</a></
 65. Terry Yoo :: National Institutes of Health :: yoo at nlm.nih.gov<br/>
 66. Joel Zuhars :: GE Global Research :: joel.zuhars at med.ge.com</p>
 </p>
-
-
-<p class="src">Content carried over from <a href="https://ncigt.org/past-igt-workshops/">https://ncigt.org/past-igt-workshops/</a>.</p></article></main>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/past-igt-workshops/">https://ncigt.org/past-igt-workshops/</a></p></article></div><section class="rel"><div class="in"><h2>More in News &amp; events</h2><div class="cards"><a class="card" href="news.html"><strong>News and seminars</strong><span>Awards, papers, grants and talks</span></a><a class="card" href="page-imri-2024.html"><strong>iMRI Symposium</strong><span>The interventional MRI meeting we co-organize</span></a><a class="card" href="page-national-image-guided-therapy-workshops.html"><strong>National IGT Workshops</strong><span>Our national image-guided therapy workshop series</span></a><a class="card" href="page-project-week.html"><strong>Project Week</strong><span>Twice-yearly open-source hackathon</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 

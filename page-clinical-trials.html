@@ -31,16 +31,7 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style>
-.arc{max-width:900px;margin:0 auto;padding:48px 24px 80px;font-size:17px;line-height:1.7;color:#1F2B3D}
-.arc h2{font-size:26px;margin:40px 0 12px;line-height:1.3}.arc h3{font-size:21px;margin:32px 0 10px}.arc h4,.arc h5{font-size:18px;margin:24px 0 8px}
-.arc img{max-width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
-.arc table{border-collapse:collapse;width:100%;font-size:15px;margin:16px 0;display:block;overflow-x:auto}.arc td,.arc th{border:1px solid #E3E8EF;padding:8px 10px;vertical-align:top}
-.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
-.arc ul,.arc ol{padding-left:24px}.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
-.crumb{font-size:14px;color:#4A5668;margin-bottom:8px}.src{margin-top:48px;padding-top:16px;border-top:1px solid #E3E8EF;font-size:14px;color:#4A5668}
-.hero-a{background:#0F1B2D;color:#fff}.hero-a div{max-width:900px;margin:0 auto;padding:48px 24px 36px}.hero-a h1{margin:0;font-size:36px;line-height:1.2;color:#fff}
-</style><style id="mm-css">
+<style id="mm-css">
 .mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
 .mm-item{position:relative}
 .mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
@@ -58,6 +49,52 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
 .mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
 @media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+</style>
+<style id="arc2">
+.hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
+.hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
+.hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
+.hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
+.hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay.one{grid-template-columns:minmax(0,1fr)}
+.toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
+.toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
+.toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
+.arc{max-width:780px;font-size:17px;line-height:1.72;color:#1F2B3D;min-width:0}
+.lay.one .arc{max-width:820px;margin:0 auto}
+.arc>p:first-child,.arc>.lead{font-size:19px;line-height:1.65;color:#0F1B2D}
+.arc h2{font-size:27px;margin:44px 0 14px;line-height:1.25;padding-top:8px;scroll-margin-top:16px}
+.arc h2:first-child,.arc>*:first-child{margin-top:0}
+.arc h3{font-size:20px;margin:30px 0 8px;line-height:1.35}
+.arc p{margin:0 0 16px}.arc ul,.arc ol{padding-left:22px;margin:0 0 18px}.arc li{margin:4px 0}
+.arc figure{margin:20px 0}.arc figure img,.arc>img{width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:12px;display:block}
+.arc img.side{float:right;width:200px;max-width:40%;height:auto;margin:4px 0 12px 24px;border-radius:10px}
+.arc::after{content:"";display:block;clear:both}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.gallery a{display:block}.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0}
+.tbl{overflow-x:auto;margin:16px 0 24px;border:1px solid #E3E8EF;border-radius:12px}
+.arc table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.arc th{background:#F3F6FA;text-align:left;font-weight:600;color:#0F1B2D;padding:10px 14px;border-bottom:1px solid #E3E8EF;white-space:nowrap}
+.arc td{padding:9px 14px;border-bottom:1px solid #EEF1F5;vertical-align:top}.arc tr:last-child td{border-bottom:0}
+.arc tbody tr:nth-child(even) td{background:#FAFBFD}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:18px 0 28px}
+.cards.three{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid #E3E8EF;border-radius:12px;padding:16px 18px;color:#0F1B2D;text-decoration:none;line-height:1.45;background:#fff}
+.card:hover{border-color:#0B5F86;box-shadow:0 6px 18px rgba(15,27,45,.08);text-decoration:none}
+.card strong{font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.3}
+.card span{font-size:14px;color:#4A5668}.card .kicker{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:#8A5A2B}
+.card.media{padding:0 0 14px;overflow:hidden}.card.media img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0 0 6px;border-radius:0}
+.card.media .kicker,.card.media strong,.card.media span{padding:0 16px}
+.arc a.more{display:inline-block;font-weight:600;font-size:15px;margin:0 0 18px}
+.arc .vid{position:relative;aspect-ratio:16/9;margin:20px 0}.arc .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0}.vgrid .vid{margin:0}
+.arc blockquote{border-left:4px solid #A8763E;margin:16px 0;padding:4px 16px;color:#3A4658}
+.box{background:#F3F6FA;border-radius:14px;padding:20px 22px;margin:20px 0}
+.src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
+.rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
+.rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 </head>
 <body>
@@ -134,90 +171,36 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hero-a"><div><p class="crumb" style="color:#D9B98F"><a href="sitemap.html" style="color:#D9B98F">All pages</a></p><h1>Clinical Trials</h1></div></section><article class="arc"><h2>Current Studies</h2><h4><a href="#1723329224721-a72c5a5b-e902">MRI GUIDED PROSTATE BIOPSY<i></i></a></h4>
-
-
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="clinical.html">AMIGO</a></p><h1>Clinical Trials</h1><p class="lede">Current studies, such as MRI-guided prostate biopsy</p></div></section><div class="lay one"><article class="arc"><h2 id="current-studies">Current Studies</h2><h3>MRI Guided Prostate Biopsy</h3>
 <p>This study aims to assess the feasibility of magnetic resonance (MR) guided prostate biopsy using a needle holder frame. This frame is used to help position the needle used for the biopsy. The feasibility in this study is defined as whether the needle holder frame enables accurate tissue sampling from a suspicious region in the prostate found on an MR image. If it does, a biopsy can be carried out with the needle holder frame safely in a clinical routine. The study will be conducted during a routine MR-guided prostate biopsy procedure with an investigational needle holder frame instead of a conventional needle-guiding template.</p>
-
-
-<a href="https://clinicaltrials.gov/study/NCT06302595?term=Kemal%20tuncali&amp;rank=1" title=""></a><h4><a href="#1723329224742-69313c89-da49">IMPLANTABLE MICRODEVICE IN PRIMARY BRAIN TUMORS<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/study/NCT06302595?term=Kemal%20tuncali&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><h3>Implantable Microdevice in Primary Brain Tumors</h3>
 <p>This pilot study will assess the safety and feasibility of using an implantable microdevice to measure local intratumor response to chemotherapy and other clinically relevant drugs in malignant brain tumors.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT04135807?titles=microdevice&amp;cntry=US&amp;draw=2&amp;rank=1" title=""></a><h4><a href="#1723329284482-77b326d5-1aa8">IMPLANTABLE MICRODEVICE FOR EVALUATING DRUG RESPONSES IN SITU IN PROSTATE CANCER<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT04135807?titles=microdevice&amp;cntry=US&amp;draw=2&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><h3>Implantable Microdevice for Evaluating Drug Responses in Situ in Prostate Cancer</h3>
 <p>In this research study, is assessing the feasibility of using an MR-guided implantable microdevice to measure tumor response to chemotherapy and other clinically relevant drugs in participants that have prostate cancer and are scheduled for a radical prostatectomy.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT04399876?titles=microdevice&amp;draw=2&amp;rank=4" title=""></a><h4><a href="#1723329320415-3bd465a6-a49e">TREATMENT OF RECURRENT MALIGNANT GLIOMA WITH rQNestin34.5v.2<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT04399876?titles=microdevice&amp;draw=2&amp;rank=4" title="">Study record on ClinicalTrials.gov →</a><h3>Treatment of Recurrent Malignant Glioma with Rqnestin34.5v.2</h3>
 <p>This research study is evaluating an investigational drug called rQNestin34.5v.2. This Phase I clinical trial tests the safety of an investigational drug and also tries to define the appropriate dose of the investigational drug as a possible treatment for this diagnosis of recurrent or progressive brain tumor.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT03152318?term=chiocca&amp;rank=1" title=""></a><h4><a href="#1723329349878-31928adb-8095">MRI-GUIDED CRYOABLATION OF HEAD, NECK AND SPINE NERVES AND FACETS<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT03152318?term=chiocca&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><h3>Mri-guided Cryoablation of Head, Neck and Spine Nerves and Facets</h3>
 <p>The objective of this study is to provide pain relief to patients with facet joint disease or head and neck pain related to compression of a nerve root. The goal is to provide palliative care with superior efficacy and longer relief compared to current methods.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27505064" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27609619" title=""></a><h2>Completed Studies</h2><h4><a href="#1723328246710-a216d8f4-ffd8">UROLOGIC LYMPHADENECTOMY IN AMIGO<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27505064" title="">Learn more →</a><h2 id="completed-studies">Completed Studies</h2><h3>Urologic Lymphadenectomy in AMIGO</h3>
 
 This research study involves the use of two navigation systems, the 3D Slicer-based navigation system, and the Siemens Monaco systems, to simplify the complexity of image-guided lymphadenectomy procedures (surgery to remove one or more lymph nodes) in patients with urological cancer.
 
-
-
-<a href="https://clinicaltrials.gov/study/NCT05132283?term=AMIGO&amp;aggFilters=status:rec&amp;rank=1" title=""></a><h4><a href="#1723328246727-c24d57a3-76d1">IMAGE-GUIDED CRYOABLATION OF HEAD, NECK AND SPINE TUMORS<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/study/NCT05132283?term=AMIGO&amp;aggFilters=status:rec&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><h3>Image-guided Cryoablation of Head, Neck and Spine Tumors</h3>
 <p>This research study is evaluating a procedure called cryoablation (the removal of diseased tissue using extreme freezing temperatures) as a possible treatment for head, neck and spine tumors.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/27845860" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27609619" title=""></a><h4><a href="#1723328300104-29760052-c721">PERCUTANEOUS IMAGE GUIDED VIDEO-ASSISTED THORACIC SURGERY (VATS) RESECTION OF LUNG LESIONS<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/27845860" title="">Learn more →</a><h3>Percutaneous Image Guided Video-assisted Thoracic Surgery (VATS) Resection of Lung Lesions</h3>
 <p>This is a phase II protocol to determine the safety and feasibility of Intraoperative CT fluoroscopy guidance for lung resection for small nodules.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT01847209?term=raphael+bueno&amp;rank=2" title=""></a><a href="#" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/26031893" title=""></a><h4><a href="#1723328321769-6888a53e-6f55">PET/CT-ASSESSMENT OF LIVER TUMOR ABLATION<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT01847209?term=raphael+bueno&amp;rank=2" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/26031893" title="">Learn more →</a><h3>Pet/ct-assessment of Liver Tumor Ablation</h3>
 <p>In this research study, the investigators are evaluating whether ammonia PET scans or FDG PET perfusion scans are more useful in helping radiologists determine whether liver tumors were successfully destroyed by the heating or freezing procedures (ablations) than other scans currently available to radiologists, such as CT scans and MRI scans. The currently available scan (usually a CT scan with contrast dye) is not always effective in showing how completely the tumor has been destroyed. The ammonia PET scan is a different way of looking at how much tumor has been destroyed. This study will compare the standard scan (CT scan) with the ammonia PET scan.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT02018107?term=paul+shyn&amp;rank=1" title=""></a><a href="#" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/28952807" title=""></a><h4><a href="#1723328344188-e146a0a5-42e3">IMAGE-GUIDED BREAST CONSERVING SURGERY<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT02018107?term=paul+shyn&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/28952807" title="">Learn more →</a><h3>Image-guided Breast Conserving Surgery</h3>
 <p>This research study is a pilot study designed to evaluate magnetic resonance imaging-guided therapy (MRT) as a possible treatment for breast cancer. In this pilot study, the investigators are studying if it is possible to use intra-operative MRI to guide surgery. The therapy takes place in the Advanced Multimodality Image Guided Operating (AMIGO) suite at Brigham and Women’s Hospital. The purpose of this study is to investigate if it is possible to perform the breast conserving surgery with the help of intra-operative magnetic resonance imaging in the advanced multimodality image guided operating suite. It is hoped that intra operative MRI may improve the surgeon’s ability to know the exact margins of tumor. Currently, approximately 40% of women need to come back to the operating room and have the margins of the cancer re-excised.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT02057432?term=AMIGO&amp;locn=Brigham+and+Womens&amp;rank=2" title=""></a><a href="#" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/25047476" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/27332738" title=""></a><h4><a href="#1723328373487-e6ea38a7-2c1e">TRANSSPHENOIDAL EXTENT OF RESECTION STUDY (TRANSSPHER)<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT02057432?term=AMIGO&amp;locn=Brigham+and+Womens&amp;rank=2" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/25047476" title="">Learn more →</a><h3>Transsphenoidal Extent of Resection Study (transspher)</h3>
 <p>This research study is to compare the extent of resection (EOR) in patients with nonfunctioning pituitary adenomas undergoing transsphenoidal surgery using a microsurgical technique to those patients who have undergone surgery with a fully endoscopic technique. Another goal is to compare surgical complications, endocrine outcomes, visual outcomes, length of surgery, length of hospital stay, and readmission rates between the two transsphenoidal surgery techniques. This is an observational data collection study with no experimental procedures or experimental medicines. Endonasal transsphenoidal removal of a pituitary tumor is a unique procedure and there is little information comparing the two surgical techniques.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT02357498?term=edward+laws&amp;rank=6" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/25047476" title=""></a><h4><a href="#1723328402539-046074ed-f564">MASS SPECTROMETRY AND INTRAOPERATIVE MRI IN BREAST-CONSERVING THERAPY<i></i></a></h4>
-
-
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT02357498?term=edward+laws&amp;rank=6" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/25047476" title="">Learn more →</a><h3>Mass Spectrometry and Intraoperative MRI in Breast-conserving Therapy</h3>
 <p>This study is to investigate the use of intra-operative Magnetic Resonance Imaging (MRI) and Mass Spectrometry (MS) during breast conserving surgery, and to determine if these tests are capable of accurately predicting the presence or absence of breast tumor in surgical specimens at the margins.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT02335671?term=AMIGO&amp;locn=Brigham+and+Womens&amp;rank=3" title=""></a><a href="https://clinicaltrials.gov/ct2/show/NCT02335671?term=AMIGO&amp;locn=Brigham+and+Womens&amp;rank=3" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=25246570" title=""></a><h4><a href="#1723328425953-faa3e8ea-5729">IMAGE-GUIDED GYNECOLOGIC BRACHYTHERAPY<i></i></a></h4>
-
-
-<p><br/>
-<br/>
-Standard therapy for gynecologic cancers involves the use of brachytherapy, also called internal radiation therapy or implant radiation. The treatment being studied consists of standard brachytherapy with the additional use of MRI to guide the insertion of radioactive applicators. The purpose of the study is to find out whether MRI-guided brachytherapy is practical and beneficial when compared to the standard CT-guided brachytherapy placement. The investigators are hoping that this MRI procedure will decrease the risk of giving too high a radiation dose to the bladder or bowel.</p>
-
-
-<a href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title=""></a><a href="#" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28843373" title=""></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28843373" title=""></a>
-<p class="src">Content carried over from <a href="https://ncigt.org/clinical-trials/">https://ncigt.org/clinical-trials/</a>.</p></article></main>
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT02335671?term=AMIGO&amp;locn=Brigham+and+Womens&amp;rank=3" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=25246570" title="">Learn more →</a><h3>Image-guided Gynecologic Brachytherapy</h3>
+<p><br/>Standard therapy for gynecologic cancers involves the use of brachytherapy, also called internal radiation therapy or implant radiation. The treatment being studied consists of standard brachytherapy with the additional use of MRI to guide the insertion of radioactive applicators. The purpose of the study is to find out whether MRI-guided brachytherapy is practical and beneficial when compared to the standard CT-guided brachytherapy placement. The investigators are hoping that this MRI procedure will decrease the risk of giving too high a radiation dose to the bladder or bowel.</p>
+<a class="more" href="https://clinicaltrials.gov/ct2/show/NCT03277469?term=brigham+and+women%27s+hospital&amp;cond=Gynecologic+Cancer&amp;rank=1" title="">Study record on ClinicalTrials.gov →</a><a class="more" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=28843373" title="">Learn more →</a>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/clinical-trials/">https://ncigt.org/clinical-trials/</a></p></article></div><section class="rel"><div class="in"><h2>More in AMIGO</h2><div class="cards"><a class="card" href="page-amigo.html"><strong>About the AMIGO suite</strong><span>MRI, PET/CT and X-ray in one procedure suite</span></a><a class="card" href="page-amigoprocedures.html"><strong>Procedures in AMIGO</strong><span>Procedures that are part of clinical trials</span></a><a class="card" href="clinical.html#studies"><strong>Clinical studies with the center</strong><span>Prostate, brain, breast, thoracic and more</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 
