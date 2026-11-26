@@ -97,25 +97,31 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 @media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.side{position:static;max-height:none}.snav{flex-direction:row;flex-wrap:wrap;gap:4px 8px}.snav .sh,.snav .sg{width:100%}.snav a:not(.sh){border-left:0;padding:4px 8px;background:#F3F6FA;border-radius:6px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 <style id="mm-css">
-.mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
-.mm-item{position:relative}
-.mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
-.mm-top::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
-.mm-item:hover .mm-top,.mm-item:focus-within .mm-top{background:#F3F6FA;color:#0B5F86}
-.mm-panel{display:none;position:absolute;top:100%;left:0;padding-top:8px;min-width:300px}
-.mm-item.mm-right .mm-panel{left:auto;right:0}
-.mm-item:hover .mm-panel,.mm-item:focus-within .mm-panel{display:block}
-.mm-box{background:#FFFFFF;border:1px solid #E3E8EF;border-top:3px solid #0B5F86;border-radius:10px;box-shadow:0 12px 32px rgba(15,27,45,.16);padding:18px 20px}
-.mm-head{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;text-decoration:none}
-.mm-head:hover{color:#0B5F86}
-.mm-sub{font-size:13px;color:#4A5668;margin:2px 0 12px;font-weight:400}
-.mm-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid #E3E8EF;display:flex;flex-direction:column;gap:2px}
-.mm-list a{display:block;padding:7px 8px;margin:0 -8px;border-radius:6px;color:#0F1B2D;text-decoration:none;font-size:15px;font-weight:600}
-.mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
-.mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
-@media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+.ym-btn{display:inline-flex;align-items:center;gap:10px;background:#0F1B2D;color:#FFFFFF;border:0;border-radius:2px;padding:12px 18px;font:600 13px Inter,system-ui,sans-serif;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer}
+.ym-btn:hover,.ym-btn:focus-visible{background:#0B5F86}
+.ym-bars{display:inline-block;width:18px;height:12px;position:relative;border-top:2px solid currentColor;border-bottom:2px solid currentColor}
+.ym-bars::after{content:"";position:absolute;left:0;right:0;top:3px;border-top:2px solid currentColor}
+.ym{position:fixed;inset:0;z-index:1000;background:#0F1B2D;color:#FFFFFF;overflow:auto;display:none}
+.ym.open{display:block}
+.ym-top{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+.ym-top .ym-logo{font-family:'Source Serif 4',Georgia,serif;font-size:24px;font-weight:600;color:#FFFFFF;text-decoration:none}
+.ym-close{background:#0B5F86}
+.ym-body{max-width:1200px;margin:0 auto;padding:8px 24px 64px}
+.ym-sec{border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:8px 40px;padding:18px 0}
+.ym-sec>a{font-family:'Source Serif 4',Georgia,serif;font-size:28px;font-weight:500;color:#FFFFFF;text-decoration:none;line-height:1.2}
+.ym-sec>a:hover{color:#D9B98F}
+.ym-sub{display:flex;flex-wrap:wrap;gap:6px 22px;align-content:center;list-style:none;margin:0;padding:0}
+.ym-sub a{color:#C9D3E0;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.ym-sub a:hover{color:#FFFFFF;text-decoration:underline}
+@media (max-width:760px){.ym-sec{grid-template-columns:1fr}.ym-sec>a{font-size:24px}.ym-btn{padding:10px 14px}}
+body.ym-lock{overflow:hidden}
 </style>
-</head>
+<script id="mm-js">document.addEventListener("DOMContentLoaded",function(){var o=document.getElementById("ym"),b=document.getElementById("ym-open"),c=document.getElementById("ym-close");if(!o||!b)return;
+function op(){o.classList.add("open");document.body.classList.add("ym-lock");b.setAttribute("aria-expanded","true");c.focus();}
+function cl(){o.classList.remove("open");document.body.classList.remove("ym-lock");b.setAttribute("aria-expanded","false");b.focus();}
+b.addEventListener("click",op);c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&o.classList.contains("open"))cl();});
+o.addEventListener("click",function(e){if(e.target.tagName==="A")cl();});});</script>
+<style id="yh-css">.hx{background:#FFFFFF;color:#0F1B2D;border-bottom:1px solid #E3E8EF}.hx .w{padding:36px 24px 28px}.hx .crumb,.hx .crumb a{color:#0B5F86;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}.hx h1{color:#0F1B2D;font-family:"Source Serif 4",Georgia,serif;font-weight:500;font-size:44px}.hx .lede{color:#3A4658}.hx .chip{background:#EEF3F8;color:#0B5F86}.hx.yh{position:relative;border:0;padding:0;background:#0F1B2D}.hx.yh .yh-img{display:block;width:100%;height:clamp(260px,42vw,520px);object-fit:cover}.hx.yh .w{position:relative;max-width:1160px;margin:-120px auto 0;padding:0 24px}.hx.yh .yh-card{background:#FFFFFF;max-width:720px;padding:28px 32px 26px;box-shadow:0 10px 30px rgba(15,27,45,.12)}.hx.yh + .lay{padding-top:32px}@media (max-width:760px){.hx h1{font-size:32px}.hx.yh .w{margin-top:-60px;padding:0 12px}.hx.yh .yh-card{padding:20px}}</style></head>
 <body>
 <a href="#content" class="skip">Skip to content</a>
 <div role="note" style="background:#FFF4D6;color:#5A4300;font:600 14px/1.4 Inter,system-ui,sans-serif;padding:10px 16px;text-align:center;border-bottom:1px solid #E8D49A">Draft mockup for internal review — not the official AT-NCIGT website. Bracketed items and grey circles are placeholders.</div>
@@ -129,66 +135,56 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">AT-NCIGT</strong><span style="font-size: 12px; color: #4A5668">Advanced Technologies - National Center for Image Guided Therapy</span></span>
 </a>
 <nav aria-label="Main" class="mm">
-<div class="mm-item"><a class="mm-top" href="research.html" aria-haspopup="true">Research</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="research.html">Research →</a><div class="mm-sub">Three technology research and development projects</div><ul class="mm-list">
-<li><a href="trd1.html">TR&amp;D 1: Imaging cancer heterogeneity<small>Advanced diffusion and CEST MRI</small></a></li>
-<li><a href="trd2.html">TR&amp;D 2: Implantable microdevices<small>Testing drugs inside the tumor</small></a></li>
-<li><a href="trd3.html">TR&amp;D 3: Enabling technologies<small>Robotic guidance and AR navigation</small></a></li>
-<li><a href="publications.html">Publications<small>Major achievements and collaborations</small></a></li>
-<li><a href="page-collaborations.html">Collaborations<small>NIH-funded researchers using center technology</small></a></li>
-</ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="people.html" aria-haspopup="true">People</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="people.html">People →</a><div class="mm-sub">Investigators, trainees and advisors</div><ul class="mm-list">
-<li><a href="people.html">Leadership and investigators<small>Who leads and carries out the research</small></a></li>
-<li><a href="page-trainees.html">Trainees and alumni<small>Current trainees and where graduates are now</small></a></li>
-</ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="clinical.html" aria-haspopup="true">AMIGO</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="clinical.html">AMIGO →</a><div class="mm-sub">Clinical research in the AMIGO suite</div><ul class="mm-list">
-<li><a href="page-amigo.html">About the AMIGO suite<small>MRI, PET/CT and X-ray in one procedure suite</small></a></li>
-<li><a href="page-amigoprocedures.html">Procedures in AMIGO<small>Procedures that are part of clinical trials</small></a></li>
-<li><a href="page-clinical-trials.html">Clinical trials<small>Current studies, such as MRI-guided prostate biopsy</small></a></li>
-<li><a href="clinical.html#studies">Clinical studies with the center<small>Prostate, brain, breast, thoracic and more</small></a></li>
-</ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="resources.html" aria-haspopup="true">Resources</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="resources.html">Resources →</a><div class="mm-sub">Tools and equipment open to collaborators</div><ul class="mm-list">
-<li><a href="resources.html">Equipment and tools<small>Imaging, robotics and devices you can use</small></a></li>
-<li><a href="resources.html#software">Software, tutorials and data<small>3D Slicer, OpenIGTLink, datasets and more</small></a></li>
-<li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
-<li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
-</ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="training.html" aria-haspopup="true">Training</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="training.html">Training →</a><div class="mm-sub">Where training with us can lead</div><ul class="mm-list">
-<li><a href="page-trainees.html">Trainees and alumni<small>Our roster since 2001 and where alumni went</small></a></li>
-<li><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars<small>Train with us for months or years</small></a></li>
-<li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program<small>Image Guidance, Precision Diagnosis and Therapy</small></a></li>
-<li><a href="page-project-week.html">Project Week hackathons<small>Hands-on open-source programming weeks</small></a></li>
-<li><a href="page-seminars.html">Research seminars<small>The Ferenc Jolesz Research Seminar Series</small></a></li>
-</ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="partner.html" aria-haspopup="true">Partner with us</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="partner.html">Partner with us →</a><div class="mm-sub">Collaborate with the center</div><ul class="mm-list">
-<li><a href="partner.html">How to partner with us<small>Three steps from a conversation to a project</small></a></li>
-<li><a href="partner.html#partner-research">Collaborative and service projects<small>Formal projects under way with the center</small></a></li>
-<li><a href="industry.html">Working with industry<small>From a clinical need to a device ready for patients</small></a></li>
-<li><a href="page-collaborations.html">Collaborations<small>Current and past NIH-funded collaborations</small></a></li>
-</ul></div></div></div>
-<div class="mm-item mm-right"><a class="mm-top" href="news.html" aria-haspopup="true">News &amp; events</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="news.html">News &amp; events →</a><div class="mm-sub">News, seminars and meetings</div><ul class="mm-list">
-<li><a href="news.html">News and seminars<small>Awards, papers, grants and talks</small></a></li>
-<li><a href="page-imri-2024.html">iMRI Symposium<small>The interventional MRI meeting we co-organize</small></a></li>
-<li><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops<small>Our national image-guided therapy workshop series</small></a></li>
-<li><a href="page-project-week.html">Project Week<small>Twice-yearly open-source hackathon</small></a></li>
-</ul></div></div></div>
-<div class="mm-item mm-right"><a class="mm-top" href="about.html" aria-haspopup="true">About</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="about.html">About →</a><div class="mm-sub">The center and its history</div><ul class="mm-list">
-<li><a href="about.html">About the center<small>Our home at Mass General Brigham</small></a></li>
-<li><a href="about.html#history">History of the center<small>NIH funding cycles since the NCIGT</small></a></li>
-<li><a href="page-history.html">IGT research at the Brigham<small>How image-guided therapy began here</small></a></li>
-<li><a href="about.html#contact">Contact<small>Reach the right person for your question</small></a></li>
-<li><a href="sitemap.html">All pages<small>A full index of the site</small></a></li>
-</ul></div></div></div>
-</nav>
+<button type="button" class="ym-btn" id="ym-open" aria-expanded="false" aria-controls="ym"><span class="ym-bars" aria-hidden="true"></span>Menu</button>
+<div class="ym" id="ym" role="dialog" aria-modal="true" aria-label="Site menu"><div class="ym-top"><a class="ym-logo" href="index.html">AT-NCIGT</a>
+<button type="button" class="ym-btn ym-close" id="ym-close">✕ Close</button></div><div class="ym-body">
+<div class="ym-sec"><a href="research.html">Research</a><ul class="ym-sub">
+<li><a href="trd1.html">TR&amp;D 1: Imaging cancer heterogeneity</a></li>
+<li><a href="trd2.html">TR&amp;D 2: Implantable microdevices</a></li>
+<li><a href="trd3.html">TR&amp;D 3: Enabling technologies</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="page-collaborations.html">Collaborations</a></li>
+</ul></div>
+<div class="ym-sec"><a href="people.html">People</a><ul class="ym-sub">
+<li><a href="page-trainees.html">Trainees and alumni</a></li>
+</ul></div>
+<div class="ym-sec"><a href="clinical.html">AMIGO</a><ul class="ym-sub">
+<li><a href="page-amigo.html">About the AMIGO suite</a></li>
+<li><a href="page-amigoprocedures.html">Procedures in AMIGO</a></li>
+<li><a href="page-clinical-trials.html">Clinical trials</a></li>
+<li><a href="clinical.html#studies">Clinical studies with the center</a></li>
+</ul></div>
+<div class="ym-sec"><a href="resources.html">Resources</a><ul class="ym-sub">
+<li><a href="resources.html#software">Software, tutorials and data</a></li>
+<li><a href="page-fast-imaging-library.html">Fast Imaging Library</a></li>
+<li><a href="page-online-lectures.html">Online lectures</a></li>
+</ul></div>
+<div class="ym-sec"><a href="training.html">Training</a><ul class="ym-sub">
+<li><a href="page-trainees.html">Trainees and alumni</a></li>
+<li><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars</a></li>
+<li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program</a></li>
+<li><a href="page-project-week.html">Project Week hackathons</a></li>
+<li><a href="page-seminars.html">Research seminars</a></li>
+</ul></div>
+<div class="ym-sec"><a href="partner.html">Partner with us</a><ul class="ym-sub">
+<li><a href="partner.html#partner-research">Collaborative and service projects</a></li>
+<li><a href="industry.html">Working with industry</a></li>
+<li><a href="page-collaborations.html">Collaborations</a></li>
+</ul></div>
+<div class="ym-sec"><a href="news.html">News &amp; events</a><ul class="ym-sub">
+<li><a href="page-imri-2024.html">iMRI Symposium</a></li>
+<li><a href="page-national-image-guided-therapy-workshops.html">National IGT Workshops</a></li>
+<li><a href="page-project-week.html">Project Week</a></li>
+</ul></div>
+<div class="ym-sec"><a href="about.html">About</a><ul class="ym-sub">
+<li><a href="about.html#history">History of the center</a></li>
+<li><a href="page-history.html">IGT research at the Brigham</a></li>
+<li><a href="about.html#contact">Contact</a></li>
+<li><a href="sitemap.html">All pages</a></li>
+</ul></div>
+</div></div></nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a><span>›</span><a href="news.html#news">News and seminars</a></p><h1>The 11 th National Image Guided Therapy Workshop</h1><div class="meta"><span class="chip">April 16, 2020</span><span class="chip">News</span></div></div></section><div class="lay one"><article class="arc"><figure class="banner"><img alt="" loading="lazy" src="media/2023_01_igtwshop-logo.png"/></figure><p>The <a href="page-national-image-guided-therapy-workshops.html#1673647856822-46d99139-eb72">11<sup>th</sup> National Image Guided Therapy Workshop</a> was also our first fully virtual meeting. It was held by Zoom on April 16, 2020.  It recorded 454 registered attendees, the largest number in the history of the workshop. Participants joined from 28 states and Washington DC in the United States, and from 13 other countries.  As an additional metric available on the video conference platform, we are able to report that the average duration that an attendee stayed in the workshop was 2.5 hours.  In a feedback survey (with 182 responses) over 90% rated the performance of the workshop between 8 and 10 on a scale of 1-10.</p>
+</header><main id="main"><section class="hx yh"><img class="yh-img" src="media/2023_01_igtwshop-logo.png" alt=""><div class="w"><div class="yh-card"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a><span>›</span><a href="news.html#news">News and seminars</a></p><h1>The 11 th National Image Guided Therapy Workshop</h1><div class="meta"><span class="chip">April 16, 2020</span><span class="chip">News</span></div></div></div></section><div class="lay one"><article class="arc"><p>The <a href="page-national-image-guided-therapy-workshops.html#1673647856822-46d99139-eb72">11<sup>th</sup> National Image Guided Therapy Workshop</a> was also our first fully virtual meeting. It was held by Zoom on April 16, 2020.  It recorded 454 registered attendees, the largest number in the history of the workshop. Participants joined from 28 states and Washington DC in the United States, and from 13 other countries.  As an additional metric available on the video conference platform, we are able to report that the average duration that an attendee stayed in the workshop was 2.5 hours.  In a feedback survey (with 182 responses) over 90% rated the performance of the workshop between 8 and 10 on a scale of 1-10.</p>
 <p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/the-11th-national-image-guided-therapy-workshop/">https://ncigt.org/the-11th-national-image-guided-therapy-workshop/</a></p></article></div><section class="rel"><div class="in"><h2>More news</h2><div class="cards"><a class="card" href="news.html"><strong>All news and seminars</strong><span>Every item, newest first</span></a><a class="card" href="page-seminars.html"><strong>Research seminars</strong><span>The Ferenc Jolesz Research Seminar Series</span></a><a class="card" href="page-national-image-guided-therapy-workshops.html"><strong>Meetings we organize</strong><span>Workshops, symposia and Project Week</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>

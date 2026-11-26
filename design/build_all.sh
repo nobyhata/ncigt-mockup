@@ -12,3 +12,4 @@ python3 design/build_landing.py
 python3 design/build_sections.py
 python3 design/megamenu.py *.html
 python3 design/mobileside.py
+python3 design/yalehero.py

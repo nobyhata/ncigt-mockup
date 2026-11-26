@@ -62,39 +62,48 @@ MENU = [
     ]),
 ]
 
-CSS = '''<style id="mm-css">
-.mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
-.mm-item{position:relative}
-.mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
-.mm-top::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
-.mm-item:hover .mm-top,.mm-item:focus-within .mm-top{background:#F3F6FA;color:#0B5F86}
-.mm-panel{display:none;position:absolute;top:100%;left:0;padding-top:8px;min-width:300px}
-.mm-item.mm-right .mm-panel{left:auto;right:0}
-.mm-item:hover .mm-panel,.mm-item:focus-within .mm-panel{display:block}
-.mm-box{background:#FFFFFF;border:1px solid #E3E8EF;border-top:3px solid #0B5F86;border-radius:10px;box-shadow:0 12px 32px rgba(15,27,45,.16);padding:18px 20px}
-.mm-head{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;text-decoration:none}
-.mm-head:hover{color:#0B5F86}
-.mm-sub{font-size:13px;color:#4A5668;margin:2px 0 12px;font-weight:400}
-.mm-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid #E3E8EF;display:flex;flex-direction:column;gap:2px}
-.mm-list a{display:block;padding:7px 8px;margin:0 -8px;border-radius:6px;color:#0F1B2D;text-decoration:none;font-size:15px;font-weight:600}
-.mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
-.mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
-@media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
+CSS = """<style id="mm-css">
+.ym-btn{display:inline-flex;align-items:center;gap:10px;background:#0F1B2D;color:#FFFFFF;border:0;border-radius:2px;padding:12px 18px;font:600 13px Inter,system-ui,sans-serif;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer}
+.ym-btn:hover,.ym-btn:focus-visible{background:#0B5F86}
+.ym-bars{display:inline-block;width:18px;height:12px;position:relative;border-top:2px solid currentColor;border-bottom:2px solid currentColor}
+.ym-bars::after{content:"";position:absolute;left:0;right:0;top:3px;border-top:2px solid currentColor}
+.ym{position:fixed;inset:0;z-index:1000;background:#0F1B2D;color:#FFFFFF;overflow:auto;display:none}
+.ym.open{display:block}
+.ym-top{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+.ym-top .ym-logo{font-family:'Source Serif 4',Georgia,serif;font-size:24px;font-weight:600;color:#FFFFFF;text-decoration:none}
+.ym-close{background:#0B5F86}
+.ym-body{max-width:1200px;margin:0 auto;padding:8px 24px 64px}
+.ym-sec{border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:8px 40px;padding:18px 0}
+.ym-sec>a{font-family:'Source Serif 4',Georgia,serif;font-size:28px;font-weight:500;color:#FFFFFF;text-decoration:none;line-height:1.2}
+.ym-sec>a:hover{color:#D9B98F}
+.ym-sub{display:flex;flex-wrap:wrap;gap:6px 22px;align-content:center;list-style:none;margin:0;padding:0}
+.ym-sub a{color:#C9D3E0;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.ym-sub a:hover{color:#FFFFFF;text-decoration:underline}
+@media (max-width:760px){.ym-sec{grid-template-columns:1fr}.ym-sec>a{font-size:24px}.ym-btn{padding:10px 14px}}
+body.ym-lock{overflow:hidden}
 </style>
-'''
+<script id="mm-js">document.addEventListener("DOMContentLoaded",function(){var o=document.getElementById("ym"),b=document.getElementById("ym-open"),c=document.getElementById("ym-close");if(!o||!b)return;
+function op(){o.classList.add("open");document.body.classList.add("ym-lock");b.setAttribute("aria-expanded","true");c.focus();}
+function cl(){o.classList.remove("open");document.body.classList.remove("ym-lock");b.setAttribute("aria-expanded","false");b.focus();}
+b.addEventListener("click",op);c.addEventListener("click",cl);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&o.classList.contains("open"))cl();});
+o.addEventListener("click",function(e){if(e.target.tagName==="A")cl();});});</script>
+"""
 
 def build_nav():
     e = lambda s: html.escape(s, quote=True)
-    out = ['<nav aria-label="Main" class="mm">']
-    n = len(MENU)
-    for i, (label, href, sub, links) in enumerate(MENU):
-        cls = 'mm-item mm-right' if i >= n - 2 else 'mm-item'
-        out.append(f'<div class="{cls}"><a class="mm-top" href="{e(href)}" aria-haspopup="true">{e(label)}</a>')
-        out.append(f'<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="{e(href)}">{e(label)} →</a><div class="mm-sub">{e(sub)}</div><ul class="mm-list">')
+    out = ['<nav aria-label="Main" class="mm">',
+           '<button type="button" class="ym-btn" id="ym-open" aria-expanded="false" aria-controls="ym"><span class="ym-bars" aria-hidden="true"></span>Menu</button>',
+           '<div class="ym" id="ym" role="dialog" aria-modal="true" aria-label="Site menu"><div class="ym-top"><a class="ym-logo" href="index.html">AT-NCIGT</a>',
+           '<button type="button" class="ym-btn ym-close" id="ym-close">✕ Close</button></div><div class="ym-body">']
+    for label, href, sub, links in MENU:
+        out.append(f'<div class="ym-sec"><a href="{e(href)}">{e(label)}</a><ul class="ym-sub">')
+        seen=set()
         for t, h, note in links:
-            out.append(f'<li><a href="{e(h)}">{e(t)}' + (f'<small>{e(note)}</small>' if note else '') + '</a></li>')
-        out.append('</ul></div></div></div>')
-    out.append('</nav>')
+            if h == href or t in seen: continue
+            seen.add(t)
+            out.append(f'<li><a href="{e(h)}">{e(t)}</a></li>')
+        out.append('</ul></div>')
+    out.append('</div></div></nav>')
     return '\n'.join(out)
 
 NAV = build_nav()
@@ -104,6 +113,7 @@ def apply(doc):
         return doc
     doc = re.sub(r'<nav aria-label="Main".*?</nav>', lambda m: NAV, doc, count=1, flags=re.S)
     doc = re.sub(r'<style id="mm-css">.*?</style>\n?', '', doc, flags=re.S)
+    doc = re.sub(r'<script id="mm-js">.*?</script>\n?', '', doc, flags=re.S)
     doc = doc.replace('</head>', CSS + '</head>', 1)
     return doc
 
