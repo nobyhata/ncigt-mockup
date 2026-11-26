@@ -93,5 +93,8 @@ for src, out, ptitle, desc in pages:
 </html>
 '''
     assert '{{' not in doc and 'sc-for' not in doc and '.dc.html' not in doc, src
+    doc=doc.replace('Supported by NIBIB P41EB028741</div></footer>','Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>')
+    if out=='index':
+        import sys; sys.path.insert(0,'/home/claude/build'); import hero; doc=hero.apply(doc)
     open('/home/claude/site/'+out+'.html','w').write(doc)
     print(out, len(doc))

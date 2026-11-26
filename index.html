@@ -55,15 +55,19 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="#training" style="color: #0F1B2D">Training</a>
 <a href="#industry" style="color: #0F1B2D">Industry</a>
 <a href="#partner" style="color: #0F1B2D">Partner with us</a>
-<a href="#community" style="color: #0F1B2D">News</a>
+<a href="news.html" style="color: #0F1B2D">News</a>
 <a href="#about" style="color: #0F1B2D">About</a>
 </nav>
 </div>
 </header>
 <div id="content"></div>
 
-<section id="top" style="background: #0F1B2D; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 72px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<section id="top" style="position: relative; overflow: hidden; background: #0F1B2D url(https://i.ytimg.com/vi/FKmVNp5UrBw/maxresdefault.jpg) center / cover no-repeat; color: #FFFFFF; min-height: 640px; display: flex; align-items: center">
+<div id="herovid" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,19,33,0.92) 0%, rgba(10,19,33,0.78) 45%, rgba(10,19,33,0.45) 100%)"></div>
+<button id="vidtoggle" type="button" style="position: absolute; right: 20px; bottom: 20px; z-index: 3; background: rgba(15,27,45,0.7); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.5); border-radius: 999px; padding: 8px 14px; font: 600 13px Inter, sans-serif; cursor: pointer">Pause video</button>
+<p style="position: absolute; left: 24px; bottom: 16px; z-index: 3; margin: 0; font-size: 12px; color: #C9D3E0">Video: Mass General Brigham Image-Guided Therapy, filmed in the AMIGO suite. <a href="https://www.youtube.com/watch?v=FKmVNp5UrBw" style="color: #D9B98F">Watch with sound →</a></p>
+<div style="position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
 <div style="flex: 999 1 520px; min-width: 0">
 <p style="margin: 0 0 16px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Mass General Brigham · Harvard Medical School · NIH NIBIB</p>
 <h1 style="margin: 0 0 20px; font-size: 42px; line-height: 1.2">Technology research that makes image-guided therapy more precise</h1>
@@ -118,7 +122,10 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
 
 <article style="border: 1px solid #E3E8EF; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column">
-<div role="img" aria-label="Placeholder for a research figure" style="aspect-ratio: 16 / 9; background: #EEF1F5; border-bottom: 1px solid #E3E8EF; display: flex; align-items: center; justify-content: center; color: #6B7A8F; font-size: 14px; text-align: center; padding: 12px">[Research figure]</div>
+<figure style="margin: 0; background: #0F1B2D">
+<img src="media/figs/trd1-hbm2026-fig2.jpg" alt="Diffusion MRI maps of the human brain in three planes" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+<figcaption style="padding: 10px 14px; font-size: 12px; line-height: 1.45; color: #C9D3E0; background: #0F1B2D">From the most recent TR&amp;D 1 publication: radial diffusivity and fractional anisotropy maps from a high-performance gradient 3T scanner. Zhu et al., Hum Brain Mapp, Nov 2026, Fig. 2 (cropped), CC BY 4.0. <a href="https://doi.org/10.1002/hbm.70664" style="color: #D9B98F">Paper →</a></figcaption>
+</figure>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
 <span style="font-size: 13px; font-weight: 600; color: #8A5A2B">TR&amp;D 1</span>
 <h3 style="margin: 0; font-size: 21px; line-height: 1.3">Imaging cancer heterogeneity</h3>
@@ -129,7 +136,10 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </article>
 
 <article style="border: 1px solid #E3E8EF; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column">
-<div role="img" aria-label="Placeholder for a research figure" style="aspect-ratio: 16 / 9; background: #EEF1F5; border-bottom: 1px solid #E3E8EF; display: flex; align-items: center; justify-content: center; color: #6B7A8F; font-size: 14px; text-align: center; padding: 12px">[Research figure]</div>
+<figure style="margin: 0; background: #0F1B2D">
+<img src="media/figs/trd2-sciadv2026-fig2.jpg" alt="Fluorescence microscopy of cells released from an implantable microdevice" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+<figcaption style="padding: 10px 14px; font-size: 12px; line-height: 1.45; color: #C9D3E0; background: #0F1B2D">From the most recent TR&amp;D 2 publication: an implantable microdevice releasing labeled cells. Panikkanvalappil et al., Sci Adv, Aug 2026, Fig. 2 (cropped), CC BY-NC 4.0. <a href="https://doi.org/10.1126/sciadv.aee6195" style="color: #D9B98F">Paper →</a></figcaption>
+</figure>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
 <span style="font-size: 13px; font-weight: 600; color: #8A5A2B">TR&amp;D 2</span>
 <h3 style="margin: 0; font-size: 21px; line-height: 1.3">Implantable microdevices</h3>
@@ -140,7 +150,10 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </article>
 
 <article style="border: 1px solid #E3E8EF; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column">
-<div role="img" aria-label="Placeholder for a research figure" style="aspect-ratio: 16 / 9; background: #EEF1F5; border-bottom: 1px solid #E3E8EF; display: flex; align-items: center; justify-content: center; color: #6B7A8F; font-size: 14px; text-align: center; padding: 12px">[Research figure]</div>
+<figure style="margin: 0; background: #0F1B2D">
+<img src="media/figs/trd3-medphys2026-fig7.jpg" alt="Predicted needle path with confidence bands overlaid on segmented prostate MRI" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
+<figcaption style="padding: 10px 14px; font-size: 12px; line-height: 1.45; color: #C9D3E0; background: #0F1B2D">From a recent TR&amp;D 3 publication: predicted needle deflection with confidence bands on segmented prostate MRI. Hoffman et al., Med Phys, Feb 2026, Fig. 7 (cropped), CC BY 4.0. <a href="https://doi.org/10.1002/mp.70314" style="color: #D9B98F">Paper →</a></figcaption>
+</figure>
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
 <span style="font-size: 13px; font-weight: 600; color: #8A5A2B">TR&amp;D 3</span>
 <h3 style="margin: 0; font-size: 21px; line-height: 1.3">Enabling technologies for data-driven interventions</h3>
@@ -195,7 +208,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <h3 style="margin: 0 0 10px; font-size: 26px; color: #0F1B2D">The AMIGO suite</h3>
 <p style="margin: 0 0 14px; font-size: 16px; line-height: 1.6; color: #3A4658">The Advanced Multi-modality Image Guided Operating suite combines MRI, PET/CT and X-ray imaging with a fully equipped procedure room, so imaging, navigation and robotics research can take place during clinical procedures.</p>
 <div style="display: flex; gap: 12px; align-items: center; margin: 0 0 16px"><p style="margin: 0; font-size: 15px; color: #3A4658"><strong>Contact:</strong> Alexandra Golby, clinical director and co-medical director [verify current directors]</p></div>
-<a href="#resources" style="font-weight: 600">Research use of AMIGO →</a>
+<a href="page-amigo.html" style="font-weight: 600">About AMIGO →</a> <a href="page-amigoprocedures.html" style="font-weight: 600">Procedures in AMIGO →</a> <a href="page-clinical-trials.html" style="font-weight: 600">Clinical trials →</a>
 </div>
 </div>
 <h3 style="margin: 0 0 16px; font-size: 22px; color: #FFFFFF">Clinical studies using the center</h3>
@@ -260,12 +273,6 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
 
 <article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; line-height: 1.3">Mass spectrometry imaging</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">MALDI timsTOF imaging for spatially resolved metabolomics and rapid molecular frozen-section analysis.</p>
-<div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Nathalie Agar</span></div>
-</article>
-
-<article style="border: 1px solid #E3E8EF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px">
 <h3 style="margin: 0; font-size: 18px; line-height: 1.3">High-performance MRI</h3>
 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A5668">Ultra-high-performance gradient (MAGNUS) and 7T MRI for advanced diffusion and quantitative imaging.</p>
 <div style="display: flex; gap: 10px; align-items: center; margin-top: auto; padding-top: 8px"><span style="font-size: 14px; font-weight: 600; color: #0B5F86">Contact: Stephan Maier</span></div>
@@ -328,8 +335,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 
 <article style="border: 1px solid #E3E8EF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
 <div style="display: flex; gap: 16px; align-items: center">
+<img src="portraits/haoyin-zhou.jpg" alt="Haoyin Zhou, PhD" style="flex: 0 0 80px; width: 80px; height: 80px; border-radius: 50%; object-fit: cover">
 
-<div role="img" aria-label="Portrait to come" style="flex: 0 0 80px; width: 80px; height: 80px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div>
 <div><h3 style="margin: 0 0 4px; font-size: 20px">Haoyin Zhou, PhD</h3><div style="font-size: 13px; color: #4A5668">Assistant Professor of Radiology</div></div>
 </div>
 <div style="font-size: 14px; font-weight: 600; color: #8A5A2B">Trainee → K99 → independent R01 → Assistant Professor of Radiology</div>
@@ -343,15 +350,15 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #CFE3EE">Career accelerator</div>
 <h3 style="margin: 6px 0 10px; font-size: 22px; color: #FFFFFF">T32 Training in Image Guidance, Precision Diagnosis and Therapy</h3>
 <p style="margin: 0 0 14px; font-size: 15px; line-height: 1.6; color: #E2EEF4">An NIH NIBIB institutional training grant (T32EB025823) that supports postdoctoral fellows working with center investigators, with structured mentoring toward independent careers. Program directors: Fiona Fennessy and Clare Tempany [verify].</p>
-<a href="#training" style="color: #FFFFFF; font-weight: 600; text-decoration: underline">About the T32 program →</a>
+<a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html" style="color: #FFFFFF; font-weight: 600; text-decoration: underline">About the T32 program →</a>
 </div>
 <div style="flex: 1 1 300px; min-width: 0; border: 1px solid #E3E8EF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
 <strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px">Ways to join</strong>
 <a href="#training" style="font-weight: 600">Open positions in center labs →</a>
-<a href="#training">Postdoctoral and visiting scholars →</a>
+<a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars →</a>
 <a href="#training">Summer internships →</a>
-<a href="#training">Project Week hackathons →</a>
-<a href="#training">Online lectures (50) →</a>
+<a href="page-project-week.html">Project Week hackathons →</a>
+<a href="page-online-lectures.html">Online lectures (50) →</a>
 </div>
 </div>
 </section>
@@ -366,8 +373,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </div>
 <div style="flex: 1 1 320px; min-width: 0; background: #1A2A42; border-radius: 12px; padding: 22px">
 <div style="font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #D9B98F">Success story</div>
-<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; margin-top: 6px; line-height: 1.3">Physical Sciences Inc.: a robotic template for MRI-guided prostate biopsy</div>
-<p style="margin: 8px 0 0; font-size: 14px; line-height: 1.55; color: #C9D3E0">From an SBIR award in 2018 to the first patient study in 2026.</p>
+<div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; margin-top: 6px; line-height: 1.3">Gregory Fischer: from MRI robots in the lab to an MRI-guided neurosurgery robot</div>
+<p style="margin: 8px 0 0; font-size: 14px; line-height: 1.55; color: #C9D3E0">Fifteen years of work with center investigators led to a 2026 SBIR Phase II award to AiM Medical Robotics, with the Brigham as clinical partner.</p>
 </div>
 </div>
 </section>
@@ -480,7 +487,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 28px">
 <div><p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #8A5A2B">Celebrating our community</p>
 <h2 style="margin: 0; font-size: 32px; line-height: 1.2">Recent achievements</h2></div>
-<a href="#community" style="font-weight: 600">All news →</a>
+<a href="news.html" style="font-weight: 600">All news →</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
 
@@ -532,7 +539,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 24px">
 <div><p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Shared with the community</p>
 <h2 id="shared" style="margin: 0; font-size: 28px; line-height: 1.2">Recently shared software and data</h2></div>
-<a href="#shared" style="font-weight: 600">All software, data and tutorials →</a>
+<a href="page-software-and-tutorials.html" style="font-weight: 600">All software, data and tutorials →</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
 
@@ -585,7 +592,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <input id="nl-email" type="email" placeholder="you@institution.edu" style="font-size: 16px; padding: 12px; border: 1px solid #B8C3D1; border-radius: 8px">
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
 <button type="button" style="background: #0B5F86; color: #FFFFFF; border: 0; padding: 12px 18px; border-radius: 8px; font-weight: 600; font-size: 15px">Subscribe to updates</button>
-<a href="#events" style="padding: 12px 4px; font-weight: 600; font-size: 15px">Seminar calendar →</a>
+<a href="page-seminars.html" style="padding: 12px 4px; font-weight: 600; font-size: 15px">Seminar calendar →</a>
 </div>
 </form>
 </div>
@@ -601,8 +608,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </div>
 <div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
 <strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 18px">About the center</strong>
-<a href="#about">Leadership and organization →</a>
-<a href="#history">History of the center →</a>
+<a href="page-team.html">Leadership and organization →</a>
+<a href="page-history.html">History of the center →</a>
 <a href="#about">NIH NIBIB P41EB028741 →</a>
 </div>
 </div>
@@ -643,7 +650,7 @@ Multiple PI: Nobuhiko Hata, PhD</p>
 </article>
 
 </div>
-<p style="margin: 16px 0 0; font-size: 15px"><a href="#history" style="font-weight: 600">Ferenc A. Jolesz, MD (1946–2014) →</a> &nbsp; <a href="#history" style="font-weight: 600">Past investigators and alumni →</a></p>
+<p style="margin: 16px 0 0; font-size: 15px"><a href="page-history.html" style="font-weight: 600">Ferenc A. Jolesz, MD (1946–2014) →</a> &nbsp; <a href="people.html" style="font-weight: 600">Past investigators and alumni →</a></p>
 </section>
 
 <section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 72px">
@@ -664,10 +671,12 @@ Multiple PI: Nobuhiko Hata, PhD</p>
 <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between">
 <div style="flex: 1 1 320px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong><br>Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School<br>[Street address], Boston, MA</div>
 <div style="flex: 1 1 260px; line-height: 1.6">Supported by the National Institute of Biomedical Imaging and Bioengineering, P41EB028741</div>
-<nav aria-label="Footer" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px"><a href="#about" style="color: #FFFFFF">About</a><a href="#community" style="color: #FFFFFF">News and events archive</a><a href="#research" style="color: #FFFFFF">Publications</a><a href="#contact" style="color: #FFFFFF">LinkedIn</a></nav>
+<nav aria-label="Footer" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px"><a href="#about" style="color: #FFFFFF">About</a><a href="news.html" style="color: #FFFFFF">News and seminars archive</a><a href="publications.html" style="color: #FFFFFF">Publications</a><a href="sitemap.html" style="color: #FFFFFF">All pages</a><a href="#contact" style="color: #FFFFFF">LinkedIn</a></nav>
 </div>
 </footer>
 </div>
 
+<style>#herovid iframe{position:absolute;top:50%;left:50%;width:max(100%,177.78vh);height:max(100%,56.25vw);transform:translate(-50%,-50%);border:0}</style>
+<script>(function(){var V="FKmVNp5UrBw",box=document.getElementById("herovid"),btn=document.getElementById("vidtoggle");var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;function start(){box.innerHTML='<iframe title="AMIGO video (background, muted)" tabindex="-1" src="https://www.youtube-nocookie.com/embed/'+V+'?autoplay=1&mute=1&loop=1&playlist='+V+'&controls=0&modestbranding=1&playsinline=1&rel=0&disablekb=1" allow="autoplay; encrypted-media"></iframe>';btn.textContent="Pause video";}function stop(){box.innerHTML="";btn.textContent="Play video";}if(reduce){stop();}else{start();}btn.addEventListener("click",function(){box.innerHTML?stop():start();});})();</script>
 </body>
 </html>
