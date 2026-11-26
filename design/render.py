@@ -100,6 +100,6 @@ for src, out, ptitle, desc in pages:
     doc=doc.replace('Supported by NIBIB P41EB028741</div></footer>','Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>')
     if out=='index':
         import sys; sys.path.insert(0,'/home/claude/build'); import hero; doc=hero.apply(doc)
-    import os; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); import megamenu; doc=megamenu.apply(doc)
+    import os; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); import megamenu; doc=megamenu.apply(doc); import build_sections; doc=build_sections.apply(doc, out+'.html')
     open('/home/claude/site/'+out+'.html','w').write(doc)
     print(out, len(doc))

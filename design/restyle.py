@@ -16,6 +16,7 @@ SRCJSON = os.path.join(HERE, 'archive_src.json')
 sys.path.insert(0, HERE)
 import megamenu
 import custom_pages
+import sitetree
 
 # ---------------------------------------------------------------- sources
 def extract(doc):
@@ -292,8 +293,17 @@ CSS = '''<style id="arc2">
 .hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
 .hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
 .hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
-.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px;align-items:start}
 .lay.one{grid-template-columns:minmax(0,1fr)}
+.side{position:sticky;top:20px;display:flex;flex-direction:column;gap:22px;max-height:calc(100vh - 40px);overflow:auto}
+.side .toc{position:static}
+.snav{display:flex;flex-direction:column;font-size:14px;line-height:1.35}
+.snav .sh{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;margin-bottom:8px}
+.snav .sg{font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:12px 0 4px}
+.snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
+.snav a.sub{padding-left:22px;font-size:13.5px}
+.snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
+.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -330,7 +340,7 @@ CSS = '''<style id="arc2">
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
-@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.side{position:static;max-height:none}.snav{flex-direction:row;flex-wrap:wrap;gap:4px 8px}.snav .sh,.snav .sg{width:100%}.snav a:not(.sh){border-left:0;padding:4px 8px;background:#F3F6FA;border-radius:6px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
 </style>
 '''
 
@@ -342,25 +352,46 @@ def shell_parts(doc):
     head = head.replace('</head>', CSS + '</head>', 1)
     return head, foot
 
+def section_nav(f):
+    """side navigation listing the page's section, current page marked"""
+    hit = sitetree.lookup(f)
+    if not hit or not hit[2]: return ''
+    sec = hit[0]
+    out = [f'<nav class="snav" aria-label="{html.escape(sec["label"])} section"><a class="sh" href="{sec["landing"]}">{html.escape(sec["label"])}</a>']
+    for gt, items in sec['groups']:
+        if gt: out.append(f'<span class="sg">{html.escape(gt)}</span>')
+        for it in items:
+            cur = ' aria-current="page"' if it[0] == f else ''
+            out.append(f'<a href="{it[0]}"{cur}>{html.escape(it[1])}</a>')
+            for ch in it[3]:
+                cur = ' aria-current="page"' if ch[0] == f else ''
+                out.append(f'<a class="sub" href="{ch[0]}"{cur}>{html.escape(ch[1])}</a>')
+    out.append('</nav>')
+    return ''.join(out)
+
 def build(f, s):
-    label, landing, note, related = place(f)
     is_news = f.startswith('news-')
+    hit = sitetree.lookup(f)
     custom = custom_pages.render(f, s)
     if custom:
         body, lede = custom
     else:
-        body = transform(s['body'], f); lede = note
+        body = transform(s['body'], f); lede = ''
     body, toc = add_ids(body)
-    if not lede and not is_news:
-        txt = BeautifulSoup(body, 'html.parser').find('p')
-        lede = ''
     title = s['title']
     if is_caps(title): title = smart_title(title)
     crumbs = ['<a href="index.html">Home</a>']
     if is_news:
-        crumbs.append('<a href="news.html">News and seminars</a>')
-    elif label:
-        crumbs.append(f'<a href="{landing}">{html.escape(label)}</a>')
+        crumbs.append('<a href="news.html">News &amp; events</a>')
+        crumbs.append('<a href="news.html#news">News and seminars</a>')
+    elif hit:
+        sec, gt, it, parent = hit
+        if it:
+            crumbs.append(f'<a href="{sec["landing"]}">{html.escape(sec["label"])}</a>')
+            if parent: crumbs.append(f'<a href="{parent[0]}">{html.escape(parent[1])}</a>')
+            title = it[1]; lede = lede or it[2]
+        else:
+            lede = lede or sec['blurb']
     meta = ''
     if is_news:
         chips = []
@@ -373,32 +404,29 @@ def build(f, s):
         meta = '<div class="meta">' + ''.join(f'<span class="chip">{html.escape(c)}</span>' for c in chips) + '</div>'
     hero = (f'<section class="hx"><div class="w"><p class="crumb">' + '<span>›</span>'.join(crumbs) + '</p>'
             f'<h1>{html.escape(title)}</h1>' + (f'<p class="lede">{html.escape(lede)}</p>' if lede else '') + meta + '</div></section>')
-    use_toc = len(toc) >= 3 and not is_news
-    tochtml = ('<nav class="toc" aria-label="On this page"><strong>On this page</strong>' + ''.join(f'<a href="#{i}">{html.escape(t)}</a>' for t, i in toc) + '</nav>') if use_toc else ''
+    snav = '' if is_news else section_nav(f)
+    tochtml = ('<nav class="toc" aria-label="On this page"><strong>On this page</strong>' + ''.join(f'<a href="#{i}">{html.escape(t)}</a>' for t, i in toc) + '</nav>') if len(toc) >= 3 and not is_news else ''
+    aside = f'<aside class="side">{snav}{tochtml}</aside>' if (snav or tochtml) else ''
     src = f'<p class="src">Carried over from the previous NCIGT website: <a href="{s["src"]}">{s["src"]}</a></p>' if s['src'] else ''
-    lay = f'<div class="lay{"" if use_toc else " one"}">{tochtml}<article class="arc">{body}{src}</article></div>'
+    lay = f'<div class="lay{"" if aside else " one"}">{aside}<article class="arc">{body}{src}</article></div>'
     rel = ''
     if is_news:
-        rel_items = [('All news and seminars', 'news.html', 'Every item, newest first'), ('Research seminars', 'page-seminars.html', 'The Ferenc Jolesz Research Seminar Series'), ('Events', 'page-events.html', 'Meetings and workshops')]
-        heading = 'More news'
-    else:
-        rel_items = related; heading = f'More in {label}' if label else ''
-    if rel_items and heading:
-        rel = ('<section class="rel"><div class="in"><h2>' + html.escape(heading) + '</h2><div class="cards">' +
-               ''.join(f'<a class="card" href="{h}"><strong>{html.escape(t)}</strong>' + (f'<span>{html.escape(n)}</span>' if n else '') + '</a>' for t, h, n in rel_items[:6]) +
+        rel = ('<section class="rel"><div class="in"><h2>More news</h2><div class="cards">' +
+               ''.join(f'<a class="card" href="{h}"><strong>{t}</strong><span>{n}</span></a>' for t, h, n in
+                       [('All news and seminars', 'news.html', 'Every item, newest first'), ('Research seminars', 'page-seminars.html', 'The Ferenc Jolesz Research Seminar Series'), ('Meetings we organize', 'page-national-image-guided-therapy-workshops.html', 'Workshops, symposia and Project Week')]) +
                '</div></div></section>')
-    return f'<main id="main">{hero}{lay}{rel}</main>'
+    return f'<main id="main">{hero}{lay}{rel}</main>', title
 
 def main(argv):
-    files = argv or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page-*.html')) + glob.glob(os.path.join(ROOT, 'news-*.html'))) + ['news.html', 'sitemap.html']
+    files = argv or sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, 'page-*.html')) + glob.glob(os.path.join(ROOT, 'news-*.html'))) + ['news.html']
     db = load_sources(files)
     for f in files:
         path = os.path.join(ROOT, f)
         doc = open(path, encoding='utf-8').read()
         head, foot = shell_parts(doc)
-        page = head + build(f, db[f]) + foot
-        if is_caps(db[f]['title']):
-            page = re.sub(r'<title>.*?·', f'<title>{html.escape(smart_title(db[f]["title"]))} ·', page, count=1)
+        main_html, title = build(f, db[f])
+        page = head + main_html + foot
+        page = re.sub(r'<title>.*?·', lambda m: f'<title>{html.escape(title)} ·', page, count=1)
         open(path, 'w', encoding='utf-8').write(page)
     print('restyled', len(files))
 

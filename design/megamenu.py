@@ -11,7 +11,7 @@ import re, sys, html
 
 # (label, landing link, short line under the panel title, [(link text, href, note)])
 MENU = [
-    ('Research', 'index.html#research', 'Three technology research and development projects', [
+    ('Research', 'research.html', 'Three technology research and development projects', [
         ('TR&D 1: Imaging cancer heterogeneity', 'trd1.html', 'Advanced diffusion and CEST MRI'),
         ('TR&D 2: Implantable microdevices', 'trd2.html', 'Testing drugs inside the tumor'),
         ('TR&D 3: Enabling technologies', 'trd3.html', 'Robotic guidance and AR navigation'),
@@ -36,7 +36,7 @@ MENU = [
         ('Fast Imaging Library', 'page-fast-imaging-library.html', 'Reconstruction code for accelerated MRI'),
         ('Online lectures', 'page-online-lectures.html', 'Free recorded talks and seminars'),
     ]),
-    ('Training', 'index.html#training', 'Where training with us can lead', [
+    ('Training', 'training.html', 'Where training with us can lead', [
         ('Trainees and alumni', 'page-trainees.html', 'Our roster since 2001 and where alumni went'),
         ('Postdoctoral and visiting scholars', 'page-visiting-scholars-program.html', 'Train with us for months or years'),
         ('T32 training program', 'page-training-in-image-guidance-precision-diagnosis-and-therapy.html', 'Image Guidance, Precision Diagnosis and Therapy'),

@@ -31,33 +31,23 @@ a{color:#0B5F86;text-decoration:none}a:hover{color:#08405A;text-decoration:under
 h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </style>
 
-<style id="mm-css">
-.mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
-.mm-item{position:relative}
-.mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
-.mm-top::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
-.mm-item:hover .mm-top,.mm-item:focus-within .mm-top{background:#F3F6FA;color:#0B5F86}
-.mm-panel{display:none;position:absolute;top:100%;left:0;padding-top:8px;min-width:300px}
-.mm-item.mm-right .mm-panel{left:auto;right:0}
-.mm-item:hover .mm-panel,.mm-item:focus-within .mm-panel{display:block}
-.mm-box{background:#FFFFFF;border:1px solid #E3E8EF;border-top:3px solid #0B5F86;border-radius:10px;box-shadow:0 12px 32px rgba(15,27,45,.16);padding:18px 20px}
-.mm-head{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;text-decoration:none}
-.mm-head:hover{color:#0B5F86}
-.mm-sub{font-size:13px;color:#4A5668;margin:2px 0 12px;font-weight:400}
-.mm-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid #E3E8EF;display:flex;flex-direction:column;gap:2px}
-.mm-list a{display:block;padding:7px 8px;margin:0 -8px;border-radius:6px;color:#0F1B2D;text-decoration:none;font-size:15px;font-weight:600}
-.mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
-.mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
-@media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
-</style>
 <style id="arc2">
 .hx{background:#0F1B2D;color:#fff}.hx .w{max-width:1160px;margin:0 auto;padding:40px 24px 36px}
 .hx .crumb{margin:0 0 12px;font-size:14px;font-weight:600;color:#D9B98F}.hx .crumb a{color:#D9B98F}.hx .crumb span{opacity:.6;margin:0 8px}
 .hx h1{margin:0;font-size:38px;line-height:1.18;color:#fff;max-width:900px}
 .hx .lede{margin:12px 0 0;font-size:18px;line-height:1.55;color:#C9D3E0;max-width:820px}
 .hx .meta{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}.hx .chip{background:#1A2A42;color:#D9B98F;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
-.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start}
+.lay{max-width:1160px;margin:0 auto;padding:40px 24px 24px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px;align-items:start}
 .lay.one{grid-template-columns:minmax(0,1fr)}
+.side{position:sticky;top:20px;display:flex;flex-direction:column;gap:22px;max-height:calc(100vh - 40px);overflow:auto}
+.side .toc{position:static}
+.snav{display:flex;flex-direction:column;font-size:14px;line-height:1.35}
+.snav .sh{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;margin-bottom:8px}
+.snav .sg{font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin:12px 0 4px}
+.snav a:not(.sh){color:#3A4658;padding:6px 10px;border-left:3px solid #E3E8EF}
+.snav a.sub{padding-left:22px;font-size:13.5px}
+.snav a:not(.sh):hover{color:#0B5F86;border-left-color:#B8C3D1;text-decoration:none}
+.snav a[aria-current]{color:#0B5F86;font-weight:600;border-left-color:#0B5F86;background:#F3F6FA}
 .toc{position:sticky;top:20px;font-size:14px;border-left:3px solid #E3E8EF;padding:4px 0 4px 16px}
 .toc strong{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5A2B;margin-bottom:8px}
 .toc a{display:block;color:#3A4658;padding:5px 0;line-height:1.35}.toc a:hover{color:#0B5F86}
@@ -94,7 +84,26 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 .src{margin-top:40px;padding-top:14px;border-top:1px solid #E3E8EF;font-size:13px;color:#6B778A}
 .rel{max-width:1160px;margin:0 auto;padding:8px 24px 64px}.rel .in{border-top:1px solid #E3E8EF;padding-top:28px}
 .rel h2{font-size:20px;margin:0 0 14px}.rel .cards{margin:0}
-@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
+@media (max-width:900px){.lay{grid-template-columns:minmax(0,1fr);gap:20px}.side{position:static;max-height:none}.snav{flex-direction:row;flex-wrap:wrap;gap:4px 8px}.snav .sh,.snav .sg{width:100%}.snav a:not(.sh){border-left:0;padding:4px 8px;background:#F3F6FA;border-radius:6px}.toc{position:static;border-left:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.toc strong{width:100%}.hx h1{font-size:30px}.arc img.side{float:none;width:100%;max-width:100%;margin:12px 0}}
+</style>
+<style id="mm-css">
+.mm{display:flex;flex-wrap:wrap;gap:4px 4px;font-size:15px;font-weight:500;position:relative;z-index:50}
+.mm-item{position:relative}
+.mm-top{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:6px;color:#0F1B2D;text-decoration:none}
+.mm-top::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
+.mm-item:hover .mm-top,.mm-item:focus-within .mm-top{background:#F3F6FA;color:#0B5F86}
+.mm-panel{display:none;position:absolute;top:100%;left:0;padding-top:8px;min-width:300px}
+.mm-item.mm-right .mm-panel{left:auto;right:0}
+.mm-item:hover .mm-panel,.mm-item:focus-within .mm-panel{display:block}
+.mm-box{background:#FFFFFF;border:1px solid #E3E8EF;border-top:3px solid #0B5F86;border-radius:10px;box-shadow:0 12px 32px rgba(15,27,45,.16);padding:18px 20px}
+.mm-head{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;color:#0F1B2D;text-decoration:none}
+.mm-head:hover{color:#0B5F86}
+.mm-sub{font-size:13px;color:#4A5668;margin:2px 0 12px;font-weight:400}
+.mm-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid #E3E8EF;display:flex;flex-direction:column;gap:2px}
+.mm-list a{display:block;padding:7px 8px;margin:0 -8px;border-radius:6px;color:#0F1B2D;text-decoration:none;font-size:15px;font-weight:600}
+.mm-list a:hover,.mm-list a:focus{background:#F3F6FA;color:#0B5F86}
+.mm-list small{display:block;font-size:12.5px;font-weight:400;color:#4A5668;margin-top:1px}
+@media (max-width:760px){.mm-panel{display:none!important}.mm-top{padding:6px 8px}.mm-top::after{display:none}}
 </style>
 </head>
 <body>
@@ -110,8 +119,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <span style="display: flex; flex-direction: column; line-height: 1.15"><strong style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px">AT-NCIGT</strong><span style="font-size: 12px; color: #4A5668">Advanced Technologies - National Center for Image Guided Therapy</span></span>
 </a>
 <nav aria-label="Main" class="mm">
-<div class="mm-item"><a class="mm-top" href="index.html#research" aria-haspopup="true">Research</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#research">Research →</a><div class="mm-sub">Three technology research and development projects</div><ul class="mm-list">
+<div class="mm-item"><a class="mm-top" href="research.html" aria-haspopup="true">Research</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="research.html">Research →</a><div class="mm-sub">Three technology research and development projects</div><ul class="mm-list">
 <li><a href="trd1.html">TR&amp;D 1: Imaging cancer heterogeneity<small>Advanced diffusion and CEST MRI</small></a></li>
 <li><a href="trd2.html">TR&amp;D 2: Implantable microdevices<small>Testing drugs inside the tumor</small></a></li>
 <li><a href="trd3.html">TR&amp;D 3: Enabling technologies<small>Robotic guidance and AR navigation</small></a></li>
@@ -139,8 +148,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <li><a href="page-fast-imaging-library.html">Fast Imaging Library<small>Reconstruction code for accelerated MRI</small></a></li>
 <li><a href="page-online-lectures.html">Online lectures<small>Free recorded talks and seminars</small></a></li>
 </ul></div></div></div>
-<div class="mm-item"><a class="mm-top" href="index.html#training" aria-haspopup="true">Training</a>
-<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="index.html#training">Training →</a><div class="mm-sub">Where training with us can lead</div><ul class="mm-list">
+<div class="mm-item"><a class="mm-top" href="training.html" aria-haspopup="true">Training</a>
+<div class="mm-panel"><div class="mm-box"><a class="mm-head" href="training.html">Training →</a><div class="mm-sub">Where training with us can lead</div><ul class="mm-list">
 <li><a href="page-trainees.html">Trainees and alumni<small>Our roster since 2001 and where alumni went</small></a></li>
 <li><a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars<small>Train with us for months or years</small></a></li>
 <li><a href="page-training-in-image-guidance-precision-diagnosis-and-therapy.html">T32 training program<small>Image Guidance, Precision Diagnosis and Therapy</small></a></li>
@@ -171,8 +180,8 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </ul></div></div></div>
 </nav>
 </div>
-</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News and seminars</a></p><h1>Ron Kikinis, MD is Named a Senior Fellow of the International Society for Magnetic Resonance in Medicine</h1><div class="meta"><span class="chip">May 13, 2019</span><span class="chip">News</span></div></div></section><div class="lay one"><article class="arc"><figure><img alt="" src="media/2022_12_ronkikinis2017-08-17.jpg"/></figure><p>Ron Kikinis is honored for his contributions in the fields of MR image-guided interventions and in medical image computing with open-source software for image visualization, analysis, and surgical navigation.</p>
-<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/ron-kikinis-md-is-named-a-senior-fellow-of-the-international-society-for-magnetic-resonance-in-medicine/">https://ncigt.org/ron-kikinis-md-is-named-a-senior-fellow-of-the-international-society-for-magnetic-resonance-in-medicine/</a></p></article></div><section class="rel"><div class="in"><h2>More news</h2><div class="cards"><a class="card" href="news.html"><strong>All news and seminars</strong><span>Every item, newest first</span></a><a class="card" href="page-seminars.html"><strong>Research seminars</strong><span>The Ferenc Jolesz Research Seminar Series</span></a><a class="card" href="page-events.html"><strong>Events</strong><span>Meetings and workshops</span></a></div></div></section></main>
+</header><main id="main"><section class="hx"><div class="w"><p class="crumb"><a href="index.html">Home</a><span>›</span><a href="news.html">News &amp; events</a><span>›</span><a href="news.html#news">News and seminars</a></p><h1>Ron Kikinis, MD is Named a Senior Fellow of the International Society for Magnetic Resonance in Medicine</h1><div class="meta"><span class="chip">May 13, 2019</span><span class="chip">News</span></div></div></section><div class="lay one"><article class="arc"><figure><img alt="" src="media/2022_12_ronkikinis2017-08-17.jpg"/></figure><p>Ron Kikinis is honored for his contributions in the fields of MR image-guided interventions and in medical image computing with open-source software for image visualization, analysis, and surgical navigation.</p>
+<p class="src">Carried over from the previous NCIGT website: <a href="https://ncigt.org/ron-kikinis-md-is-named-a-senior-fellow-of-the-international-society-for-magnetic-resonance-in-medicine/">https://ncigt.org/ron-kikinis-md-is-named-a-senior-fellow-of-the-international-society-for-magnetic-resonance-in-medicine/</a></p></article></div><section class="rel"><div class="in"><h2>More news</h2><div class="cards"><a class="card" href="news.html"><strong>All news and seminars</strong><span>Every item, newest first</span></a><a class="card" href="page-seminars.html"><strong>Research seminars</strong><span>The Ferenc Jolesz Research Seminar Series</span></a><a class="card" href="page-national-image-guided-therapy-workshops.html"><strong>Meetings we organize</strong><span>Workshops, symposia and Project Week</span></a></div></div></section></main>
 <footer style="background: #0F1B2D; color: #C9D3E0; font-size: 14px"><div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; line-height: 1.6"><strong style="color: #FFFFFF">Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT)</strong> · Brigham and Women's Hospital · Mass General Brigham · Harvard Medical School · Supported by NIBIB P41EB028741 · <a href="sitemap.html" style="color: #D9B98F">All pages</a> · <a href="news.html" style="color: #D9B98F">News and seminars</a></div></footer>
 </div>
 
