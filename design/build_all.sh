@@ -11,3 +11,4 @@ python3 design/restyle.py
 python3 design/build_landing.py
 python3 design/build_sections.py
 python3 design/megamenu.py *.html
+python3 design/mobileside.py
