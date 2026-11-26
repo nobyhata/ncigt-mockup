@@ -62,13 +62,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </div>
 </section>
 
-<section aria-label="The center at a glance" style="background: #F3F6FA">
-<div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
-<sc-for list="{{stats}}" as="s" hint-placeholder-count="5">
-<div><div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; font-weight: 600; color: #0B5F86">{{s.v}}</div><div style="font-size: 14px; line-height: 1.45; color: #4A5668; margin-top: 2px">{{s.l}}</div></div>
-</sc-for>
-</div>
-</section>
+
 
 <section id="research" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 24px">
 <p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #0B5F86">Research</p>
@@ -76,17 +70,16 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <p style="margin: 0 0 32px; font-size: 17px; line-height: 1.6; color: #4A5668; max-width: 840px">Each project takes a clinical problem from new technology to testing in patients. Visit a project to see its results, its team and how to work with it.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
 <sc-for list="{{trds}}" as="t" hint-placeholder-count="3">
-<article style="border: 1px solid #E3E8EF; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column">
-<figure style="margin: 0; background: #0F1B2D">
-<img src="{{t.fig}}" alt="{{t.figalt}}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover">
-<figcaption style="padding: 10px 14px; font-size: 12px; line-height: 1.45; color: #C9D3E0; background: #0F1B2D">{{t.figcap}} <a href="{{t.figdoi}}" style="color: #D9B98F">Paper →</a></figcaption>
-</figure>
-<div style="padding: 22px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
-<span style="font-size: 13px; font-weight: 600; color: #8A5A2B">{{t.tag}}</span>
-<h3 style="margin: 0; font-size: 21px; line-height: 1.3">{{t.title}}</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A5668">{{t.problem}}</p>
-<div style="margin-top: 6px; padding-top: 10px; border-top: 1px solid #EEF1F5; font-size: 14px; line-height: 1.5"><span style="font-weight: 600; color: #0B5F86">Recent result:</span> {{t.result}}</div>
-<a href="{{t.page}}" style="margin-top: auto; padding-top: 8px; font-weight: 600">Explore the project →</a>
+<article style="position: relative; overflow: hidden; border-radius: 16px; background: #0F1B2D; color: #FFFFFF; min-height: 460px; display: flex; flex-direction: column">
+<img src="{{t.fig}}" alt="" aria-hidden="true" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.1); opacity: 0.55">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,95,134,0.55) 0%, rgba(15,27,45,0.88) 55%, rgba(15,27,45,0.97) 100%)"></div>
+<div style="position: relative; padding: 26px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 1px; color: #D9B98F">{{t.tag}}</span>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.25; color: #FFFFFF">{{t.title}}</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #DCE4EE">{{t.problem}}</p>
+<div style="margin-top: 4px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 14px; line-height: 1.5; color: #DCE4EE"><span style="font-weight: 600; color: #FFFFFF">Recent result:</span> {{t.result}}</div>
+<a href="{{t.page}}" style="margin-top: auto; padding-top: 12px; font-weight: 600; color: #FFFFFF">Explore the project →</a>
+<p style="margin: 4px 0 0; font-size: 11px; line-height: 1.45; color: #9FB0C5">Background: {{t.figcap}} <a href="{{t.figdoi}}" style="color: #D9B98F">Paper</a></p>
 </div>
 </article>
 </sc-for>
@@ -185,7 +178,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 <a href="page-visiting-scholars-program.html">Postdoctoral and visiting scholars →</a>
 <a href="#training">Summer internships →</a>
 <a href="page-project-week.html">Project Week hackathons →</a>
-<a href="page-online-lectures.html">Online lectures (50) →</a>
+<a href="page-online-lectures.html">Online lectures →</a>
 </div>
 </div>
 </section>
@@ -253,7 +246,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:600}
 </div>
 <a href="#partner" style="background: #0B5F86; color: #FFFFFF; padding: 13px 22px; border-radius: 8px; font-weight: 600; text-decoration: none">Start a conversation</a>
 </div>
-<p style="margin: 16px 0 0; font-size: 15px; color: #4A5668">Current partners: 12 collaborative and 10 service projects. <a href="#partner" style="font-weight: 600">See current projects →</a></p>
+<p style="margin: 16px 0 0; font-size: 15px; color: #4A5668"><a href="#partner" style="font-weight: 600">See current collaborative and service projects →</a></p>
 </section>
 
 <section aria-labelledby="partner-research" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
