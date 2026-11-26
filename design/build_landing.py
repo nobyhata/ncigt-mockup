@@ -116,9 +116,8 @@ def build(d):
         lead='Advanced Technologies – National Center for Image Guided Therapy is an NIH NIBIB P41 national resource center at Brigham and Women’s Hospital and Harvard Medical School. Its work depends on the clinical expertise, research infrastructure and patients of Mass General Brigham.',
         glance=[('Funded by', 'NIH NIBIB, P41EB028741'), ('Since', '2005 as NCIGT'), ('Principal investigators', 'Clare Tempany, MD; Nobuhiko Hata, PhD'), ('Home', 'Department of Radiology, Brigham and Women’s Hospital')],
         body=[('History of the center', cards([(c['years'] + ' · ' + c['grant'], c['name'], c['people'].replace('\n', '; '), '') for c in d['cycles']])),
-              ('Acknowledging the center', '<p>If the center’s technology, data, equipment or staff contributed to your work, please include this sentence in your acknowledgments:</p><blockquote>This work was supported in part by the Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT), funded by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health under award P41EB028741.</blockquote>'),
-              ('Contact', '<p>Tell us what you would like to talk about, and we will connect you with the right person: research collaboration, industry partnership, positions and training, inviting a speaker, or research use of AMIGO. [Contact email or form]</p>')],
-        contact='[Center email]',
+              ('Acknowledging the center', '<p>If the center’s technology, data, equipment or staff contributed to your work, please include this sentence in your acknowledgments:</p><blockquote>This work was supported in part by the Advanced Technologies - National Center for Image Guided Therapy (AT-NCIGT), funded by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health under award P41EB028741.</blockquote>')],
+        contact='Tell us what you would like to talk about, and we will connect you with the right person. [Center email]',
         links=[('People', 'people.html'), ('IGT research at the Brigham', 'page-history.html'), ('All pages', 'sitemap.html')])
     return P
 
