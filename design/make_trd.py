@@ -201,7 +201,8 @@ pages = {
  team=[{'name':'Stephan E. Maier','role':'Project lead','focus':'Quantitative diffusion MRI'},
   {'name':'Carl-Fredrik Westin','role':'Investigator','focus':'Diffusion MRI methods'},
   {'name':'William M. Wells III','role':'Co-investigator','focus':'Image registration and multimodal learning'},
-  {'name':'Daniel Paech','role':'Investigator','focus':'Quantitative CEST MRI of tumor chemistry'}],
+  {'name':'Daniel Paech','role':'Investigator','focus':'Quantitative CEST MRI of tumor chemistry'},
+  {'name':'Florian Kroh','role':'Postdoctoral fellow','focus':'CEST MRI'}],
  rising=[{'name':'[Name]','role':'[Instructor in Radiology]'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Collaborative project','lead':'Vikas Gulani, University of Michigan','what':'Multicenter repeatability of MR fingerprinting in prostate tissue'},
   {'type':'Service project','lead':'Peter LaViolette, Medical College of Wisconsin','what':'Multi-site concordance of diffusion-weighted imaging in prostate cancer'},
@@ -238,7 +239,8 @@ pages = {
  team=[{'name':'Junichi Tokuda','role':'Project lead','focus':'MRI-guided robotic interventions'},
   {'name':'Jagadeesan Jayender','role':'Investigator','focus':'Surgical navigation and computer vision'},
   {'name':'Nobuhiko Hata','role':'Investigator','focus':'Robotic navigation for bronchoscopy and prostate interventions'},
-  {'name':'Haoyin Zhou','role':'Co-investigator','focus':'Trackerless navigation for minimally invasive surgery'}],
+  {'name':'Haoyin Zhou','role':'Co-investigator','focus':'Trackerless navigation for minimally invasive surgery'},
+  {'name':'Mariana Bernardes','role':'Investigator','focus':'MRI-guided robotic needle placement'}],
  rising=[{'name':'Pedro Moreira, PhD','role':'Instructor in Radiology, BWH and HMS','photo':'portraits/pedro-moreira.jpg'},{'name':'[Name]','role':'[Research fellow]'}],
  partners=[{'type':'Service project','lead':'Jesung Park, Physical Sciences Inc.','what':'Robotic template for MRI-guided prostate biopsy and cryoablation'},
   {'type':'Collaborative project','lead':'Haichong Zhang, Worcester Polytechnic Institute','what':'Robot-assisted photoacoustic imaging for monitoring liver ablation'},
@@ -248,7 +250,7 @@ pages = {
 }
 P='portraits/'
 def ph(n): return P+n+'.jpg'
-photos={'Carl-Fredrik Westin':'carl-fredrik-westin','Daniel Paech':'daniel-paech','Haoyin Zhou':'haoyin-zhou','Stephan E. Maier':'stephan-e-maier','Fiona M. Fennessy':'fiona-m-fennessy','Clare M. Tempany':'clare-m-tempany','Oliver Jonas':'oliver-jonas','Sharath Bhagavatula':'sharath-bhagavatula','Nathalie Y. R. Agar':'nathalie-y-r-agar','Junichi Tokuda':'junichi-tokuda','Nobuhiko Hata':'nobuhiko-hata','Jagadeesan Jayender':'jagadeesan-jayender','Pedro Moreira':'pedro-moreira','Kemal Tuncali':'kemal-tuncali'}
+photos={'Mariana Bernardes':'mariana-bernardes','Carl-Fredrik Westin':'carl-fredrik-westin','Daniel Paech':'daniel-paech','Haoyin Zhou':'haoyin-zhou','Stephan E. Maier':'stephan-e-maier','Fiona M. Fennessy':'fiona-m-fennessy','Clare M. Tempany':'clare-m-tempany','Oliver Jonas':'oliver-jonas','Sharath Bhagavatula':'sharath-bhagavatula','Nathalie Y. R. Agar':'nathalie-y-r-agar','Junichi Tokuda':'junichi-tokuda','Nobuhiko Hata':'nobuhiko-hata','Jagadeesan Jayender':'jagadeesan-jayender','Pedro Moreira':'pedro-moreira','Kemal Tuncali':'kemal-tuncali'}
 jonas=[('Sebastian Ahn','sebastian-ahn'),('Simon Chow','simon-chow'),('Christine Dominas','christine-dominas'),('Guigen Liu','guigen-liu'),('Nellie Maloney','nellie-maloney'),('Samantha Martin','samantha-martin'),('Sajanlal Panikkanvalappil','sajanlal-panikkanvalappil'),('Fanni Santa','fanni-santa'),('Vincenzo Tarallo','vincenzo-tarallo')]
 agar=[('Gerard Baquer','gerard-baquer'),('Sankha (Bobby) Basu','sankha-bobby-basu'),('Clément Bodineau','clement-bodineau'),('Julia Bonney','julia-bonney'),('Kaitlyn Bootz','kaitlyn-bootz'),('Aaron Bowen','aaron-bowen'),('Jamie Brett','jamie-brett'),('Aanchalika Chauhan','aanchalika-chauhan'),('Jennifer Gantchev','jennifer-gantchev'),('Christelle Guillermier','christelle-guillermier'),('Songhua Hu','songhua-hu'),('Jaimie Lee','jaimie-lee'),('Zongyu Li','zongyu-li'),('C. Zoë Linke','c-zoe-linke'),('Camilla Martinez','camilla-martinez'),('Jacob Myers','jacob-myers'),('Atticus Scovel','atticus-scovel')]
 tokuda=[('Mariana Bernardes','mariana-bernardes'),('Ruofeng Wei','ruofeng-wei')]

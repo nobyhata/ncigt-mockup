@@ -15,17 +15,21 @@ open('/home/claude/build/nav.html','w').write(NAV)
 P='portraits/'
 def card(name, role, focus='', photo='', link='', linktext=''):
     return {'name':name,'role':role,'focus':focus,'photo':P+photo+'.jpg' if photo else '','nophoto':not photo,'link':link,'linktext':linktext,'haslink':bool(link)}
-leaders=[card('Clare M. Tempany','Contact PI · Administration Core','Prostate MRI and image-guided therapy','clare-m-tempany'),card('Nobuhiko Hata','Multiple PI · Administration Core','Robotic navigation and image-guided interventions','nobuhiko-hata')]
-current=[card('Stephan E. Maier','TR&D 1 lead','Quantitative diffusion MRI','stephan-e-maier','TRD1.dc.html','TR&D 1'),
-card('Carl-Fredrik Westin','TR&D 1 · Training and Dissemination lead','Diffusion MRI methods','carl-fredrik-westin','TRD1.dc.html','TR&D 1'),
-card('William M. Wells III','TR&D 1 co-investigator','Image registration and multimodal learning','william-m-wells-iii','TRD1.dc.html','TR&D 1'),
-card('Daniel Paech','TR&D 1 investigator','Quantitative CEST MRI of tumor chemistry','daniel-paech','TRD1.dc.html','TR&D 1'),
-card('Oliver Jonas','TR&D 2 lead','Implantable microdevices','oliver-jonas','TRD2.dc.html','TR&D 2'),
-card('Sharath Bhagavatula','TR&D 2 investigator','Interventional radiology','sharath-bhagavatula','TRD2.dc.html','TR&D 2'),
-card('[First name] Akgul','TR&D 2 co-investigator','[Research focus]','','TRD2.dc.html','TR&D 2'),
-card('Junichi Tokuda','TR&D 3 lead','MRI-guided robotic interventions','junichi-tokuda','TRD3.dc.html','TR&D 3'),
-card('Jagadeesan Jayender','TR&D 3 investigator','Surgical navigation and computer vision','jagadeesan-jayender','TRD3.dc.html','TR&D 3'),
-card('Haoyin Zhou','TR&D 3 co-investigator','Trackerless navigation for minimally invasive surgery','haoyin-zhou','TRD3.dc.html','TR&D 3')]
+leaders=[card('Nobuhiko Hata','Multiple PI · Administration Core','Robotic navigation and image-guided interventions','nobuhiko-hata'),
+card('Oliver Jonas','TR&D 2 project lead','Implantable microdevices','oliver-jonas','TRD2.dc.html','TR&D 2'),
+card('Stephan E. Maier','TR&D 1 project lead','Quantitative diffusion MRI','stephan-e-maier','TRD1.dc.html','TR&D 1'),
+card('Clare M. Tempany','Multiple PI, contact PI · Administration Core','Prostate MRI and image-guided therapy','clare-m-tempany'),
+card('Junichi Tokuda','TR&D 3 project lead','MRI-guided robotic interventions','junichi-tokuda','TRD3.dc.html','TR&D 3'),
+card('Carl-Fredrik Westin','Training and Dissemination lead · TR&D 1','Diffusion MRI methods','carl-fredrik-westin','TRD1.dc.html','TR&D 1')]
+current=[card('[First name] Akgul','TR&D 2','[Research focus]','','TRD2.dc.html','TR&D 2'),
+card('Mariana Bernardes','TR&D 3','MRI-guided robotic needle placement','mariana-bernardes','TRD3.dc.html','TR&D 3'),
+card('Sharath Bhagavatula','TR&D 2','Interventional radiology','sharath-bhagavatula','TRD2.dc.html','TR&D 2'),
+card('Jagadeesan Jayender','TR&D 3','Surgical navigation and computer vision','jagadeesan-jayender','TRD3.dc.html','TR&D 3'),
+card('Florian Kroh','TR&D 1 · postdoctoral fellow','CEST MRI','','TRD1.dc.html','TR&D 1'),
+card('Daniel Paech','TR&D 1','Quantitative CEST MRI of tumor chemistry','daniel-paech','TRD1.dc.html','TR&D 1'),
+card('[Name], Westin Lab','TR&D 1','[Research focus]','','TRD1.dc.html','TR&D 1'),
+card('William M. Wells III','TR&D 1','Image registration and multimodal learning','william-m-wells-iii','TRD1.dc.html','TR&D 1'),
+card('Haoyin Zhou','TR&D 3','Trackerless navigation for minimally invasive surgery','haoyin-zhou','TRD3.dc.html','TR&D 3')]
 past=[card(n,'Investigator, 2021–2026 cycle',f,p) for n,f,p in [('Nathalie Y. R. Agar','Mass spectrometry imaging (TRD 1 lead)','nathalie-y-r-agar'),('Tina Kapur','Training and Dissemination (core lead)','tina-kapur'),('Alexandra J. Golby','Image-guided neurosurgery; AMIGO clinical director','alexandra-j-golby'),('Sarah F. Frisken','Image analysis for brain tumor surgery','sarah-f-frisken'),('Ron Kikinis','Open-source medical image computing','ron-kikinis'),("Lauren J. O\u2019Donnell",'Diffusion MRI tractography','lauren-j-odonnell'),('Fiona M. Fennessy','Quantitative prostate MRI','fiona-m-fennessy'),('Kemal Tuncali','MRI-guided interventions','kemal-tuncali')]]
 inv=[('Oliver Jonas','Implantable microdevices for measuring drug response','oliver-jonas','TRD2'),
 ("Lauren J. O’Donnell",'Diffusion MRI tractography and white-matter analysis','lauren-j-odonnell',''),
@@ -52,7 +56,7 @@ labs=[('Jonas Lab','TRD2',[('Sebastian Ahn','sebastian-ahn'),('Simon Chow','simo
 labgroups=[{'lab':l,'page':t+'.dc.html','proj':'TR&D '+t[-1],'people':[{'name':n,'photo':P+f+'.jpg'} for n,f in ppl]} for l,t,ppl in labs]
 collab=[{'name':n,'photo':P+f+'.jpg','role':r} for n,f,r in [('Iulian Iordachita','iulian-iordachita','Research Professor'),('Axel Krieger','axel-krieger','Assistant Professor'),('Gregory Fischer','gregory-fischer','Professor'),('Simon Leonard','simon-leonard','Assistant Research Professor'),('Tamas Ungi','tamas-ungi','Assistant Professor'),('Ehud Schmidt','ehud-schmidt','Associate Professor'),('Robert Cormack','robert-cormack','Associate Professor of Radiation Oncology'),('Mark Fuge','mark-fuge','Associate Professor'),('Yue Chen','yue-chen','Assistant Professor'),('Gregory Ekchian','gregory-ekchian','CEO')]]
 data={'leaders':leaders,'current':current,'past':past,
- 'rising':[{'name':'Pedro Moreira, PhD','role':'Instructor in Radiology, Brigham and Women’s Hospital and Harvard Medical School','open':'collaborations, invited talks, faculty positions','photo':'portraits/pedro-moreira.jpg','nophoto':False},{'name':'[Name]','role':'[Instructor in Radiology]','open':'collaborations, invited talks, faculty positions','photo':'','nophoto':True},{'name':'[Name]','role':'[Senior research fellow]','open':'collaborations, faculty positions','photo':'','nophoto':True}]}
+ 'rising':[{'name':'Pedro Moreira, PhD','role':'Instructor in Radiology, Brigham and Women’s Hospital and Harvard Medical School','open':'collaborations, invited talks, faculty positions','photo':'portraits/pedro-moreira.jpg','nophoto':False}]}
 CARD='''<article style="background: #FFFFFF; border: 1px solid #E3E8EF; border-radius: 14px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px">
 <sc-if value="{{c.photo}}" hint-placeholder-val="{{ true }}"><img src="{{c.photo}}" alt="{{c.name}}" style="width: 104px; height: 104px; border-radius: 50%; object-fit: cover; margin-bottom: 8px"></sc-if>
 <sc-if value="{{c.nophoto}}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="Portrait to come" style="width: 104px; height: 104px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1; margin-bottom: 8px"></div></sc-if>
@@ -84,8 +88,8 @@ body = f'''<header style="border-bottom: 1px solid #E3E8EF">
 <h1 style="margin: 0 0 14px; font-size: 40px; line-height: 1.2">The people of AT-NCIGT</h1>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9D3E0; max-width: 760px">Investigators, clinicians, scientists, students and collaborators who carry out the center's research. Reach out to any of them to collaborate, invite a talk or join a lab.</p>
 </div></section>
-''' + sec('Leadership','Principal investigators of the center.',grid('leaders')) \
-  + sec('Center investigators','Investigators funded in the current cycle (2P41EB028741, 2026–2031), including clinician-scientists. Follow a link to see their project.',grid('current'),'#F7F9FC') \
+''' + sec('Leadership','The principal investigators and the leads of the research projects and the Training and Dissemination core, in alphabetical order.',grid('leaders')) \
+  + sec('Center investigators','Investigators, clinicians and scientists who contribute to the center’s projects in the current cycle (2P41EB028741), in alphabetical order. Follow a link to see their project.',grid('current'),'#F7F9FC') \
   + sec('Rising investigators','Early-career faculty and senior fellows ready for their next step. They welcome conversations about collaborations, invited talks and career opportunities.','''<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
 <sc-for list="{{rising}}" as="r" hint-placeholder-count="3"><article style="background: #FFFFFF; border-radius: 12px; padding: 18px; display: flex; gap: 12px; align-items: center"><sc-if value="{{r.photo}}" hint-placeholder-val="{{ false }}"><img src="{{r.photo}}" alt="{{r.name}}" style="flex: 0 0 64px; width: 64px; height: 64px; border-radius: 50%; object-fit: cover"></sc-if><sc-if value="{{r.nophoto}}" hint-placeholder-val="{{ true }}"><div role="img" aria-label="Portrait to come" style="flex: 0 0 64px; height: 64px; border-radius: 50%; background: #EEF1F5; border: 1px dashed #B8C3D1"></div></sc-if><div><strong>{{r.name}}</strong><div style="font-size: 13px; color: #4A5668">{{r.role}}</div><div style="font-size: 12px; font-weight: 600; color: #8A5A2B; margin-top: 2px">Open to: {{r.open}}</div></div></article></sc-for>
 </div>''','#F6F1EA') \
