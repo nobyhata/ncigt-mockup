@@ -4,6 +4,7 @@ def data_of(src):
     prog = "class DCLogic{constructor(){this.props={};this.state={}}setState(){}};" + js + ";console.log(JSON.stringify(new Component().renderVals()))"
     return json.loads(subprocess.run(['node','-e',prog],capture_output=True,text=True,check=True).stdout)
 def get(ctx, path):
+    if path in ('true','false'): return path=='true'
     v = ctx
     for k in path.split('.'):
         v = v[k]
@@ -13,6 +14,14 @@ def fill(t, ctx):
         v = get(ctx, m.group(1).strip())
         return html.escape(str(v), quote=True)
     return re.sub(r'\{\{\s*([\w.$]+)\s*\}\}', rep, t)
+def resolve_if(t):
+    def f(m):
+        v=m.group(1).strip()
+        return m.group(2) if v not in ('', 'False', 'false', '0', 'None') else ''
+    prev=None
+    while prev!=t:
+        prev=t; t=re.sub(r'<sc-if value="([^"]*)"[^>]*>((?:(?!<sc-if).)*?)</sc-if>', f, t, flags=re.S)
+    return t
 def render(src, page_links):
     data = data_of(src)
     body = re.search(r'<x-dc>(.*?)</x-dc>', src, re.S).group(1)
@@ -23,10 +32,10 @@ def render(src, page_links):
         out=[]
         for item in get(data, lst):
             ctx = dict(data); ctx[var] = item
-            out.append(fill(inner, ctx))
+            out.append(resolve_if(fill(inner, ctx)))
         return ''.join(out)
     body = re.sub(r'<sc-for list="\{\{\s*([\w.]+)\s*\}\}" as="(\w+)"[^>]*>(.*?)</sc-for>', loop, body, flags=re.S)
-    body = fill(body, data)
+    body = resolve_if(fill(body, data))
     for a,b in page_links.items(): body = body.replace(a,b)
     title = re.search(r'<title>(.*?)</title>', src).group(1)
     return title, helmet, body
